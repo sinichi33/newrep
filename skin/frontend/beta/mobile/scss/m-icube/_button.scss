@@ -1,0 +1,23 @@
+@mixin button-dark-grey($width: auto, $height: 37px, $border-radius: 0) {
+    @include button-color($width, $height, $font-size: 14, $color: #fff, $background-color: $c-text, $hover-color: #fff, $hover-background: #3b3c40, $border-radius: $border-radius);
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+@mixin button-white($width: auto, $height: 37px, $border-radius: 0) {
+    @include button-color($width, $height, $font-size: 14, $color: $c-text, $background-color: #fff, $hover-color: $c-text, $hover-background: #efefef, $border-radius: $border-radius);
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.button {
+	letter-spacing: 0;
+}
+
+.btn-dark-grey {
+    @include button-dark-grey();
+}
+
+.btn-white {
+    @include button-white();
+}

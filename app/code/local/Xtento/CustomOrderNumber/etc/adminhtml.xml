@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <xtento_extensions translate="title">
+                    <title>XTENTO Extensions</title>
+                    <sort_order>1</sort_order>
+                    <children>
+                        <customordernumber translate="title">
+                            <title>Order Number Customizer</title>
+                            <sort_order>250</sort_order>
+                            <action>adminhtml/system_config/edit/section/customordernumber</action>
+                        </customordernumber>
+                    </children>
+                </xtento_extensions>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <customordernumber translate="title">
+                                        <title>XTENTO Order Number Customizer</title>
+                                        <sort_order>1</sort_order>
+                                    </customordernumber>
+                                </children>
+                            </config>
+                            <xtento_extensions translate="title">
+                                <title>XTENTO Extensions</title>
+                                <sort_order>1</sort_order>
+                                <children>
+                                    <customordernumber translate="title">
+                                        <title>Order Number Customizer</title>
+                                        <sort_order>250</sort_order>
+                                        <action>adminhtml/system_config/edit/section/customordernumber</action>
+                                    </customordernumber>
+                                </children>
+                            </xtento_extensions>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
+<!--
+/**
+ * Product:       Xtento_CustomOrderNumber (1.0.6)
+ * ID:            8xAf+oCns/QOEdaiZub3aLgVCGFua6nB8AAizsm8sRY=
+ * Packaged:      2016-02-24T02:27:18+00:00
+ * Last Modified: 2014-04-07T14:13:48+02:00
+ * File:          app/code/local/Xtento/CustomOrderNumber/etc/adminhtml.xml
+ * Copyright:     Copyright (c) 2014 XTENTO GmbH & Co. KG <info@xtento.com> / All rights reserved.
+ */
+-->

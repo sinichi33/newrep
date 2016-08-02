@@ -1,0 +1,407 @@
+/*----------------------------------------------------------------------------*/
+/* Var
+/*----------------------------------------------------------------------------*/
+
+$check-width: 2%;
+$product-image-width: 14%;
+$product-detail-width: 28%;
+$product-list-padding: 2%;
+$product-rma-detail: 56%;
+
+/*----------------------------------------------------------------------------*/
+/* Global
+/*----------------------------------------------------------------------------*/
+
+.icube-rma-return-create,
+.icube-rma-return-search {
+
+    h2,
+    h4 {
+    }
+
+    h2 {
+    }
+
+    h4 {
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* RMA Order search Form
+/*----------------------------------------------------------------------------*/
+
+#rma-order-search-section {
+
+    h2 {
+        display: none;
+    }
+
+    form {
+    }
+
+    .col2-set {
+
+        .col-1,
+        .col-2 {
+            padding: 10px !important;
+        }
+
+        .border-left {
+        }
+
+        .buttons-set {
+        }
+    }
+
+    .form-list {
+
+        li {
+        }
+
+        label {
+        }
+
+        .input-text {
+        }
+    }
+
+    .buttons-set {
+
+        .button {
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    .user-not-logged-in-tabs {
+        padding-top: 10px;
+
+        h4 {
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        .active {
+            background: $c-orange;
+            border-bottom: 1px solid $c-orange;
+            position: relative;
+
+            h4 {
+                color: #fff;
+            }
+
+            &:before {
+                content: '';
+                background: $c-orange;
+                height: 10px;
+                position: absolute;
+                left: 0;
+                top: -10px;
+                width: 100%;
+            }
+        }
+
+        > div:not(.active) {
+            border: 1px solid #a9a9a9;
+        }
+
+        .col-1:not(.active) {
+            border-right: none;
+        }
+
+        .col-2:not(.active) {
+            border-left: none;
+        }
+    }
+
+    .user-not-logged-in {
+        margin-top: -1px;
+        border: 1px solid #a9a9a9;
+        
+        .col-1,
+        .col-2 {
+            float: none;
+            width: 100%;
+            padding: 0;
+            border: none;
+        }
+
+        .col-2 {
+
+            h4 {
+            }
+
+            p {
+                padding-top: 20px;
+            }
+
+            .buttons-set {
+                margin-top: 22px;
+            }
+        }
+    }
+
+    .user-logged-in {
+
+        #rma-order-search-not-logged-in {
+            margin: 10px auto;
+
+            .buttons-set {
+            }
+
+            label {
+            }
+
+            .input-box {
+                width: 100%;
+
+                .select {
+                    width: 100%;
+                }
+            }
+
+            .form-list {
+            }
+        }
+    }
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* General Create RMA Style
+/*----------------------------------------------------------------------------*/
+
+.icube-rma-return-create .main {
+
+    .page-title,
+    h2 {
+        display: none;
+    }
+
+    .content-section + .content-section {
+        margin-top: 15px;
+    }
+
+    .buttons-set {
+        padding: 0 10px;
+
+        .back-link {
+        }
+
+        .button {
+            width: 100%;
+            margin: 0 0 10px;
+        }
+    }
+
+    .order-page {
+    }
+}
+
+.desc-list.order-detail {
+
+    label {
+        width: 110px;
+    }
+}
+
+.rma-product-list {
+    
+    .item {
+
+        &:not(:last-child) {
+        }
+
+        td {
+
+            &:first-child {
+            }
+
+            &.check {
+            }
+
+            &.rma-detail {
+            }
+
+            &.product-detail-image {
+            }
+
+            &.product-details {
+            }
+        }
+
+        .product-image {
+
+            img {
+            }
+        }
+
+        .product-name {
+        }
+
+        .product-sku {
+        }
+
+        .rma-detail {
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* RMA Pickup Items List
+/*----------------------------------------------------------------------------*/
+
+.rma-pickup-items {
+
+    h4 {
+    }
+
+    .item + h4 {
+    }
+
+    .store-info {
+
+        .left {
+        }
+
+        .left:last-child {
+        }
+
+        .desc-list {
+        }
+    }
+
+    .item {
+
+        .rma-detail p {
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* RMA Delivered Items List
+/*----------------------------------------------------------------------------*/
+
+.rma-delivered-items {
+
+    .item {
+        padding-bottom: 20px;
+
+        table,
+        tbody,
+        tr,
+        td {
+            display: block;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        td.product-detail-image {
+            width: 30%;
+            float: left;
+            max-width: 84px;
+        }
+
+        td.check {
+            float: left;
+            width: 10%;
+            text-align: center;
+            height: 80px;
+            padding: 0;
+            max-width: 60px;
+            padding-top: 25px;
+        }
+
+        td.product-details {
+            float: left;
+            width: 60%;
+            padding-left: 15px;
+        }
+
+        td.rma-input-detail {
+            clear: both;
+            padding-top: 15px;
+        }
+    }
+
+    .rma-input-detail {
+
+        .field {
+            float: none;
+
+            + .field {
+                margin-top: 10px;
+            }
+
+            &.qty,
+            &.reason,
+            &.resolution,
+            &.condition,
+            &.description {
+                width: 100%;
+            }
+
+            &.reason {
+                margin-left: 0;
+            }
+
+            .validation-advice {
+            }
+        }
+
+        .select,
+        .select .select-bg,
+        .select select {
+        }
+
+        input:disabled,
+        .select.disabled .select-bg,
+        textarea:disabled {
+        }
+    }
+
+    .rma-product-list {
+    
+        .item {
+        }
+    }
+}
+
+#registrant_options input[type="checkbox"] {
+
+    + .validation-advice {
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Upload images
+/*----------------------------------------------------------------------------*/
+
+.entry-images {
+
+    ol {
+    }
+
+    .thumb-wrapper {
+    }
+
+    .value {
+    }
+
+    .image-list {
+
+        li {
+            margin-top: 10px;
+
+            + li {
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .fieldset {
+    }
+}

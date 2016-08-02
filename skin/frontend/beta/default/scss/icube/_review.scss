@@ -1,0 +1,30 @@
+
+/*----------------------------------------------------------------------------*/
+/* Mixin
+/*----------------------------------------------------------------------------*/
+
+@mixin rating-box() {
+    .rating-box {
+        @include background-retina('sprites/rating-empty.png','sprites2x/rating-empty.png');
+        background-size: 92px 16px;
+        width: 92px;
+        height: 16px;
+        background-position: 0;
+    }
+
+    .rating-box .rating {
+        @include background-retina('sprites/rating-fill.png','sprites2x/rating-fill.png');
+        background-size: 92px 16px;
+        width: 92px;
+        height: 16px;
+        background-position: 0;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Customer Review
+/*----------------------------------------------------------------------------*/
+
+.ratings {
+    @include rating-box();
+}

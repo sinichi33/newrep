@@ -1,0 +1,171 @@
+/*----------------------------------------------------------------------------*/
+/* Mixin
+/*----------------------------------------------------------------------------*/
+
+@mixin see-more() {
+    display: block;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0;
+    font-weight: 400;
+    border-radius: initial;
+    color: #3399CC;
+    float: right;
+    font-size: 10px;
+    font-size: 0.625rem;
+    margin: 6px 0 -2px;
+    text-transform: capitalize;
+}
+
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+.cms-index-index {
+
+	h2 {
+		@include responsive-font-size(16);
+		margin-bottom: 10px;
+		text-align: left;
+		font-weight: bold;
+
+		.see-more {
+			@include see-more();
+
+		    &:after {
+		    	content: "\f105";
+                font: normal normal normal 10px/1 FontAwesome;
+                margin-left: 5px;
+		    }
+		}
+	}
+
+	.note-msg  {
+		@include responsive-font-size(12);
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Banner Slider
+/*----------------------------------------------------------------------------*/
+
+#section-banner-slider {
+
+	/* bxslider */
+    .bx-wrapper {
+
+    	.bx-pager {
+    		bottom: -15px;
+    		right: initial;
+    		margin: 0 auto;
+    		position: relative;
+	    }
+
+	    .bx-pager.bx-default-pager a {
+	    	width: 8px;
+	    	height: 8px;
+	    }
+    }
+
+    .bx-controls-direction {
+    	display: none;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* products grid
+/*----------------------------------------------------------------------------*/
+
+.cms-index-index {
+
+	.products-grid {
+
+		li {
+			width: 48.5%;
+			margin: 0 0 10px;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Inspiration
+/*----------------------------------------------------------------------------*/
+
+#section-inspirations {
+	margin-top: 25px;
+
+	.see-more {
+		position: relative;
+	    height: initial;
+	    right: initial;
+	    bottom: initial;
+		@include see-more();
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Featured Product
+/*----------------------------------------------------------------------------*/
+
+#section-featured_products {
+	margin-top: 15px;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Company
+/*----------------------------------------------------------------------------*/
+
+#section-company {
+	margin-top: 25px;
+
+	.banner,
+	.products {
+		float: none;
+		width: 100%;
+	}
+
+	.products {
+		padding: 10px 5px;
+
+		li {
+			margin-bottom: 5px;
+
+			.product-image,
+			.product-info {
+				float: none;
+				width: 100%;
+			}
+
+			.product-info {
+				margin: 0;
+				padding: 5px;
+			}
+
+			.product-name {
+				margin-bottom: 2px;
+			}
+
+			.price-wrapper.has-sale {
+
+				.sale {
+					@include responsive-font-size(9);
+				}
+			}
+		}
+	}
+
+	.company {
+
+		+ .company {
+			margin-top: 20px;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Brands Slider
+/*----------------------------------------------------------------------------*/
+
+#section-brands {
+	display: none;
+}

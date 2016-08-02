@@ -1,0 +1,64 @@
+
+/*----------------------------------------------------------------------------*/
+/* Messages
+/*----------------------------------------------------------------------------*/
+
+.messages {
+    
+    /* success */
+
+    /* error */
+}
+
+/*----------------------------------------------------------------------------*/
+/* Breadcrumbs
+/*----------------------------------------------------------------------------*/
+
+.breadcrumbs {
+    
+}
+
+/*----------------------------------------------------------------------------*/
+/* Forms, Input, Validation.
+/*----------------------------------------------------------------------------*/
+
+input {
+}
+
+input[type=email], 
+input[type=search], 
+input[type=number], 
+input[type=password], 
+input[type=tel], 
+input[type=text] {
+  @include responsive-font-size(14);
+}
+
+.col-main {
+	input[type=email], 
+	input[type=search], 
+	input[type=number], 
+	input[type=password], 
+	input[type=tel], 
+	input[type=text] {
+	  width: 100%;
+	  min-width: 0;
+	  max-width: 100%;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Global Styles
+/*----------------------------------------------------------------------------*/
+
+.content-section {
+	padding: 10px;
+}
+
+.mob-hide {
+    display: none;
+}
+
+.mob-only {
+  display: block;
+}

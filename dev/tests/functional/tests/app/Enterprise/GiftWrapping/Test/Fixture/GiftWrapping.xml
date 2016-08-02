@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento Enterprise Edition
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Magento Enterprise Edition End User License Agreement
+ * that is bundled with this package in the file LICENSE_EE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magento.com/license/enterprise-edition
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Tests
+ * @package     Tests_Functional
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/etc/fixture.xsd">
+    <fixture name="giftWrapping" module="Enterprise_GiftWrapping" type="flat" entity_type="enterprise_giftwrapping" collection="Enterprise\GiftWrapping\Model\Resource\Wrapping\Collection" identifier="code" repository_class="Enterprise\GiftWrapping\Test\Repository\GiftWrapping" handler_interface="Enterprise\GiftWrapping\Test\Handler\GiftWrapping\GiftWrappingInterface" class="Enterprise\GiftWrapping\Test\Fixture\GiftWrapping">
+        <dataset name="default">
+            <field name="design" xsi:type="string">Gift Wrapping %isolation%</field>
+            <field name="website_ids" xsi:type="array">
+                <item name="dataSet" xsi:type="string">main_website</item>
+            </field>
+            <field name="status" xsi:type="string">Enabled</field>
+            <field name="base_price" xsi:type="string">10</field>
+        </dataset>
+        <field name="wrapping_id" is_required="1">
+            <default_value xsi:type="null"/>
+        </field>
+        <field name="status" is_required="1">
+            <default_value xsi:type="string">Enabled</default_value>
+        </field>
+        <field name="base_price" is_required="1">
+            <default_value xsi:type="number">10</default_value>
+        </field>
+        <field name="image" is_required="0">
+            <default_value xsi:type="null"/>
+        </field>
+        <field name="design">
+            <default_value xsi:type="string">Gift Wrapping %isolation%</default_value>
+        </field>
+        <field name="website_ids" source="Enterprise\GiftWrapping\Test\Fixture\GiftWrapping\WebsiteIds">
+            <default_value xsi:type="array">
+                <item name="dataSet" xsi:type="string">main_website</item>
+            </default_value>
+        </field>
+    </fixture>
+</config>

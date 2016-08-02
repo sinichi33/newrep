@@ -1,0 +1,79 @@
+<?php
+/**
+ * Related Template
+ *
+ * Description:
+ * - override rwd/enterprise
+ * - add id to product listing wrapper
+ * - change block title
+ * - remove block subtitle
+ *
+ * @category    design
+ * @package     rwd_enterprise
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+/* @var $this Enterprise_TargetRule_Block_Catalog_Product_List_Related */
+?>
+<?php if ($this->hasItems()):?>
+<div class="box-collateral box-related block-related">
+    <div class="block-title">
+        <h2><?php echo $this->__('Produk Menarik Lainnya') ?></h2>
+    </div>
+    <ul class="products-grid products-grid--max-5-col" id="related-product-table">
+    <?php $i=0; foreach($this->getItemCollection() as $_item): ?>
+        <?php $i++ ?>
+        <?php /*if ($i % $this->getColumnCount() == 0): ?>
+        <ul class="box-content mini-products-list">
+        <?php endif*/ ?>
+        <li class="item<?php if (($i - 1) % $this->getColumnCount() == 0):?> first<?php elseif ($i % $this->getColumnCount() == 0): ?> last<?php endif; ?>">
+            <?php
+                $itemBlock = $this->getChild('catalog.product.related.item')->setItem($_item)->setPosition($i);
+                echo $itemBlock->toHtml();
+            ?>
+        </li>
+        <?php /*if ($i % $this->getColumnCount() == 0 || $i == $this->getItemsCount()): ?>
+        </ul>
+        <?php endif*/ ?>
+    <?php endforeach ?>
+    </ul>
+    <script type="text/javascript">decorateGeneric($$('.box-related ul.box-content'), ['odd','even','first','last'])</script>
+
+    <script type="text/javascript">
+    //<![CDATA[
+    $$('.related-checkbox').each(function(elem){
+        Event.observe(elem, 'click', addRelatedToProduct)
+    });
+
+    var relatedProductsCheckFlag = false;
+    function selectAllRelated(txt){
+        if (relatedProductsCheckFlag == false) {
+            $$('.related-checkbox').each(function(elem){
+                elem.checked = true;
+            });
+            relatedProductsCheckFlag = true;
+            txt.innerHTML = "<strong><?php echo $this->jsQuoteEscape($this->__('unselect all')) ?><\/strong>";
+        } else {
+            $$('.related-checkbox').each(function(elem){
+                elem.checked = false;
+            });
+            relatedProductsCheckFlag = false;
+            txt.innerHTML = "<strong><?php echo $this->jsQuoteEscape($this->__('select all')) ?><\/strong>";
+        }
+        addRelatedToProduct();
+    }
+
+    function addRelatedToProduct(){
+        var checkboxes = $$('.related-checkbox');
+        var values = [];
+        for(var i=0;i<checkboxes.length;i++){
+            if(checkboxes[i].checked) values.push(checkboxes[i].value);
+        }
+        if($('related-products-field')){
+            $('related-products-field').value = values.join(',');
+        }
+    }
+    //]]>
+    </script>
+</div>
+<?php endif;?>

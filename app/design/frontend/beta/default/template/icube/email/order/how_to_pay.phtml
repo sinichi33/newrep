@@ -1,0 +1,114 @@
+<?php
+/**
+ * How to pay template for Order Confirmation email
+ *
+ * Description:
+ * - Created from scratch
+ * - This template is targeted for VA payment only
+ */
+?>
+
+<?php  
+$_order = $this->getOrder();
+$_payment = $_order->getPayment()->getData();
+?>
+
+<?php /* if payment method is VA */ ?>
+<?php if ($_payment['method'] == 'vpaymentva'): ?>
+
+	<?php /* if the bank is BCA */ ?>
+	<?php if ($_payment['vabank'] == 'bca'): ?>
+		<div class="va-instruction">
+			<p style="text-align:center; font-weight:bold; font-size:16px;">Pembayaran melalui BCA - Virtual Account dapat dilakukan dengan mengikuti petunjuk berikut:</p>
+			<hr>
+			<p><b>Pembayaran Melalui Virtual Account BCA</b></p>
+			<ol class="va-steps">
+			    <li>Pilih Menu Transaksi Lainnya</li>
+			    <li>Pilih Menu Transfer</li>
+			    <li>Pilih Menu Ke Rek BCA Virtual Account</li>
+			    <li>Masukkan Nomor Virtual Account : <b><?php echo $_payment['vanumber'] ?></b></li>
+			    <li>Konfirmasi Pembayaran dengan menekan pilihan Ya</li>
+			</ol>
+			<p><b>Pembayaran Melalui KlikBCA Individual</b></p>
+			<ol class="va-steps">
+			    <li>Login ke KlikBCA Individual</li>
+			    <li>Pilih Menu Transfer</li>
+			    <li>Pilih Menu Transfer ke BCA Virtual Account</li>
+			    <li>Masukkan Nomor Virtual Account : <b><?php echo $_payment['vanumber'] ?></b></li>
+			    <li>Pilih Lanjutkan untuk melanjutkan pembayaran</li>
+			    <li>Masukkan RESPON KEYBCA APPLI 1 yang muncul pada Token BCA,lalu klik tombol Kirim</li>
+			</ol>
+			<p><b>Pembayaran Melalui KlikBCA Bisnis</b></p>
+			<ol class="va-steps">
+			    <li>Buka Aplikasi BCA Mobile</li>
+			    <li>Pilih Menu m-BCA</li>
+			    <li>Pilih Menu m-Transfer</li>
+			    <li>Pilih Opsi BCA Virtual Account</li>
+			    <li>Masukkan Nomor Virtual Account yang dituju: <b><?php echo $_payment['vanumber'] ?></b>, lalu klik tombol OK</li>
+			    <li>Klik tombol Send yang berada di sudut kanan atas aplikasi untuk melakukan transfer</li>
+			    <li>Klik OK untuk melanjutkan pembayaran</li>
+			    <li>Input PIN BCA untuk mengotorisasi transaksi</li>
+			</ol>
+			<p><b>Pembayaran Melalui Mobile Banking BCA</b></p>
+			<ol class="va-steps">
+			    <li>Login ke KlikBCA Bisnis</li>
+			    <li>Pilih Menu Transfer Dana, lalu klik Tambah, pilih Ke BCA Virtual Account</li>
+			    <li>Masukkan nomor Virtual Account :<b><?php echo $_payment['vanumber'] ?></b></li>
+			    <li>Klik tombol Kirim untuk mendaftarkan Virtual Account yang dituju</li>
+			    <li>Klik tombol Simpan untuk menyimpan Virtual Account yang dituju</li>
+			    <li>Pada Menu Utama, pilih menu Transfer Dana, lalu pilih Ke BCA Virtual Account, pilih No. BCA Virtual
+			Account yang dituju</li>
+			    <li>Klik tombol Lanjut untuk melanjutkan pembayaran</li>
+			    <li>Klik tombol Kirim untuk melanjutkan pembayaran</li>
+			    <li>Klik tombol Simpan untuk melanjutkan pembayaran</li>
+			    <li>Pilih tombol Setuju untuk melanjutkan Otorisasi Transaksi</li>
+			    <li>Mohon mengikuti instruksi pada tab Otorisasi, lalu Input angka yang terdapat pada layar KeyBCA</li>
+			    <li>Transaksi berhasil diotorisasi, Pilih tombol Simpan untuk menyelesaikan transaksi</li>
+			</ol>
+		</div>
+	<?php endif ?>
+
+	<?php /* if the bank is permata */ ?>
+	<?php if ($_payment['vabank'] == 'permata'): ?>
+		<div class="va-instruction">
+			<p style="text-align:center; font-weight:bold; font-size:16px;">Pembayaran melalui Jaringan Bank Permata atau bank lain dapat dilakukan dengan mengikuti petunjuk berikut:</p>
+			<hr>
+			<p><b>PEMBAYARAN MELALUI JARINGAN PERMATA/ALTO</b></p>
+			<ol class="va-steps">
+			    <li>Pada menu utama, pilih <b>"Transaksi Lainnya"</b></li>
+			    <li>Pilih <b>"Transaksi Pembayaran"</b></li>
+			    <li>Pilih <b>"Lain-lain"</b></li>
+			    <li>Pilih <b>"Pembayaran Virtual Account"</b></li>
+			    <li>Masukkan 16 digit no.rekening pembayaran lalu tekan <b>"Benar"</b></li>
+			    <li>Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening, dan nama merchant. Jika informasi telah sesuai tekan <b>"Benar"</b></li>
+			    <li>Konfirmasi pembayaran Anda</li>
+			</ol>
+
+			<p style="font-size:10px; color:#959595; margin-top:25px; line-height:16px;">*Pembayaran menggunakan Jaringan Bank Permata atau bank lain akan dikenakan biaya administrasi Rp6,500 (sesuai dengan peraturan Bank Indonesia)</p>
+		</div>
+	<?php endif ?>
+
+	<?php /* if the bank is mandiri */ ?>
+	<?php if ($_payment['vabank'] == 'echannel'): ?>
+		<div class="va-instruction">
+			<p style="text-align:center; font-weight:bold; font-size:16px;">Pembayaran melalui ATM Mandiri dapat dilakukan dengan mengikuti petunjuk berikut:</p>
+			<hr>
+			<p><b>Pembayaran melalui ATM Mandiri</b></p>
+			<ol class="va-steps">
+			    <li>Masukkan PIN Anda</li>
+			    <li>Pada menu utama pilih menu <b>"Pembayaran"</b> kemudian pilih menu <b>"Multi Payment"</b></li>
+			    <li>Masukkan kode perusahaan, dalam hal ini adalah <b>70012</b> kemudian tekan tombol <b>"Benar"</b></li>
+			    <li>Masukkan kode pembayaran Anda, dalam hal ini adalah <b>xxxxx (tercantum waktu Checkout)</b> kemudian Anda akan mendapatkan detail pembayaran Anda</li>
+			    <li>Konfirmasi pembayaran Anda</li>
+			</ol>
+			<p><b>Cara membayar melalui Internet Banking Mandiri</b></p>
+			<ol class="va-steps">
+			    <li>Login ke <a href="https://ib.bankmandiri.co.id/" target="_blank" style="color:#008ccf; text-decoration:none;">Internet Banking Mandiri</a></li>
+			    <li>Di Menu Utama silakan pilih <b>"Bayar"</b> kemudian pilih <b>"Multi Payment"</b></li>
+			    <li>Pilih akun Anda di <b>"Dari Rekening"</b>, kemudian di <b>"Penyedia Jasa"</b> pilih Veritrans</li>
+			    <li>Masukkan kode pembayaran Anda, dalam hal ini adalah <b>xxxxx (tercantum waktu Checkout)</b> dan klik <b>"Lanjutkan"</b></li>
+			    <li>Konfirmasi pembayaran Anda menggunakan Mandiri Token.</li>
+			</ol>
+		</div>
+	<?php endif ?>
+<?php endif ?>

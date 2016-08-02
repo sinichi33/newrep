@@ -1,0 +1,12 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1460446928;s:6:"expire";i:1460446933;s:4:"tags";s:31:"d32_FPC,d32_BLOCK_HTML,d32_MAGE";}
+<div class="links loggedin">
+                <a href="javascript:void(0)">Hi,<br/>
+        susu</a>
+</div>
+
+<div class="myaccount-menu skip-content">
+    <a href="http://magen.local/customer/account/index/">Akun Saya</a>
+    <a href="http://magen.local/sales/order/history/">Pesanan Saya</a>
+    <a href="http://magen.local/wishlist/">Wishlist</a>
+    <a href="http://magen.local/customer/account/logout/">Log Out</a>
+</div>

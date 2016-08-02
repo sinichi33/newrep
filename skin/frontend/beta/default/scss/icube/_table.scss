@@ -1,0 +1,148 @@
+/*----------------------------------------------------------------------------*/
+/* Table
+/*----------------------------------------------------------------------------*/
+/*
+    Standard table-less layouts. Apply mixin to container element. Use html from example layout links below.
+    IDs changed to classes to allow multiple tables per page.
+    Class names simplified to be more friendly.
+
+    Table layouts for reference:
+    2 column: http://www.dynamicdrive.com/style/layouts/category/C9/
+    3 column: http://www.dynamicdrive.com/style/layouts/category/C10/
+*/
+
+/*----------------------------------------------------------------------------*/
+/* CSS Fixed Layout #3.1- (Fixed-Fixed-Fixed)
+/*----------------------------------------------------------------------------*/
+/*
+    http://www.dynamicdrive.com/style/layouts/item/css-liquid-layout-33-fluid-fluid-fluid/
+
+    <div class="column-middle-container">
+        <div class="column middle">
+            Middle Column
+        </div>
+    </div>
+
+    <div class="column left">
+        Left Column
+    </div>
+
+    <div class="column right">
+        Right Column
+    </div>
+*/
+
+@mixin table-layout-33-fluid-fluid-fluid($leftWidth, $rightWidth) {
+
+    .column-middle-container {
+        float: left;
+        width: 100%;
+
+        .column.middle{
+            margin: 0 $rightWidth 0 $leftWidth; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+            @include box-sizing(border-box);
+        }
+    }
+
+    .column.left {
+        float: left;
+        width: $leftWidth; /*Width of left column in percentage*/
+        margin-left: -100%;
+        @include box-sizing(border-box);
+    }
+
+    .column.right {
+        float: left;
+        width: 15%; /*Width of right column in pixels*/
+        margin-left: -$rightWidth; /*Set margin to that of -(RightColumnWidth)*/
+        @include box-sizing(border-box);
+    }
+}
+
+@mixin table-layout-33-fluid-fluid-fluid-remove() {
+
+    .column-middle-container {
+        float: none;
+        width: auto;
+
+        .column.middle{
+            margin: 0;
+            @include box-sizing(content-box);
+        }
+    }
+
+    .column.left {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        @include box-sizing(content-box);
+        border: 10px solid red;
+    }
+
+    .column.right {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        @include box-sizing(content-box);
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* CSS Liquid Layout #2.2- (Fluid-Fixed)
+/*----------------------------------------------------------------------------*/
+/*
+    http://www.dynamicdrive.com/style/layouts/item/css-liquid-layout-22-fluid-fixed/
+
+    <div class="column-left-container">
+        <div class="column left">
+            Left Column
+        </div>
+    </div>
+
+    <div class="column right">
+        Right Column
+    </div>
+*/
+
+@mixin table-layout-22-fluid-fixed($leftWidth, $rightWidth) {
+
+    .column-left-container {
+        float: left;
+        width: 100%;
+
+        .column.left {
+            margin-right: $rightWidth; /*Set right margin to RightColumnWidth*/
+            @include box-sizing(border-box);
+        }
+    }
+
+    .column.right {
+        float: left;
+        width: $rightWidth; /*Width of right column in pixels*/
+        margin-left: -$rightWidth; /*Set left margin to -(RightColumnWidth) */
+        @include box-sizing(border-box);
+    }
+}
+
+@mixin table-layout-22-fluid-fixed-remove() {
+
+    .column-left-container {
+        float: none;
+        width: auto;
+
+        .column.left {
+            margin-right: 0;
+            @include box-sizing(content-box);
+        }
+    }
+
+    .column.right {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        @include box-sizing(content-box);
+    }
+}
+
+

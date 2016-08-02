@@ -1,0 +1,123 @@
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+.contacts-index-index {
+
+	.main-container {
+
+		.contact-content-wrapper {
+
+			&:after {
+				@include clearfix;
+			}
+
+			.call {
+				position: relative;
+				padding: 10px;
+				background: #fff;
+				border: none;
+				border-radius: 5px;
+				box-shadow: 0 3px 0 #c0c4c4;
+				height: auto;
+				text-align: center;
+			    line-height: 1.3;
+			    width: 90%;
+			    margin: 0 auto;
+			}
+		}
+
+		.buttons-set {
+		}
+
+		.col-main {
+			padding: 0;
+			background: none;
+		}
+	}
+
+	#messages_product_view {
+	}
+
+	.page-title {
+		display: none;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Form
+/*----------------------------------------------------------------------------*/
+
+.contact-form {
+	background: #fff;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+#contactForm {
+
+	h2 {
+	}
+
+	.fieldset {
+
+		.left,
+		.right {
+			width: 100%;
+			float: none;
+			padding: 0;
+		}
+	}
+
+	label {
+		float: none;
+		display: inline-block;
+		width: auto;
+		line-height: 1;
+	}
+
+	.input-box {
+		float: none;
+		width: 100%;
+	}
+
+	li,
+	.field {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	li.wide{
+
+		label {
+			float: none;
+			display: inline-block;
+			width: auto;
+			line-height: 1;
+		}
+
+		.input-box {
+			width: 100%;
+		}
+
+		textarea {
+		}
+	}
+
+	label[for="topic"] {
+
+		+ .input-box {
+			margin-bottom: 0;
+		}
+	}
+
+	.buttons-set {
+
+		.button {
+			width: 100%;
+			margin: 0;
+			border-radius: $button-radius;
+		}
+	}
+
+}

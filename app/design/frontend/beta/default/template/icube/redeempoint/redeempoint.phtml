@@ -1,0 +1,105 @@
+<div class="section redeempoint">
+	<div class="section-title">
+		<h2><?php echo $this->__('Redeem Point') ?></h2>
+	</div>
+
+	<?php echo $this->getChildHtml('select.company') ?>
+
+	<div class="col2-set">
+		<div class="col-1 step-1">
+			<div clas="title">
+				<h3><?php echo $this->__('Get Reward') ?></h3>
+			</div>
+			<div id="form-ace" class="form-wrapper">
+				<div class="fieldset">
+					<form action="<?php echo $this->getAjaxAction() ?>" method="post" id="form-validate-ace">
+						<ul class="form-list">
+							<li>
+								<label ><?php echo $this->__('Card Number') ?></label>
+								<div class="input-box">
+									<input type="text" name="memberid" id="memberid"  value="<?php echo $this->getMemberCardValue('AHI') ?>" class="input-text required-entry" />
+								</div>
+							</li>
+							<li>
+								<label ><?php echo $this->__('Passkey') ?></label>
+								<div class="input-box">
+								    <input type="hidden" name="type"  value="AHI" />
+									<input type="password" name="memberpin" id="memberpin"  value="" class="input-text required-entry" />
+								</div>
+							</li>
+						</ul>
+						<div class="buttons-set">
+							<button type="button" class="button btn-orange btn-submit" onclick="redeemformace.submit()" title="<?php echo $this->__('Check Point') ?>"><span><span><?php echo $this->__('Check Point') ?></span></span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div id="form-toyskingdom" class="form-wrapper">
+				<form action="<?php echo $this->getAjaxAction() ?>" method="post" id="form-validate-toyskingdom">
+					<div class="fieldset">
+						<ul class="form-list">
+							<li>
+								<label ><?php echo $this->__('Card Number') ?></label>
+								<div class="input-box">
+									<input type="text" name="memberid" id="memberid"  value="<?php echo $this->getMemberCardValue('TGI') ?>" class="input-text required-entry" />
+								</div>
+							</li>
+							<li>
+								<label ><?php echo $this->__('Passkey') ?></label>
+								<div class="input-box">
+									<input type="hidden" name="type"  value="TGI" />
+									<input type="password" name="memberpin" id="memberpin"  value="" class="input-text required-entry" />
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="buttons-set">
+						<button type="button" onclick="redeemformtoyskingdom.submit()" class="button btn-orange btn-submit"  title="<?php echo $this->__('Check Point') ?>"><span><span><?php echo $this->__('Check Point') ?></span></span></button>
+					</div>
+				</form>
+			</div>
+
+			<div id="form-informa" class="form-wrapper">
+				<form action="<?php echo $this->getAjaxAction() ?>" method="post" id="form-validate-informa">
+					<div class="fieldset">
+						<ul class="form-list">
+							<li>
+								<label ><?php echo $this->__('Card Number') ?></label>
+								<div class="input-box">
+									<input type="text" name="memberid" id="memberid"  value="<?php echo $this->getMemberCardValue('HCI') ?>" class="input-text required-entry" />
+								</div>
+							</li>
+							<li>
+								<label ><?php echo $this->__('Passkey') ?></label>
+								<div class="input-box">
+									<input type="hidden" name="type"  value="HCI" />
+									<input type="password" name="memberpin" id="memberpin"  value="" class="input-text required-entry" />
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="buttons-set">
+						<button type="button" onclick="redeemforminforma.submit()" class="button btn-orange btn-submit"  title="<?php echo $this->__('Check Point') ?>"><span><span><?php echo $this->__('Check Point') ?></span></span></button>
+					</div>
+				</form>
+			</div>
+			<p class="info"><?php echo $this->__('Press enter to get reward') ?></p>
+		</div>
+		<div class="col-2 step-2 disable">
+			<?php echo $this->getChildHtml('redeempoint.available') ?>
+		</div>
+	</div>
+
+	<div class="step-3">
+		<?php echo $this->getChildHtml('customgiftcard_list') ?>
+	</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+    var redeemformace = new VarienForm('form-validate-ace');
+    var redeemforminforma = new VarienForm('form-validate-informa');
+    var redeemformtoyskingdom = new VarienForm('form-validate-toyskingdom');
+//]]>
+</script>

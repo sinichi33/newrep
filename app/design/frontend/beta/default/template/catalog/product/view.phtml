@@ -1,0 +1,300 @@
+<?php
+/**
+ * Product view template
+ *
+ * Description:
+ * - Override rwd/default
+ * - wrap contents at the right of product-img-box with div.product-info
+ * - unload childhtml "addto" since we are using wishlist link inside "addtocart"
+ * - add recent products viewed
+ * - change descriptio content to 3 top of specs
+ * - remove installment / cicilan logos & keterangan (task: http://teamwork.icubeonline.com/tasks/6366434)
+ * - hide several tabs (task: http://teamwork.icubeonline.com/tasks/6366434)
+ * - Add catalog event ticker here
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ */
+?>
+<?php $_helper = $this->helper('catalog/output'); ?>
+<?php $_product = $this->getProduct(); ?>
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+<div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
+<div class="product-view">
+    <div class="product-essential">
+        <form action="<?php echo $this->getSubmitUrl($_product, array('_secure' => $this->_isSecure())) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+            <?php echo $this->getBlockHtml('formkey') ?>
+            <div class="no-display">
+                <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+                <input type="hidden" name="related_product" id="related-products-field" value="" />
+            </div>
+
+            <div class="product-img-box">
+                <div class="product-name">
+                    <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+                </div>
+                <?php echo $this->getChildHtml('media') ?>
+                <?php echo $this->getChildHtml('sharing') ?>
+            </div>
+
+            <div class="product-info">
+                <div class="product-shop">
+                    <div class="product-name">
+                        <span class="h1"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></span>
+                    </div>
+
+                    <div class="left">
+                        <div class="sku">
+                            <?php echo $this->__('SKU : %s',$_helper->productAttribute($_product, $_product->getSku(), 'sku')); ?>
+                        </div>
+
+                        <?php  
+                            $_brand = $_product->getAttributeText('brand');
+                            $_brandCategory = Mage::getModel('catalog/category')->loadByAttribute('name', $_brand);
+                            $_brand_url = ($_brandCategory)? $_brandCategory->getUrl() : '' ;
+                        ?>
+                        <?php if ($_brand && strtoupper($_brand) != 'NO BRAND'): ?>
+                        <div class="brand">
+                            <span><strong><?php echo $this->__('BRAND :') ?></strong></span>
+                            <?php if ($_brandCategory): ?>
+                                <a href="<?php echo $_brand_url ?>"><?php echo $_brand; ?></a>
+                            <?php else: ?>
+                                <?php echo $_brand; ?>
+                            <?php endif ?>
+                        </div>
+                        <?php endif ?>
+
+                        <div class="extra-info">
+                            <?php echo $this->getReviewsSummaryHtml($_product, 'short', false)?>
+                            <?php echo $this->getChildHtml('product_type_availability'); ?>
+                        </div>
+
+                        <?php  
+                            // get DISC label
+                            $_finalPrice = $_product->getFinalPrice(); 
+                            $_price = $_product->getPrice();
+                            $_savePercent = 100 - round(($_finalPrice / $_price)*100) .'%';
+                        ?>
+                        <div class="price-info">
+
+                            <div class="price-wrapper <?php echo ($_finalPrice < $_price)? 'has-sale':'' ?>">
+                                <?php echo $this->getPriceHtml($_product); ?>
+                                <?php echo $this->getChildHtml('bundle_prices') ?>
+                                <?php echo $this->getTierPriceHtml() ?>
+
+                                <?php if($_finalPrice < $_price): ?>
+                                    <!-- discount label -->
+                                    <span class="label sale">
+                                        <?php echo $this->__('%s OFF', $_savePercent) ?>
+                                    </span>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+
+                        <?php echo $this->getChildHtml('alert_urls') ?>
+
+                        <?php /* catalog event ticker */ ?>
+                        <?php echo $this->getChildHtml('product_category_event') ?>
+
+                        <?php if ($_product->getSpecification() && $_product->offsetExists('specification')):?>
+                        <?php  
+                            $_specsText = $_product->getSpecification();
+                            $_specsArr = split('</li>', str_replace('<li>', '', $_specsText));
+                        ?>
+                        <div class="description">
+                            <strong><?php echo $this->__('DESKRIPSI') ?></strong>
+                            <ul>
+                                <?php $i=0; foreach ($_specsArr as $_spec): ?>
+                                    <?php $i++ ?>
+                                    <?php if (!empty($_spec) && $i <= 3): ?>
+                                        <li><?php echo $_spec ?></li>
+                                    <?php endif ?>
+                                <?php endforeach ?>
+                            </ul>
+                            <a href="javascript:void(0)" class="see-more"><?php echo $this->__('Deskripsi Selengkapnya') ?></a>
+                        </div>
+                        <?php endif ?>
+                    </div>
+
+                    <div class="right">
+
+                        <?php /*div class="free-shipping">
+                            <?php echo $this->__('GRATIS ONGKOS KIRIM') ?>
+                        </div */?>
+
+                        <?php
+                            $stores = Mage::helper('icube_order')->getInventoryList($_product->getId(),1);
+                            $_shipmentMethods = explode(",",$_product->getResource()->getAttribute('shipment_method')->getFrontend()->getValue($_product));
+                            $_enablePickUpStore = false;
+
+                            $dcStock = 1;
+                            $bopisStock = 0;
+                            foreach($_shipmentMethods as $key => $value)
+                            {
+                                if (strtolower($value) == "bopis")
+                                {
+                                    $dcStock = 0;
+                                    $_enablePickUpStore = true;
+                                }
+                            }
+
+                            foreach ($stores as $store) :
+                                if($store->getStoreCode() == 'DC') {
+                                    $dcStock = $store->getQuantityInStock();
+                                    continue;
+                                }else{
+                                    $bopisStock=$bopisStock+$store->getQuantityInStock();
+                                }
+                            endforeach;
+                        ?>
+
+                        <?php if ($_enablePickUpStore && $bopisStock > 0): ?>
+                            <?php if (count($stores) > 0): ?>
+                                <div class="pickup-store">
+                                    <p>
+                                        <?php echo $this->__('Dapat diambil ke store terdekat') ?>
+                                    </p>
+                                    <span><?php echo $this->__('Tersedia di store :') ?></span>
+                                    <ul class="available-store-list">
+                                        <?php foreach ($stores as $store) :?>
+                                            <?php
+                                                if($store->getStoreCode() == 'DC') {
+                                                    continue;
+                                                }
+                                            ?>
+                                            <li><?php echo $store->getName() ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </div>
+                            <?php endif; ?>
+                        <?php endif; ?>
+                        
+                        <?php echo $this->getChildHtml('other');?>
+
+                        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+                            <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+                        <?php endif;?>
+
+                        <div class="add-to-cart-wrapper">
+                            <?php echo $this->getChildHtml('product_type_data') ?>
+                            <?php echo $this->getChildHtml('extrahint') ?>
+
+                            <?php if (!$this->hasOptions()):?>
+                                <div class="add-to-box">
+                                    <?php if($_product->isSaleable()): ?>
+                                        <?php echo $this->getChildHtml('addtocart') ?>
+                                        <?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
+                                            <span class="or"><?php echo $this->__('OR') ?></span>
+                                        <?php endif; ?>
+                                        <?php if($dcStock < 1 && $bopisStock > 0): ?>
+                                            <div class="add-to-cart">
+                                                <div class="add-to-cart-buttons"><?php echo $this->__('Produk ini hanya dapat diambil di toko') ?></div>
+                                            </div>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
+                                </div>
+                                <?php echo $this->getChildHtml('extra_buttons') ?>
+
+                            <?php endif; ?>
+                        </div>
+                        
+                        <div class="clearer"></div>
+                        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+                            <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+                        <?php endif;?>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+        <?php
+            $storeId = Mage::app()->getStore()->getId();
+            $ajaxAddToCartEnabled = Mage::getStoreConfig('addtocartajax/option/addtocartajax_enabled', $storeId);
+        ?>
+        <script type="text/javascript">
+        //<![CDATA[
+            var productAddToCartForm = new VarienForm('product_addtocart_form');
+        
+            <?php if(!$ajaxAddToCartEnabled) : ?>
+            productAddToCartForm.submit = function(button, url) {
+                if (this.validator.validate()) {
+                    var form = this.form;
+                    var oldUrl = form.action;
+
+                    if (url) {
+                       form.action = url;
+                    }
+                    var e = null;
+                    try {
+                        this.form.submit();
+                    } catch (e) {
+                    }
+                    this.form.action = oldUrl;
+                    if (e) {
+                        throw e;
+                    }
+
+                    if (button && button != 'undefined') {
+                        button.disabled = true;
+                    }
+                }
+            }.bind(productAddToCartForm);
+            <?php endif ?>
+
+            productAddToCartForm.submitLight = function(button, url){
+                if(this.validator) {
+                    var nv = Validation.methods;
+                    delete Validation.methods['required-entry'];
+                    delete Validation.methods['validate-one-required'];
+                    delete Validation.methods['validate-one-required-by-name'];
+                    // Remove custom datetime validators
+                    for (var methodName in Validation.methods) {
+                        if (methodName.match(/^validate-datetime-.*/i)) {
+                            delete Validation.methods[methodName];
+                        }
+                    }
+
+                    if (this.validator.validate()) {
+                        if (url) {
+                            this.form.action = url;
+                        }
+                        this.form.submit();
+                    }
+                    Object.extend(Validation.methods, nv);
+                }
+            }.bind(productAddToCartForm);
+        //]]>
+        </script>
+        <?php if($ajaxAddToCartEnabled) : ?>
+            <?php echo $this->getChildHtml('addtocartjs') ?>
+        <?php endif ?>
+    </div>
+
+    <?php echo $this->getChildHtml('upsell_products') ?>
+    
+    <div class="product-collateral toggle-content tabs">
+        <?php if ($detailedInfoGroup = $this->getChildGroup('detailed_info', 'getChildHtml')):?>
+            <dl id="collateral-tabs" class="collateral-tabs">
+                <?php foreach ($detailedInfoGroup as $alias => $html):?>
+                    <?php 
+                        /* Currently hide these tabs : */
+                        $_excpt = array('pembelian', 'pengembalian', 'kalkulator'); 
+                    ?>
+                    <?php if (!in_array(strtolower($alias), $_excpt)): ?>                        
+                        <dt class="tab <?php echo $alias ?>"><span><?php echo $this->escapeHtml($this->getChildData($alias, 'title')) ?></span></dt>
+                        <dd class="tab-container">
+                            <div class="tab-content"><?php echo $html ?></div>
+                        </dd>
+                    <?php endif ?>
+                <?php endforeach;?>
+            </dl>
+        <?php endif; ?>
+    </div>
+
+    <?php echo $this->getChildHtml('related_products') ?>
+    <?php echo $this->getChildHtml('right.reports.product.viewed') ?>
+    <?php echo $this->getChildHtml('product_additional_data') ?>
+
+</div>

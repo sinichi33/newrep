@@ -1,0 +1,27 @@
+<?php
+/**
+ * RMA Form renderer for textarea
+ *
+ * Description:
+ * - override rwd/enterprise
+ * - add placeholder
+ * 
+ * 
+ * @category    design
+ * @package     rwd_enterprise
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<?php
+/**
+ * Create account form template
+ *
+ * @see Enterprise_Customer_Block_Form_Renderer_Textarea
+ */
+/* @var $this Enterprise_Rma_Block_Form_Renderer_Textarea */
+?>
+<label for="items:<?php echo $this->getHtmlId()?>_index_"<?php if ($this->isRequired()) echo ' class="required"' ?>><?php if ($this->isRequired()) echo '<em>*</em>' ?><?php echo $this->getLabel() ?></label>
+<div class="input-box">
+    <textarea id="items:<?php echo $this->getHtmlId()?>_index_" name="items[_index_][<?php echo $this->getFieldName()?>]" rows="5" cols="25" class="input-text<?php echo $this->getHtmlClass(); ?>" placeholder="<?php echo $this->getLabel() ?>"><?php echo $this->getEscapedValue() ?></textarea>
+</div>

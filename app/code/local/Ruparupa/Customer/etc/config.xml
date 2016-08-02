@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Ruparupa_Customer>
+      <version>1.0</version>
+    </Ruparupa_Customer>
+  </modules>
+  <global>
+  <helpers>
+      <ruparupa_customer>
+          <class>Ruparupa_Customer_Helper</class>
+      </ruparupa_customer>
+  </helpers>
+  <template>
+      <email>
+          <ruparupa_customer_account_new_giftcard_template translate="label" module="ruparupa_customer">
+                <label>account new giftcard</label>
+                <file>account_new_giftcard.html</file>
+                <type>html</type>
+          </ruparupa_customer_account_new_giftcard_template>
+          <ruparupa_customer_account_new_giftcard_bni_template translate="label" module="ruparupa_customer">
+              <label>account new giftcard bni</label>
+              <file>account_new_giftcard_bni.html</file>
+              <type>html</type>
+          </ruparupa_customer_account_new_giftcard_bni_template>
+      </email>
+  </template>
+  </global>
+  <frontend>
+    <routers>
+      <customer>
+        <args>
+          <modules>
+            <Ruparupa_Customer before="Mage_Customer">Ruparupa_Customer</Ruparupa_Customer>
+          </modules>
+        </args>
+      </customer>
+    </routers>
+  </frontend>
+</config>

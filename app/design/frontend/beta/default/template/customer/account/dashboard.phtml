@@ -1,0 +1,62 @@
+<?php
+/**
+ * Customer Navigation template
+ *
+ * Description:
+ * - Override rwd/default
+ * - Change title wording
+ * - Split content into section
+ * - Remove hello block
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<div class="dashboard">
+    <div class="page-title">
+        <h1><?php echo $this->__('Dashboard') ?></h1>
+    </div>
+    <?php echo $this->getMessagesBlock()->toHtml() ?>
+
+    <?php echo $this->getChildHtml('customer_edit') ?>
+    <?php echo $this->getChildHtml('redeempoint') ?>
+    
+    <div class="section-2cols">
+        <div class="section link">
+            <a href="<?php echo Mage::getUrl('customer/address') ?>" class="flaticon-situation">
+                <strong><?php echo $this->__('Address Book') ?></strong>
+                <?php echo $this->__('Change shipping / billing address') ?>
+            </a>
+        </div>
+        <div class="section link">
+            <a href="<?php echo Mage::getUrl('sales/order/history') ?>" class="flaticon-cart3">
+                <strong><?php echo $this->__('My Orders') ?></strong>
+                <?php echo $this->__('View order history and order status') ?>
+            </a>
+        </div>
+    </div>
+
+    <div class="section-2cols">
+        <div class="section link">
+            <a href="<?php echo Mage::getUrl('review/customer') ?>" class="flaticon-star-shape1">
+                <strong><?php echo $this->__('Product Review') ?></strong>
+                <?php echo $this->__('View reviews have been write') ?>
+            </a>
+        </div>
+        <div class="section link">
+            <a href="<?php echo Mage::getUrl('newsletter/manage/') ?>" class="flaticon-mail59">
+                <strong><?php echo $this->__('Newsletter Subscription') ?></strong>
+                <?php echo $this->__('Subscribe promo newsletter') ?>
+            </a>
+        </div>
+    </div>
+
+    <div class="section link">
+        <a href="<?php echo Mage::getUrl('wishlist/') ?>" class="flaticon-heart13">
+            <strong><?php echo $this->__('Wishlist') ?></strong>
+            <?php echo $this->__('Your wishlist products') ?>
+        </a>
+    </div>
+</div>

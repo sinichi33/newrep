@@ -1,0 +1,403 @@
+2016-03-22T03:22:56+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 0e591a78-852a-4322-a02e-a9919ca892e1
+    [order_id] => RupaODI100000778-208
+    [gross_amount] => 229000.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-03-22 10:22:56
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104214158
+                )
+
+        )
+
+)
+
+2016-03-22T03:27:53+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => f22763f0-6d52-42a2-a9d2-c6d75fb8a6f5
+    [order_id] => RupaODI100000779-209
+    [gross_amount] => 600000.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-03-22 10:27:53
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104720682
+                )
+
+        )
+
+)
+
+2016-03-23T06:43:48+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => ff39ed29-d70a-4a50-9571-650ffce4348f
+    [order_id] => RupaODI100000780-211
+    [gross_amount] => 19900.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-03-23 13:43:48
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104091432
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T06:17:54+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 5709aa18-b16c-4062-8c90-56f4d2d72a94
+    [order_id] => RupaODI100000781-212
+    [gross_amount] => 278900.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 13:17:53
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104271823
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T06:23:25+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 88fdf667-129e-4239-a65f-2fcf84a4a27e
+    [order_id] => RupaODI100000782-213
+    [gross_amount] => 189500.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 13:23:25
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104073711
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T06:36:22+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 400
+    [status_message] => Validation Error, [merchant cannot charge and request token from the same ip address]
+    [validation_messages] => Array
+        (
+            [0] => merchant cannot charge and request token from the same ip address
+        )
+
+)
+
+2016-04-01T07:06:59+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 400
+    [status_message] => Validation Error, [merchant cannot charge and request token from the same ip address]
+    [validation_messages] => Array
+        (
+            [0] => merchant cannot charge and request token from the same ip address
+        )
+
+)
+
+2016-04-01T07:07:45+00:00 DEBUG (7): sentReq:
+2016-04-01T07:08:55+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 400
+    [status_message] => Validation Error, [merchant cannot charge and request token from the same ip address]
+    [validation_messages] => Array
+        (
+            [0] => merchant cannot charge and request token from the same ip address
+        )
+
+)
+
+2016-04-01T07:26:20+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 400
+    [status_message] => Validation Error, [merchant cannot charge and request token from the same ip address]
+    [validation_messages] => Array
+        (
+            [0] => merchant cannot charge and request token from the same ip address
+        )
+
+)
+
+2016-04-01T08:18:09+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 411
+    [status_message] => Token id is missing, invalid, or timed out
+)
+
+2016-04-01T08:25:34+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 411
+    [status_message] => Token id is missing, invalid, or timed out
+)
+
+2016-04-01T08:28:25+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => dbf71ccd-499e-4335-9e6f-c12c1295b201
+    [order_id] => RupaODI100000783-222
+    [gross_amount] => 683500.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 15:28:25
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104395679
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T08:47:20+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 99ad802a-9865-472b-8e9b-526dbf24c600
+    [order_id] => RupaODI100000784-223
+    [gross_amount] => 2408000.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 15:47:20
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104665818
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T09:00:32+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 8c7b1cdb-bb15-4b21-b87d-49710a21b3e2
+    [order_id] => RupaODI100000785-224
+    [gross_amount] => 1784000.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 16:00:31
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104683128
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T09:09:32+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 118b0ba8-7a2c-4043-9e04-a4306cfe132c
+    [order_id] => RupaODI100000786-225
+    [gross_amount] => 903900.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 16:09:32
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104474616
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T09:14:41+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 5813e658-6a68-45ef-affd-76b560a71bf6
+    [order_id] => RupaODI100000787-226
+    [gross_amount] => 499000.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 16:14:41
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104860050
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T09:22:40+00:00 DEBUG (7): sentReq:
+2016-04-01T09:25:09+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 9bb3ec6b-0078-4918-8528-592361590f35
+    [order_id] => RupaODI100000788-228
+    [gross_amount] => 564000.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 16:25:09
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104353466
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T09:28:35+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => ab56f80c-212d-4c92-9449-d015070b8968
+    [order_id] => RupaODI100000789-229
+    [gross_amount] => 564000.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 16:28:35
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104581218
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T09:39:57+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 44726dce-552b-475b-b925-b6e1107a8821
+    [order_id] => RupaODI100000790-231
+    [gross_amount] => 564000.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-01 16:39:57
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104052802
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-04-01T09:40:21+00:00 DEBUG (7): sentReq:
+2016-04-01T16:22:30+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 400
+    [status_message] => Validation Error, [merchant cannot charge and request token from the same ip address]
+    [validation_messages] => Array
+        (
+            [0] => merchant cannot charge and request token from the same ip address
+        )
+
+)
+
+2016-04-01T16:28:40+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 400
+    [status_message] => Validation Error, [merchant cannot charge and request token from the same ip address]
+    [validation_messages] => Array
+        (
+            [0] => merchant cannot charge and request token from the same ip address
+        )
+
+)
+
+2016-04-22T06:28:52+00:00 DEBUG (7): sentReq:stdClass Object
+(
+    [status_code] => 201
+    [status_message] => Success, Bank Transfer transaction is created
+    [transaction_id] => 1f798223-ca37-4a84-b18c-e8a0247d0177
+    [order_id] => RupaODI100000791-234
+    [gross_amount] => 614000.00
+    [payment_type] => bank_transfer
+    [transaction_time] => 2016-04-22 13:28:52
+    [transaction_status] => pending
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [bank] => bca
+                    [va_number] => 72104669052
+                )
+
+        )
+
+    [fraud_status] => accept
+)
+
+2016-05-02T06:24:37+00:00 DEBUG (7): sentReq:
+2016-05-02T06:24:50+00:00 DEBUG (7): sentReq:

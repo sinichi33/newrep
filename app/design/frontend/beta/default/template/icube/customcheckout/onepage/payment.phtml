@@ -1,0 +1,107 @@
+<?php
+/**
+ * Payment template
+ * 
+ * Desription:
+ * - add order review
+ * - change back link
+ * 
+ * @category    design
+ * @package     rwd_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<script type="text/javascript">
+//<![CDATA[
+    var quoteBaseGrandTotal = <?php echo (float)$this->getQuoteBaseGrandTotal(); ?>;
+    var checkQuoteBaseGrandTotal = quoteBaseGrandTotal;
+    var payment = new Payment('co-payment-form', '<?php echo $this->getUrl('checkout/onepage/savePayment') ?>');
+    var lastPrice;
+//]]>
+</script>
+
+<div class="col2-set">
+    <div class="col-1">
+        <div class="opc-content-wrapper">
+            <h3><?php echo $this->__('Payment') ?></h3>
+            <form action="" id="co-payment-form">
+                <div class="fieldset">
+                    <?php echo $this->getChildChildHtml('methods_additional', '', true, true) ?>
+                    <?php echo $this->getChildHtml('methods') ?>
+                </div>
+            </form>
+            <div class="tool-tip" id="payment-tool-tip">
+                <div class="btn-close hidden"><a href="#" id="payment-tool-tip-close" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Close')) ?>"><?php echo $this->__('Close') ?></a></div>
+                <div class="tool-tip-content"><img src="<?php echo $this->getSkinUrl('images/cvv.gif') ?>" alt="<?php echo Mage::helper('core')->quoteEscape($this->__('Card Verification Number Visual Reference')) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Card Verification Number Visual Reference')) ?>" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="opc-content-wrapper">
+            <h3><?php echo $this->__('Ship To') ?></h3>
+            <div id="payment-shipToAddress" class="loading"></div>
+        </div>
+        <div class="opc-content-wrapper">
+            <h3><?php echo $this->__('Items Ordered') ?></h3>
+            <?php echo $this->getChildHtml('review'); ?>
+            <?php echo $this->getChildHtml('totals'); ?>
+            <?php $order = Mage::getSingleton('checkout/session')->getQuote(); ?>
+            <div class="gc-alert-when-used" <?php echo ($order->getGiftCardsAmount() > 0)? '': 'hidden' ?>><?php echo $this->__('Gift Voucher akan terhitung digunakan saat Anda menekan tombol \'Pesan\'') ?></div>
+            <?php echo $this->getChildChildHtml('additional') ?>
+        </div>
+    </div>
+</div>
+<div class="buttons-set" id="payment-buttons-container">
+    <?php // Moved to CC form ?>
+    <?php /* <p class="required"><?php echo $this->__('* Required Fields') ?></p> */ ?>
+    <a href="javascript:void(0)" onclick="checkout.back();return false;" class="back-link"><?php echo $this->__('Back') ?></a>
+    <button type="button" class="button" onclick="payment.save()"><span><span><?php echo $this->__('Continue') ?></span></span></button>
+    <span class="please-wait" id="payment-please-wait" style="display:none;">
+        <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>" alt="<?php echo Mage::helper('core')->quoteEscape($this->__('Loading next step...')) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Loading next step...')) ?>" class="v-middle" /> <?php echo $this->__('Loading next step...') ?>
+    </span>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    function toggleToolTip(event){
+        if($('payment-tool-tip')){
+            $('payment-tool-tip').setStyle({
+                top: (Event.pointerY(event)-560)+'px'//,
+                //left: (Event.pointerX(event)+100)+'px'
+            })
+            $('payment-tool-tip').toggle();
+        }
+        Event.stop(event);
+    }
+    if($('payment-tool-tip-close')){
+        Event.observe($('payment-tool-tip-close'), 'click', toggleToolTip);
+    }
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+    payment.currentMethod = "<?php echo $this->getChild('methods')->getSelectedMethodCode() ?>";
+//]]>
+</script>
+
+<script type="text/javascript">
+    
+    function hideDetail(elm) {
+        var head = jQuery(elm).parent();
+        var detail = jQuery(elm).parent().next();
+
+        if (head.hasClass('inactive')) {
+            hideAllDetail();
+
+            if (detail.length) {
+                detail.slideDown();
+                head.removeClass('inactive');
+            };
+        };
+    }
+
+    function hideAllDetail() {
+        jQuery('#checkout-payment-method-load > dt').addClass('inactive');
+        jQuery('#checkout-payment-method-load > dd').slideUp();
+    }
+</script>

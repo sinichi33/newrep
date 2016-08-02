@@ -1,0 +1,56 @@
+<?php
+/**
+ * Product Sharing Template
+ *
+ * Description:
+ * - Override rwd/default
+ * - Apply sharethis.com
+ *
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+
+<?php $_product = $this->getProduct(); ?>
+<?php $_wishlistSubmitUrl = $this->helper('wishlist')->getAddUrl($_product); ?>
+
+<div class="sharing">
+    <div class="label"><?php echo $this->__('Share :') ?></div>
+    <ul class="sharing-links">
+        <?php if ($this->canEmailToFriend()): ?>
+            <li>
+                <span class='st_email_custom st' displayText='Email'>
+                    <i class="fa fa-envelope"></i>
+                    <span><?php echo $this->__('Email') ?></span>
+                </span>
+            </li>
+        <?php endif; ?>
+        <li>
+            <span class='st_facebook_custom st' displayText='Facebook'>
+                <i class="fa fa-facebook"></i>
+                <span><?php echo $this->__('Facebook') ?></span>
+            </span>
+        </li>
+        <li>
+            <span class='st_twitter_custom st' displayText='Twitter'>
+                <i class="fa fa-twitter"></i>
+                <span><?php echo $this->__('Twitter') ?></span>
+            </span>
+        </li>
+        <li>
+            <span class='st_googleplus_custom st' displayText='Google +'>
+                <i class="fa fa-google-plus"></i>
+                <span><?php echo $this->__('Twitter') ?></span>
+            </span>
+        </li>
+        <li>
+            <span class='st_pinterest_custom st' displayText='Pinterest'>
+                <i class="fa fa-pinterest"></i>
+                <span><?php echo $this->__('Pinterest') ?></span>
+            </span>
+        </li>
+    </ul>
+</div>

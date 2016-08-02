@@ -1,0 +1,390 @@
+/*
+   GENERAL STYLE
+*/
+body
+{
+    font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    position: relative;
+
+    height: 75vh;
+    min-height: calc(690px * (90/150));
+    margin: 0;
+    padding: 0;
+
+    letter-spacing: .9px;
+}
+
+hr.divide
+{
+    width: 70px;
+    height: 2px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
+    border: none;
+    background-color: #fff;
+}
+
+/*   Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix
+*/
+@-webkit-viewport
+{
+    width: device-width;
+}
+
+@-moz-viewport
+{
+    width: device-width;
+}
+
+@-ms-viewport
+{
+    width: device-width;
+}
+
+@-o-viewport
+{
+    width: device-width;
+}
+
+@viewport
+{
+    width: device-width;
+}
+
+/*
+   TYPOGRAPHY
+*/
+
+h1,
+.h1,
+h2,
+.h2,
+p,
+{
+    padding: 0;
+}
+
+h1,
+.h1
+{
+    font-size: 46px;
+    font-weight: bolder;
+}
+
+h2,
+.h2
+{
+    font-size: 18px;
+    font-weight: 400;
+
+    margin-top: 24px;
+    margin-bottom: 50px;
+	
+	line-height:34px;
+}
+
+p.content
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.text-white
+{
+    color: #fff;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.shadow
+{
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+/*
+   BACKGROUNDS
+*/
+.bg-white
+{
+    background-color: #fff;
+}
+
+.bg-orange
+{
+    background: url(../images/bg.png) no-repeat;
+    background-size: cover;
+}
+
+
+/*
+   HEADER NAVIGATION
+*/
+.navbar
+{
+    background-color: #fff;
+}
+
+.navbar-header
+{
+    margin-top: 5px;
+}
+
+.navbar-brand
+{
+    height: auto;
+    padding: 3px 0 0;
+}
+
+.navbar-nav > li
+{
+    background: none!important;
+}
+
+.navbar.bg-white
+{
+    padding: 10px 0;
+
+    color: #fff;
+    border: none;
+    background-color: white;
+    box-shadow: none;
+}
+
+.res-navbar-header
+{
+    display: none;
+}
+
+/*
+	Login
+*/
+.navbar-collapse
+{
+	padding-top: 3px;padding-bottom: 3px !important;
+}
+.dropdown-menu
+{
+    width: 350px;margin-top: 3px; padding: 20px 0;
+}
+.dropdown-menu .col-sm-12
+{
+    margin-bottom: 15px;
+}
+.login-button
+{font-size: 24px; font-weight: bold; margin-top: -8px; text-align: right; letter-spacing: 0;color: #008ccf; 
+    border: none;
+}
+p.login-text
+{font-weight: 400; margin-top: 10px;
+
+    color: #4baedd;
+}
+.dropdown-menu:after
+{
+    position: absolute;
+    top: -6px;
+    right: 10px;
+
+    display: inline-block;
+
+    content: '';
+
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid transparent;
+}
+.btn-login
+{float: right; 
+
+    margin-bottom: 10px;padding: 10px 50px; -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;color: #fff;border: solid 2px #008ccf;background-color: #008ccf;
+}
+.btn-login:hover
+{color: #008ccf;
+    border: solid 2px #008ccf; background-color: #fff;
+}
+.input-login
+{
+    font-size: 14px;
+    line-height: 1.5;
+
+    height: 35px;
+    padding: 10px 10px;
+
+    border-radius: 2px;
+}
+
+
+
+/*
+   HERO SECTION
+*/
+.hero
+{
+    min-height: 125%;
+}
+
+.hero.hero-countdown
+{
+    position: relative;
+
+    height: 100%;
+    padding-top: 6%;
+}
+
+/*
+   FORM SECTION
+*/
+form
+{
+    display: block;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+input
+{
+    width: 350px;
+    height: 42px;
+    padding: 0 10px;
+
+    vertical-align: middle;
+
+    color: #2a2a2a;
+    border: none;
+    background: #fff;
+}
+
+input[type='button']
+{
+    font-weight: bold;
+    font-weight: normal;
+
+    display: inline-block;
+
+    width: auto;
+    height: 42px;
+    margin-left: -5px;
+    padding: 0 30px;
+
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    color: #fff;
+    border: none;
+    background: #008ccf;
+}
+
+
+
+/*
+   FOOTER SECTION
+*/
+footer
+{
+    margin-top: -1px;
+
+    border-top: 50px solid #52555f;
+}
+
+footer ul.socmed
+{
+    margin: 25px 0 35px -45px;
+
+    list-style-type: none;
+
+    text-align: center;
+}
+
+footer ul.socmed li
+{
+    display: inline-block;
+}
+
+footer ul.socmed li a
+{
+    margin: 0 5px;
+    margin-bottom: 0;
+    padding: 15px;
+
+    -webkit-transition: all .2s ease-in-out;
+       -moz-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+
+footer ul.socmed li a:hover,
+footer ul.socmed li a:focus,
+footer ul.socmed li a:hover
+{
+    -webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+        -ms-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+
+    box-shadow: 0 3px 1px rgba(0,0,0,.3);
+}
+
+footer .align-center
+{
+    padding: 8px 0;
+}
+
+footer .align-center p
+{
+    font-size: 12px;
+    font-weight: normal;
+
+    margin-top: 12px;
+
+    text-align: center;
+
+    color: #52555f;
+}
+
+.resp-img,
+.resp-text
+{
+    display: none;
+}
+
+p.desk-login
+{
+    display: inline-block;
+}
+
+p.desk-reg
+{
+    display: block;
+
+    margin-top: 20px;
+
+    color: #008ccf;
+}
+
+img.user
+{
+    margin-right: 7px; margin-bottom: 7px;
+}
+
+#result{
+    color:#000;
+}
+
+.mailchimp-message{
+    display: none;
+}

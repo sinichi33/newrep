@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<theme>
+    <parent>beta/default</parent>
+    <layout>
+        <updates>
+            <default>
+                <file>local_mobile.xml</file>
+            </default>
+        </updates>
+    </layout>
+</theme>

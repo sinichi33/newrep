@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Fooman_TotalsSortingFix>
+            <version>0.1.0</version>
+        </Fooman_TotalsSortingFix>
+    </modules>
+
+    <global>
+        <helpers>
+            <fooman_totalssortingfix>
+                <class>Fooman_TotalsSortingFix_Helper</class>
+            </fooman_totalssortingfix>
+        </helpers>
+        <sales>
+            <quote>
+                <totals>
+                    <!-- Magento can get the totals sort order completely wrong when multiple custom totals are involved
+                    the below provides the sorting mechanism with more guidance. It adds complete before and after information for
+                    each total. Magento's Default Sort Order:
+                     nominal,subtotal,msrp,freeshipping,tax_subtotal,weee,shipping,tax_shipping,discount,tax,grand_total-->
+                    <nominal>
+                        <before>subtotal,msrp,freeshipping,tax_subtotal,weee,shipping,tax_shipping,discount,tax,grand_total</before>
+                    </nominal>
+                    <subtotal>
+                        <after>nominal</after>
+                        <before>msrp,freeshipping,tax_subtotal,weee,shipping,tax_shipping,discount,tax,grand_total</before>
+                    </subtotal>
+                    <msrp>
+                        <after>nominal,subtotal</after>
+                        <before>freeshipping,tax_subtotal,weee,shipping,tax_shipping,discount,tax,grand_total</before>
+                    </msrp>
+                    <freeshipping>
+                        <after>nominal,subtotal,msrp</after>
+                        <before>tax_subtotal,weee,shipping,tax_shipping,discount,tax,grand_total</before>
+                    </freeshipping>
+                    <tax_subtotal>
+                        <after>nominal,subtotal,msrp,freeshipping</after>
+                        <before>tax_subtotal,weee,shipping,tax_shipping,discount,tax,grand_total</before>
+                    </tax_subtotal>
+                    <weee>
+                        <after>nominal,subtotal,msrp,tax_subtotal,freeshipping</after>
+                        <before>shipping,tax_shipping,discount,tax,grand_total</before>
+                    </weee>
+                    <shipping>
+                        <after>nominal,subtotal,msrp,tax_subtotal,freeshipping,weee</after>
+                        <before>tax_shipping,discount,tax,grand_total</before>
+                    </shipping>
+                    <tax_shipping>
+                        <after>nominal,subtotal,msrp,tax_subtotal,freeshipping,weee,shipping</after>
+                        <before>discount,tax,grand_total</before>
+                    </tax_shipping>
+                    <discount>
+                        <after>nominal,subtotal,msrp,tax_subtotal,freeshipping,weee,shipping,tax_shipping</after>
+                        <before>tax,grand_total</before>
+                    </discount>
+                    <tax>
+                        <after>nominal,subtotal,msrp,tax_subtotal,freeshipping,weee,shipping,tax_shipping,discount</after>
+                        <before>grand_total</before>
+                    </tax>
+                    <grand_total>
+                        <after>nominal,subtotal,msrp,tax_subtotal,freeshipping,weee,shipping,tax_shipping,discount,tax</after>
+                    </grand_total>
+                    <!-- Enterprise totals -->
+                    <giftwrapping>
+                        <after>nominal,subtotal</after>
+                        <before>msrp,freeshipping,tax_subtotal,weee,shipping,tax_shipping,discount,tax,grand_total</before>
+                    </giftwrapping>
+                    <tax_giftwrapping>
+                        <after>nominal,subtotal,msrp,tax_subtotal,freeshipping,weee,shipping,tax_shipping,discount,tax</after>
+                        <before>grand_total</before>
+                    </tax_giftwrapping>
+                </totals>
+            </quote>
+        </sales>
+    </global>
+</config>

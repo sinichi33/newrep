@@ -1,0 +1,35 @@
+<div id="orderstatus-form-mini" class="skip-content">
+	<h2><?php echo $this->__('Check Your Order Status') ?></h2>
+	
+	<form action="<?php echo Mage::getUrl('trackorder/tracking/result'); ?>" id="trackorderSearchFormMini" method="get" class="scaffold-form">
+		<div class="fieldset">
+			<ul class="form-list">
+				<li class="wide">
+					<label for="orderid"><?php echo $this->__('Order Number') ?></label>
+					<div class="input-box">
+						<input name="orderid" id="orderid" title="<?php echo $this->__('OrderId') ?>" class="input-text required-entry validate-number-characters" type="text" />
+					</div>
+				</li>
+				<li class="wide">
+					<label for="orderid"><?php echo $this->__('Email') ?></label>
+					<div class="input-box">
+						<input name="email" id="email" title="<?php echo $this->__('Email') ?>" class="input-text required-entry validate-email" type="text" />
+					</div>
+				</li>
+				<li>
+					<div class="input-box">
+						<button type="submit" title="<?php echo $this->__('View Status') ?>" class="button" ><span><span><?php echo $this->__('View Status') ?></span></span></button>
+					</div>
+				</li>
+				<li>
+					<?php echo $this->__('Butuh bantuan? <a href="%s">klik disini</a>', Mage::getBaseUrl().'contacts/index/') ?>
+				</li>
+			</ul>
+		</div>
+	</form>
+	<script type="text/javascript">
+	//<![CDATA[
+	    var dataForm = new VarienForm('trackorderSearchFormMini', true);
+	//]]>
+	</script>
+</div>

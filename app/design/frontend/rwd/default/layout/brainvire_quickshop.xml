@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!-- 
+
+@author Brainvire Team 
+
+@copyright Brainvire 
+
+@package Brainvire_Quickshop
+
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <block type="page/html" name="top.Js" as="topJs" template="brainvire_quickshop/page/html/jshead.phtml"/>
+            <action method="addJs">
+                <name>brainvire/quickshop/jquery.js</name>
+            </action>
+            <action method="addJs">
+                <name>brainvire/quickshop/brainvire_quickshop.js</name>
+            </action>
+            <action method="addCss">
+                <stylesheet>bv_quickshop/colorbox/colorbox.css</stylesheet>
+            </action>
+            <action method="addJs">
+                <name>brainvire/quickshop/jquery.colorbox.js</name>
+            </action>
+        </reference>
+    </default>
+    <quickshop_index_view>
+        <update handle="catalog_product_view"/> 
+    </quickshop_index_view>
+	
+    <quickshop_index_view_FINAL>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>brainvire_quickshop/product.phtml</template>
+            </action>
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>bv_quickshop/css/brainvire_quickshop_frame.css</stylesheet>
+            </action>
+        </reference>
+        <reference name="content">
+            <remove name="product.info.upsell"/>
+            <remove name="product.info.additional"/>
+            <remove name="product.description"/>
+            <remove name="product.attributes"/>
+            <remove name="product.info.addto"/>
+        </reference>
+    </quickshop_index_view_FINAL>
+	
+</layout>

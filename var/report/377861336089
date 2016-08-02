@@ -1,0 +1,9 @@
+a:5:{i:0;s:249:"Error in file: "/Users/SutrisnoYao/Documents/ruparuparepo/kl-beta/app/code/local/Icube/Customgiftcard/sql/icube_customgiftcard_setup/mysql4-upgrade-0.1.7-0.1.8.php" - SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'campaign_name'";i:1;s:1162:"#0 /Users/SutrisnoYao/Documents/ruparuparepo/kl-beta/app/code/core/Mage/Core/Model/Resource/Setup.php(644): Mage::exception('Mage_Core', 'Error in file: ...')
+#1 /Users/SutrisnoYao/Documents/ruparuparepo/kl-beta/app/code/core/Mage/Core/Model/Resource/Setup.php(437): Mage_Core_Model_Resource_Setup->_modifyResourceDb('upgrade', '0.1.7', '0.1.8')
+#2 /Users/SutrisnoYao/Documents/ruparuparepo/kl-beta/app/code/core/Mage/Core/Model/Resource/Setup.php(320): Mage_Core_Model_Resource_Setup->_upgradeResourceDb('0.1.7', '0.1.8')
+#3 /Users/SutrisnoYao/Documents/ruparuparepo/kl-beta/app/code/core/Mage/Core/Model/Resource/Setup.php(235): Mage_Core_Model_Resource_Setup->applyUpdates()
+#4 /Users/SutrisnoYao/Documents/ruparuparepo/kl-beta/app/code/core/Mage/Core/Model/App.php(428): Mage_Core_Model_Resource_Setup::applyAllUpdates()
+#5 /Users/SutrisnoYao/Documents/ruparuparepo/kl-beta/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Model_App->_initModules()
+#6 /Users/SutrisnoYao/Documents/ruparuparepo/kl-beta/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#7 /Users/SutrisnoYao/Documents/ruparuparepo/kl-beta/index.php(83): Mage::run('', 'store')
+#8 {main}";s:3:"url";s:5:"/?qws";s:11:"script_name";s:10:"/index.php";s:4:"skin";s:7:"default";}

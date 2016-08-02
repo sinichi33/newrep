@@ -1,0 +1,79 @@
+<?php
+/**
+ * Payment Method List Template
+ *
+ * Description:
+ * - Override base/default
+ *
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<?php
+/**
+ * One page checkout payment methods
+ *
+ * @var $this Mage_Checkout_Block_Onepage_Payment_Methods
+ */
+?>
+
+<?php
+    $methods = $this->getMethods();
+    $oneMethod = count($methods) <= 1;
+?>
+<?php if (empty($methods)): ?>
+    <dt>
+        <?php echo $this->__('No Payment Methods') ?>
+    </dt>
+<?php else:
+
+    foreach ($methods as $_method):
+        $_code = $_method->getCode();
+
+          //edited by Sutrisno 2-4-2016 to limit payment on BNI promo only for CC
+          $cart = Mage::getModel('checkout/cart')->getQuote();
+          $gift_cards = unserialize($cart->getGiftCards());
+          foreach ($gift_cards as $gc_check) {
+          $gc = $gc_check['c'];
+          $checkGC = Mage::getModel('vpayment/vpayment')->cekGC($gc); 
+          }
+
+          if ($checkGC == 'BNI' || $checkGC == 'bni'):
+            if(in_array($_code,array('vpaymentins','vpaymentva'))):
+            continue;
+            endif;
+          endif;
+
+     ?>
+    <dt id="dt_method_<?php echo $_code ?>" class="inactive">
+    <?php if(!$oneMethod): ?>
+        <input id="p_method_<?php echo $_code ?>" value="<?php echo $_code ?>" type="radio" name="payment[method]" title="<?php echo $this->escapeHtml($_method->getTitle()) ?>" onclick="payment.switchMethod('<?php echo $_code ?>')"<?php if($this->getSelectedMethodCode()==$_code): ?> checked="checked"<?php endif; ?> class="radio" />
+    <?php else: ?>
+        <span class="no-display"><input id="p_method_<?php echo $_code ?>" value="<?php echo $_code ?>" type="radio" name="payment[method]" checked="checked" class="radio" /></span>
+        <?php $oneMethod = $_code; ?>
+    <?php endif; ?>
+        <label for="p_method_<?php echo $_code ?>" onclick="hideDetail(this)"><?php echo htmlspecialchars_decode($this->getMethodTitle($_method)) ?> <?php echo $this->getMethodLabelAfterHtml($_method) ?></label>
+        <span class="arrow"></span>
+    </dt>
+    <dd id="dd_method_<?php echo $_code ?>" style="display:none;">
+ 
+    <?php if ($html = $this->getPaymentMethodFormHtml($_method)): ?>
+        <?php echo $html; ?>
+    <?php endif; ?>
+    </dd>
+<?php endforeach;
+    endif;
+?>
+<?php echo $this->getChildChildHtml('additional'); ?>
+<script type="text/javascript">
+    //<![CDATA[
+    <?php echo $this->getChildChildHtml('scripts'); ?>
+    payment.init();
+    <?php if (is_string($oneMethod)): ?>
+    payment.switchMethod('<?php echo $oneMethod ?>');
+        <?php endif; ?>
+    //]]>
+</script>

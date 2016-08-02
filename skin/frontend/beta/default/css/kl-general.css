@@ -1,0 +1,11 @@
+.cms-index-index.cms-home .event-container .event.upcoming, .cms-index-index.cms-home .event-container .event.closed {
+  padding: 6px;
+  padding-top: 16px;
+}
+
+.cms-index-index.cms-home .event-container .event.upcoming .event-dates .start,
+.cms-index-index.cms-home .event-container .event.closed .event-dates .start,
+.cms-index-index.cms-home .event-container .event.upcoming .event-dates .start .time-part,
+.cms-index-index.cms-home .event-container .event.closed .event-dates .start .time-part {
+  font-size: 12px;
+}

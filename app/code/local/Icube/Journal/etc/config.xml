@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Icube_Journal>
+            <version>0.1.0</version>
+        </Icube_Journal>
+    </modules>
+    <frontend>
+        <routers>
+            <journal>
+                <use>standard</use>
+                <args>
+                    <module>Icube_Journal</module>
+                    <frontName>journal</frontName>
+                </args>
+            </journal>
+        </routers>
+    </frontend>
+    <global>
+        <helpers>
+            <journal>
+                <class>Icube_Journal_Helper</class>
+            </journal>
+        </helpers>
+        <models>
+            <journal>
+                <class>Icube_Journal_Model</class>
+            </journal>
+        </models>
+    </global>
+
+    <default>
+        <journal>
+            <xml_header>
+                <werks>O300</werks>
+                <vorgangart_redeem>3601</vorgangart_redeem>
+                <vorgangart_bopis>3602</vorgangart_bopis>
+                <vorgangart_credit_memo>3603</vorgangart_credit_memo>
+                <vorgangart_reclass>3604</vorgangart_reclass>
+            </xml_header>
+        </journal>
+    </default>
+
+</config>

@@ -1,0 +1,38 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+
+$attributes = $this->getAttributes();
+?>
+<?php if (!empty($attributes)): ?>
+<div class="col2-set order-info-box" style="position: relative;">
+    <div class="box" id="amorderattr-block">
+        <div class="box-title">
+            <h2><?php echo $this->__('Additional Information'); ?></h2>
+        </div>
+        <div class="box-content">
+            <fieldset id="order_attributes">
+                
+                <table cellspacing="0" style="width: 100%;">
+                    <tbody>
+                        <?php foreach ($attributes as $label => $value): ?>
+                        <tr>
+                            <td style="width: 25%;">
+                                <?php echo $label; ?>:
+                            </td>
+                            <td>
+                                <?php echo nl2br(htmlentities(preg_replace('/\$/','\\\$', $value), ENT_COMPAT, "UTF-8")); ?>
+                            </td>
+                        </tr>
+                        <tr><td height="6" colspan="2"></td></tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+    </div>
+</div>
+<?php endif; ?>

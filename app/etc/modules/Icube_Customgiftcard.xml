@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+     <modules>
+        <Icube_Customgiftcard>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Enterprise_GiftCardAccount/>
+            </depends>
+        </Icube_Customgiftcard>
+     </modules>
+</config>

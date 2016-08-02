@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Icube
+ * @package     Icube_Customcheckout
+ * @copyright   Copyright (c) 2015 ICUBE
+ */
+-->
+<config>
+    <modules>
+        <Icube_Customcheckout>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Checkout/>
+            </depends>
+        </Icube_Customcheckout>
+    </modules>
+</config>

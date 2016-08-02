@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+-->
+<config>
+    <modules>
+        <Amasty_Orderattr>
+            <version>3.1.9</version>
+        </Amasty_Orderattr>
+    </modules>
+    
+    <admin>
+        <routers>
+            <amorderattr>
+                <use>admin</use>
+                <args>
+                    <module>Amasty_Orderattr</module>
+                    <frontName>amorderattr</frontName>
+                </args>
+            </amorderattr>
+        </routers>
+    </admin>
+    
+    <frontend>
+        <translate>
+            <modules>
+                <Amasty_Orderattr>
+                    <files>
+                        <default>Amasty_Orderattr.csv</default>
+                    </files>
+                </Amasty_Orderattr>
+            </modules>
+        </translate>
+        
+        <layout>
+            <updates>
+                <amorderattr>
+                    <file>amasty/amorderattr/amorderattr.xml</file>
+                </amorderattr>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <adminhtml>
+        <menu>
+            <sales>
+                <children>
+                    <amorderattr translate="title">
+                        <title>Manage Order Attributes</title>
+                        <action>amorderattr/adminhtml_manage</action>
+                        <sort_order>2000</sort_order>
+                    </amorderattr>
+                </children>
+            </sales>
+        </menu>
+
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <sales>
+                            <children>
+                                <amorderattr translate="title" module="amorderattr">
+                                    <title>Order Attributes</title>
+                                    <sort_order>2000</sort_order>
+                                </amorderattr>
+                            </children>
+                        </sales>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <amorderattr translate="title" module="amorderattr">
+                                            <title>Amasty: Order Attributes</title>
+                                        </amorderattr>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        
+        <translate>
+            <modules>
+                <Amasty_Orderattr>
+                    <files>
+                        <default>Amasty_Orderattr.csv</default>
+                    </files>
+                </Amasty_Orderattr>
+            </modules>
+        </translate>
+    </adminhtml>
+    
+    <global>
+        <models>
+            <amorderattr>
+                <class>Amasty_Orderattr_Model</class>
+                <resourceModel>amorderattr_mysql4</resourceModel>
+            </amorderattr>
+            <sales>
+                <rewrite>
+                    <order_pdf_invoice>Amasty_Orderattr_Model_Order_Pdf_Invoice</order_pdf_invoice>
+                    <order_pdf_shipment>Amasty_Orderattr_Model_Order_Pdf_Shipment</order_pdf_shipment>
+                </rewrite>
+            </sales>
+            
+            <amorderattr_mysql4>
+                <class>Amasty_Orderattr_Model_Mysql4</class>
+                <entities>
+                    <order_attribute>
+                        <table>amasty_amorderattr_order_attribute</table>
+                    </order_attribute>
+                    <shipping_methods>
+                        <table>amasty_amorderattr_order_attribute2shipping_methods</table>
+                    </shipping_methods>
+                </entities>
+            </amorderattr_mysql4>
+            
+            <sales>
+                <rewrite>
+                    <order>Amasty_Orderattr_Model_Sales_Order</order>
+                    <order_api>Amasty_Orderattr_Model_Sales_Order_Api</order_api>
+                </rewrite>
+            </sales>
+
+            <eav_mysql4>
+                <rewrite>
+                    <entity_attribute>Amasty_Orderattr_Model_Eav_Mysql4_Entity_Attribute</entity_attribute>
+                </rewrite>
+            </eav_mysql4>
+            
+            <eav_resource>
+                <rewrite>
+                    <entity_attribute>Amasty_Orderattr_Model_Eav_Mysql4_Entity_Attribute</entity_attribute>
+                </rewrite>
+            </eav_resource>
+        </models>
+        
+		<resources>
+             <amorderattr_setup>
+                <setup>
+                    <module>Amasty_Orderattr</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </amorderattr_setup>
+            
+		    <amorderattr_write>
+		        <connection><use>core_write</use></connection>
+		    </amorderattr_write>
+            
+		    <amorderattr_read>
+		        <connection><use>core_read</use></connection>
+		    </amorderattr_read>
+		</resources>
+        
+        <blocks>
+            <amorderattr>
+                <class>Amasty_Orderattr_Block</class>
+            </amorderattr>
+
+            <sales>
+                <rewrite>
+                    <order_email_items>Amasty_Orderattr_Block_Sales_Order_Email_Items</order_email_items>
+                    <order_email_invoice_items>Amasty_Orderattr_Block_Sales_Order_Email_Invoice_Items</order_email_invoice_items>
+                    <order_email_shipment_items>Amasty_Orderattr_Block_Sales_Order_Email_Shipment_Items</order_email_shipment_items>
+                </rewrite>
+            </sales>
+            
+            <adminhtml>
+                <rewrite>
+                    <sales_order_create_form_account>Amasty_Orderattr_Block_Adminhtml_Order_Create_Form_Account</sales_order_create_form_account>
+                </rewrite>
+            </adminhtml>
+            
+            <checkout>
+                <rewrite>
+                    <onepage_progress>Amasty_Orderattr_Block_Checkout_Onepage_Progress</onepage_progress>
+                </rewrite>
+            </checkout>
+        </blocks>
+        
+        <helpers>
+            <amorderattr>
+                <class>Amasty_Orderattr_Helper</class>
+            </amorderattr>
+            
+            <core>
+                <rewrite>
+                    <data>Amasty_Orderattr_Helper_Core_Data</data>
+                </rewrite>
+            </core>
+        </helpers>
+        
+        <events>
+            <sales_quote_save_after>
+                <observers>
+                    <amorderattr>
+                        <type>singleton</type>
+                        <class>amorderattr/observer</class>
+                        <method>onSalesQuoteSaveAfter</method>
+                    </amorderattr>
+                </observers>
+            </sales_quote_save_after>
+            
+            <sales_quote_save_after>
+                <observers>
+                    <amorderattr_paypal>
+                        <class>amorderattr/PaypalObserver</class>
+                        <method>onPaypalQuoteSaveAfter</method>
+                    </amorderattr_paypal>
+                </observers>
+            </sales_quote_save_after>
+
+            <sales_order_save_before>
+                <observers>
+                    <amorderattr>
+                        <type>singleton</type>
+                        <class>amorderattr/observer</class>
+                        <method>onSalesOrderSaveBefore</method>
+                    </amorderattr>
+                </observers>
+            </sales_order_save_before>
+            
+            <sales_order_save_after>
+                <observers>
+                    <amorderattr>
+                        <type>singleton</type>
+                        <class>amorderattr/observer</class>
+                        <method>onSalesOrderSaveAfter</method>
+                    </amorderattr>
+                </observers>
+            </sales_order_save_after>
+            
+            <sales_order_place_after>
+                <observers>
+                    <amorderattr_paypal>
+                        <type>singleton</type>
+                        <class>amorderattr/PaypalObserver</class>
+                        <method>onPaypalSaveOrderAfter</method>
+                    </amorderattr_paypal>
+                </observers>
+            </sales_order_place_after>
+                           
+            <checkout_type_onepage_save_order_after>
+                <observers>
+                    <amorderattr>
+                        <type>singleton</type>
+                        <class>amorderattr/observer</class>
+                        <method>onCheckoutTypeOnepageSaveOrderAfter</method>
+                    </amorderattr>
+                </observers>
+            </checkout_type_onepage_save_order_after>
+            
+            <core_layout_block_create_after>
+                <observers>
+                    <amorderattr>
+                        <type>singleton</type>
+                        <class>amorderattr/observer</class>
+                        <method>onCoreLayoutBlockCreateAfter</method>
+                    </amorderattr>
+                </observers>
+            </core_layout_block_create_after>
+            
+            <sales_order_grid_collection_load_before>
+                <observers>
+                    <amorderattr>
+                        <type>singleton</type>
+                        <class>amorderattr/observer</class>
+                        <method>onSalesOrderGridCollectionLoadBefore</method>
+                    </amorderattr>
+                </observers>
+            </sales_order_grid_collection_load_before>
+            
+            <sales_order_invoice_grid_collection_load_before>
+                <observers>
+                    <amorderattr>
+                        <type>singleton</type>
+                        <class>amorderattr/observer</class>
+                        <method>onSalesOrderInvoiceGridCollectionLoadBefore</method>
+                    </amorderattr>
+                </observers>
+            </sales_order_invoice_grid_collection_load_before>
+            
+            <sales_order_shipment_grid_collection_load_before>
+                <observers>
+                    <amorderattr>
+                        <type>singleton</type>
+                        <class>amorderattr/observer</class>
+                        <method>onSalesOrderShipmentGridCollectionLoadBefore</method>
+                    </amorderattr>
+                </observers>
+            </sales_order_shipment_grid_collection_load_before>
+            
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <amorderattr>
+                        <type>singleton</type>
+                        <class>amorderattr/observer</class>
+                        <method>handleBlockOutput</method>
+                    </amorderattr>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+    </global>
+    
+    <default>
+        <sales_email>
+            <order>
+                <include>1</include>
+            </order>
+            
+            <invoice>
+                <include>1</include>
+            </invoice>
+            
+            <shipment>
+                <include>1</include>
+            </shipment>
+        </sales_email>
+        
+        <amorderattr>
+            <checkout>
+                <progress>1</progress>
+            </checkout>
+            
+            <pdf>
+                <shipment>1</shipment>
+                <invoice>1</invoice>
+            </pdf>
+            
+            <invoices_shipments>
+                <invoice_grid>1</invoice_grid>
+                <invoice_view>1</invoice_view>
+                <shipment_grid>1</shipment_grid>
+                <shipment_view>1</shipment_view>
+            </invoices_shipments>
+            
+            <dropdowns_ajax>
+                <enabled>0</enabled>
+            </dropdowns_ajax>
+        </amorderattr>
+    </default>
+</config>

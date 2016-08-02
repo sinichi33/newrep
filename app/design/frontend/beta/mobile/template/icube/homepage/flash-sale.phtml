@@ -1,0 +1,142 @@
+<?php  
+/*
+ * Flash Sale on homepage
+ *
+ * Description:
+ * - Override beta/default
+ *
+ */
+?>
+<?php 
+    $_helper = $this->helper('catalog/output');
+    $_category = Mage::getModel('catalog/category')->loadByAttribute('url_key',  $this->getData('category_url'));
+    if($_category != NULL && $_category->getIsActive()){
+        $_products = Mage::getResourceModel('catalog/product_collection')
+        ->addAttributeToSelect('*')
+        ->setStoreId(Mage::app()->getStore()->getId())
+        ->addCategoryFilter($_category)
+        ->addAttributeToSort('position')
+        ->setPageSize(2);
+        Mage::getSingleton('cataloginventory/stock')->addInStockFilterToCollection($_products);
+    }
+    
+    $_event = false;
+    if ($_category) {
+        $_event = $_category->getEvent();
+    }
+    
+    $_eventProductBlock = $this->getLayout()->getBlockSingleton('Enterprise_CatalogEvent_Block_Catalog_Product_Event');
+?>
+
+<?php if ($_event): ?>
+
+    <h2>
+        <?php if ($_event->getStatus() == 'upcoming'): ?>
+            <?php echo $this->__('Upcoming Flash Sale') ?>
+        <?php else: ?>
+            <?php echo $this->__('Flash Sale') ?>
+        <?php endif ?>
+        <?php if ($_products): ?> 
+            <a href="<?php echo $_category->getUrl() ?>" class="see-more"><?php echo $this->__('View More') ?></a>
+        <?php endif ?>
+    </h2>
+
+    <div class="products flash-sale">
+    <?php if ($_products && $_products->getSize() > 0): ?>        
+        <ul>
+        <?php $i=0; foreach ($_products->getItems() as $key => $_product): ?>
+            <li>
+                <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+                    <?php $_imgSize = 210; ?>
+                    <img id="product-collection-image-<?php echo $_product->getId(); ?>"
+                         src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize); ?>"
+                         alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+                </a>
+                <div class="product-info">
+                    <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h3>
+
+                    <div class="price-wrapper">
+                        <?php 
+                            // get SALE label
+                            $_finalPrice=$_product->getFinalPrice(); 
+                            $_price=$_product->getPrice();
+                            $_savePercent = 100 - round(($_finalPrice / $_price)*100);
+                        ?>
+                        <?php if($_finalPrice < $_price): ?>
+                            <?php /* label discount */ ?>
+                            <div class="label discount">
+                                <div class="value">
+                                    <?php echo $_savePercent ?>
+                                </div>
+                                <div class="percent">
+                                    <div>%</div>
+                                    <div>OFF</div>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+                        <?php echo $this->getPriceHtml($_product, true) ?>
+                    </div>
+
+                    
+                    <?php /* Event Timer */ ?>
+                    <?php
+                        $_timerEnable = Mage::helper('enterprise_catalogevent')->isEnabled() &&
+                            $_event &&
+                            $_event->canDisplayProductPage() &&
+                            !$_product->getEventNoTicker();
+                    ?>
+                    <?php if ($_timerEnable): ?>
+                        <?php
+                        $_endTime = strtotime($_event->getDateEnd());
+                        $_currentTime = gmdate('U');
+                        $_secondsToClose = $_endTime - $_currentTime;
+                        ?>
+                        <div class="event-container container-<?php echo $_event->getStatus()?>">
+                            <div class="event <?php echo $_event->getStatus()?>">
+
+                                <?php switch ($_event->getStatus()):
+                                    case 'upcoming': ?>
+                                    <div class="event-dates">
+                                    <div class="start">
+                                        <span class="date-part"><?php echo $_eventProductBlock->getEventDate('start', $_event); ?></span>
+                                        <span class="time-part"><?php echo $_eventProductBlock->getEventTime('start', $_event, 'hh:mm a'); ?></span>
+                                        <span class="delimiter-part">-</span>
+                                        <span class="date-part"><?php echo $_eventProductBlock->getEventDate('end', $_event); ?></span>
+                                        <span class="time-part"><?php echo $_eventProductBlock->getEventTime('end', $_event, 'hh:mm a'); ?></span>
+                                    </div>
+                                    </div>
+                                <?php break;
+                                    case 'open': ?>
+                                        <div class="event-ticker" id="event-ticker-<?php echo $key ?>">
+                                            <div class="container">
+                                                <span class="days">00</span><span class="delimiter">:</span><span class="hour">00</span><span class="delimiter">:</span><span class="minute">00</span><span class="delimiter">:</span><span class="second">00</span>
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript">
+                                        new Enterprise.CatalogEvent.Ticker('event-ticker-<?php echo $key ?>', <?php echo $_secondsToClose; ?>);
+                                        </script>
+                                <?php break;
+                                    case 'closed': ?>
+                                    <div class="event-dates">
+                                    <div class="start">
+                                        <span class="date-part"><?php echo $_eventProductBlock->getEventDate('start', $_event); ?></span>
+                                        <span class="time-part"><?php echo $_eventProductBlock->getEventTime('start', $_event, 'hh:mm a'); ?></span>
+                                        <span class="delimiter-part">-</span>
+                                        <span class="date-part"><?php echo $_eventProductBlock->getEventDate('end', $_event); ?></span>
+                                        <span class="time-part"><?php echo $_eventProductBlock->getEventTime('end', $_event, 'hh:mm a'); ?></span>
+                                    </div>
+                                    </div>
+                                <?php break; ?>
+                            <?php endswitch; ?>
+                            </div>
+                        </div>
+                    <?php endif ?>
+                </div>
+            </li>
+        <?php endforeach ?>
+        </ul>
+    <?php else: ?>
+        <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
+    <?php endif ?>
+    </div>
+<?php endif ?>

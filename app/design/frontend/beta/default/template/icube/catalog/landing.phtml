@@ -1,0 +1,87 @@
+<?php
+/**
+ * Category View Template
+ *
+ * Description:
+ * - Created from scratch
+ *
+ * @see Mage_Catalog_Block_Category_View
+ */
+?>
+
+<div id="section-banner">
+	<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('banner-flashsale-full')->toHTML(); ?>
+</div>
+
+<div id="section-category-children">
+	<?php  
+	    $_curCategory = Mage::getModel('catalog/layer')->getCurrentCategory();
+		
+		/* Get children (level 1) category */
+		$_children = $_curCategory->getChildren();
+	?>
+
+	<?php if ($_children): ?>	
+		<?php foreach (explode(',',$_children) as $_childrenId): ?>
+			<?php  
+			  	$_child = Mage::getModel('catalog/category')->load($_childrenId);
+			?>
+
+			<?php if ($_child->getIsActive() && $_child->getIncludeInMenu()): ?>
+				<?php  
+					$_caturl     = $_child->getURL();
+				    $_catname     = ucwords(strtolower($_child->getName()));
+				?>
+				<div class="child-wrapper">
+					<div class="thumbnail">
+						<a href="<?php echo $_caturl ?>">
+			                <?php 
+			                    if ($_child->getThumbnail()) {
+			                        $image_url = Mage::getBaseUrl('media') . 'catalog' . DS . 'category' . DS . $_child->getThumbnail();
+			                    }else{
+			                        $img_placeholder_media = Mage::getStoreConfig("catalog/placeholder/small_image_placeholder");
+			                        if ($img_placeholder_media) {
+			                            $image_url = Mage::getSingleton('catalog/product_media_config')->getBaseMediaUrl(). '/placeholder/' .$img_placeholder_media;
+			                        }else{
+			                            $image_url = $this->getSkinUrl('images/catalog/product/placeholder/small_image.jpg');
+			                        }
+			                    }
+			                ?>
+			                <img src="<?php echo $image_url ?>" alt="<?php echo $_catname ?>" />
+			            </a>
+					</div>
+					<div class="children-content">
+						<h3>
+							<a href="<?php echo $_caturl ?>" title="<?php echo $_catname ?>"><?php echo $_catname ?></a>
+						</h3>
+
+						<?php
+							/* Get grand children (level 2) category */
+							$_grandChildren = $_child->getChildren();
+						?>
+						<?php if ($_grandChildren): ?>						
+							<ul>
+							<?php foreach (explode(',',$_grandChildren) as $_grandChildrenId): ?>
+								<?php  
+								  	$_grandChild = Mage::getModel('catalog/category')->load($_grandChildrenId);
+								?>
+
+								<?php if ($_grandChild->getIsActive() && $_grandChild->getIncludeInMenu()): ?>
+									<?php  
+										$_caturl     = $_grandChild->getURL();
+				    					$_catname     = ucwords(strtolower($_grandChild->getName()));
+									?>
+									<li>
+										<a href="<?php echo $_caturl ?>" title="<?php echo $_catname ?>"><?php echo $_catname ?></a>
+									</li>
+								<?php endif ?>
+							<?php endforeach ?>
+							</ul>
+						<?php endif ?>
+					</div>
+				</div>
+			<?php endif ?>
+			
+		<?php endforeach ?>
+	<?php endif ?>
+</div>

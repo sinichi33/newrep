@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+-->
+<config>
+    <menu>
+        <sales>
+            <children>
+                <amorderattr translate="title">
+                    <title>Manage Order Attributes</title>
+                    <action>amorderattr/adminhtml_manage</action>
+                    <sort_order>2000</sort_order>
+                </amorderattr>
+            </children>
+        </sales>
+    </menu>
+    
+    <translate>
+        <modules>
+            <Amasty_Orderattr>
+                <files>
+                    <default>Amasty_Orderattr.csv</default>
+                </files>
+            </Amasty_Orderattr>
+        </modules>
+    </translate>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sales>
+                        <children>
+                            <amorderattr translate="title" module="amorderattr">
+                                <title>Order Attributes</title>
+                                <sort_order>2000</sort_order>
+                            </amorderattr>
+                        </children>
+                    </sales>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <amorderattr translate="title" module="amorderattr">
+                                        <title>Amasty: Order Attributes</title>
+                                    </amorderattr>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

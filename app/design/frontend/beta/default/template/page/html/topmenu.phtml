@@ -1,0 +1,25 @@
+<?php
+/**
+ * Footer Template
+ *
+ * Description:
+ * - override RWD/default
+ * 
+ */
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see Mage_Page_Block_Html_Topmenu
+ */
+?>
+<?php $_menu = $this->getHtml('level-top','sub-cat-wrapper') ?>
+
+<?php if($_menu): ?>
+    <nav id="nav">
+        <ol class="nav-primary">
+            <?php echo $_menu ?>
+        </ol>
+    </nav>
+<?php endif ?>

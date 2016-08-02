@@ -1,0 +1,48 @@
+<?php /** @var $this Icube_Rma_Block_Adminhtml_Rma_Edit_Tab_Images */ ?>
+<?php $images = $this->getImages(); ?>
+<div class="entry-edit">
+    <div class="fieldset">
+        <div id="rma-proof-images" >
+			<!-- IMAGES -->
+		    <div class="entry-edit">
+		        <div class="entry-edit-head">
+		            <h4 class="icon-head head-edit-form fieldset-legend">Images</h4>
+		        </div>
+		        <div class="fieldset">
+		            <div class="hor-scroll">
+		                <table id="image-table" class="form-list container">
+		                    <tr class="wrapper-tr">
+		                        <td class="value">
+		                            <input type="file" name="images[]"/>
+		                        </td>
+		                        <td class="label">
+		                            <span class="removeimage">Remove</span>
+		                        </td>
+		                    </tr>
+		                </table>
+		                <input type="button" class="addimage" value="Add Image"/>
+		            </div>
+		        </div>
+		    </div>
+
+		    <script>
+		        document.observe("dom:loaded", function() {
+		            $$('.addimage').invoke('observe','click', function(event) {
+		                var wrapper = "<tr class='wrapper-tr'>" +
+		                        "<td class='value'><input type='file' name='images[]'></td>" +
+		                        "<td class='label'><span class='removeimage'>Remove</span></td>" +
+		                        "</tr>";
+
+		                $('image-table').insert(wrapper);
+		                $$('.removeimage').invoke('observe','click', function() {
+		                    this.up('.wrapper-tr').remove();
+		                });
+		            });
+		            $$('.removeimage').invoke('observe','click', function() {
+		                    this.up('.wrapper-tr').remove();
+		            });
+		        });
+		    </script>
+		</div>
+    </div>
+</div>

@@ -1,0 +1,245 @@
+<?php
+/**
+ * Success Checkout Template
+ *
+ * Description:
+ * - Override base/default
+ * - Show content depends on payment method & bank
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+
+<?php  
+    $_order = Mage::getModel('sales/order')->loadByIncrementId($this->getOrderId());
+    $_customer = Mage::getModel('customer/customer')->load($_order->getCustomerId());
+    $_payment = $_order->getPayment()->getData();
+    $_isCC = false;
+    $_isVA = false;
+    // $_bank_code = '';
+
+    if ($_payment['method'] == 'vpayment' || $_payment['method'] == 'vpaymentins') {
+        $_isCC = true;
+    }
+    if ($_payment['method'] == 'vpaymentva') {
+        $_isVA = true;
+        // $_bank_code = $_order->getPayment()->getVabank();
+        // $_banks = unserialize(Mage::getStoreConfig('payment/vpaymentva/banks', Mage::app()->getStore()));
+        // $_bankName = $_banks[$_bank_code];
+    }
+    
+?>
+
+<div class="opc-content-wrapper">
+    <div class="page-title" style="text-align:center;">
+        <h1>Thank You for Shopping!</h1>
+    </div>
+    <?php echo $this->getMessagesBlock()->toHtml() ?>
+    
+    <?php if ($this->getOrderId()):?>
+        
+        <p style="text-align:center; font-size:16px; font-weight:bold; margin-bottom:-5px;">Hi <?php echo $_order->getCustomerName() ?>,</p>
+        <p class="order-id" style="text-align:center; line-height:22px; margin-bottom:20px;">Terima kasih telah berbelanja di Ruparupa. Anda akan segera menerima email konfirmasi untuk pesanan ini. Jika belum, silakan cek folder spam Anda untuk melihat apakah email kami masuk ke folder tersebut.<br/>
+        <?php if (!$_isCC): ?>
+        Pembelian Anda untuk No. Pesanan :<?php if ($this->getViewOrderUrl()): ?>
+            <a href="<?php echo $this->escapeHtml($this->getViewOrderUrl()) ?>" style="color:#008CCF;">    
+        <?php endif ?>
+        <?php echo $this->getOrderId() ?>
+        <?php if ($this->getViewOrderUrl()): ?>
+            </a> 
+        <?php endif ?> telah kami terima dan menunggu pembayaran dengan detail sebagai berikut :
+        <?php else: ?>
+        Berikut adalah detail pembelian Anda untuk No. Pesanan : <?php if ($this->getViewOrderUrl()): ?>
+            <a href="<?php echo $this->escapeHtml($this->getViewOrderUrl()) ?>" style="color:#008CCF;">    
+        <?php endif ?>
+        <?php echo $this->getOrderId() ?>
+        <?php if ($this->getViewOrderUrl()): ?>
+            </a> 
+        <?php endif ?> :
+        <?php endif ?>
+        </p>
+
+        <table class="table-content">
+        <?php if (!$_isCC): ?>
+            <tr>
+                <td style="width:170px;">Total Pembelian</td>
+                <td style="width:25px;">:</td>
+                <td style="font-weight:bold;"><?php echo $formattedPrice = Mage::helper('core')->currency($_order->getGrandTotal(), true, false); ?></td>
+            </tr> 
+            <?php if ($_isVA): ?>
+                <tr>
+                    <?php if ($_payment['vabank'] == 'bca'): ?>
+                        <td>No. VA BCA</td>
+                    <?php elseif ($_payment['vabank'] == 'echannel'): ?>
+                        <td>No. VA Mandiri</td>
+                    <?php else: ?>
+                        <td>No. Virtual Account</td>
+                    <?php endif ?>
+                    <td>:</td>
+                    <?php if ($_payment['vabank'] == 'echannel'): ?>
+                        <td style="font-weight:bold;"><?php echo $_payment['billercode'] ?></td>
+                    <?php else: ?>
+                        <td style="font-weight:bold;"><?php echo $_payment['vanumber'] ?></td>
+                    <?php endif ?>
+                </tr> 
+                <?php if ($_payment['vabank'] == 'echannel'): ?>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td style="font-weight:bold;"><?php echo $_payment['billkey'] ?></td>
+                    </tr>
+                <?php endif ?>
+            <?php endif ?>
+        <?php endif ?>
+
+        <?php if ($_isCC): ?>
+            <tr>
+                <td class="first">Metode Pembayaran</td>
+                <td style="width:25px;">:</td>
+                <td style="font-weight:bold;"><?php echo Mage::getStoreConfig('payment/'.$_payment['method'].'/title') ?></td>
+            </tr>
+        <?php endif ?>
+
+        <tr>
+            <td>Waktu Pembelian</td>
+            <td>:</td>
+            <td style="font-weight:bold;">
+                <?php
+                //echo Mage::getModel('core/date')->date('j F Y | H:i', strtotime($_order->getCreatedAtStoreDate()));
+                 echo Mage::getModel('core/date')->date('j F Y | H:i', strtotime($_order->getCreatedAtFormated('long')));
+                ?>
+            </td>
+        </tr>
+        <?php if ($_order->getStatus() == 'pending'): ?>
+            <tr>
+                <td>Status Pembelian</td>
+                <td>:</td>
+                <td style="font-weight:bold;">Menunggu Pembayaran</td>
+            </tr>
+        <?php else: ?>
+            <tr>
+                <td>Total Pembayaran</td>
+                <td>:</td>
+                <td style="font-weight:bold;"><?php echo $formattedPrice = Mage::helper('core')->currency($_order->getGrandTotal(), true, false); ?></td>
+            </tr>
+        <?php endif ?>
+
+       </table><!--- end opening -->
+       <br/>
+
+       <?php if ($_isCC): ?>
+            <p class="order-id" style="text-align:center;">Pesanan Anda akan tiba dalam 2-5 hari untuk wilayah <strong>Jabodetabek</strong> dan 5 -14 hari untuk wilayah di <strong>luar Jabodetabek.</strong></p><!--- end opening -->
+       <?php endif ?>
+       
+        <?php if ($_isVA): ?>
+
+           <div class="alert">
+            <img src="https://img.ruparupa.com/media/static/email/alert.png" width="25"/><p>Mohon selesaikan pembayaran Anda dalam waktu 24 jam. Silakan ikuti petunjuk di bawah untuk proses pembayaran.</p>
+           </div> <!-- end alert -->
+
+            <div class="va-instruction">
+
+            <?php /* BCA VA instruction */ ?>
+            <?php if ($_payment['vabank'] == 'bca'): ?>
+               <p style="text-align:center; font-weight:bold; font-size:18px;">Pembayaran melalui BCA - Virtual Account dapat dilakukan dengan mengikuti petunjuk berikut:</p>
+               <br/>
+               <hr/>
+               <br/>
+               <p><strong>Pembayaran Melalui Virtual Account BCA</strong></p>
+                <ol class="va-steps">
+                    <li>Pilih Menu Transaksi Lainnya</li>
+                    <li>Pilih Menu Transfer</li>
+                    <li>Pilih Menu Ke Rek BCA Virtual Account</li>
+                    <li>Masukkan Nomor Virtual Account : <strong><?php echo $_payment['vanumber'] ?></strong></li>
+                    <li>Konfirmasi Pembayaran dengan menekan pilihan Ya</li>
+                </ol>
+                <p><strong>Pembayaran Melalui KlikBCA Individual</strong></p>
+                <ol class="va-steps">
+                    <li>Login ke KlikBCA Individual</li>
+                    <li>Pilih Menu Transfer</li>
+                    <li>Pilih Menu Transfer ke BCA Virtual Account</li>
+                    <li>Masukkan Nomor Virtual Account : <strong><?php echo $_payment['vanumber'] ?></strong></li>
+                    <li>Pilih Lanjutkan untuk melanjutkan pembayaran</li>
+                    <li>Masukkan RESPON KEYBCA APPLI 1 yang muncul pada Token BCA,lalu klik tombol Kirim</li>
+                </ol>
+                <p><strong>Pembayaran Melalui KlikBCA Bisnis</strong></p>
+                <ol class="va-steps">
+                    <li>Buka Aplikasi BCA Mobile</li>
+                    <li>Pilih Menu m-BCA</li>
+                    <li>Pilih Menu m-Transfer</li>
+                    <li>Pilih Opsi BCA Virtual Account</li>
+                    <li>Masukkan Nomor Virtual Account yang dituju: <strong><?php echo $_payment['vanumber'] ?></strong>, lalu klik tombol OK</li>
+                    <li>Klik tombol Send yang berada di sudut kanan atas aplikasi untuk melakukan transfer</li>
+                    <li>Klik OK untuk melanjutkan pembayaran</li>
+                    <li>Input PIN BCA untuk mengotorisasi transaksi</li>
+                </ol>
+                <p><strong>Pembayaran Melalui Mobile Banking BCA</strong></p>
+                <ol class="va-steps">
+                    <li>Login ke KlikBCA Bisnis</li>
+                    <li>Pilih Menu Transfer Dana, lalu klik Tambah, pilih Ke BCA Virtual Account</li>
+                    <li>Masukkan nomor Virtual Account :<strong><?php echo $_payment['vanumber'] ?></strong></li>
+                    <li>Klik tombol Kirim untuk mendaftarkan Virtual Account yang dituju</li>
+                    <li>Klik tombol Simpan untuk menyimpan Virtual Account yang dituju</li>
+                    <li>Pada Menu Utama, pilih menu Transfer Dana, lalu pilih Ke BCA Virtual Account, pilih No. BCA Virtual
+        Account yang dituju</li>
+                    <li>Klik tombol Lanjut untuk melanjutkan pembayaran</li>
+                    <li>Klik tombol Kirim untuk melanjutkan pembayaran</li>
+                    <li>Klik tombol Simpan untuk melanjutkan pembayaran</li>
+                    <li>Pilih tombol Setuju untuk melanjutkan Otorisasi Transaksi</li>
+                    <li>Mohon mengikuti instruksi pada tab Otorisasi, lalu Input angka yang terdapat pada layar KeyBCA</li>
+                    <li>Transaksi berhasil diotorisasi, Pilih tombol Simpan untuk menyelesaikan transaksi</li>
+                </ol>
+            <?php endif ?>
+            
+            <?php /* Permata VA instruction */ ?>
+            <?php if ($_payment['vabank'] == 'permata'): ?>
+                <p style="text-align:center; font-weight:bold; font-size:18px;">Pembayaran melalui Jaringan Bank Permata atau bank lain dapat dilakukan dengan mengikuti petunjuk berikut:</p>
+                <br/><hr/><br/>
+                <p><strong>PEMBAYARAN MELALUI JARINGAN PERMATA/ALTO</strong></p>
+                <ol class="va-steps">
+                    <li>Pada menu utama, pilih <strong>"Transaksi Lainnya"</strong></li>
+                    <li>Pilih <strong>"Transaksi Pembayaran"</strong></li>
+                    <li>Pilih <strong>"Lain-lain"</strong></li>
+                    <li>Pilih <strong>"Pembayaran Virtual Account"</strong></li>
+                    <li>Masukkan 16 digit no.rekening pembayaran lalu tekan <strong>"Benar"</strong></li>
+                    <li>Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening, dan nama merchant. Jika informasi telah sesuai tekan <strong>"Benar"</strong></li>
+                    <li>Konfirmasi pembayaran Anda</li>
+                </ol>
+
+                <p style="font-size:12px; color:#959595; margin-top:25px; line-height:16px;">*Pembayaran menggunakan Jaringan Bank Permata atau bank lain akan dikenakan biaya administrasi Rp6,500 (sesuai dengan peraturan Bank Indonesia)</p>
+            <?php endif ?>
+
+            <?php /* Mandiri VA instruction */ ?>
+            <?php if ($_payment['vabank'] == 'echannel'): ?>
+                <p style="text-align:center; font-weight:bold; font-size:18px;">Pembayaran melalui ATM Mandiri dapat dilakukan dengan mengikuti petunjuk berikut:</p>
+                <br/><hr/><br/>
+                <p><strong>Pembayaran melalui ATM Mandiri</strong></p>
+                <ol class="va-steps">
+                    <li>Masukkan PIN Anda</li>
+                    <li>Pada menu utama pilih menu <strong>"Pembayaran"</strong> kemudian pilih menu <strong>"Multi Payment"</strong></li>
+                    <li>Masukkan kode perusahaan, dalam hal ini adalah <strong>70012</strong> kemudian tekan tombol <strong>"Benar"</strong></li>
+                    <li>Masukkan kode pembayaran Anda, dalam hal ini adalah <strong>xxxxx (tercantum waktu Checkout)</strong> kemudian Anda akan mendapatkan detail pembayaran Anda</li>
+                    <li>Konfirmasi pembayaran Anda</li>
+                </ol>
+                <p><strong>Cara membayar melalui Internet Banking Mandiri</strong></p>
+                <ol class="va-steps">
+                    <li>Login ke <a href="https://ib.bankmandiri.co.id/" target="_blank" style="color:#008ccf; text-decoration:none;">Internet Banking Mandiri</a></li>
+                    <li>Di Menu Utama silakan pilih <strong>"Bayar"</strong> kemudian pilih <strong>"Multi Payment"</strong></li>
+                    <li>Pilih akun Anda di <strong>"Dari Rekening"</strong>, kemudian di <strong>"Penyedia Jasa"</strong> pilih Veritrans</li>
+                    <li>Masukkan kode pembayaran Anda, dalam hal ini adalah <strong>xxxxx (tercantum waktu Checkout)</strong> dan klik <strong>"Lanjutkan"</strong></li>
+                    <li>Konfirmasi pembayaran Anda menggunakan Mandiri Token.</li>
+                </ol>
+            <?php endif ?>
+                
+            </div><!-- end VA Desc -->
+        <?php endif ?>
+
+    <?php endif;?>
+
+    <div class="buttons-set">
+        <button type="button" class="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Continue Shopping')) ?>" onclick="window.location='<?php echo $this->getUrl() ?>'"><span><span><?php echo $this->__('Get More!') ?></span></span></button>
+    </div>
+</div>

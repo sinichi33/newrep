@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento Enterprise Edition
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Magento Enterprise Edition End User License Agreement
+ * that is bundled with this package in the file LICENSE_EE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magento.com/license/enterprise-edition
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Tests
+ * @package     Tests_Functional
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/etc/variations.xsd">
+    <testCase name="Enterprise\Checkout\Test\TestCase\AddProductsToCartBySkuFromBackendTest">
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation1">
+            <data name="description" xsi:type="string">Two Simple products.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::default, catalogProductSimple::default</data>
+            <data name="cartBlock" xsi:type="string">cart, cart</data>
+            <data name="orderOptions/sku" xsi:type="string">-, -</data>
+            <data name="orderOptions/qty" xsi:type="string">1, 1</data>
+            <constraint name="Mage\Sales\Test\Constraint\AssertProductsVisibilityInItemsOrderedBlock" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation2">
+            <data name="description" xsi:type="string">Simple product.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::default</data>
+            <data name="cartBlock" xsi:type="string">cart</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Mage\Sales\Test\Constraint\AssertProductsVisibilityInItemsOrderedBlock" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation3">
+            <data name="description" xsi:type="string">Simple Out Of Stock.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::out_of_stock</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertProductIsOutOfStockBackendFailMessage" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation4">
+            <data name="description" xsi:type="string">Simple product with qty more than available.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::default</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">101</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertQtyIsNotEnoughBackendFailMessage" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation5">
+            <data name="description" xsi:type="string">Simple offline product.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::offline</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertProductIsDisabledFailMessage" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation6">
+            <data name="description" xsi:type="string">Not visible individually product.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::not_visible_individually</data>
+            <data name="cartBlock" xsi:type="string">cart</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Mage\Sales\Test\Constraint\AssertProductsVisibilityInItemsOrderedBlock" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation7">
+            <data name="description" xsi:type="string">Product with qty less than minimum allowed in cart.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::simple_with_cart_limits</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertMinRequestedQtyBackendFailMessage" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation8">
+            <data name="description" xsi:type="string">Product with qty more than maximum allowed in cart.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::simple_with_cart_limits</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">6</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertMaxRequestedQtyBackendFailMessage" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation9">
+            <data name="description" xsi:type="string">Configurable product.</data>
+            <data name="products" xsi:type="string">configurableProduct::default</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">2</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertProductRequiredAttentionBackendFailMessage" />
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertSpecifyProductOptionsBackendFailMessage" />
+            <constraint name="Mage\Sales\Test\Constraint\AssertItemsOrderedBlockIsEmpty" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation10">
+            <data name="description" xsi:type="string">Bundle dynamic product.</data>
+            <data name="products" xsi:type="string">bundleProduct::bundle_dynamic_product</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertProductRequiredAttentionBackendFailMessage" />
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertSpecifyProductOptionsBackendFailMessage" />
+            <constraint name="Mage\Sales\Test\Constraint\AssertItemsOrderedBlockIsEmpty" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation11">
+            <data name="description" xsi:type="string">Bundle fixed product.</data>
+            <data name="products" xsi:type="string">bundleProduct::bundle_fixed_product</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertProductRequiredAttentionBackendFailMessage" />
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertSpecifyProductOptionsBackendFailMessage" />
+            <constraint name="Mage\Sales\Test\Constraint\AssertItemsOrderedBlockIsEmpty" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation12">
+            <data name="description" xsi:type="string">Simple product with custom option.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::with_one_custom_option_and_category</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertProductRequiredAttentionBackendFailMessage" />
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertSpecifyProductOptionsBackendFailMessage" />
+            <constraint name="Mage\Sales\Test\Constraint\AssertItemsOrderedBlockIsEmpty" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation13">
+            <data name="description" xsi:type="string">Simple product with custom option by compound sku.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::with_one_custom_option_and_category</data>
+            <data name="cartBlock" xsi:type="string">cart</data>
+            <data name="orderOptions/sku" xsi:type="string">simpleWithOptionCompoundSku</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Mage\Sales\Test\Constraint\AssertProductsVisibilityInItemsOrderedBlock" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation14">
+            <data name="description" xsi:type="string">Simple product with qty increments.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::simple_with_qty_increments</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">3</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertQtyIncrementsBackendFailMessage" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation15">
+            <data name="description" xsi:type="string">Nonexistent product.</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">nonExistentSku</data>
+            <data name="orderOptions/qty" xsi:type="string">1</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertProductRequiredAttentionBackendFailMessage" />
+            <constraint name="Mage\Sales\Test\Constraint\AssertItemsOrderedBlockIsEmpty" />
+        </variation>
+        <variation name="AddProductsToCartBySkuFromBackendTestVariation16">
+            <data name="description" xsi:type="string">Product with not valid qty.</data>
+            <data name="products" xsi:type="string">catalogProductSimple::default</data>
+            <data name="cartBlock" xsi:type="string">required_attention</data>
+            <data name="orderOptions/sku" xsi:type="string">-</data>
+            <data name="orderOptions/qty" xsi:type="string">abc</data>
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertProductRequiredAttentionBackendFailMessage" />
+            <constraint name="Enterprise\Checkout\Test\Constraint\AssertValidNumberInQtyFieldBackendFailMessage" />
+            <constraint name="Mage\Sales\Test\Constraint\AssertItemsOrderedBlockIsEmpty" />
+        </variation>
+    </testCase>
+</config>

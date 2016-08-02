@@ -1,0 +1,16 @@
+<div class="block links logo-grid">
+    <div class="block-title">
+        Metode Pembayaran
+    </div>
+    <div class="block-content">
+        <ul>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/visa.png" alt="Visa" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/mastercard.png" alt="Master Card" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/permata.png" alt="Permata" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/bca.png" alt="BCA" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/mandiri.png" alt="Mandiri" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/atm_bersama.png" alt="ATM Bersama" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/bank_transfer.png" alt="Bank Transfer" /></li>
+        </ul>
+    </div>
+</div>

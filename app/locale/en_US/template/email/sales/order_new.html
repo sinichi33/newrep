@@ -1,0 +1,84 @@
+<!--subject {{var store.getFrontendName()}}: New Order # {{var order.increment_id}} -->
+<!--@subject {{layout handle="sales_email_order_new_subject" order=$order}} @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$order.getCustomerName()":"Customer Name",
+"var store.getFrontendName()":"Store Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var order.increment_id":"Order Id",
+"var order.getCreatedAtFormated('long')":"Order Created At (datetime)",
+"var order.getBillingAddress().format('html')":"Billing Address",
+"var payment_html":"Payment Details",
+"var order.getShippingAddress().format('html')":"Shipping Address",
+"var order.getShippingDescription()":"Shipping Description",
+"layout handle=\"sales_email_order_items\" order=$order":"Order Items Grid",
+"var order.getEmailCustomerNote()":"Email Order Note"}
+@-->
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<!-- If VA payment -->
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr class="section">
+        <td>
+            {{layout handle="sales_email_order_heading" order=$order customerFirstName=$order.getCustomerFirstname()}}
+        </td>
+    </tr>
+    <tr class="section">
+        <td class="order-info">
+            {{layout handle="sales_email_order_orderinfo" order=$order paymentHtml=$payment_html}}
+        </td>
+    </tr>
+    <tr class="order-information section">
+        <td>
+           <hr>
+           <h2>RINCIAN PRODUK</h2>
+
+            {{if order.getEmailCustomerNote()}}
+            <table cellspacing="0" cellpadding="0" class="message-container">
+                <tr>
+                    <td>{{var order.getEmailCustomerNote()}}</td>
+                </tr>
+            </table>
+            {{/if}}
+            <table>
+                {{layout handle="sales_email_order_items" order=$order}}
+            </table>
+        </td>
+    </tr>
+    {{depend order.getIsNotVirtual()}}
+        {{layout handle="sales_email_order_shippinginfo" order=$order shippingAddress=$order.getShippingAddress().format('html')}}
+    {{/depend}}
+    <tr class="section">
+        <td>
+            {{layout handle="sales_email_order_howtopay" order=$order}}
+        </td>
+    </tr>
+    <tr class="section">
+        <td>
+            <table class="signature">
+                <tbody>
+                <tr>
+                    <td>Terima Kasih</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid #E1E1E1; padding-bottom:5px; color:#F36525;">Sisca</td>
+                </tr>
+                <tr>
+                    <td>Ruparupa.com</td>
+                </tr>
+               </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

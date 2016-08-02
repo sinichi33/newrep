@@ -1,0 +1,8 @@
+../../../../../app/code/community/Fooman/Surcharge/                       /app/code/community/Fooman/Surcharge/
+../../../../../app/code/community/Fooman/TotalsSortingFix/                /app/code/community/Fooman/TotalsSortingFix/
+../../../../../app/design/adminhtml/default/default/layout/surcharge.xml  /app/design/adminhtml/default/default/layout/surcharge.xml
+../../../../../app/design/adminhtml/default/default/template/surcharge/   /app/design/adminhtml/default/default/template/surcharge/
+../../../../../app/design/frontend/base/default/layout/surcharge.xml      /app/design/frontend/base/default/layout/surcharge.xml
+../../../../../app/design/frontend/base/default/template/surcharge/       /app/design/frontend/base/default/template/surcharge/
+../../../../../app/etc/modules/Fooman_Surcharge.xml                       /app/etc/modules/Fooman_Surcharge.xml
+../../../../../app/etc/modules/Fooman_TotalsSortingFix.xml                /app/etc/modules/Fooman_TotalsSortingFix.xml

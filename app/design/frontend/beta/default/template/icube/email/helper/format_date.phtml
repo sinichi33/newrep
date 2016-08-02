@@ -1,0 +1,14 @@
+<?php
+/**
+ * Formatting Date
+ *
+ * Description:
+ * - Created from scratch
+ */
+?>
+
+<?php  
+$_date = $this->getDate();
+?>
+
+<?php echo Mage::getModel('core/date')->date('j F Y H:i:s', strtotime($_date)); ?>

@@ -1,0 +1,104 @@
+/*----------------------------------------------------------------------------*/
+/* Magento Enterprise Reset
+/*----------------------------------------------------------------------------*/
+
+body {
+    text-align: left;
+}
+
+h2 {
+    text-transform: none;
+}
+
+a {
+    color: inherit;    
+
+    &:hover {
+        text-decoration: underline;
+        color: inherit;
+    }
+}
+
+strong {
+    font-weight: bold;
+}
+
+.block-title {
+    border-top: 0px;
+
+    h2, h3, strong {
+        color: inherit;
+    }
+}
+.no-touch {
+
+    .product-image {
+        
+        &:hover {
+            border-color: initital;
+        }
+    }
+}
+
+body .main-container {
+    padding: 0;
+
+}
+button, .button {
+	background: #fed807;
+
+	&:hover {
+		background: #fed807;
+	}
+}
+
+ul,
+.std ul,
+li,
+.std ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.cms-page-view .std p,
+.cms-no-route .std p {
+    font-family: inherit;
+    font-style: normal;
+}
+
+.cms-page-view .std li,
+.cms-no-route .std li {
+    font-style: normal;
+}
+
+.product-image-thumbs li:first-child {
+    margin-left: 0;
+}
+
+.breadcrumbs li,
+.block-related .block-title h2,
+label,
+.button,
+.cart-table .product-cart-actions .button,
+#co-shipping-method-form .buttons-set .button,
+.footer .button,
+form .form-instructions,
+.cart-table,
+.cart-table .product-cart-sku,
+.cart-table thead th,
+.cart-table tbody td,
+.block-title h2,
+.block-title h3,
+.block-title strong,
+.block-progress dt,
+.data-table tbody td,
+.data-table tfoot td,
+.data-table th,
+.block-progress dd {
+    font-family: inherit;
+}
+
+.customer-account-login .col2-set .buttons-set button,
+.customer-account-login .col2-set .buttons-set .button {
+    min-width: 0;
+}

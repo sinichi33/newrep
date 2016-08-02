@@ -1,0 +1,1109 @@
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_default
+ * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/*
+// ----------------------------------------------
+// Usage example:
+// For IE set $mq-support to false.
+// Set the fixed value.
+// Then use mixins to test whether styles should be applied.
+// ----------------------------------------------
+
+$mq-support: false;
+$mq-fixed-value: 1024;
+
+// Renders at fixed value
+@include bp (min-width, 300px) { 
+    div { color:#000; }
+}
+
+// Doesn't render without MQ support
+@include bp (min-width, 1200px) { 
+    div { color:#FFF; }
+}
+
+// Doesn't render without MQ support
+@include bp (max-width, 300px) { 
+    div { color:#444; }
+}
+
+// Renders at fixed value
+@include bp (max-width, 1200px) { 
+    div { color:#888; }
+}
+
+// ----------------------------------------------
+*/
+/* ============================================ *
+ * General Styles
+ * ============================================ */
+/* line 42, ../scss/email-inline.scss */
+body, table.body, th, h1, h2, h3, h4, h5, h6, td, p, strong {
+  font-family: Verdana, Arial;
+  font-weight: normal;
+}
+
+/* line 47, ../scss/email-inline.scss */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #333333;
+  background-color: #EBEBEB;
+}
+
+/* line 55, ../scss/email-inline.scss */
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 60, ../scss/email-inline.scss */
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+/* line 65, ../scss/email-inline.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 68, ../scss/email-inline.scss */
+body {
+  background: #EBEBEB;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 74, ../scss/email-inline.scss */
+table,
+table td {
+  border-collapse: collapse;
+}
+
+/* line 78, ../scss/email-inline.scss */
+table td {
+  vertical-align: top;
+}
+
+/* line 81, ../scss/email-inline.scss */
+a {
+  color: #3696C2;
+}
+
+/* line 84, ../scss/email-inline.scss */
+.cell-content.product-info,
+.bundle-item,
+.bundle-item-parent.product-info,
+.bill-ship-to,
+.method-information {
+  text-align: left;
+}
+
+/* line 91, ../scss/email-inline.scss */
+html,
+#background-table {
+  background-color: #EBEBEB;
+}
+
+/* line 95, ../scss/email-inline.scss */
+#background-table {
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 100, ../scss/email-inline.scss */
+.container-td {
+  width: 100%;
+}
+
+/* line 103, ../scss/email-inline.scss */
+.container-table {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* ============================================ *
+ * Header Styles
+ * ============================================ */
+/* line 112, ../scss/email-inline.scss */
+.top-content {
+  border: 1px solid #EBEBEB;
+  background: #FFF;
+  padding: 15px 15px 5px;
+}
+
+/* line 117, ../scss/email-inline.scss */
+table.logo-container {
+  width: 100%;
+}
+
+/* line 120, ../scss/email-inline.scss */
+td.logo {
+  padding: 15px 0px 10px 5px;
+}
+
+/* line 123, ../scss/email-inline.scss */
+td.logo a {
+  float: left;
+  display: block;
+}
+
+/* line 127, ../scss/email-inline.scss */
+td.logo img {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 131, ../scss/email-inline.scss */
+td.email-heading {
+  padding: 0 1%;
+  background: #E1F0F8;
+  border-right: 1px dashed #C3CED4;
+  text-align: center;
+  width: 58%;
+}
+
+/* line 138, ../scss/email-inline.scss */
+td.email-heading h1 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 1em 0;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* line 145, ../scss/email-inline.scss */
+td.email-heading p {
+  line-height: 20px;
+  margin: 1em 0;
+}
+
+/* line 149, ../scss/email-inline.scss */
+td.store-info {
+  padding: 2%;
+  background: #E1F0F8;
+  width: 40%;
+}
+
+/* line 154, ../scss/email-inline.scss */
+td.store-info h4 {
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+
+/* line 158, ../scss/email-inline.scss */
+td.store-info p {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 1em 0;
+}
+
+/* line 163, ../scss/email-inline.scss */
+td.store-info a {
+  text-decoration: underline;
+  color: #3696C2;
+}
+
+/* ============================================ *
+ * Content - Styles
+ * ============================================ */
+/* line 172, ../scss/email-inline.scss */
+td.order-details {
+  padding: 5px 15px;
+  text-align: center;
+}
+
+/* line 176, ../scss/email-inline.scss */
+td.order-details h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: normal;
+}
+
+/* line 182, ../scss/email-inline.scss */
+td.order-details p {
+  font-size: 11px;
+  margin: 1em 0 15px;
+}
+
+/* line 186, ../scss/email-inline.scss */
+.items {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+/* line 190, ../scss/email-inline.scss */
+.cell-name {
+  padding: 10px 15px;
+  background: #F1F1F1;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 11px;
+}
+
+/* line 198, ../scss/email-inline.scss */
+.cell-name.align-center {
+  text-align: center;
+}
+
+/* line 201, ../scss/email-inline.scss */
+.cell-name.align-right {
+  text-align: right;
+}
+
+/* line 204, ../scss/email-inline.scss */
+.method-info,
+.method-info h6,
+.method-info p,
+.method-info strong {
+  text-align: left;
+}
+
+/* line 210, ../scss/email-inline.scss */
+.cell-content {
+  padding: 10px 15px;
+  border-top: 1px solid #EBEBEB;
+  font-family: Verdana, Arial;
+}
+
+/* line 215, ../scss/email-inline.scss */
+.product-info a.product-name {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3696C2;
+  text-decoration: none;
+  vertical-align: middle;
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* line 225, ../scss/email-inline.scss */
+.table-totals {
+  width: 100%;
+  background: #E1F0F8;
+}
+
+/* line 229, ../scss/email-inline.scss */
+.padding-totals {
+  padding: 20px 15px;
+  text-align: right;
+  line-height: 20px;
+}
+
+/* line 234, ../scss/email-inline.scss */
+.padding-totals .last {
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* line 238, ../scss/email-inline.scss */
+.table-totals table {
+  width: 100%;
+}
+
+/* line 241, ../scss/email-inline.scss */
+.shipping {
+  padding-bottom: 5px;
+}
+
+/* line 244, ../scss/email-inline.scss */
+.grand-total {
+  border-top: 1px solid #C3CED4;
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* line 250, ../scss/email-inline.scss */
+.shipping-information td {
+  padding: 0 15px;
+}
+
+/* line 253, ../scss/email-inline.scss */
+.shipping-information > td > table {
+  width: 100%;
+}
+
+/* line 256, ../scss/email-inline.scss */
+.address-details {
+  padding-top: 10px;
+}
+
+/* line 259, ../scss/email-inline.scss */
+.address-details,
+.method-info {
+  text-align: left;
+  padding: 10px 15px 0;
+}
+
+/* line 264, ../scss/email-inline.scss */
+.address-details h6,
+.method-info h6 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+/* line 272, ../scss/email-inline.scss */
+.address-details p {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  margin-top: 2px;
+}
+
+/* line 278, ../scss/email-inline.scss */
+.method-info {
+  padding-bottom: 10px;
+}
+
+/* line 281, ../scss/email-inline.scss */
+.method-info p {
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 30px;
+  line-height: 18px;
+}
+
+/* line 287, ../scss/email-inline.scss */
+.closing-text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: normal;
+  margin-bottom: 75px;
+  margin-top: 30px;
+}
+
+/* line 295, ../scss/email-inline.scss */
+.product-info > p,
+.product-info > dl {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* line 301, ../scss/email-inline.scss */
+.product-info > dl {
+  line-height: 20px;
+}
+
+/* line 304, ../scss/email-inline.scss */
+.action-content {
+  padding: 10px 20px 15px;
+  line-height: 18px;
+}
+
+/* line 308, ../scss/email-inline.scss */
+.action-content h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  line-height: 28px;
+}
+
+/* line 315, ../scss/email-inline.scss */
+.line-separator {
+  height: 5px;
+}
+
+/* line 318, ../scss/email-inline.scss */
+.method-info p, .method-info dl {
+  padding: 0;
+}
+
+/* ============================================ *
+ * Comments and Messages - Styles
+ * ============================================ */
+/* line 327, ../scss/email-inline.scss */
+.message-container {
+  margin: 15px 0;
+  width: 100%;
+  background-color: #FFFDD9;
+  border: 1px solid #FFF74C;
+}
+
+/* line 333, ../scss/email-inline.scss */
+.message-container,
+.order-information > td > table,
+.top-content > table {
+  width: 100%;
+}
+
+/* line 338, ../scss/email-inline.scss */
+.message-container td {
+  padding: 10px 15px;
+  margin: 0;
+}
+
+/* line 343, ../scss/email-inline.scss */
+.highlighted-text {
+  border: 1px solid #C3CED4;
+  padding: 13px 18px;
+  background: #F1F1F1;
+}
+
+/* ============================================ *
+ * Bundle Products - Styles
+ * ============================================ */
+/* line 353, ../scss/email-inline.scss */
+.bundle-item {
+  padding: 0px 15px;
+  text-align: left;
+}
+
+/* line 357, ../scss/email-inline.scss */
+.bundle-item-parent {
+  border-top: 1px solid #EBEBEB;
+  padding: 10px 15px;
+}
+
+/* line 361, ../scss/email-inline.scss */
+.bundle-item-parent.product-info {
+  text-align: left;
+}
+
+/* line 364, ../scss/email-inline.scss */
+.bundle-item > div,
+.bundle-item > strong {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* line 370, ../scss/email-inline.scss */
+.bundle-item.bundle-details > div {
+  margin-bottom: 15px;
+}
+
+/* ============================================ *
+ * Buttons - Styles
+ * ============================================ */
+/* line 378, ../scss/email-inline.scss */
+.action-button {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 383, ../scss/email-inline.scss */
+.action-button td {
+  background-color: #3696C2;
+  color: #FFF;
+  width: 100%;
+  height: 40px;
+  display: block;
+  border: 0 none;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+/* line 396, ../scss/email-inline.scss */
+.action-button a {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* line 404, ../scss/email-inline.scss */
+.action-button a span {
+  color: #FFF;
+}
+
+/* ============================================ *
+ * Newsletter - Default Template Styles
+ * ============================================ */
+/* line 412, ../scss/email-inline.scss */
+hr {
+  background-color: #D9D9D9;
+  border: medium none;
+  color: #D9D9D9;
+  height: 1px;
+  margin-left: 3%;
+  width: 94%;
+}
+
+/* line 420, ../scss/email-inline.scss */
+td.email-heading h1 {
+  margin-top: 25px;
+}
+
+/* line 423, ../scss/email-inline.scss */
+td.store-info h4 {
+  font-size: 12px;
+  margin-top: 13px;
+  font-weight: bold;
+}
+
+/* line 428, ../scss/email-inline.scss */
+table, table td {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 432, ../scss/email-inline.scss */
+table.columns.heading {
+  margin-bottom: 3px;
+}
+
+/* line 435, ../scss/email-inline.scss */
+.main-image {
+  width: 100%;
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+/* line 440, ../scss/email-inline.scss */
+table.row {
+  padding: 0px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 445, ../scss/email-inline.scss */
+table.container table.row {
+  display: block;
+  margin: 5px;
+}
+
+/* line 449, ../scss/email-inline.scss */
+td.wrapper {
+  padding: 10px 0 0;
+  position: relative;
+}
+
+/* line 453, ../scss/email-inline.scss */
+.full {
+  width: 100%;
+}
+
+/* line 456, ../scss/email-inline.scss */
+.half {
+  width: 50%;
+}
+
+/* line 459, ../scss/email-inline.scss */
+.half.left {
+  padding-right: 5px;
+  padding-left: 10px;
+}
+
+/* line 463, ../scss/email-inline.scss */
+.half.right {
+  padding-left: 5px;
+}
+
+/* line 466, ../scss/email-inline.scss */
+.columns {
+  width: 100%;
+}
+
+/* line 469, ../scss/email-inline.scss */
+td.expander {
+  visibility: hidden;
+  width: 0px;
+  padding: 0;
+}
+
+/* line 474, ../scss/email-inline.scss */
+table.button {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 478, ../scss/email-inline.scss */
+table.button td,
+table.social-button td {
+  display: block;
+  width: auto;
+  text-align: center;
+  color: #FFF;
+  padding: 8px 4%;
+  cursor: pointer;
+}
+
+/* line 487, ../scss/email-inline.scss */
+.social-button {
+  width: 94%;
+  margin: 5px 3%;
+}
+
+/* line 491, ../scss/email-inline.scss */
+table.button td {
+  background: #3696C2;
+}
+
+/* line 494, ../scss/email-inline.scss */
+table.social-button td {
+  padding: 5px 4%;
+}
+
+/* line 497, ../scss/email-inline.scss */
+table.button td a,
+table.social-button td a {
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 504, ../scss/email-inline.scss */
+table.social-button td a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 508, ../scss/email-inline.scss */
+.panel {
+  background-color: #F2F2F2;
+  border: 1px solid #D9D9D9;
+}
+
+/* line 512, ../scss/email-inline.scss */
+.panel p {
+  margin: 10px;
+}
+
+/* line 515, ../scss/email-inline.scss */
+.panel h6 {
+  font-size: 20px;
+  margin: 15px 10px;
+}
+
+/* line 519, ../scss/email-inline.scss */
+.panel a {
+  color: #3696C2;
+  text-decoration: none;
+}
+
+/* line 523, ../scss/email-inline.scss */
+.sidebar-links table {
+  width: 100%;
+}
+
+/* line 526, ../scss/email-inline.scss */
+.sidebar-links td {
+  width: 100%;
+}
+
+/* line 529, ../scss/email-inline.scss */
+.sidebar-links a {
+  margin: 8px 0;
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+
+/* line 535, ../scss/email-inline.scss */
+.sidebar-links table p {
+  margin: 0 10px;
+}
+
+/* line 538, ../scss/email-inline.scss */
+.sidebar-links a span {
+  margin-left: 3%;
+}
+
+/* line 541, ../scss/email-inline.scss */
+table.facebook td,
+table.twitter td,
+table.google-plus td,
+table.facebook td a,
+table.twitter td a,
+table.google-plus td a {
+  text-align: center;
+  height: 17px;
+}
+
+/* line 550, ../scss/email-inline.scss */
+table.facebook td {
+  background: #3B5998;
+}
+
+/* line 553, ../scss/email-inline.scss */
+table.twitter td {
+  background: #00ACEE;
+}
+
+/* line 556, ../scss/email-inline.scss */
+table.google-plus td {
+  background: #DB4A39;
+}
+
+/* ============================================ *
+ * Product Grid
+ * ============================================ */
+/* line 564, ../scss/email-inline.scss */
+h2.products {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 568, ../scss/email-inline.scss */
+.products-grid > tr > td {
+  width: 25%;
+}
+
+/* line 571, ../scss/email-inline.scss */
+.products-grid > tr > td img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 575, ../scss/email-inline.scss */
+.products-grid .product-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 579, ../scss/email-inline.scss */
+.product-name {
+  margin: 0 0 5px 0;
+  color: #636363;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+/* line 588, ../scss/email-inline.scss */
+p.product-name {
+  font-weight: bold;
+}
+
+/* line 591, ../scss/email-inline.scss */
+p.sku {
+  margin: 0 0 5px;
+}
+
+/* ============================================ *
+ * Product Grid - Price Styles
+ * The price styles are copied directly from the _common.scss file
+ * ============================================ */
+/* line 600, ../scss/email-inline.scss */
+.price-box {
+  margin: 7px 0;
+  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+
+/* line 605, ../scss/email-inline.scss */
+.price-box p {
+  margin-bottom: 0;
+}
+
+/* line 609, ../scss/email-inline.scss */
+.price-notice {
+  color: #A0A0A0;
+}
+
+/* line 613, ../scss/email-inline.scss */
+.price-box .price {
+  color: #3399CC;
+  font-size: 16px;
+}
+
+/* line 618, ../scss/email-inline.scss */
+.price-box .price,
+.price {
+  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+
+/* line 623, ../scss/email-inline.scss */
+.price-box .price-label {
+  color: #A0A0A0;
+  white-space: nowrap;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+
+/* line 629, ../scss/email-inline.scss */
+.price-box .minimal-price-link {
+  padding-left: 1em;
+  color: #3399CC;
+  display: block;
+  /* We want this to show on its own line, otherwise the layout looks funky */
+}
+/* line 634, ../scss/email-inline.scss */
+.price-box .minimal-price-link .label {
+  color: #A0A0A0;
+}
+
+/* -------------------------------------------- *
+ * Price Box - Special
+ */
+/* line 643, ../scss/email-inline.scss */
+.price-box .old-price,
+.price-box .special-price {
+  display: inline-block;
+}
+/* line 647, ../scss/email-inline.scss */
+.price-box .old-price .price-label,
+.price-box .special-price .price-label {
+  display: none;
+}
+/* line 651, ../scss/email-inline.scss */
+.price-box .old-price .price,
+.price-box .special-price .price {
+  display: inline-block;
+}
+
+/* line 657, ../scss/email-inline.scss */
+.price-box .old-price .price {
+  color: #A0A0A0;
+  text-decoration: line-through;
+}
+
+/* line 663, ../scss/email-inline.scss */
+.price-box .special-price {
+  color: #3399CC;
+  padding-left: 1em;
+}
+/* line 667, ../scss/email-inline.scss */
+.price-box .special-price .price-label {
+  color: #D84D3C;
+}
+
+/* -------------------------------------------- *
+ * Price Box - Taxes
+ */
+/* line 676, ../scss/email-inline.scss */
+.price-box .price-excluding-tax,
+.price-box .price-including-tax {
+  display: block;
+}
+
+/* ============================================ *
+ * ICUBE
+ * ============================================ */
+/* line 686, ../scss/email-inline.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 687, ../scss/email-inline.scss */
+p .navbar {
+  font-size: 15pt;
+}
+
+/* line 688, ../scss/email-inline.scss */
+.borderright {
+  border-right: #a9a9a9 1px solid;
+}
+
+/* line 689, ../scss/email-inline.scss */
+p a {
+  text-decoration: none;
+  color: #52555f;
+}
+
+/* line 691, ../scss/email-inline.scss */
+body {
+  color: #52555f;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* line 697, ../scss/email-inline.scss */
+body, table.body, th, h1, h2, h3, h4, h5, h6, td, p, strong {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #52555f;
+  font-size: 14px;
+}
+
+/* line 703, ../scss/email-inline.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 707, ../scss/email-inline.scss */
+h1, h2 {
+  font-size: 14px;
+}
+
+/* line 711, ../scss/email-inline.scss */
+hr {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+/* line 717, ../scss/email-inline.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 721, ../scss/email-inline.scss */
+.navbar {
+  margin: 15px 0;
+}
+
+/* line 725, ../scss/email-inline.scss */
+.navbar a {
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: initial;
+  color: #52555f;
+}
+
+/* line 732, ../scss/email-inline.scss */
+.top-content {
+  border: none;
+}
+
+/* line 736, ../scss/email-inline.scss */
+.footer p {
+  color: #52555f;
+  text-decoration: initial;
+}
+
+/* line 743, ../scss/email-inline.scss */
+.section * {
+  line-height: 1.5;
+}
+/* line 747, ../scss/email-inline.scss */
+.section h1, .section h2 {
+  margin: 15px 0;
+}
+/* line 751, ../scss/email-inline.scss */
+.section p {
+  margin: 0 0 10px;
+}
+
+/* line 756, ../scss/email-inline.scss */
+.va-instruction {
+  font-size: 14px;
+  padding: 15px;
+  margin: 25px auto;
+  border: 1px solid #E1E1E1;
+  display: block;
+}
+
+/* line 764, ../scss/email-inline.scss */
+.no-white-space {
+  white-space: nowrap;
+}
+
+/* line 768, ../scss/email-inline.scss */
+.order-info {
+  padding-bottom: 15px;
+}
+/* line 771, ../scss/email-inline.scss */
+.order-info td {
+  line-height: 2;
+}
+/* line 774, ../scss/email-inline.scss */
+.order-info td p {
+  line-height: inherit !important;
+  margin: 0 !important;
+}
+/* line 778, ../scss/email-inline.scss */
+.order-info td p strong {
+  line-height: inherit !important;
+  display: block;
+}
+
+/* line 786, ../scss/email-inline.scss */
+table.table-content {
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 400;
+  border-collapse: collapse;
+}
+/* line 793, ../scss/email-inline.scss */
+table.table-content th,
+table.table-content td {
+  border: 1px solid #545761;
+}
+/* line 798, ../scss/email-inline.scss */
+table.table-content th {
+  color: white;
+  background-color: #545761;
+  font-weight: 300;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+/* line 807, ../scss/email-inline.scss */
+table.table-content tr td {
+  padding: 15px;
+  text-align: left;
+}
+/* line 812, ../scss/email-inline.scss */
+table.table-content .product-name {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: initial;
+}
+
+/* line 822, ../scss/email-inline.scss */
+.signature a {
+  color: #52555f;
+}
+
+/* line 827, ../scss/email-inline.scss */
+table.table-totals {
+  width: 300px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  margin-top: 15px;
+  background: none;
+  float: right;
+}
+
+/* line 828, ../scss/email-inline.scss */
+table.table-totals td {
+  padding: 0;
+  line-height: 1;
+}
+
+/* line 829, ../scss/email-inline.scss */
+table.table-totals td tbody tr td {
+  padding: 0 2px;
+  line-height: 1;
+}
+
+/* line 831, ../scss/email-inline.scss */
+.contact-if {
+  margin: 20px 0;
+}

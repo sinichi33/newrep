@@ -1,0 +1,14 @@
+<?php
+/**
+ * Formatting Price
+ *
+ * Description:
+ * - Created from scratch
+ * - Used for formatting price
+ */
+?>
+
+<?php  
+$_price = $this->getPrice();
+?>
+<?php echo Mage::helper('core')->currency($_price , true, false); ?>

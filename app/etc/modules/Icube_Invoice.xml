@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Icube_Invoice>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Icube_Invoice>
+	</modules>
+</config>

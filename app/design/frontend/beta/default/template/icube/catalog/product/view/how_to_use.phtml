@@ -1,0 +1,23 @@
+<?php
+/**
+ * Product How-to-Use template
+ *
+ * Description:
+ * - Created from scratch
+ *
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ */
+?>
+<?php $_product = $this->getProduct(); ?>
+<?php if ($_product->offsetExists('how_to_use')): ?>
+	<?php $_content = $_product->getData("how_to_use") ?>
+
+	<?php if ($_content): ?>
+		<h2><?php echo $this->__('Cara Menggunakan') ?></h2>
+		<div class="std">
+			<?php echo $_product->getData("how_to_use");?>
+		</div>
+	<?php endif ?>
+<?php endif ?>

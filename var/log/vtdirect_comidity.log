@@ -1,0 +1,1852 @@
+2016-04-01T06:36:21+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1877
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:28:34
+    [updated_at] => 2016-04-01 06:36:19
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 614000.0000
+    [base_grand_total] => 614000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000783
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 599000.0000
+    [base_subtotal] => 599000.0000
+    [subtotal_with_discount] => 599000.0000
+    [base_subtotal_with_discount] => 599000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T06:36:21+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 481111-1114-713a60e7-d829-401d-aeaf-c76152f8bda3
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000783-214
+            [gross_amount] => 614000
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 1
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 1
+                    [price] => 15000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [2] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T07:02:45+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1877
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:28:34
+    [updated_at] => 2016-04-01 07:02:43
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 2
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 683500.0000
+    [base_grand_total] => 683500.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000783
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 668500.0000
+    [base_subtotal] => 668500.0000
+    [subtotal_with_discount] => 668500.0000
+    [base_subtotal_with_discount] => 668500.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T07:02:45+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 481111-1114-14b8072e-2458-4c26-98cf-5727c7b18c13
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000783-215
+            [gross_amount] => 683500
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 1
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 036643-1
+                    [price] => 69500
+                    [quantity] => 1
+                    [name] => PAINT YOUR DREAM WORLD PATUNG PERI A
+                )
+
+            [2] => Array
+                (
+                    [id] => 1
+                    [price] => 15000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [3] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T07:06:59+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1877
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:28:34
+    [updated_at] => 2016-04-01 07:06:57
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 2
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 683500.0000
+    [base_grand_total] => 683500.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000783
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 668500.0000
+    [base_subtotal] => 668500.0000
+    [subtotal_with_discount] => 668500.0000
+    [base_subtotal_with_discount] => 668500.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T07:06:59+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 481111-1114-5e928809-e896-48b9-85f7-33083ba935b1
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000783-216
+            [gross_amount] => 683500
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 1
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 036643-1
+                    [price] => 69500
+                    [quantity] => 1
+                    [name] => PAINT YOUR DREAM WORLD PATUNG PERI A
+                )
+
+            [2] => Array
+                (
+                    [id] => 1
+                    [price] => 15000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [3] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T07:08:54+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1877
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:28:34
+    [updated_at] => 2016-04-01 07:08:53
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 2
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 683500.0000
+    [base_grand_total] => 683500.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000783
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 668500.0000
+    [base_subtotal] => 668500.0000
+    [subtotal_with_discount] => 668500.0000
+    [base_subtotal_with_discount] => 668500.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T07:08:54+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 481111-1114-cbd291fd-b3dc-464c-861c-399bf5cf4968
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000783-217
+            [gross_amount] => 683500
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 1
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 036643-1
+                    [price] => 69500
+                    [quantity] => 1
+                    [name] => PAINT YOUR DREAM WORLD PATUNG PERI A
+                )
+
+            [2] => Array
+                (
+                    [id] => 1
+                    [price] => 15000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [3] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T07:17:36+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1877
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:28:34
+    [updated_at] => 2016-04-01 07:17:34
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 2
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 683500.0000
+    [base_grand_total] => 683500.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000783
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 668500.0000
+    [base_subtotal] => 668500.0000
+    [subtotal_with_discount] => 668500.0000
+    [base_subtotal_with_discount] => 668500.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T07:17:36+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 481111-1114-4175463d-dee0-4f3b-9c21-bb493f943176
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000783-218
+            [gross_amount] => 683500
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 1
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 036643-1
+                    [price] => 69500
+                    [quantity] => 1
+                    [name] => PAINT YOUR DREAM WORLD PATUNG PERI A
+                )
+
+            [2] => Array
+                (
+                    [id] => 1
+                    [price] => 15000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [3] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T07:26:19+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1877
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:28:34
+    [updated_at] => 2016-04-01 07:26:17
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 2
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 683500.0000
+    [base_grand_total] => 683500.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000783
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 668500.0000
+    [base_subtotal] => 668500.0000
+    [subtotal_with_discount] => 668500.0000
+    [base_subtotal_with_discount] => 668500.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T07:26:19+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 481111-1114-7f115e8b-6058-4f48-b8f8-056bc70b7b41
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000783-219
+            [gross_amount] => 683500
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 1
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 036643-1
+                    [price] => 69500
+                    [quantity] => 1
+                    [name] => PAINT YOUR DREAM WORLD PATUNG PERI A
+                )
+
+            [2] => Array
+                (
+                    [id] => 1
+                    [price] => 15000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [3] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T08:18:09+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1877
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:28:34
+    [updated_at] => 2016-04-01 08:18:07
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 2
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 683500.0000
+    [base_grand_total] => 683500.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000783
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 668500.0000
+    [base_subtotal] => 668500.0000
+    [subtotal_with_discount] => 668500.0000
+    [base_subtotal_with_discount] => 668500.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T08:18:09+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000783-220
+            [gross_amount] => 683500
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 1
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 036643-1
+                    [price] => 69500
+                    [quantity] => 1
+                    [name] => PAINT YOUR DREAM WORLD PATUNG PERI A
+                )
+
+            [2] => Array
+                (
+                    [id] => 1
+                    [price] => 15000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [3] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T08:25:34+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1877
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:28:34
+    [updated_at] => 2016-04-01 08:25:32
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 2
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 683500.0000
+    [base_grand_total] => 683500.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000783
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 668500.0000
+    [base_subtotal] => 668500.0000
+    [subtotal_with_discount] => 668500.0000
+    [base_subtotal_with_discount] => 668500.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T08:25:34+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000783-221
+            [gross_amount] => 683500
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 1
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 036643-1
+                    [price] => 69500
+                    [quantity] => 1
+                    [name] => PAINT YOUR DREAM WORLD PATUNG PERI A
+                )
+
+            [2] => Array
+                (
+                    [id] => 1
+                    [price] => 15000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [3] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T16:22:29+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1885
+    [store_id] => 1
+    [created_at] => 2016-04-01 09:34:38
+    [updated_at] => 2016-04-01 16:22:28
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 1173000.0000
+    [base_grand_total] => 1173000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000790
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 1198000.0000
+    [base_subtotal] => 1198000.0000
+    [subtotal_with_discount] => 1198000.0000
+    [base_subtotal_with_discount] => 1198000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T16:22:29+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 411111-1111-310c2ffc-2b3a-4809-8135-535659a5b806
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000790-232
+            [gross_amount] => 1173000
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 2
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 1
+                    [price] => 25000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [2] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+            [3] => Array
+                (
+                    [id] => 3
+                    [price] => -50000
+                    [quantity] => 1
+                    [name] => Giftcard Amount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T16:28:39+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1885
+    [store_id] => 1
+    [created_at] => 2016-04-01 09:34:38
+    [updated_at] => 2016-04-01 16:28:37
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 1173000.0000
+    [base_grand_total] => 1173000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000790
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 1198000.0000
+    [base_subtotal] => 1198000.0000
+    [subtotal_with_discount] => 1198000.0000
+    [base_subtotal_with_discount] => 1198000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T16:28:39+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => credit_card
+    [credit_card] => Array
+        (
+            [token_id] => 401111-1112-cf5d9b95-e637-453b-8510-0c32eb9bfafc
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000790-233
+            [gross_amount] => 1173000
+        )
+
+    [item_details] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 240818
+                    [price] => 599000
+                    [quantity] => 2
+                    [name] => MAXIMUS BUFFALO ALAT PENGHISAP DEBU KERING DAN
+                )
+
+            [1] => Array
+                (
+                    [id] => 1
+                    [price] => 25000
+                    [quantity] => 1
+                    [name] => Shipping
+                )
+
+            [2] => Array
+                (
+                    [id] => 2
+                    [price] => 0
+                    [quantity] => 1
+                    [name] => Discount
+                )
+
+            [3] => Array
+                (
+                    [id] => 3
+                    [price] => -50000
+                    [quantity] => 1
+                    [name] => Giftcard Amount
+                )
+
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => sutrisno
+            [last_name] => sutrisno
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => sutrisno
+                    [last_name] => sutrisno
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+

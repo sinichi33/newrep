@@ -1,0 +1,11 @@
+<nav id="mobile-menu">
+	<ul>
+		<li><i class="flaticon-user146"></i><?php echo $this->getChildHtml('mmenu_miniaccount') ?></li>
+		<li><i class="flaticon-construction"></i><a href="<?php echo Mage::getBaseUrl() ?>"><?php echo $this->__('Halaman Depan') ?></a></li>
+		<li class="category"><i class="flaticon-three-1"></i><?php echo $this->getChildHtml('catalog.topnav') ?></li>
+		<li><i class="flaticon-tool-1"></i><a href="<?php echo Mage::getBaseUrl().'trackorder/tracking/' ?>"><?php echo $this->__('Status Pesanan') ?></a></li>
+		<li><i class="flaticon-circle"></i><a href="<?php echo Mage::getBaseUrl().'faq/' ?>"><?php echo $this->__('F.A.Q') ?></a></li>
+		<li><i class="flaticon-telephone"></i><a href="<?php echo Mage::getBaseUrl().'contacts/' ?>"><?php echo $this->__('Hubungi Kami') ?></a></li>
+		<?php echo $this->getChildHtml('mmenu_logout') ?>
+	</ul>
+</nav>

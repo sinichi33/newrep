@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!-- 
+
+@author Brainvire Team 
+
+@copyright Brainvire 
+
+@package Brainvire_Quickshop
+
+-->
+<config>
+    <modules>
+        <Brainvire_Quickshop>
+            <version>1.0.2</version>
+        </Brainvire_Quickshop>
+    </modules>
+    <frontend>
+        <routers>
+            <quickshop>
+                <use>standard</use>
+                <args>
+                    <module>Brainvire_Quickshop</module>
+                    <frontName>quickshop</frontName>
+                </args>
+            </quickshop>
+        </routers>
+        <layout>
+            <updates>
+                <quickshop>
+                    <file>brainvire_quickshop.xml</file>
+                </quickshop>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <quickshop>
+                <use>admin</use>
+                <args>
+                    <module>Brainvire_Quickshop</module>
+                    <frontName>quickshop</frontName>
+                </args>
+            </quickshop>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <quickshop>
+                    <file>quickshop.xml</file>
+                </quickshop>
+            </updates>
+        </layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <quickshop>
+                <class>Brainvire_Quickshop_Model</class>
+                <resourceModel>quickshop_mysql4</resourceModel>
+            </quickshop>
+            <quickshop_mysql4>
+                <class>Brainvire_Quickshop_Model_Mysql4</class>
+                <entities>
+                    <quickshop>
+                        <table>quickshop</table>
+                    </quickshop>
+                </entities>
+            </quickshop_mysql4>
+        </models>
+        <resources>
+           <quickshop_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </quickshop_write>
+            <quickshop_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </quickshop_read>
+        </resources>
+        <blocks>
+            <quickshop>
+                <class>Brainvire_Quickshop_Block</class>
+            </quickshop>
+        </blocks>
+        <helpers>
+            <quickshop>
+                <class>Brainvire_Quickshop_Helper</class>
+            </quickshop>
+        </helpers>
+    </global>
+    <default>
+        <quickshop>
+            <general>
+                <size_type>0</size_type>
+                <frame_width>75</frame_width>
+                <frame_height>90</frame_height>
+            </general>
+        </quickshop>
+    </default>
+</config>

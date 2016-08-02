@@ -1,0 +1,181 @@
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+.contacts-index-index {
+
+	.main-container {
+
+		.contact-content-wrapper {
+			max-width: $max-content-width;
+			margin: 0 auto;
+			position: relative;
+
+			&:after {
+				@include clearfix;
+			}
+
+			.call {
+				position: absolute;
+				right: 0;
+				top: 0;
+				color: $c-orange;
+				@include responsive-font-size(21);
+				height: 120px;
+				border-left: 1px solid #dedede;
+				padding-left: 40px;
+				font-weight: bold;
+
+				strong {
+					color: $c-text;
+					margin-bottom: 10px;
+					@include responsive-font-size(14);
+				}
+			}
+		}
+
+		.buttons-set {
+			margin: 0;
+			border: none;
+			max-width: 100%;
+
+			p.required {
+				display: none;
+			}
+
+		}
+
+		.col-main {
+			background: #fff;
+			padding: 30px;
+		}
+	}
+
+	#messages_product_view {
+		max-width: 540px;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Map
+/*----------------------------------------------------------------------------*/
+
+.contact-map {
+
+	iframe {
+		width: 100%;
+		height: 280px;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Form
+/*----------------------------------------------------------------------------*/
+
+.contact-form {
+	// width: 66%;
+	width: 100%;
+	float: left;
+	padding-right: 10px;
+}
+
+#contactForm {
+	padding-left: 0;
+
+	h2 {
+		color: $c-text-black-alt;
+		display: block;
+		padding-bottom: 0;
+		margin-bottom: 10px;
+	}
+
+	.fieldset {
+
+		&:after {
+			@include clearfix;
+		}
+
+		.left {
+			float: left;
+			width: 50%;
+			padding-right: 15px;
+		}
+
+		.right {
+			float: right;
+			width: 50%;
+			padding-left: 15px;
+		}
+	}
+
+	.field:after {
+		@include clearfix;
+	}
+
+	label {
+		width: 35%;
+		display: block;
+		float: left;
+		line-height: 30px;
+	}
+
+	.input-box {
+		float: right;
+		width: 65%;
+	}
+
+	li,
+	.field {
+		margin-bottom: 20px;
+	}
+
+	li.wide{
+
+		label {
+			width: 17%;
+		}
+
+		.input-box {
+			width: 83%;
+		}
+
+		textarea {
+			max-width: 100%;
+			min-height: 170px;
+		}
+	}
+
+	label[for="topic"] {
+		float: none;
+		width: auto;
+
+		+ .input-box {
+			float: none;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Contact Detail Info
+/*----------------------------------------------------------------------------*/
+
+.contact-detail {
+	float: right;
+	width: 34%;
+	padding-left: 30px;
+
+	li {
+
+		img {
+			vertical-align: middle;
+			display: inline-block;
+			margin-right: 7px;
+		}
+
+		+ li {
+			margin-top: 15px;
+		}
+	}
+}

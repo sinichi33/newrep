@@ -1,0 +1,11 @@
+<div class="block links logo-grid">
+    <div class="block-title">
+        Jasa Pengiriman
+    </div>
+    <div class="block-content">
+        <ul>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/jne.png" alt="JNE" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/sap.png" alt="SAP Express" /></li>
+        </ul>
+    </div>
+</div>

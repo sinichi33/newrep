@@ -1,0 +1,114 @@
+<!--@subject {{var store.getFrontendName()}}: Pesanan Dapat Diambil # {{var order.increment_id}} @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$order.getCustomerName()":"Customer Name",
+"var store.getFrontendName()":"Store Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var order.increment_id":"Order Id",
+"var order.getCreatedAtFormated('long')":"Order Created At (datetime)",
+"var order.getBillingAddress().format('html')":"Billing Address",
+"var payment_html":"Payment Details",
+"var order.getShippingAddress().format('html')":"Shipping Address",
+"var order.getShippingDescription()":"Shipping Description",
+"layout handle=\"sales_email_order_items\" order=$order":"Order Items Grid",
+"var order.getEmailCustomerNote()":"Email Order Note"}
+@-->
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<!-- If VA payment -->
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr class="section">
+        <td>
+            <h1>Hi {{var order.getCustomerFirstname()}},</h1>
+            <p>Terima kasih telah berbelanja di ruparupa, Pesanan Anda dengan nomor pesanan <span style="color:#229bd5; font-weight:bold">{{var order.getIncrementId()}}</span> sudah siap diambil pukul 10:00 - 22:00 WIB.</p>
+        </td>
+    </tr>
+    <tr class="section">
+        <td class="order-info">
+            <hr style="margin-bottom:15px" />
+            <table>
+            <tbody><tr>
+                <td style="width:300px; padding-bottom:10px !important;" class="bold">LOKASI PENGAMBILAN</td>
+                <td style="width:300px; padding-bottom:10px !important;" class="bold">BATAS PENGAMBILAN PESANAN</td>
+            </tr>
+            <tr>
+                <td style="vertical-align:text-top; padding-top:10px; line-height:20px;">Pickup Point {{var location.getData('name')}}<br>
+                {{var location.getData('address')}}<br>                
+                </td>
+                <td style="padding-top:10px; vertical-align:text-top; line-height:20px;">Segera ambil pesanan Anda sebelum tanggal <strong>{{var expDate}}</strong><br> Untuk mengatur waktu pengambilan silakan email ke <a href="mailto:help@ruparupa.com" style="color:#229bd5; text decoration:none;">CS Ruparupa</a></td>
+            </tr>
+         </tbody></table>
+        </td>
+    </tr>
+    <tr class="order-information section">
+        <td>
+            <hr style="margin-bottom:15px" />
+           <h2>RINCIAN PESANAN</h2>
+
+            {{if order.getEmailCustomerNote()}}
+            <table cellspacing="0" cellpadding="0" class="message-container">
+                <tr>
+                    <td>{{var order.getEmailCustomerNote()}}</td>
+                </tr>
+            </table>
+            {{/if}}
+            <table>
+                {{layout handle="sales_email_order_invoice_bopis_items" invoices=$invoices order=$order}}
+            </table>
+        </td>
+    </tr>
+    {{depend order.getIsNotVirtual()}}
+        <tr class="section">
+            <td style="padding: 20px 0 35px;">
+                <hr style="margin-bottom:15px" />
+                <div class="contact-if">
+                    <table>
+                        <tbody><tr>
+                            <td style="padding-bottom:10px !important;" class="bold">SYARAT PENGAMBILAN PESANAN</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:text-top; padding-top:10px; line-height:20px;">Harap membawa identitas diri (KTP / SIM) dan bukti pemesanan barang untuk mengambil pesanan.
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <hr style="margin:15px 0 25px" />
+                    <table>
+                        <tbody><tr>
+                            <td style="vertical-align:text-top; padding-top:10px; line-height:20px; color:#959595; font-size:12px;">Jika Anda menemukan kesulitan atau mempunyai pertanyaan tentang pick up point pesanan Anda, silakan kunjungi laman <a href="https://www.ruparupa.com/faq/" target="_blank" style="color:#229bd5; text-decoration:none;">FAQ</a> kami. 
+
+                            </td>
+                        </tr>
+                    </tbody></table><!-- end shipping info -->
+                </div>
+            </td>
+        </tr>
+    {{/depend}}
+    <tr class="section">
+        <td>
+            <table class="signature">
+                <tbody>
+                <tr>
+                    <td>Terima Kasih</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid #E1E1E1; padding-bottom:5px; color:#F36525;">Sisca</td>
+                </tr>
+                <tr>
+                    <td>Ruparupa.com</td>
+                </tr>
+               </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

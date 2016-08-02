@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <icube translate="label" module="productajax">
+            <label>Icube</label>
+            <sort_order>100</sort_order>
+        </icube>
+    </tabs>
+    <sections>
+        <addtocartajax translate="label" module="productajax">
+            <label>Add to Cart Ajax</label>
+            <tab>icube</tab>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+ 
+            <groups>
+                <option>
+                    <label>Add to Cart Ajax Options</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>
+                        <addtocartajax_enabled translate="label">
+                            <label>Enable Add to Cart Ajax</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </addtocartajax_enabled>
+                    </fields>
+                </option>
+            </groups>
+        </addtocartajax>
+    </sections>
+</config>

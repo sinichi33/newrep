@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_enhancedgrid_grid_index>
+        <reference name="content">
+            <block type="xtento_enhancedgrid/adminhtml_grid" name="xtento_enhancedgrid_grid"/>
+        </reference>
+    </adminhtml_enhancedgrid_grid_index>
+    <adminhtml_enhancedgrid_grid_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="xtento_enhancedgrid/adminhtml_grid_grid" name="xtento_enhancedgrid_grid_grid"/>
+        </block>
+    </adminhtml_enhancedgrid_grid_grid>
+</layout>

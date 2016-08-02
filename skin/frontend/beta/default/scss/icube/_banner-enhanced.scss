@@ -1,0 +1,68 @@
+/*----------------------------------------------------------------------------*/
+/* Banner Enhanced (Home)
+/*----------------------------------------------------------------------------*/
+
+.cms-home #banners-container {
+
+    .banners {
+
+        > .banner {
+
+            // Some of these styles will be set by the plugin (by default) but setting them here helps avoid flash-of-unstyled-content
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            max-width: 1450px;
+            padding: 0;
+        }
+
+        .navigation {
+            position: absolute;
+            z-index: 102;
+            top: 25%;
+            width: 47px;
+            height: 108px;
+            cursor: pointer;
+        }
+
+        .cycle-next {
+            right: 0;
+            @include use-sprite('banner-next');
+        }
+
+        .cycle-prev {
+            left: 0;
+            @include use-sprite('banner-prev');
+        }
+    }
+
+    /*----------------------------------------------------------------------------*/
+    /* Cycle Pager
+    /*----------------------------------------------------------------------------*/
+
+    .cycle-pager {
+        position: absolute;
+        z-index: 102;
+        bottom: 3.5%;
+        width: 100%;
+        text-align: center;
+
+        @include breakpoint(mobile) {
+            bottom: 10%;
+        }
+
+        span {
+            margin-right: 0.15%;
+            @include use-sprite('banner-pager');
+            display: inline-block;
+            cursor: pointer;
+
+            &.cycle-pager-active {
+                @include use-sprite('banner-pager-active');
+                display: inline-block;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+<!--subject {{var store.getFrontendName()}}: Shipment # {{var shipment.increment_id}} for Order # {{var order.increment_id}} -->
+<!--@subject Pesanan sudah dikirim @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$order.getCustomerName()":"Customer Name",
+"var store.getFrontendName()":"Store Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var shipment.increment_id":"Shipment Id",
+"var order.increment_id":"Order Id",
+"var order.billing_address.format('html')":"Billing Address",
+"var payment_html":"Payment Details",
+"var order.shipping_address.format('html')":"Shipping Address",
+"var order.shipping_description":"Shipping Description",
+"layout handle=\"sales_email_order_shipment_items\" shipment=$shipment order=$order":"Shipment Items Grid",
+"block type='core/template' area='frontend' template='email/order/shipment/track.phtml' shipment=$shipment order=$order":"Shipment Track Details",
+"var comment":"Shipment Comment"}
+@-->
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<!-- If VA payment -->
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr class="section">
+        <td>
+            <h1>Hi {{var order.getCustomerFirstname()}},</h1>
+            <p>Pesanan Anda telah kami kemas dan sudah dalam proses pengiriman pada tanggal <b>{{layout handle="sales_email_helper_formatdate" date=$shipment.getCreatedAt()}}</b>. Pesanan Anda biasanya akan sampai dalam 2-5 hari untuk wilayah Jabodetabek dan 5-14 hari untuk wilayah luar Jabodetabek</p>
+        </td>
+    </tr>
+    <tr class="section">
+        <td class="order-info">
+            <h2>INFORMASI PESANAN</h2>
+            <table>
+                <tr>
+                    <td>Nomor Pesanan</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">{{var order.getIncrementId()}}</td>
+                </tr>
+                <tr>
+                    <td>Tanggal Pesanan</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">{{var order.getCreatedAtFormated('long')}}</td>
+                </tr>
+                <tr>
+                    <td>Status Transaksi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">Pesanan telah dikirim</td>
+                </tr>
+                <tr>
+                    <td>No. Resi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">{{block type='core/template' area='frontend' template='email/order/shipment/track.phtml' shipment=$shipment order=$order}}</td>
+                </tr>
+            </table>
+            <!--<p style="font-size:12px; color:#959595; margin:10px 0 -10px;">*Anda dapat tracking pesanan Anda dengan No. Resi di atas dengan mengunjungi <a href="www.jne.co.id/tracking" target="_blank" style="font-size:12px; color:#008ccf;"><a href="www.jne.co.id/tracking" target="_blank" style="font-size:12px; color:#008ccf;">Website JNE</a></a></p>-->
+        </td>
+    </tr>
+    <tr class="order-information section">
+        <td>
+           <hr>
+           <h2>RINCIAN PRODUK</h2>
+
+            {{if order.getEmailCustomerNote()}}
+            <table cellspacing="0" cellpadding="0" class="message-container">
+                <tr>
+                    <td>{{var order.getEmailCustomerNote()}}</td>
+                </tr>
+            </table>
+            {{/if}}
+            <table>
+                {{layout handle="sales_email_order_shipment_items" shipment=$shipment order=$order}}
+            </table>
+        </td>
+    </tr>
+    <tr class="section">
+        <td>
+            <table class="signature">
+                <tbody>
+                <tr>
+                    <td>Terima Kasih</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid #E1E1E1; padding-bottom:5px; color:#F36525;">Sisca</td>
+                </tr>
+                <tr>
+                    <td>Ruparupa.com</td>
+                </tr>
+               </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

@@ -1,0 +1,545 @@
+
+<div class="nav-bar">
+<!-- menu start -->
+<ul id="nav">
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="http://magen.local/index.php/kembangan328/dashboard/index/key/$dashboard/index$/"   class=""><span>Dashboard</span></a>
+<ul >
+<li  class="  last level1"> <a href="http://magen.local/index.php/kembangan328/abandonedorder/dashboard/key/$abandonedorder/dashboard$/"   class=""><span>Abandoned Cart Dashboard</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Sales</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://magen.local/index.php/pointofsale/adminhtml_manage/index/key/$adminhtml_manage/index$/"   class=""><span>POS / Warehouses</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/pointofsale/adminhtml_manage/index/key/$adminhtml_manage/index$/"   class=""><span>Manage POS / Warehouses</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/advancedinventory/adminhtml_permissions/index/key/$adminhtml_permissions/index$/"   class=""><span>Manage Users Permissions</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/advancedinventory/adminhtml_log/index/key/$adminhtml_log/index$/"   class=""><span>Stock movement journal</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/sales_order/index/key/$sales_order/index$/"   class=""><span>Orders</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/sales_invoice/index/key/$sales_invoice/index$/"   class=""><span>Invoices</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/sales_shipment/index/key/$sales_shipment/index$/"   class=""><span>Shipments</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>RMA</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/rma/index/key/$rma/index$/"   class=""><span>Manage RMA</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/rma_item_attribute/index/key/$rma_item_attribute/index$/"   class=""><span>Manage RMA Items Attributes</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/sales_creditmemo/index/key/$sales_creditmemo/index$/"   class=""><span>Credit Memos</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/sales_transactions/index/key/$sales_transactions/index$/"   class=""><span>Transactions</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/sales_recurring_profile/index/key/$sales_recurring_profile/index$/"   class=""><span>Recurring Profiles (beta)</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/sales_billing_agreement/index/key/$sales_billing_agreement/index$/"   class=""><span>Billing Agreements</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/checkout_agreement/index/key/$checkout_agreement/index$/"   class=""><span>Terms and conditions</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/giftwrapping/index/key/$giftwrapping/index$/"   class=""><span>Gift Wrapping</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tax</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/tax_rule/index/key/$tax_rule/index$/"   class=""><span>Manage Tax Rules</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/tax_rate/index/key/$tax_rate/index$/"   class=""><span>Manage Tax Zones &amp; Rates</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/tax_rate/importExport/key/$tax_rate/importExport$/"   class=""><span>Import / Export Tax Rates</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/tax_class_customer/index/key/$tax_class_customer/index$/"   class=""><span>Customer Tax Classes</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/tax_class_product/index/key/$tax_class_product/index$/"   class=""><span>Product Tax Classes</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/abandonedorder/index/key/$abandonedorder/index$/"   class=""><span>Abandoned Cart Orders</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://magen.local/index.php/kembangan328/orderexport_index/redirect/key/$orderexport_index/redirect$/"   class=""><span>Sales Export</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/orderexport_manual/index/key/$orderexport_manual/index$/"   class=""><span>Manual Export</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/orderexport_log/index/key/$orderexport_log/index$/"   class=""><span>Execution Log</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/orderexport_history/index/key/$orderexport_history/index$/"   class=""><span>Export History</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/orderexport_profile/index/key/$orderexport_profile/index$/"   class=""><span>Export Profiles</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/orderexport_destination/index/key/$orderexport_destination/index$/"   class=""><span>Export Destinations</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/orderexport_tools/index/key/$orderexport_tools/index$/"   class=""><span>Tools</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level1"> <a href="http://magen.local/index.php/amorderattr/adminhtml_manage/index/key/$adminhtml_manage/index$/"   class=""><span>Manage Order Attributes</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class=" active  parent level0"> <a href="#"  onclick="return false" class="active"><span>Catalog</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/catalog_product/index/key/$catalog_product/index$/"   class=""><span>Manage Products</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/advancedinventory/adminhtml_stocks/index/key/$adminhtml_stocks/index$/"   class=""><span>Manage Stocks</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Categories</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/catalog_category/index/key/$catalog_category/index$/"   class=""><span>Manage Categories</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/catalog_event/index/key/$catalog_event/index$/"   class=""><span>Catalog Events</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Attributes</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/catalog_product_attribute/index/key/$catalog_product_attribute/index$/"   class=""><span>Manage Attributes</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/catalog_product_set/index/key/$catalog_product_set/index$/"   class=""><span>Manage Attribute Sets</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/urlrewrite/index/key/$urlrewrite/index$/"   class=""><span>URL Redirects</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/targetrule/index/key/$targetrule/index$/"   class=""><span>Rule-Based Product Relations</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/catalog_search/index/key/$catalog_search/index$/"   class=""><span>Search Terms</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Reviews and Ratings</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>Customer Reviews</span></a>
+<ul >
+<li  class="  level3"> <a href="http://magen.local/index.php/kembangan328/catalog_product_review/pending/key/$catalog_product_review/pending$/"   class=""><span>Pending Reviews</span></a>
+</li>
+<li  class="  last level3"> <a href="http://magen.local/index.php/kembangan328/catalog_product_review/index/key/$catalog_product_review/index$/"   class=""><span>All Reviews</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/rating/index/key/$rating/index$/"   class=""><span>Manage Ratings</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/tag/index/key/$tag/index$/"   class=""><span>All Tags</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/tag/pending/key/$tag/pending$/"   class=""><span>Pending Tags</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/sitemap/index/key/$sitemap/index$/"   class=""><span>Google Sitemap</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>Improved Navigation</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/amshopby/adminhtml_filter/index/key/$adminhtml_filter/index$/"   class=""><span>Filters</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/amshopby/adminhtml_range/index/key/$adminhtml_range/index$/"   class=""><span>Price Ranges</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/amshopby/adminhtml_page/index/key/$adminhtml_page/index$/"   class=""><span>Pages</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/system_config/edit/section/amshopby/key/$system_config/edit$/"   class=""><span>Settings</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Splash</span></a>
+<ul >
+<li  class="  last level1"> <a href="http://magen.local/index.php/kembangan328/attributeSplash/index/key/$attributeSplash/index$/"   class=""><span>Manage Splash Pages</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Customers</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/customer/index/key/$customer/index$/"   class=""><span>Manage Customers</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Attributes</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/customer_attribute/index/key/$customer_attribute/index$/"   class=""><span>Manage Customer Attributes</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/customer_address_attribute/index/key/$customer_address_attribute/index$/"   class=""><span>Manage Customer Address Attributes</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/customer_group/index/key/$customer_group/index$/"   class=""><span>Customer Groups</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/customersegment/index/key/$customersegment/index$/"   class=""><span>Customer Segments</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/invitation/index/key/$invitation/index$/"   class=""><span>Invitations</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/giftregistry/index/key/$giftregistry/index$/"   class=""><span>Gift Registry</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/giftcardaccount/index/key/$giftcardaccount/index$/"   class=""><span>Gift Card Accounts</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/reward_rate/index/key/$reward_rate/index$/"   class=""><span>Reward Exchange Rates</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magen.local/index.php/kembangan328/customer_online/index/key/$customer_online/index$/"   class=""><span>Online Customers</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Promotions</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/promo_catalog/index/key/$promo_catalog/index$/"   class=""><span>Catalog Price Rules</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/promo_quote/index/key/$promo_quote/index$/"   class=""><span>Shopping Cart Price Rules</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/vpayment/adminhtml_promo/index/key/$adminhtml_promo/index$/"   class=""><span>Manage Promos</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magen.local/index.php/kembangan328/reminder/index/key/$reminder/index$/"   class=""><span>Automated Email Reminder Rules</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Newsletter</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/newsletter_template/index/key/$newsletter_template/index$/"   class=""><span>Newsletter Templates</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/newsletter_queue/index/key/$newsletter_queue/index$/"   class=""><span>Newsletter Queue</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/newsletter_subscriber/index/key/$newsletter_subscriber/index$/"   class=""><span>Newsletter Subscribers</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/newsletter_problem/index/key/$newsletter_problem/index$/"   class=""><span>Newsletter Problem Reports</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>MailChimp</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>Ecommerce 360 Orders</span></a>
+<ul >
+<li  class="  level3"> <a href="http://magen.local/index.php/kembangan328/ecommerce/index/key/$ecommerce/index$/"   class=""><span>Magento sent orders</span></a>
+</li>
+<li  class="  last level3"> <a href="http://magen.local/index.php/kembangan328/ecommerce/apiorders/key/$ecommerce/apiorders$/"   class=""><span>ALL orders from API</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>Bulk Sync</span></a>
+<ul >
+<li  class="  level3"> <a href="http://magen.local/index.php/kembangan328/bulksync/export/key/$bulksync/export$/"   class=""><span>Export</span></a>
+</li>
+<li  class="  last level3"> <a href="http://magen.local/index.php/kembangan328/bulksync/import/key/$bulksync/import$/"   class=""><span>Import</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/abandonedmails/index/key/$abandonedmails/index$/"   class=""><span>Emails Sent</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>CMS</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Pages</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/cms_page/index/key/$cms_page/index$/"   class=""><span>Manage Content</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/cms_hierarchy/index/key/$cms_hierarchy/index$/"   class=""><span>Manage Hierarchy</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/cms_block/index/key/$cms_block/index$/"   class=""><span>Static Blocks</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/banner/index/key/$banner/index$/"   class=""><span>Banners</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/widget_instance/index/key/$widget_instance/index$/"   class=""><span>Widgets</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magen.local/index.php/kembangan328/poll/index/key/$poll/index$/"   class=""><span>Polls</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Icube</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/bopisdashboard/index/key/$bopisdashboard/index$/"   class=""><span>BOPIS Dashboard</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magen.local/index.php/kembangan328/dcdashboard/index/key/$dcdashboard/index$/"   class=""><span>DC Dashboard</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Reports</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Auto Cancel Order</span></a>
+<ul >
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/AutoCancelOrder_Admin/showLogs/key/$AutoCancelOrder_Admin/showLogs$/"   class=""><span>Logs</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Sales</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_sales/sales/key/$report_sales/sales$/"   class=""><span>Orders</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_sales/tax/key/$report_sales/tax$/"   class=""><span>Tax</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_sales/invoiced/key/$report_sales/invoiced$/"   class=""><span>Invoiced</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_sales/shipping/key/$report_sales/shipping$/"   class=""><span>Shipping</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_sales/refunded/key/$report_sales/refunded$/"   class=""><span>Refunds</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_sales/coupons/key/$report_sales/coupons$/"   class=""><span>Coupons</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/paypal_reports/index/key/$paypal_reports/index$/"   class=""><span>PayPal Settlement Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Shopping Cart</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_shopcart/product/key/$report_shopcart/product$/"   class=""><span>Products in carts</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/report_shopcart/abandoned/key/$report_shopcart/abandoned$/"   class=""><span>Abandoned carts</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Invitations</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_invitation/index/key/$report_invitation/index$/"   class=""><span>General</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_invitation/customer/key/$report_invitation/customer$/"   class=""><span>Customers</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/report_invitation/order/key/$report_invitation/order$/"   class=""><span>Order Conversion Rate</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Products</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_sales/bestsellers/key/$report_sales/bestsellers$/"   class=""><span>Bestsellers</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_product/sold/key/$report_product/sold$/"   class=""><span>Products Ordered</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_product/viewed/key/$report_product/viewed$/"   class=""><span>Most Viewed</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_product/lowstock/key/$report_product/lowstock$/"   class=""><span>Low stock</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/report_product/downloads/key/$report_product/downloads$/"   class=""><span>Downloads</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Customers</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_customer/accounts/key/$report_customer/accounts$/"   class=""><span>New Accounts</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_customer/totals/key/$report_customer/totals$/"   class=""><span>Customers by orders total</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_customer/orders/key/$report_customer/orders$/"   class=""><span>Customers by number of orders</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_customer_customersegment/segment/key/$report_customer_customersegment/segment$/"   class=""><span>Customer Segments</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/report_customer_wishlist/index/key/$report_customer_wishlist/index$/"   class=""><span>Customer's Wishlists</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_tag/customer/key/$report_tag/customer$/"   class=""><span>Customers</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_tag/product/key/$report_tag/product$/"   class=""><span>Products</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/report_tag/popular/key/$report_tag/popular$/"   class=""><span>Popular</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Reviews</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/report_review/customer/key/$report_review/customer$/"   class=""><span>Customers Reviews</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/report_review/product/key/$report_review/product$/"   class=""><span>Products Reviews</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/report/search/key/$report/search$/"   class=""><span>Search Terms</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magen.local/index.php/kembangan328/report_statistics/index/key/$report_statistics/index$/"   class=""><span>Refresh Statistics</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>System</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Scheduler</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/job/index/key/$job/index$/"   class=""><span>Job Configuration</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/scheduler/index/key/$scheduler/index$/"   class=""><span>List View</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/timeline/index/key/$timeline/index$/"   class=""><span>Timeline View</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/instructions/index/key/$instructions/index$/"   class=""><span>Instructions</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>XTENTO Extensions</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/system_config/edit/section/orderexport/key/$system_config/edit$/"   class=""><span>Sales Export Configuration</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/system_config/edit/section/enhancedgrid/key/$system_config/edit$/"   class=""><span>Enhanced Order Grid</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/system_config/edit/section/customordernumber/key/$system_config/edit$/"   class=""><span>Order Number Customizer</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/watchlog/adminhtml_basic/index/key/$adminhtml_basic/index$/"   class=""><span>Watchlog</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/system_account/index/key/$system_account/index$/"   class=""><span>My Account</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/wsalogger/adminhtml_log/index/key/$adminhtml_log/index$/"   class=""><span>WebShopApps View Logs</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/notification/index/key/$notification/index$/"   class=""><span>Notifications</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tools</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/system_backup/index/key/$system_backup/index$/"   class=""><span>Backups</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/smtp_log/index/key/$smtp_log/index$/"   class=""><span>SMTPPro - Email Log</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>Support</span></a>
+<ul >
+<li  class="  level3"> <a href="http://magen.local/index.php/kembangan328/support_backup/index/key/$support_backup/index$/"   class=""><span>System Backups</span></a>
+</li>
+<li  class="  last level3"> <a href="http://magen.local/index.php/kembangan328/support_sysreport/index/key/$support_sysreport/index$/"   class=""><span>System Reports</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/compiler_process/index/key/$compiler_process/index$/"   class=""><span>Compilation</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Content Staging</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/staging_manage/index/key/$staging_manage/index$/"   class=""><span>Staging Websites</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/staging_backup/index/key/$staging_backup/index$/"   class=""><span>Backups</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/staging_log/index/key/$staging_log/index$/"   class=""><span>Log</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Web Services</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/api_user/index/key/$api_user/index$/"   class=""><span>SOAP/XML-RPC - Users</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/api_role/index/key/$api_role/index$/"   class=""><span>SOAP/XML-RPC - Roles</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/api2_role/index/key/$api2_role/index$/"   class=""><span>REST - Roles</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/api2_attribute/index/key/$api2_attribute/index$/"   class=""><span>REST - Attributes</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/oauth_consumer/index/key/$oauth_consumer/index$/"   class=""><span>REST - OAuth Consumers</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/oauth_authorizedTokens/index/key/$oauth_authorizedTokens/index$/"   class=""><span>REST - OAuth Authorized Tokens</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/oauth_admin_token/index/key/$oauth_admin_token/index$/"   class=""><span>REST - My Apps</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/system_design/index/key/$system_design/index$/"   class=""><span>Design</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Import/Export</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/massstockupdate/adminhtml_import/index/key/$adminhtml_import/index$/"   class=""><span>Mass Stock Update</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/import/index/key/$import/index$/"   class=""><span>Import</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/export/index/key/$export/index$/"   class=""><span>Export</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/system_convert_gui/index/key/$system_convert_gui/index$/"   class=""><span>Dataflow - Profiles</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/scheduled_operation/index/key/$scheduled_operation/index$/"   class=""><span>Scheduled Import/Export</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/system_convert_profile/index/key/$system_convert_profile/index$/"   class=""><span>Dataflow - Advanced Profiles</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/urapidflowadmin/adminhtml_profile/index/key/$adminhtml_profile/index$/"   class=""><span>RapidFlow</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://magen.local/index.php/kembangan328/system_currency/index/key/$system_currency/index$/"   class=""><span>Manage Currency</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/system_currency/index/key/$system_currency/index$/"   class=""><span>Rates</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/system_currencysymbol/index/key/$system_currencysymbol/index$/"   class=""><span>Symbols</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/system_email_template/index/key/$system_email_template/index$/"   class=""><span>Transactional Emails</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/system_variable/index/key/$system_variable/index$/"   class=""><span>Custom Variables</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Permissions</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/permissions_user/index/key/$permissions_user/index$/"   class=""><span>Users</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/permissions_role/index/key/$permissions_role/index$/"   class=""><span>Roles</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/permissions_variable/index/key/$permissions_variable/index$/"   class=""><span>Variables</span></a>
+</li>
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/permissions_block/index/key/$permissions_block/index$/"   class=""><span>Blocks</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/locks/index/key/$locks/index$/"   class=""><span>Locked Users</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Admin Actions Log</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/logging/index/key/$logging/index$/"   class=""><span>Report</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/logging/archive/key/$logging/archive$/"   class=""><span>Archive</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/crypt_key/index/key/$crypt_key/index$/"   class=""><span>Manage Encryption Key</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Magento Connect</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/extension_local/index/key/$extension_local/index$/"   class=""><span>Magento Connect Manager</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/extension_custom/index/key/$extension_custom/index$/"   class=""><span>Package Extensions</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/cache/index/key/$cache/index$/"   class=""><span>Cache Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/process/list/key/$process/list$/"   class=""><span>Index Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/system_store/index/key/$system_store/index$/"   class=""><span>Manage Stores</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/sales_order_status/index/key/$sales_order_status/index$/"   class=""><span>Order Statuses</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magen.local/index.php/kembangan328/system_config/index/key/$system_config/index$/"   class=""><span>Configuration</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Store Locator</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/managestorelocator/index/key/$managestorelocator/index$/"   class=""><span>Manage Stores</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/system_config/edit/section/clarion_storelocator_general_setting/key/$system_config/edit$/"   class=""><span>General Settings</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>Import/Export</span></a>
+<ul >
+<li  class="  level2"> <a href="http://magen.local/index.php/kembangan328/managestorelocator/index/key/$managestorelocator/index$/"   class=""><span>Export</span></a>
+</li>
+<li  class="  last level2"> <a href="http://magen.local/index.php/kembangan328/importstorelocator/index/key/$importstorelocator/index$/"   class=""><span>Import</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Zendesk</span></a>
+<ul >
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/zendesk/index/key/$zendesk/index$/"   class=""><span>Dashboard</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/zendesk/create/key/$zendesk/create$/"   class=""><span>Create Ticket</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/zendesk/launch/key/$zendesk/launch$/"   class=""><span>Launch Zendesk</span></a>
+</li>
+<li  class="  level1"> <a href="http://magen.local/index.php/kembangan328/system_config/edit/section/zendesk/key/$system_config/edit$/"   class=""><span>Configuration</span></a>
+</li>
+<li  class="  last level1"> <a href="http://magen.local/index.php/kembangan328/zendesk/log/key/$zendesk/log$/"   class=""><span>Log Viewer</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- menu end -->
+
+    <a id="page-help-link" href="http://www.magentocommerce.com/gethelp/id_ID/Wyomind_Advancedinventory_Adminhtml/catalog_product/index/">Get help for this page</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>

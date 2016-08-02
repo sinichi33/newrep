@@ -1,0 +1,23 @@
+<?php
+/**
+ * Email subject of New Order Confirmation email
+ *
+ * Description:
+ * - Created from scratch
+ */
+?>
+<?php  
+$_order = $this->getOrder();
+$_payment = $_order->getPayment()->getData();
+if ($_payment['method'] == 'vpayment' || $_payment['method'] == 'vpaymentins') {
+    $_isCC = true;
+}
+
+if ($_isCC) {
+	// echo $this->__('Pembayaran untuk order Ruparupa %s telah diterima', $_order->getIncrementId() );
+	echo $this->__('Pembayaran berhasil');
+}else{
+	// echo $this->__('Order Ruparupa %s menunggu pembayaran', $_order->getIncrementId() );
+	echo $this->__('[REMINDER] Segera lakukan pembayaran');
+}
+?>

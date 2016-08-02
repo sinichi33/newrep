@@ -1,0 +1,247 @@
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+ul.products-grid,
+ol.products-list {
+	
+}
+
+/*----------------------------------------------------------------------------*/
+/* Product Grid
+/*----------------------------------------------------------------------------*/
+
+ul.products-grid {
+
+	li {
+		list-style: none;
+		background: #fff;
+
+		/* product image */
+		.product-image {
+			border: none !important;
+		}
+
+		/* for product label */
+		.beli1gratis1-label, .beli2gratis1-label, .bestdeal-label, .freegift-label, .newarrival-label,
+		.promobni-label {
+			position: absolute;
+			right: 0px;
+			top: 0;
+			width: 43px;
+			height: 43px;
+			display: block;
+			z-index: 0;
+		}
+
+	  	.beli1gratis1-label {
+		  background: url(https://img.ruparupa.com/media/static/icon/label/icon_beli1gratis1.png) no-repeat;
+		  background-size: 43px 43px;
+		}
+
+		.beli2gratis1-label {
+		  background: url(https://img.ruparupa.com/media/static/icon/label/icon_beli2gratis1.png) no-repeat;
+		  background-size: 43px 43px;
+		}
+
+		.bestdeal-label {
+		  background: url(https://img.ruparupa.com/media/static/icon/label/icon_bestdeal.png) no-repeat;
+		  background-size: 43px 43px;
+		}
+
+		.freegift-label {
+		  background: url(https://img.ruparupa.com/media/static/icon/label/icon_freegift.png) no-repeat;
+		  background-size: 43px 43px;
+		}
+
+		.newarrival-label {
+		  background: url(https://img.ruparupa.com/media/static/icon/label/icon_newarrival.png) no-repeat;
+		  background-size: 43px 43px;
+		}
+
+		.promobni-label {
+		  background: url(https://img.ruparupa.com/media/static/icon/label/icon_promoBNI.png) no-repeat;
+		  background-size: 43px 43px;
+		}
+
+		/* product info */
+		.product-info {
+			text-align: left;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 0 !important;
+			min-height: 0 !important;
+		}
+
+		/* product name */
+		.product-name {
+			text-align: left;
+			height: 34px;
+		    overflow: hidden;
+		    line-height: 17px;
+		    margin-bottom: 2px;
+		    @include responsive-font-size(13);
+
+			a {
+				font-weight: 600;
+				text-transform: initial;
+
+				&:hover {
+					color: inherit;
+				}
+			}
+		}
+
+		/* rating */
+		.ratings {
+			display: none;
+		}
+
+		/* price wrapper */
+		.price-wrapper {
+			position: relative;
+
+			&:after {
+				@include clearfix;
+			}
+
+			&.has-sale .price-box {
+				width: 62.5%;
+				float: left;
+			}
+
+			&.has-sale .sale {
+				width: 39%;
+				float: right;
+			}
+		}
+
+		/* price */
+		.price-box {
+			min-height: 38px;
+			position: relative;
+
+			p {
+				margin-bottom: 0;
+				display: block;
+			}
+
+			.old-price {
+				color: #a9a9a9;
+
+				.price {
+					@include responsive-font-size(11);
+				}
+			}
+
+			.regular-price,
+			.special-price {
+				padding-left: 0;
+				font-weight: 600;
+				vertical-align: bottom;
+			    position: absolute;
+			    bottom: 0;
+
+				.price {
+					color: $c-orange;
+					@include responsive-font-size(14);
+					line-height: 1;
+				}
+			}
+		}
+
+		/* bottom part */
+		.bottom-part {
+			border-top: 1px solid #cecbc9;
+			height: 30px;
+
+			&:after {
+				@include clearfix;
+			}
+		}
+
+		.actions {
+			min-height: 0;
+			left: 0;
+			padding: 0;
+			height: 30px;
+			display: none;
+
+			.btn-quickview {
+				width: 16%;
+			    text-align: center;
+			    color: #fff;
+			    height: 30px;
+			    line-height: 30px;
+			    float: left;
+			    background: $c-blue;
+			    display: block !important;
+			    text-decoration: none;
+			    
+			    &:hover {
+			    	background: $c-blue-dark;
+			    }
+
+			    &:before {
+			    	font-size: 14px;
+			    }
+			}
+
+			.btn-cart {
+				float: right;
+				@include button-orange(84%, 30px);
+				font-weight: 400;
+			    letter-spacing: 0;
+			    text-transform: uppercase;
+			    position: relative;
+			    padding: 0;
+			}
+		}
+
+		&:hover {
+
+			.actions {
+				display: block;
+			}
+		}
+
+		/* labels */
+		.label.sale {
+			color: #fff;
+			border: 1px solid $c-orange;
+			background: $c-orange;
+			padding: 2px 5px;
+			@include responsive-font-size(12);
+			font-weight: 600;
+			position: absolute;
+			bottom: 9px;
+			right: 0;
+			text-align: center;
+			border-radius: 2px;
+		}
+
+		.label.installment {
+			color: $c-blue;
+			@include responsive-font-size(10);
+			text-transform: uppercase;
+			float: right;
+			font-weight: 600;
+		}
+
+		.label.new {
+			float: left;
+			text-transform: uppercase;
+			@include responsive-font-size(10);
+			color: #676b78;
+			font-weight: 600;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Product List
+/*----------------------------------------------------------------------------*/
+
+ol.products-list {
+
+}

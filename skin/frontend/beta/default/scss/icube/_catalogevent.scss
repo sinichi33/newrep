@@ -1,0 +1,287 @@
+
+/*----------------------------------------------------------------------------*/
+/* Ticker
+/*----------------------------------------------------------------------------*/
+
+.event-container {
+	background: none;
+    border: 1px solid #d7d7d7;
+    border-radius: $button-radius;
+    margin: 0;
+    min-height: 50px;
+    z-index: 0;
+
+    &:after {
+    	display: none;
+    }
+
+    .event {
+    	padding: 0;
+        min-height: 0;
+        min-height: 50px;
+
+        &.open {
+            margin-top: 3px;
+        }
+
+    	.status {
+    		margin-right: 15px;
+    	}
+
+        &.open {
+
+            .status {
+                display: none;
+            }
+        }
+    	
+    	.event-ticker {
+    		@include responsive-font-size(18);
+
+    		span {
+    			@include responsive-font-size(20);
+    			position: relative;
+    			width: 40px;
+    			display: inline-block;
+                line-height: 1;
+                height: auto;
+    		}
+
+    		.days,
+    		.hour,
+    		.minute,
+    		.second {
+    			
+    			&:after {
+    				content: attr(class);
+    				display: block;
+    				@include responsive-font-size(12);
+    				text-align: center;
+    				position: absolute;
+				    bottom: -12px;
+				    width: 100%;
+				    line-height: 1;
+				    left: 0;
+				    font-size: 12px;
+    			}
+    		}
+    	}
+
+        &.upcoming,
+        &.closed {
+            padding: 6px;
+        }
+    }
+
+    .event-dates {
+        @include responsive-font-size(14);
+
+        .start,
+        .end {
+            display: block;
+            line-height: 1.3;
+        }
+
+        .date-part {
+            font-weight: bold;
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Ticker on catalog
+/*----------------------------------------------------------------------------*/
+
+body.catalog-category-view {
+
+    .event-container {
+        margin: -20px 0 50px;
+        background: #fff;
+        border: none;
+        border-radius: 0;
+        min-height: 0;
+
+        .event {
+            line-height: 1;
+            padding: 20px;
+            min-height: 0;
+
+            &:after {
+                @include clearfix;
+            }
+
+            .event-ticker {
+
+                span {
+                    margin: -5px 15px 8px;
+                    width: auto;
+                    @include responsive-font-size(40);
+
+                    &:after {
+
+                    }
+                }
+
+                .days,
+                .hour,
+                .minute,
+                .second {
+                    
+                    &:after {
+                        display: initial;
+                    }
+                }
+            }
+        }
+
+        .event-dates {
+            
+            .start, 
+            .end {
+                display: inline;
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Ticker on PDP
+/*----------------------------------------------------------------------------*/
+
+
+body.catalog-product-view {
+
+    .event-container {
+        border: none;
+        display: none;
+
+        /* only showing ticker of open event */
+        &.container-open {
+            display: inline-block;
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Product list
+/*----------------------------------------------------------------------------*/
+
+.flash-sale {
+    margin-top: -15px;
+
+    &:after {
+        @include clearfix;
+    }
+
+    li {
+        width: 49%;
+        background: #fff;
+        margin: 20px 0 0 !important;
+        list-style: none;
+
+        &:after {
+            @include clearfix;
+        }
+
+        &:nth-child(n) {
+            float: left;
+        }
+
+        &:nth-child(2n) {
+            float: right;
+        }
+    }
+
+    .product-image {
+        float: left;
+        width: 38%;
+        border: none;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .product-info {
+        float: right;
+        width: 62%;
+        padding: 15px;
+    }
+
+    .product-name {
+        text-align: left;
+        margin-bottom: 5px;
+        height: 46px;
+        line-height: 1;
+
+        a {
+            text-transform: initial;
+            font-weight: bold;
+            @include responsive-font-size(14);
+            line-height: 1.4;
+        } 
+    }
+
+    .price-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .price-box {
+        vertical-align: top;
+        margin: 0;
+        display: inline-block;
+
+        .old-price,
+        .special-price {
+            display: block;
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+        }
+
+        .old-price {
+            
+            .price {
+                @include responsive-font-size(14);
+            }
+        }
+
+        .special-price,
+        .regular-price {
+            
+            .price {
+                @include responsive-font-size(19);
+                font-weight: bold;
+                color: #058ccc;
+            }
+        }
+    }
+
+    .label.discount {
+        color: #fb9d29;
+        display: inline-block;
+        line-height: 1;
+        vertical-align: top;
+
+        &:after {
+            @include clearfix;
+        }
+
+        .value {
+            float: left;
+            @include responsive-font-size(40);
+        }
+
+        .percent {
+            float: right;
+            @include responsive-font-size(14);
+            line-height: 1.4;
+            margin: 0 10px 0 3px;
+        }
+    }
+
+    .bottom-part,
+    .actions {
+        display: none;
+    }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+-->
+<layout>
+    <checkout_onepage_index>
+        <reference name="head">            
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+            <action method="addItem"><type>js</type><name>amasty/amorderattr/linked.js</name></action>
+        </reference>
+        <reference name="content">
+            <block type="core/html_calendar" name="html_calendar" as="html_calendar" template="page/js/calendar.phtml"/>
+        </reference>
+    </checkout_onepage_index>
+  
+    <paypal_express_review>
+        <reference name="head">            
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+            <action method="addItem"><type>js</type><name>amasty/amorderattr/linked.js</name></action>
+        </reference>
+        <reference name="content">
+            <block type="core/html_calendar" name="html_calendar" as="html_calendar" template="page/js/calendar.phtml"/>
+        </reference>
+    </paypal_express_review>
+    
+    <sales_order_view>
+        <reference name="head">
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+            <block type="core/html_calendar" name="head.calendar" as="calendar" template="page/js/calendar.phtml"/>
+        </reference>
+        <reference name="my.account.wrapper">
+            <block type="amorderattr/sales_order_view_attributes" name="amorderattr.attributes" before="sales.order.view" />
+        </reference>
+    </sales_order_view>
+</layout>

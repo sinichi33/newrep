@@ -1,0 +1,42 @@
+<?php
+$id = Mage::getSingleton('customer/session')->getId();
+$giftcards = $this->getGiftCards($id);
+?>
+
+<div class="data-table-wrapper">
+	<table class="data-table">
+		<thead>
+			<tr class="first last">
+				<th><?php echo $this->__('Voucher Code') ?></th>
+				<th><?php echo $this->__('Voucher') ?></th>
+				<th><?php echo $this->__('Date Expires') ?></th>
+				<th><?php echo $this->__('Balance') ?></th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php if (count($giftcards) == 0) : ?>
+				<tr>
+					<td colspan="4"><?php echo $this->__('No Gift Card Voucher available') ?></td>
+				</tr>
+			<?php endif; ?>
+			<?php $company = Mage::helper('redeempoint')->getCompanyListName();?>
+			<?php foreach ($giftcards as $giftcard) : ?>
+			<?php $total += $giftcard->getBalance(); ?>
+				<tr>
+					<td data-rwd="<?php echo $this->__('Voucher Code') ?>"><?php echo $giftcard->getCode(); ?></td>
+					<td data-rwd="<?php echo $this->__('Voucher') ?>"><?php if($giftcard->getCompanyId()!='') : echo $company[$giftcard->getCompanyId()].' '.$this->__('Reward Points'); else : echo ucfirst($giftcard->getType()); endif; ?></td>
+					<td data-rwd="<?php echo $this->__('Date Expires') ?>"><?php echo $giftcard->getDateExpires(); ?></td>
+					<td data-rwd="<?php echo $this->__('Balance') ?>"><?php echo Mage::helper('core')->currency($giftcard->getBalance(), true, false); ?></td>
+				</tr>
+			<?php endforeach; ?>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="a-center"><strong><?php echo $this->__('Total') ?></strong></td>
+				<td><strong><?php echo Mage::helper('core')->currency($total, true, false); ?></strong></td>
+			</tr>
+		</tfoot>
+	</table>
+</div>

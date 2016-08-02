@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+
+<!--
+One page checkout main layout
+-->
+
+    <checkout_onepage_index translate="label">
+    	<reference name="checkout.onepage">
+            <action method="setTemplate">
+                <template>icube/customcheckout/onepage.phtml</template>
+            </action>
+        </reference>
+        
+        <reference name="checkout.onepage.login">
+            <action method="setTemplate"><template>icube/customcheckout/onepage/login.phtml</template></action>
+            <block type="persistent/form_remember" name="persistent.remember.me" template="persistent/remember_me.phtml" />
+            <block type="core/template" name="persistent.remember.me.tooltip" template="persistent/remember_me_tooltip.phtml" />
+        </reference>
+        
+        <reference name="checkout.onepage.shipping">
+            <action method="setTemplate">
+                <template>icube/customcheckout/onepage/shipping.phtml</template>
+            </action>
+            <block type="customcheckout/onepage_review_info" name="checkout.onepage.shipping.review" as="review" template="icube/customcheckout/onepage/review/info_shipping_payment.phtml">
+                <action method="addItemRender"><type>default</type><block>checkout/cart_item_renderer</block><template>icube/customcheckout/onepage/review/item.phtml</template></action>
+                <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>icube/customcheckout/onepage/review/item.phtml</template></action>
+                <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>icube/customcheckout/onepage/review/item.phtml</template></action>
+            </block>
+            <block type="checkout/cart_totals" name="checkout.onepage.review.info.totals" as="totals" template="icube/customcheckout/onepage/review/totals.phtml"/>    
+            <block type="enterprise_giftcardaccount/checkout_cart_giftcardaccount" template="giftcardaccount/cart/block.phtml" name="checkout.cart.giftcardaccount" as="giftcards" />
+            <block type="checkout/cart_coupon" name="checkout.cart.coupon" as="coupon" template="checkout/cart/coupon.phtml"/>
+        </reference>
+        
+        <reference name="checkout.onepage.billing">
+	        <action method="setTemplate">
+                <template>icube/customcheckout/onepage/billing.phtml</template>
+            </action>
+        </reference>
+
+        <reference name="checkout.onepage.payment">
+            <action method="setTemplate">
+                <template>icube/customcheckout/onepage/payment.phtml</template>
+            </action>
+            <block type="customcheckout/onepage_review_info" name="checkout.onepage.shipping.review" as="review" template="icube/customcheckout/onepage/review/info_shipping_payment.phtml">
+                <action method="addItemRender"><type>default</type><block>checkout/cart_item_renderer</block><template>icube/customcheckout/onepage/review/item.phtml</template></action>
+                <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>icube/customcheckout/onepage/review/item.phtml</template></action>
+                <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>icube/customcheckout/onepage/review/item.phtml</template></action>
+            </block>
+            <block type="checkout/cart_totals" name="checkout.onepage.review.info.totals" as="totals" template="icube/customcheckout/onepage/review/totals.phtml"/>    
+        </reference>
+    </checkout_onepage_index>
+    <checkout_onepage_review translate="label">
+    	<reference name="root">
+    		<action method="setTemplate">
+                <template>icube/customcheckout/onepage/review/info.phtml</template>
+            </action>
+    	</reference>
+    </checkout_onepage_review>
+    <checkout_onepage_paymentmethod>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>icube/customcheckout/onepage/payment/methods.phtml</template>
+            </action>
+        </reference>
+    </checkout_onepage_paymentmethod>
+</layout>

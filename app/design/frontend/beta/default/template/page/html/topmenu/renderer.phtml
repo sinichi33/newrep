@@ -1,0 +1,90 @@
+<?php
+/**
+ * Menu Template Renderer
+ *
+ * Description
+ * - add Icon
+ * - Remove "view all" link
+ * - Add menu banner
+ * 
+ */
+
+/** @var Mage_Page_Block_Html_Topmenu_Renderer $this */
+/** @var Varien_Data_Tree_Node $menuTree */
+/** @var string $childrenWrapClass */
+
+$html = '';
+
+$children = $menuTree->getChildren();
+$parentLevel = $menuTree->getLevel();
+$childLevel = is_null($parentLevel) ? 0 : $parentLevel + 1;
+
+$counter = 1;
+$childrenCount = $children->count();
+
+$parentPositionClass = $menuTree->getPositionClass();
+$itemPositionClassPrefix = $parentPositionClass ? $parentPositionClass . '-' : 'nav-';
+
+foreach ($children as $child) {
+    $child_id = trim(str_replace('category-node-', '', $child->getId()));
+    $child->setLevel($childLevel);
+    $child->setIsFirst($counter == 1);
+    $child->setIsLast($counter == $childrenCount);
+    $child->setPositionClass($itemPositionClassPrefix . $counter);
+
+    $outermostClassCode = 'level'. $childLevel;
+    $_hasChildren = ($child->hasChildren()) ? 'has-children' : '';
+
+    $html .= '<li '. $this->_getRenderedMenuItemAttributes($child) .'>';
+
+    $dataChildren = ($child->hasChildren())? 'data-children="'.$child->getId().'"' : '';
+
+    /* icon */
+    if ($_icon = Mage::getModel('catalog/category')->load($child_id)->getIcon()) {
+        $icon=    '<i class="icon"><img src="' . Mage::getBaseUrl('media') . 'catalog' . DS . 'category' . DS . $_icon . '" /></i>';
+    }else{
+        $icon = '';
+    }
+
+    // icube: custom logic for class 'has-children. in purpose of fixing clicking issue on touch device' 
+    $_linkClass = ($child->hasChildren() && $childLevel < 1)? 'has-children':'';
+
+    $html .= '<a href="'. $child->getUrl() .'" class="'. $outermostClassCode .' '. $_linkClass .' '. $child->getId()  .'" ' . $dataChildren . '>';
+    $html .=    $icon ;
+    $html .=    $this->escapeHtml($this->__(ucwords(strtolower($child->getName())))) ;
+    $html .= '</a>';
+
+    $nextChildLevel = $childLevel + 1;
+
+    if (!empty($childrenWrapClass) && $nextChildLevel <= 1 && !empty($_hasChildren)) {
+        $html .= '<div class="'. $childrenWrapClass .'">';
+    }
+
+    if (!empty($_hasChildren)) {
+        $html .= '<ul class="level'. $childLevel .'">';
+        $html .=     $this->render($child, $childrenWrapClass);
+
+        /* banner image */
+        if ($childLevel == 0) {
+            if ($_banner = Mage::getModel('catalog/category')->load($child_id)->getMenuBanner()) {
+                $banner=    '<li class="menu-banner"><img src="' . Mage::getBaseUrl('media') . 'catalog' . DS . 'category' . DS . $_banner . '" /></li>';
+            }else{
+                $banner = '';
+            }
+            
+            $html .=    $banner ;
+        }
+
+        $html .= '</ul>';
+    }
+    
+    if (!empty($childrenWrapClass) && $nextChildLevel <= 1 && !empty($_hasChildren)) {
+        $html .= '</div>';
+    }
+
+    $html .= '</li>';
+
+    $counter++;
+}
+
+return $html;

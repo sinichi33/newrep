@@ -1,0 +1,8 @@
+
+<?php $_shipment=$this->getShipment() ?>
+<?php $_order=$this->getOrder() ?>
+<?php if ($_shipment && $_order && $_shipment->getAllTracks()): ?>
+    <?php $i=0; foreach ($_shipment->getAllTracks() as $_item): $i++ ?>
+        <?php echo $this->escapeHtml($_item->getNumber()) ?> (<?php echo $this->escapeHtml($_item->getTitle()) ?>)<?php echo ($i != count($_shipment->getAllTracks()))? ', ':''; ?>
+    <?php endforeach ?>
+<?php endif; ?>

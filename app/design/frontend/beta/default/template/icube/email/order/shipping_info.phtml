@@ -1,0 +1,39 @@
+<?php
+/**
+ * Shipping Info template for Order Confirmation email
+ *
+ * Description:
+ * - Created from scratch
+ * - This template is targeted for other VA payment, e.g. CC
+ */
+?>
+
+<?php  
+$_order = $this->getOrder();
+$_payment = $_order->getPayment()->getData();
+$_shippingAddress = $this->getShippingAddress();
+?>
+
+<?php if ($_payment['method'] != 'vpaymentva'): ?>
+<tr class="section">
+	<td style="padding: 20px 0 35px;">
+		<div class="contact-if">
+	       <hr>
+	        <table>
+	        	<tbody>
+		        	<tr>
+		            	<td style="width:300px; padding:10px 0 7px;" class="bold"><b>Alamat Pengiriman</b></td>
+		                <td style="width:300px; padding:10px 0 7px;" class="bold"><b>Estimasi Barang Sampai</b></td>
+		            </tr>
+		            <tr>
+		            	<td style="vertical-align:text-top; padding-top:10px; line-height:20px;">
+		            		<?php echo $_shippingAddress ?>
+		                </td>
+		                <td style="padding-top:10px; vertical-align:text-top; line-height:20px;">2-5 hari untuk wilayah <b>Jabodetabek</b> dan <br/>5-14 hari untuk wilayah <b>luar Jabodetabek</b></td>
+		            </tr>
+	         	</tbody>
+	         </table>
+        </div>
+    </td>
+</tr>
+<?php endif ?>

@@ -1,0 +1,432 @@
+<?php
+/*
+ * Description:
+ * - invoice splited by shipment method (delivey or pickup)
+ * - Here we check, if order have no invoice yet, here split the order manually
+ */
+?>
+<?php
+$order = $this->getResult();
+?>
+<div class="page-title">
+	<h1><?php echo $this->__('Order Status') ?></h1>
+</div>
+<div class="trackorder-result">
+
+	<?php if ($order->getIncrementId()):?>
+		<?php
+			$_order = Mage::getModel('sales/order')->loadByIncrementId($order->getIncrementId());
+			$_payment = $_order->getPayment()->getData();
+			//echo "<pre>"; print_r($_payment); echo "</pre>";
+		?>
+		<div class="result-section top col2-set">
+			<h2><?php echo $this->__('Order Number : %s', $order->getIncrementId()) ?></h2>
+			<div class="col-1">
+				<span><strong><?php echo $this->__('%s ITEM(S)', round($order->getData('total_qty_ordered'))) ?></strong></span>
+				<span class="order-date"><?php echo $this->__('Ordered on %s',gmdate('d/m/Y', strtotime($order->getCreatedAtStoreDate()->toString(Varien_Date::DATETIME_INTERNAL_FORMAT))));?></span>
+			</div>
+			<div class="col-2">
+				<table class="payment-information">
+					<tr>
+						<td>Total Pembayaran</td>
+						<td class="indent-colon">:</td>
+						<td class="tebal"><?php echo $order->formatPrice($order->getGrandTotal()) ?></td>
+					</tr>
+					<tr>
+						<td>Cara Pembayaran</td>
+						<td class="indent-colon">:</td>
+						<td class="tebal"><?php echo $_order->getPayment()->getMethodInstance()->getTitle(); ?></td>
+					</tr>
+
+				<?php if ($_payment['method'] == 'vpaymentva'): ?>
+					<?php if ($_payment['vabank'] == 'bca'): ?>
+						<tr>
+							<td>Nomor Virtual Account BCA</td>
+							<td class="indent-colon">:</td>
+							<td class="tebal"><?php echo $_payment['vanumber'] ?></td>
+						</tr>
+					<?php endif ?>
+					<?php if ($_payment['vabank'] == 'permata'): ?>
+						<tr>
+							<td>Nomor Virtual Account Permata</td>
+							<td class="indent-colon">:</td>
+							<td class="tebal"><?php echo $_payment['vanumber'] ?></td>
+						</tr>
+					<?php endif ?>
+					<?php if ($_payment['vabank'] == 'echannel'): ?>
+						<tr>
+							<td>Nomor Mandiri Bill Payment</td>
+							<td class="indent-colon">:</td>
+							<td class="tebal"><?php echo $_payment['billercode'] ?></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td class="indent-colon">&nbsp;</td>
+							<td class="tebal"><?php echo $_payment['billkey'] ?></td>
+						</tr>
+					<?php endif ?>
+				<?php endif ?>
+					<tr>
+						<td colspan="3">
+							<a href="<?php echo $this->getUrl('payment') ?>" target="_blank">Lihat cara pembayaran</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="hr"></div>
+		</div>
+
+		<?php
+		$counter = 0;
+		$totalInvoice = count($order->getInvoiceCollection());
+		?>
+		<?php if ($totalInvoice > 0): ?>
+			<?php /* Invoice exists */ ?>
+			<?php foreach ($order->getInvoiceCollection() as $_invoice): ?>
+				<?php $counter++; ?>
+				<div class="result-section invoice <?php echo ($counter == 1)? 'first-invoice': '' ?> <?php echo ($counter == $totalInvoice)? 'last-invoice': '' ?> <?php echo ($_invoice->getDeliveryPickup()=='delivery')? $this->__('delivery') : $this->__('pickup') ?>">
+
+					<h3><?php echo ($_invoice->getDeliveryPickup()=='delivery')? $this->__('Home Delivery') : $this->__('Pick Up In Store') ?> <span class="hidden"><?php echo $this->__('(Invoice: #%s)',$_invoice->getIncrementId()) ?></span></h3>
+
+					<?php if ($_invoice->getDeliveryPickup() == 'delivery') : ?>
+						<div class="col2-set">
+							<div class="col-1">
+								<h4><?php echo $this->__('SHIPPING ADDRESS') ?></h4>
+								<?php
+								$_shipAddress = $order->getShippingAddress()->getData();
+								$_country = Mage::app()->getLocale()->getCountryTranslation($_shipAddress['country_id']);
+								?>
+								<address>
+									<?php
+									echo $_shipAddress['firstname'].' '.$_shipAddress['lastname'].'<br/>';
+									echo $_shipAddress['street'].', '.$_shipAddress['city'].'<br/>';
+									echo $_shipAddress['region'].' '.$_shipAddress['postcode'].'<br/>';
+									echo $_country;
+									?>
+								</address>
+							</div>
+							<div class="col-2">
+								<h4><?php echo $this->__('ESTIMATION OF ORDER COMPLETE') ?></h4>
+								<div><?php echo $this->__('Jabodetabek : 2-5 hari') ?></div>
+								<div><?php echo $this->__('Luar Jabodetabek : 4-14 hari') ?></div>
+							</div>
+						</div>
+					<?php else: ?>
+						<div class="col2-set">
+							<div class="col-1">
+								<h4><?php echo $this->__('PICKUP LOCATION') ?></h4>
+								<?php $_store = Mage::helper('icube_order')->getStore($_invoice->getStoreCode()); ?>
+								<address>
+									<?php
+									echo $_store['name'].'<br/>';
+									echo $_store['address_line_1'].'<br/>';
+									echo (!empty($_store['address_line_2']))? $_store['address_line_2'].'<br/>': '';
+									echo $_store['city'].', '.$_store['postal_code'].'<br/>';
+									?>
+								</address>
+							</div>
+							<div class="col-2">
+								<h4><?php echo $this->__('ESTIMATION OF PICK UP ORDER') ?></h4>
+								<div><?php echo $this->__('Jabodetabek : 2-5 hari') ?></div>
+								<div><?php echo $this->__('Luar Jabodetabek : 4-14 hari') ?></div>
+							</div>
+						</div>
+					<?php endif; ?>
+
+					<div class="box">
+
+						<table class="trackorder-status">
+							<?php
+							$_status = strtoupper($_invoice->getInvoiceStatus());
+							?>
+							<tbody>
+							<?php if ($_invoice->getDeliveryPickup()=='delivery'): ?>
+								<?php /* Status for delivery */ ?>
+								<tr class="icons">
+									<td class="<?php echo ($_status=="PENDING SHIPMENT" || $_status=="SHIPPED" || $_status=="DELIVERED")? 'done':''; ?>">
+										<i class="flaticon-money146"></i>
+										<span><?php echo $this->__('Pembayaran') ?></span>
+									</td>
+									<td class="<?php echo ($_status=="PENDING SHIPMENT" || $_status=="SHIPPED" || $_status=="DELIVERED")? 'done':''; ?>">
+										<i class="flaticon-delivery33"></i>
+										<span><?php echo $this->__('Diproses') ?></span>
+									</td>
+									<td class="<?php echo ($_status=="SHIPPED" || $_status=="DELIVERED")? 'done':''; ?>">
+										<i class="flaticon-delivery18"></i>
+										<span><?php echo $this->__('Pengiriman') ?></span>
+									</td>
+									<td class="<?php echo ($_status=="DELIVERED")? 'done':''; ?>">
+										<i class="flaticon-checked21"></i>
+										<span><?php echo $this->__('Selesai') ?></span>
+									</td>
+								</tr>
+								<tr class="progress-line">
+									<td class="<?php echo ($_status=="PENDING SHIPMENT" || $_status=="SHIPPED" || $_status=="DELIVERED")? 'done':'hidden'; ?>">
+												<span>
+													<i class="flaticon-checked21"></i>
+												</span>
+									</td>
+									<td class="<?php echo ($_status=="PENDING SHIPMENT" || $_status=="SHIPPED" || $_status=="DELIVERED")? 'done':'hidden'; ?>">
+												<span>
+													<i class="flaticon-checked21"></i>
+												</span>
+									</td>
+									<td class="<?php echo ($_status=="SHIPPED" || $_status=="DELIVERED")? 'done':'hidden'; ?>">
+												<span>
+													<i class="flaticon-checked21"></i>
+												</span>
+									</td>
+									<td class="<?php echo ($_status=="DELIVERED")? 'done':'hidden'; ?>">
+												<span>
+													<i class="flaticon-checked21"></i>
+												</span>
+									</td>
+								</tr>
+							<?php else: ?>
+								<?php /* Status for pick up in store */ ?>
+								<tr class="icons">
+									<td class="<?php echo ($_status=="PENDING" || $_status=="READY FOR PICKUP" || $_status=="PICKED UP BY CUSTOMER")? 'done':''; ?>">
+										<i class="flaticon-money146"></i>
+										<span><?php echo $this->__('Pembayaran') ?></span>
+									</td>
+									<td class="<?php echo ($_status=="READY FOR PICKUP" || $_status=="PICKED UP BY CUSTOMER")? 'done':''; ?>">
+										<i class="flaticon-delivery33"></i>
+										<span><?php echo $this->__('Siap Diambil') ?></span>
+									</td>
+									<td class="<?php echo ($_status=="PICKED UP BY CUSTOMER")? 'done':''; ?>">
+										<i class="flaticon-checked21"></i>
+										<span><?php echo $this->__('Selesai') ?></span>
+									</td>
+								</tr>
+								<tr class="progress-line">
+									<td class="<?php echo ($_status=="PENDING" || $_status=="READY FOR PICKUP" || $_status=="PICKED UP BY CUSTOMER")? 'done':'hidden'; ?>">
+												<span>
+													<i class="flaticon-checked21"></i>
+												</span>
+									</td>
+									<td class="<?php echo ($_status=="READY FOR PICKUP" || $_status=="PICKED UP BY CUSTOMER")? 'done':'hidden'; ?>">
+												<span>
+													<i class="flaticon-checked21"></i>
+												</span>
+									</td>
+									<td class="<?php echo ($_status=="PICKED UP BY CUSTOMER")? 'done':'hidden'; ?>">
+												<span>
+													<i class="flaticon-checked21"></i>
+												</span>
+									</td>
+								</tr>
+							<?php endif ?>
+							</tbody>
+						</table>
+
+						<?php $_items = $_invoice->getAllItems(); ?>
+						<?php $_count = count($_items) ?>
+						<ul class="products">
+							<?php foreach ($_items as $item): ?>
+								<?php $_product = Mage::getModel('catalog/product')->load($item->getProductId()); ?>
+								<li>
+									<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+										<?php $_imgSize = 120; ?>
+										<img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize); ?>" />
+									</a>
+									<div class="product-info">
+										<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_product->getName() ?>" class="product-name"><?php echo $_product->getName() ?></a>
+										<p class="price">
+											<?php echo $order->formatPrice($_product->getFinalPrice()); ?>
+										</p>
+										<p class="qty">
+											<?php echo $this->__('Qty: %s item', round($item->getQty())) ?>
+										</p>
+									</div>
+								</li>
+							<?php endforeach ?>
+						</ul>
+					</div>
+					<?php echo $this->getInvoiceCommentsHtml($_invoice)?>
+				</div>
+			<?php endforeach; ?>
+
+		<?php else: ?>
+			<?php /* Order have no invoice yet */ ?>
+
+			<?php /* Grouping items*/ ?>
+			<?php
+			$_items = $order->getAllItems();
+			$_deliveredItems = array();
+			$_pickupItems = array();
+
+			foreach ($_items as $item) {
+				$_data = array();
+
+				if ($item->getDeliveryPickup() == 'delivery') {
+					$_data['id'] = $item->getProductId();
+					$_data['qty'] = round($item->getQtyOrdered());
+					$_deliveredItems[] = $_data;
+				}else{
+					$_data['id'] = $item->getProductId();
+					$_data['qty'] = round($item->getQtyOrdered());
+					$_pickupItems[$item->getStoreCode()][] = $_data;
+				}
+			}
+			?>
+
+			<?php if ($_deliveredItems): ?>
+				<div class="result-section invoice first-invoice <?php echo (!$_pickupItems)? 'last-invoice':''; ?> delivery">
+					<h3><?php echo $this->__('Home Delivery') ?></span></h3>
+					<div class="col2-set">
+						<div class="col-1">
+							<h4><?php echo $this->__('SHIPPING ADDRESS') ?></h4>
+							<?php
+							$_shipAddress = $order->getShippingAddress()->getData();
+							$_country = Mage::app()->getLocale()->getCountryTranslation($_shipAddress['country_id']);
+							?>
+							<address>
+								<?php
+								echo $_shipAddress['firstname'].' '.$_shipAddress['lastname'].'<br/>';
+								echo $_shipAddress['street'].', '.$_shipAddress['city'].'<br/>';
+								echo $_shipAddress['region'].' '.$_shipAddress['postcode'].'<br/>';
+								echo $_country;
+								?>
+							</address>
+						</div>
+						<div class="col-2">
+							<h4><?php echo $this->__('ESTIMATION OF ORDER COMPLETE') ?></h4>
+							<div><?php echo $this->__('Jabodetabek : 2-5 hari') ?></div>
+							<div><?php echo $this->__('Luar Jabodetabek : 4-14 hari') ?></div>
+						</div>
+					</div>
+
+					<div class="box">
+						<table class="trackorder-status">
+							<tbody>
+							<tr class="icons">
+								<td>
+									<i class="flaticon-money146"></i>
+									<span><?php echo $this->__('Pembayaran') ?></span>
+								</td>
+								<td>
+									<i class="flaticon-delivery33"></i>
+									<span><?php echo $this->__('Diproses') ?></span>
+								</td>
+								<td>
+									<i class="flaticon-delivery18"></i>
+									<span><?php echo $this->__('Pengiriman') ?></span>
+								</td>
+								<td>
+									<i class="flaticon-checked21"></i>
+									<span><?php echo $this->__('Selesai') ?></span>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+						<ul class="products">
+							<?php foreach ($_deliveredItems as $item): ?>
+								<?php $_product = Mage::getModel('catalog/product')->load($item['id']); ?>
+								<li>
+									<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+										<?php $_imgSize = 120; ?>
+										<img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize); ?>" />
+									</a>
+									<div class="product-info">
+										<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_product->getName() ?>" class="product-name"><?php echo $_product->getName() ?></a>
+										<p class="price">
+											<?php echo $order->formatPrice($_product->getFinalPrice()); ?>
+										</p>
+										<p class="qty">
+											<?php echo $this->__('Qty: %s item', round($item['qty'])) ?>
+										</p>
+									</div>
+								</li>
+							<?php endforeach ?>
+						</ul>
+					</div>
+				</div>
+			<?php endif ?>
+
+			<?php if ($_pickupItems): ?>
+				<?php $count = 0; ?>
+				<?php foreach ($_pickupItems as $storecode => $items): ?>
+					<?php $count++; ?>
+					<div class="result-section invoice <?php echo (!$_deliveredItems && $count==1)? 'first-invoice':''; ?> <?php echo ($count==count($_pickupItems))? 'last-invoice':''; ?> pickup">
+
+						<h3><?php echo $this->__('Pick Up In Store') ?></span></h3>
+
+						<div class="col2-set">
+							<div class="col-1">
+								<h4><?php echo $this->__('PICKUP LOCATION') ?></h4>
+								<?php $_store = Mage::helper('icube_order')->getStore($storecode); ?>
+								<address>
+									<?php
+									echo $_store['name'].'<br/>';
+									echo $_store['address_line_1'].'<br/>';
+									echo (!empty($_store['address_line_2']))? $_store['address_line_2'].'<br/>': '';
+									echo $_store['city'].', '.$_store['postal_code'].'<br/>';
+									?>
+								</address>
+							</div>
+							<div class="col-2">
+								<h4><?php echo $this->__('ESTIMATION OF PICK UP ORDER') ?></h4>
+								<div><?php echo $this->__('Jabodetabek : 2-5 hari') ?></div>
+								<div><?php echo $this->__('Luar Jabodetabek : 4-14 hari') ?></div>
+							</div>
+						</div>
+
+						<div class="box">
+							<table class="trackorder-status">
+								<tbody>
+								<tr class="icons">
+									<td>
+										<i class="flaticon-money146"></i>
+										<span><?php echo $this->__('Pembayaran') ?></span>
+									</td>
+									<td>
+										<i class="flaticon-delivery33"></i>
+										<span><?php echo $this->__('Siap Diambil') ?></span>
+									</td>
+									<td>
+										<i class="flaticon-checked21"></i>
+										<span><?php echo $this->__('Selesai') ?></span>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+							<ul class="products">
+								<?php foreach ($items as $item): ?>
+									<?php $_product = Mage::getModel('catalog/product')->load($item['id']); ?>
+									<li>
+										<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+											<?php $_imgSize = 120; ?>
+											<img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize); ?>" />
+										</a>
+										<div class="product-info">
+											<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_product->getName() ?>" class="product-name"><?php echo $_product->getName() ?></a>
+											<p class="price">
+												<?php echo $order->formatPrice($_product->getFinalPrice()); ?>
+											</p>
+											<p class="qty">
+												<?php echo $this->__('Qty: %s item', round($item['qty'])) ?>
+											</p>
+										</div>
+									</li>
+								<?php endforeach ?>
+							</ul>
+						</div>
+					</div>
+				<?php endforeach ?>
+			<?php endif ?>
+		<?php endif ?>
+
+		<div class="result-section bottom">
+
+			<div class="buttons-set">
+				<a href="<?php echo Mage::getBaseUrl() ?>" class="button"><?php echo $this->__('Shop Again') ?></a>
+			</div>
+		</div>
+
+
+	<?php else: ?>
+		<div class="result-section">
+			<p class="empty"><?php echo  $this->__('Orders can not be found.'); ?></p>
+		</div>
+	<?php endif ?>
+</div>

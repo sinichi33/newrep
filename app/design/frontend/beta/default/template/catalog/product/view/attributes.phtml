@@ -1,0 +1,75 @@
+<?php
+/**
+ * Attribute Template
+ *
+ * Description:
+ * - Override rwd/base
+ * - Don't show attribute with null/empty/"none"/"no" value
+ * - special treatment for dimensions attribute
+ *
+ *
+ * Product additional attributes template
+ *
+ * @see Mage_Catalog_Block_Product_View_Attributes
+ */
+?>
+<?php
+    $_helper = $this->helper('catalog/output');
+    $_product = $this->getProduct()
+?>
+<?php if($_additional = $this->getAdditionalData()): ?>
+    <h2><?php echo $this->__('Spesifikasi') ?></h2>
+    <table class="data-table" id="product-attribute-specs-table">
+        <col width="30%" />
+        <col />
+        <tbody>
+        <?php 
+            $_dimensionCount = 0;
+            $_dimensionLength = -1;
+            $_dimensionWidth = -1;
+            $_dimensionHeight = -1;
+            $excluded_values = array('no','tidak','none','n/a', 'no brand','no period');
+
+        ?>
+        <?php foreach ($_additional as $_data): ?>
+            <?php if ($_data['value'] && !empty($_data['value']) && !in_array(strtolower($_data['value']),$excluded_values) ) : ?>
+
+                <?php //dimensions attribute ?>
+                <?php 
+                    if ($_data['code'] == 'dimension_length') {
+                        $_dimensionLength = $_helper->productAttribute($_product, $_data['value'], $_data['code']);
+                        $_dimensionCount++;
+                        continue;
+                    }
+                    if ($_data['code'] == 'dimension_height') {
+                        $_dimensionHeight = $_helper->productAttribute($_product, $_data['value'], $_data['code']);
+                        $_dimensionCount++;
+                        continue;
+                    } 
+                    if ($_data['code'] == 'dimension_width') {
+                        $_dimensionWidth = $_helper->productAttribute($_product, $_data['value'], $_data['code']);
+                        $_dimensionCount++;
+                        continue;
+                    } 
+                ?>
+
+                <?php if ($_dimensionLength > -1 && $_dimensionWidth > -1 && $_dimensionHeight > -1): ?>
+                    <?php if ($_dimensionCount == 3): ?>
+                        <tr>
+                            <th class='label'><?php echo $this->__('Dimension') ?></th>
+                            <td class="data"><?php echo $this->__('%s cm x %s cm x %s cm',round($_dimensionLength,1), round($_dimensionWidth,1), round($_dimensionHeight,1)) ?></td>
+                        </tr>
+                    <?php $_dimensionCount = 0; ?>
+                    <?php endif ?>
+                <?php endif ?>
+                
+                <tr>
+                    <th class="label"><?php echo $this->escapeHtml($this->__($_data['label'])) ?></th>
+                    <td class="data"><?php echo html_entity_decode($_helper->productAttribute($_product, $_data['value'], $_data['code'])) ?></td>
+                </tr>
+            <?php endif ?>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+    <script type="text/javascript">decorateTable('product-attribute-specs-table')</script>
+<?php endif;?>

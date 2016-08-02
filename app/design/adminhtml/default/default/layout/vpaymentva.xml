@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <vpaymentva_adminhtml_promo_index>
+        <reference name="content">
+            <block type="vpaymentva/adminhtml_promo" name="vpaymentva_promo" />
+        </reference>
+    </vpaymentva_adminhtml_promo_index>
+</layout>

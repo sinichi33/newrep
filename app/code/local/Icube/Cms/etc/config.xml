@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Icube_Cms>
+            <version>0.4.8</version>
+        </Icube_Cms>
+    </modules>
+	<global>
+        <resources>
+            <icube_cms_setup>
+                <setup>
+                    <module>Icube_Cms</module>
+                </setup>
+            </icube_cms_setup>
+        </resources>
+    </global>
+</config>

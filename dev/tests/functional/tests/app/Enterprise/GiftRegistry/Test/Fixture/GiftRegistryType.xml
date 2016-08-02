@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento Enterprise Edition
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Magento Enterprise Edition End User License Agreement
+ * that is bundled with this package in the file LICENSE_EE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magento.com/license/enterprise-edition
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Tests
+ * @package     Tests_Functional
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="../../../../../../vendor/magento/mtf/etc/fixture.xsd">
+    <fixture name="giftRegistryType" module="Enterprise_GiftRegistry" type="composite" collection="Enterprise\GiftRegistry\Model\Resource\Type\Collection" repository_class="Enterprise\GiftRegistry\Test\Repository\GiftRegistryType" handler_interface="Enterprise\GiftRegistry\Test\Handler\GiftRegistryType\GiftRegistryTypeInterface" class="Enterprise\GiftRegistry\Test\Fixture\GiftRegistryType">
+        <dataset name="default">
+            <field name="code" xsi:type="string">code_%isolation%</field>
+            <field name="label" xsi:type="string">gift_registry_label%isolation%</field>
+            <field name="is_listed" xsi:type="string">Yes</field>
+        </dataset>
+        <field name="type_id" is_required="1">
+            <default_value xsi:type="number">0</default_value>
+        </field>
+        <field name="code" group="general">
+            <default_value xsi:type="string">code_%isolation%</default_value>
+        </field>
+        <field name="meta_xml">
+            <default_value xsi:type="null" />
+        </field>
+        <field name="store_id" is_required="1">
+            <default_value xsi:type="number">0</default_value>
+        </field>
+        <field name="label" group="general">
+            <default_value xsi:type="string">gift_registry_label%isolation%</default_value>
+        </field>
+        <field name="is_listed" group="general">
+            <default_value xsi:type="string">Yes</default_value>
+        </field>
+        <field name="sort_order">
+            <default_value xsi:type="null" />
+        </field>
+        <field name="attributes" source="\Enterprise\GiftRegistry\Test\Fixture\GiftRegistryType\Attributes" group="attributes" />
+    </fixture>
+</config>

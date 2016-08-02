@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento Enterprise Edition
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Magento Enterprise Edition End User License Agreement
+ * that is bundled with this package in the file LICENSE_EE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magento.com/license/enterprise-edition
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Tests
+ * @package     Tests_Functional
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/etc/variations.xsd">
+    <testCase name="Enterprise\GiftRegistry\Test\TestCase\CreateGiftRegistryTypeEntityTest">
+        <variation name="CreateGiftRegistryTypeEntityTestVariation1">
+            <data name="giftRegistryType/data/code" xsi:type="string">code_%isolation%</data>
+            <data name="giftRegistryType/data/label" xsi:type="string">gift_registry_text_label%isolation%</data>
+            <data name="giftRegistryType/data/is_listed" xsi:type="string">Yes</data>
+            <data name="giftRegistryType/data/attributes/preset" xsi:type="string">text</data>
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeSuccessSaveMessage" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeInGrid" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeForm" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeOnFrontend" />
+        </variation>
+        <variation name="CreateGiftRegistryTypeEntityTestVariation2">
+            <data name="giftRegistryType/data/code" xsi:type="string">code_%isolation%</data>
+            <data name="giftRegistryType/data/label" xsi:type="string">gift_registry_select_label%isolation%</data>
+            <data name="giftRegistryType/data/is_listed" xsi:type="string">Yes</data>
+            <data name="giftRegistryType/data/attributes/preset" xsi:type="string">select</data>
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeSuccessSaveMessage" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeInGrid" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeForm" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeOnFrontend" />
+        </variation>
+        <variation name="CreateGiftRegistryTypeEntityTestVariation3">
+            <data name="giftRegistryType/data/code" xsi:type="string">code_%isolation%</data>
+            <data name="giftRegistryType/data/label" xsi:type="string">gift_registry_date_label%isolation%</data>
+            <data name="giftRegistryType/data/is_listed" xsi:type="string">Yes</data>
+            <data name="giftRegistryType/data/attributes/preset" xsi:type="string">date</data>
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeSuccessSaveMessage" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeInGrid" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeForm" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeOnFrontend" />
+        </variation>
+        <variation name="CreateGiftRegistryTypeEntityTestVariation4">
+            <data name="giftRegistryType/data/code" xsi:type="string">code_%isolation%</data>
+            <data name="giftRegistryType/data/label" xsi:type="string">gift_registry_country_label%isolation%</data>
+            <data name="giftRegistryType/data/is_listed" xsi:type="string">Yes</data>
+            <data name="giftRegistryType/data/attributes/preset" xsi:type="string">country</data>
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeSuccessSaveMessage" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeInGrid" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeForm" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeOnFrontend" />
+        </variation>
+        <variation name="CreateGiftRegistryTypeEntityTestVariation5">
+            <data name="giftRegistryType/data/code" xsi:type="string">code_%isolation%</data>
+            <data name="giftRegistryType/data/label" xsi:type="string">gift_registry_eventdate_label%isolation%</data>
+            <data name="giftRegistryType/data/is_listed" xsi:type="string">Yes</data>
+            <data name="giftRegistryType/data/attributes/preset" xsi:type="string">event_date</data>
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeSuccessSaveMessage" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeInGrid" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeForm" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeOnFrontend" />
+        </variation>
+        <variation name="CreateGiftRegistryTypeEntityTestVariation6">
+            <data name="giftRegistryType/data/code" xsi:type="string">code_%isolation%</data>
+            <data name="giftRegistryType/data/label" xsi:type="string">gift_registry_eventcountry_label%isolation%</data>
+            <data name="giftRegistryType/data/is_listed" xsi:type="string">Yes</data>
+            <data name="giftRegistryType/data/attributes/preset" xsi:type="string">event_country</data>
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeSuccessSaveMessage" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeInGrid" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeForm" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeOnFrontend" />
+        </variation>
+        <variation name="CreateGiftRegistryTypeEntityTestVariation7">
+            <data name="giftRegistryType/data/code" xsi:type="string">code_%isolation%</data>
+            <data name="giftRegistryType/data/label" xsi:type="string">gift_registry_eventlocation_label%isolation%</data>
+            <data name="giftRegistryType/data/is_listed" xsi:type="string">Yes</data>
+            <data name="giftRegistryType/data/attributes/preset" xsi:type="string">event_location</data>
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeSuccessSaveMessage" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeInGrid" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeForm" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeOnFrontend" />
+        </variation>
+        <variation name="CreateGiftRegistryTypeEntityTestVariation8">
+            <data name="giftRegistryType/data/code" xsi:type="string">code_%isolation%</data>
+            <data name="giftRegistryType/data/label" xsi:type="string">gift_registry_role_label%isolation%</data>
+            <data name="giftRegistryType/data/is_listed" xsi:type="string">Yes</data>
+            <data name="giftRegistryType/data/attributes/preset" xsi:type="string">role</data>
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeSuccessSaveMessage" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeInGrid" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeForm" />
+            <constraint name="Enterprise\GiftRegistry\Test\Constraint\AssertGiftRegistryTypeOnFrontend" />
+        </variation>
+    </testCase>
+</config>

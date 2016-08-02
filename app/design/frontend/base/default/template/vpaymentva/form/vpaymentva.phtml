@@ -1,0 +1,63 @@
+<?php
+/**
+ * CC form Template
+ *
+ * Description:
+ * - Override vtpayment form template from base/default
+ * - exchange expiration date and card verification number position
+ * - reposition input fields
+ *
+ * @category    design
+ * @package     default_icube
+ * @copyright   Copyright (c) 2012 Icubeonline.com
+ */
+?>
+<?php
+$order=Mage::helper('checkout')->getQuote()->getData();
+$grandTotal=$order['grand_total'];
+?>
+<?php $_code=$this->getMethodCode() ?>
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;">
+    <li>
+        <div class="input-box">
+            <?php $banks = unserialize(Mage::getStoreConfig('payment/vpaymentva/banks')); ?>
+            <select name="payment[vabank]" id="va_bank" class="required-entry">
+                <option value="" ><?php echo $this->__('-- Select bank --') ?></option>
+                <?php foreach($banks as $bank) { ?>
+                    <option value="<?php echo $bank['bank']; ?>" ><?php echo $this->__($bank['label']) ?></option>
+                <?php } ?>
+                <?php if(Mage::getStoreConfig('payment/vpaymentva/enablemandiribill')) : ?>
+                    <option value="<?php echo Icube_Vpaymentva_Model_Vpaymentva::CODE_MANDIRI_BILLPAYMENT?>" ><?php echo $this->__('Mandiri Bill Payment') ?></option>
+                <?php endif; ?>
+            </select>
+        </div>
+    </li>
+</ul>
+<?php if ($instructions = $this->getInstructions()): ?>
+    <ul class="form-list checkout-agreements" id="payment_form_<?php echo $this->getMethodCode() ?>" style="display:none;">
+        <li>
+            <div class="<?php echo $this->getMethodCode() ?>-instructions-content agreement-content">
+                <?php echo nl2br($instructions) ?>
+            </div>
+        </li>
+    </ul>
+<?php endif; ?>
+
+<script type="text/javascript">
+    var grand_total = <?php echo round($grandTotal); ?>;
+
+    jQuery("input[name*='payment\[method\]']").change(function() {
+        var sel_method = jQuery("input[name*='payment\[method\]']:checked").val();
+        if(sel_method == 'vpaymentva') {
+            jQuery("#payment-buttons-container").find(".button").prop('onclick',null).off('click').click(
+                function savePaymentIns(){
+                    payment.save();
+                }
+            );
+        }
+    });
+
+    jQuery(document).ready(function() {
+        jQuery("input[name*='payment\[method\]']").trigger("change");
+    });
+</script>

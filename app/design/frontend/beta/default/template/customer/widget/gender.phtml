@@ -1,0 +1,24 @@
+<?php
+/**
+ * Gender widget template
+ *
+ * Description:
+ * - Override base/default
+ * - Change input from select to radio
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<label for="<?php echo $this->getFieldId('gender')?>"<?php if ($this->isRequired()) echo ' class="required"' ?>><?php if ($this->isRequired()) echo '<em>*</em>' ?><?php echo $this->__('Gender') ?></label>
+<div class="input-box">
+    <?php $options = Mage::getResourceSingleton('customer/customer')->getAttribute('gender')->getSource()->getAllOptions();?>
+    <?php $value = $this->getGender();?>
+    <?php foreach ($options as $option):?>
+    	<?php if (!empty($option['label'])): ?>
+		    <input type="radio" name="<?php echo $this->getFieldName('gender')?>" value="<?php echo $option['value'] ?>"<?php if ($option['value'] == $value) echo ' checked="checked"' ?> id="<?php echo $this->getFieldName('gender') . '-' . strtolower($option['label']) ?>" class="radio" /> <label for="<?php echo $this->getFieldName('gender') . '-' . strtolower($option['label']) ?>"><?php echo $this->__($option['label']) ?></label>
+    	<?php endif ?>
+    <?php endforeach;?>
+</div>

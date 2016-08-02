@@ -1,0 +1,36 @@
+<?php $param = $this->getRequest()->getParams(); ?>
+<div class="page-title">
+	<h1><?php echo $this->__('Order Status') ?></h1>
+</div>
+<div>
+	<h2><?php echo $this->__('Check Your Order Status') ?></h2>
+<form action="<?php echo $this->getFormAction(); ?>" id="trackorderSearchForm" method="get" class="scaffold-form">
+	<div class="fieldset">
+		<ul class="form-list">
+			<li class="wide">
+				<label for="orderid"><?php echo $this->__('Order Number') ?></label>
+				<div class="input-box">
+					<input name="orderid" id="orderid" title="<?php echo $this->__('OrderId') ?>" class="input-text required-entry validate-number-characters" type="text" value="<?php echo $param['orderid'] ?>" /><br/>
+				</div>
+			</li>
+			<li class="wide">
+				<label for="orderid"><?php echo $this->__('Email') ?></label>
+				<div class="input-box">
+					<input name="email" id="email" title="<?php echo $this->__('Email') ?>" class="input-text required-entry validate-number-characters" type="text" value="<?php echo $param['email'] ?>" />
+				</div>
+			</li>
+			<li>
+				<label></label>
+				<div class="input-box">
+					<button type="submit" title="<?php echo $this->__('View Status') ?>" class="button" ><span><span><?php echo $this->__('View Status') ?></span></span></button>
+				</div>
+			</li>
+		</ul>
+	</div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var dataForm = new VarienForm('trackorderSearchForm', true);
+//]]>
+</script>
+	</div>

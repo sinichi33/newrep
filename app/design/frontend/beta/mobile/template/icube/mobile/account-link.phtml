@@ -1,0 +1,18 @@
+<?php
+/**
+ * Mini Account Template
+ *
+ * Description:
+ * - created from scratch
+ * 
+ */
+?>
+<?php if(!Mage::getSingleton('customer/session')->isLoggedIn()): ?>
+    <a href="<?php echo Mage::helper('customer')->getLoginUrl() ?>"><?php echo $this->__('Login') ?> / <?php echo $this->__('Register') ?></a>
+<?php else: ?>
+    <?php 
+        $_customer = Mage::getSingleton('customer/session')->getCustomer();
+        $_customerFirtsName = $_customer->getFirstname();
+    ?>
+    <a href="<?php echo Mage::getUrl('customer/account') ?>"><?php echo $_customerFirtsName ?></a>
+<?php endif; ?>

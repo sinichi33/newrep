@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Icube_Import>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>0.1.0</version>
+    </Icube_Import>
+  </modules>
+</config>

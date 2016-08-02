@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Icube_Import>
+      <version>0.1.0</version>
+    </Icube_Import>
+  </modules>
+  <frontend>
+    <routers>
+      <import>
+        <use>standard</use>
+          <args>
+            <module>Icube_Import</module>
+            <frontName>import</frontName>
+          </args>
+      </import>
+    </routers>
+  </frontend>
+  <global>
+    <helpers>
+      <import>
+        <class>Icube_Import_Helper</class>
+      </import>
+    </helpers>
+    <models>
+      <import>
+          <class>Icube_Import_Model</class>
+      </import>      
+  </models>
+	<blocks>
+	  <import>
+		<class>Icube_Import_Block</class>
+	  </import>
+	</blocks>
+  </global>
+  <crontab>
+      <jobs>
+          <import_product>
+              <schedule><cron_expr>0 2 * * *</cron_expr></schedule>
+              <run><model>import/observer::importproducts</model></run>
+          </import_product>
+          <import_ccp>
+              <schedule><cron_expr>0 3 * * *</cron_expr></schedule>
+              <run><model>import/observer::importccp</model></run>
+          </import_ccp>
+          <import_mainimage>
+              <schedule><cron_expr>0 4 * * *</cron_expr></schedule>
+              <run><model>import/observer::mainimage</model></run>
+          </import_mainimage>
+          <import_cpi>
+              <schedule><cron_expr>0 3 * * *</cron_expr></schedule>
+              <run><model>import/observer::importcpi</model></run>
+          </import_cpi>
+      </jobs>
+  </crontab>
+</config> 

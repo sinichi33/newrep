@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Icube_Order>
+            <version>0.1.0</version>
+        </Icube_Order>
+    </modules>
+    <global>
+	    <helpers>
+            <icube_order>
+                <class>Icube_Order_Helper</class>
+            </icube_order>
+        </helpers>
+        <models>
+	        <icube_order>
+                <class>Icube_Order_Model</class>
+            </icube_order>
+        </models>
+        <resources>
+            <icube_order_setup>
+                <setup>
+                    <module>Icube_Order</module>
+                </setup>
+            </icube_order_setup>
+        </resources>
+        <template>
+            <email>
+                <sales_email_payment_confirm_template translate="label" module="icube_order">
+                    <label>Payment Confirm</label>
+                    <file>icube/payment_confirm.html</file>
+                    <type>html</type>
+                </sales_email_payment_confirm_template>
+                <sales_email_bopis_ready_template translate="label" module="icube_order">
+                    <label>Bopis Ready</label>
+                    <file>icube/bopis_ready.html</file>
+                    <type>html</type>
+                </sales_email_bopis_ready_template>
+                <sales_email_bopis_picked_template translate="label" module="icube_order">
+                    <label>Bopis Ready</label>
+                    <file>icube/bopis_picked.html</file>
+                    <type>html</type>
+                </sales_email_bopis_picked_template>
+                <sales_email_payment_expire_template translate="label" module="icube_order">
+                    <label>Payment Expire</label>
+                    <file>icube/payment_expire.html</file>
+                    <type>html</type>
+                </sales_email_payment_expire_template>
+            </email>
+        </template>
+        <events>
+          <controller_action_predispatch_checkout_onepage_index>
+            <observers>
+              <validate_item_stock>
+                <type>singleton</type>
+                <class>Icube_Order_Model_Observer</class>
+                <method>validateItemStock</method>
+              </validate_item_stock>
+            </observers>
+          </controller_action_predispatch_checkout_onepage_index>
+        </events>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Icube_Order before="Mage_Adminhtml">Icube_Order_Adminhtml</Icube_Order>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <icubeorder>
+                    <file>icube/icubeorder.xml</file>
+                </icubeorder>
+            </updates>
+        </layout>
+        <events>
+            <adminhtml_widget_container_html_before>
+                <observers>
+                    <edit_button_remove>
+                        <class>icube_order/observer</class>
+                        <type>singleton</type>
+                        <method>removeEditButton</method>
+                    </edit_button_remove>
+                </observers>
+            </adminhtml_widget_container_html_before>
+        </events>
+    </adminhtml>
+    <frontend>
+        <routers>
+            <icube_order>
+                <use>standard</use>
+                <args>
+                    <module>Icube_Order</module>
+                    <frontName>customorder</frontName>
+                </args>
+            </icube_order>
+        </routers>
+    </frontend>
+</config>

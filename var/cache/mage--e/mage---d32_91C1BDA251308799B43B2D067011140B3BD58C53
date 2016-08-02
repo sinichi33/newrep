@@ -1,0 +1,115 @@
+
+<div id="footer-top">
+	<div class="footer-container">
+		
+<div class="block block-subscribe">
+    <div class="block-title">
+        Berlangganan Newsletter    </div>
+    <div class="block-content">
+        <form action="http://magen.local/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+            <div class="form-subscribe-header">
+                <label for="newsletter">Sign Up for Our Newsletter:</label>
+            </div>
+            <div class="input-box">
+               <input type="text" autocapitalize="off" autocorrect="off" spellcheck="false" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" placeholder="Masukkan email Anda..." />
+            </div>
+            <div class="actions">
+                <button type="submit" title="Langganan" class="button btn-orange"><span><span>Langganan</span></span></button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+		<div class="block socmed">
+    <div class="block-title">
+        Terhubung Dengan Kami
+    </div>
+    <div class="block-content">
+        <ul>
+            <li><a href="https://twitter.com/RupaRupaCom" class="twitter" target="_blank"></a></li>
+            <li><a href="https://www.facebook.com/ruparupacom" class="facebook" target="_blank"></a></li>
+            <li><a href="https://www.instagram.com/ruparupacom/" class="instagram" target="_blank"></a></li>
+        </ul>
+    </div>
+</div>	</div>
+</div>
+
+<div id="footer-mid">
+	<div class="footer-container">
+		<div class="footer-links-wrapper">
+	        <div class="block links">
+<div class="block-title">Info Ruparupa</div>
+<div class="block-content">
+<ul>
+<li><a href="http://magen.local/about-us/">Tentang Ruparupa</a></li>
+<li><a href="http://magen.local/privacy-policy/">Kebijakan Privasi</a></li>
+<li><a href="http://magen.local/terms-conditions/">Syarat &amp; Ketentuan</a></li>
+<li><a href="http://magen.local/career/">Info Karir</a></li>
+</ul>
+</div>
+</div>	        <div class="block links">
+<div class="block-title">Layanan Konsumen</div>
+<div class="block-content">
+<ul>
+<li><a href="http://magen.local/faq/">FAQ</a></li>
+<li><a href="http://magen.local/how-to-shop/">Cara Berbelanja</a></li>
+<li><a href="http://magen.local/payment/">Pembayaran</a></li>
+</ul>
+</div>
+</div>	        <div class="block links logo-grid">
+<div class="block-title">Cicilan 0%</div>
+<div class="block-content">
+<ul>
+<li><img alt="Mandiri" src="http://magen.local/skin/frontend/beta/default/images/sample/footer/mandiri.png" /></li>
+</ul>
+</div>
+</div>	        <div class="block links logo-grid">
+    <div class="block-title">
+        Metode Pembayaran
+    </div>
+    <div class="block-content">
+        <ul>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/visa.png" alt="Visa" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/mastercard.png" alt="Master Card" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/permata.png" alt="Permata" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/bca.png" alt="BCA" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/mandiri.png" alt="Mandiri" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/atm_bersama.png" alt="ATM Bersama" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/bank_transfer.png" alt="Bank Transfer" /></li>
+        </ul>
+    </div>
+</div>	        <div class="block links logo-grid">
+    <div class="block-title">
+        Keamanan Berbelanja
+    </div>
+    <div class="block-content">
+        <ul>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/mastercard_secure_code.png" alt="Master Card Secure Code" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/verified_by_visa.png" alt="Verified by Visa" /></li>
+        </ul>
+    </div>
+</div>	        <div class="block links logo-grid">
+    <div class="block-title">
+        Jasa Pengiriman
+    </div>
+    <div class="block-content">
+        <ul>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/jne.png" alt="JNE" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/sap.png" alt="SAP Express" /></li>
+        </ul>
+    </div>
+</div>	    </div>
+	    <div class="footer-text">
+				    </div>
+	</div>
+</div>
+
+<div id="footer-bottom">
+	<div class="footer-container">
+		<address class="copyright">&copy; 2015 RUPARUPA</address>
+	</div>
+</div>

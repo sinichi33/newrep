@@ -1,0 +1,11 @@
+<div class="block links logo-grid">
+    <div class="block-title">
+        Keamanan Berbelanja
+    </div>
+    <div class="block-content">
+        <ul>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/mastercard_secure_code.png" alt="Master Card Secure Code" /></li>
+            <li><img src="http://magen.local/skin/frontend/beta/default/images/sample/footer/verified_by_visa.png" alt="Verified by Visa" /></li>
+        </ul>
+    </div>
+</div>

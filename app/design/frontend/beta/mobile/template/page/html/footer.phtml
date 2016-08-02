@@ -1,0 +1,21 @@
+<?php
+/**
+ * Footer Template
+ *
+ * Description:
+ * - override RWD/default
+ * 
+ */
+?>
+<div id="footer-top">
+	<div class="footer-container">
+		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('m-footer')->toHtml();  ?>
+	</div>
+</div>
+
+<div id="footer-bottom">
+	<div class="footer-container">
+		<a id="switchToDesktop" href="<?php echo Mage::getBaseUrl().'?___store=default' ?>"><?php echo $this->__('Ganti ke versi desktop') ?></a>
+		<address class="copyright"><?php echo $this->getCopyright() ?></address>
+	</div>
+</div>

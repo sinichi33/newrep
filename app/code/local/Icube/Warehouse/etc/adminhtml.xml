@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+ 
+<config>
+    <menu>
+        <icube>
+            <children>
+                <dcdashboard translate="title" module="icube_warehouse">
+                    <sort_order>10</sort_order>
+                    <title>DC Dashboard</title>
+                    <action>adminhtml/dcdashboard/</action>
+                </dcdashboard>
+                <bopisdashboard translate="title" module="icube_warehouse">
+                    <sort_order>10</sort_order>
+                    <title>BOPIS Dashboard</title>
+                    <action>adminhtml/bopisdashboard/</action>
+                </bopisdashboard>
+            </children>
+        </icube>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <icube>
+                        <children>
+                            <dcdashboard translate="title" module="icube_warehouse">
+                                <title>Icube Warehouse - DC Dashboard</title>
+                            </dcdashboard>
+                            <bopisdashboard translate="title" module="icube_warehouse">
+                                <title>Icube Warehouse - BOPIS Dashboard</title>
+                            </bopisdashboard>
+                        </children>
+                    </icube>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

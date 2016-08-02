@@ -1,0 +1,3990 @@
+2016-03-22T03:22:55+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1813
+    [store_id] => 1
+    [created_at] => 2016-03-18 06:46:06
+    [updated_at] => 2016-03-22 03:22:54
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 229000.0000
+    [base_grand_total] => 229000.0000
+    [checkout_method] => 
+    [customer_id] => 4150
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 1
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => susu
+    [customer_firstname] => Sutrisno
+    [customer_middlename] => 
+    [customer_lastname] => Yao
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 1
+    [reserved_order_id] => ODI100000778
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 
+    [subtotal] => 229000.0000
+    [base_subtotal] => 229000.0000
+    [subtotal_with_discount] => 229000.0000
+    [base_subtotal_with_discount] => 229000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 081908803985
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-03-22T03:22:55+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000778-208
+            [gross_amount] => 229000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-03-22T03:27:53+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1814
+    [store_id] => 1
+    [created_at] => 2016-03-22 03:26:55
+    [updated_at] => 2016-03-22 03:27:51
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 600000.0000
+    [base_grand_total] => 600000.0000
+    [checkout_method] => 
+    [customer_id] => 4150
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 1
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => susu
+    [customer_firstname] => Sutrisno
+    [customer_middlename] => 
+    [customer_lastname] => Yao
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 1
+    [reserved_order_id] => ODI100000779
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 
+    [subtotal] => 600000.0000
+    [base_subtotal] => 600000.0000
+    [subtotal_with_discount] => 600000.0000
+    [base_subtotal_with_discount] => 600000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 081908803985
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-03-22T03:27:53+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000779-209
+            [gross_amount] => 600000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-03-23T06:40:10+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1815
+    [store_id] => 1
+    [created_at] => 2016-03-23 03:34:32
+    [updated_at] => 2016-03-23 06:40:08
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 19900.0000
+    [base_grand_total] => 19900.0000
+    [checkout_method] => 
+    [customer_id] => 4151
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 1
+    [customer_email] => kuda@susu.com
+    [customer_prefix] => 
+    [customer_firstname] => susu
+    [customer_middlename] => 
+    [customer_lastname] => kuda
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 1
+    [reserved_order_id] => ODI100000780
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 19900.0000
+    [base_subtotal] => 19900.0000
+    [subtotal_with_discount] => 19900.0000
+    [base_subtotal_with_discount] => 19900.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 122222211
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-03-23T06:40:10+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000780-210
+            [gross_amount] => 19900
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => kuda@susu.com
+            [phone] => +6281908803985
+            [billing_address] => Array
+                (
+                    [first_name] => susu
+                    [last_name] => kuda
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => +6281908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-03-23T06:43:47+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1815
+    [store_id] => 1
+    [created_at] => 2016-03-23 03:34:32
+    [updated_at] => 2016-03-23 06:43:46
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 19900.0000
+    [base_grand_total] => 19900.0000
+    [checkout_method] => 
+    [customer_id] => 4151
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 1
+    [customer_email] => kuda@susu.com
+    [customer_prefix] => 
+    [customer_firstname] => susu
+    [customer_middlename] => 
+    [customer_lastname] => kuda
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 1
+    [reserved_order_id] => ODI100000780
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 19900.0000
+    [base_subtotal] => 19900.0000
+    [subtotal_with_discount] => 19900.0000
+    [base_subtotal_with_discount] => 19900.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 122222211
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-03-23T06:43:47+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000780-211
+            [gross_amount] => 19900
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => kuda@susu.com
+            [phone] => +6281908803985
+            [billing_address] => Array
+                (
+                    [first_name] => susu
+                    [last_name] => kuda
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => +6281908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T06:17:53+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1871
+    [store_id] => 1
+    [created_at] => 2016-03-25 16:59:09
+    [updated_at] => 2016-04-01 06:17:51
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 3
+    [items_qty] => 3.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 278900.0000
+    [base_grand_total] => 278900.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000781
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 268900.0000
+    [base_subtotal] => 268900.0000
+    [subtotal_with_discount] => 268900.0000
+    [base_subtotal_with_discount] => 268900.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T06:17:53+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000781-212
+            [gross_amount] => 278900
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T06:23:23+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1876
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:22:44
+    [updated_at] => 2016-04-01 06:23:22
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 189500.0000
+    [base_grand_total] => 189500.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000782
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 179500.0000
+    [base_subtotal] => 179500.0000
+    [subtotal_with_discount] => 179500.0000
+    [base_subtotal_with_discount] => 179500.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T06:23:23+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000782-213
+            [gross_amount] => 189500
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T08:28:25+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1877
+    [store_id] => 1
+    [created_at] => 2016-04-01 06:28:34
+    [updated_at] => 2016-04-01 08:28:23
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 2
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 683500.0000
+    [base_grand_total] => 683500.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000783
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 668500.0000
+    [base_subtotal] => 668500.0000
+    [subtotal_with_discount] => 668500.0000
+    [base_subtotal_with_discount] => 668500.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T08:28:25+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000783-222
+            [gross_amount] => 683500
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T08:47:20+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1879
+    [store_id] => 1
+    [created_at] => 2016-04-01 08:41:53
+    [updated_at] => 2016-04-01 08:47:18
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 2408000.0000
+    [base_grand_total] => 2408000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000784
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 2398000.0000
+    [base_subtotal] => 2398000.0000
+    [subtotal_with_discount] => 2398000.0000
+    [base_subtotal_with_discount] => 2398000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T08:47:20+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000784-223
+            [gross_amount] => 2408000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T09:00:31+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1880
+    [store_id] => 1
+    [created_at] => 2016-04-01 08:52:05
+    [updated_at] => 2016-04-01 09:00:30
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 1784000.0000
+    [base_grand_total] => 1784000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000785
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 1599000.0000
+    [base_subtotal] => 1599000.0000
+    [subtotal_with_discount] => 1599000.0000
+    [base_subtotal_with_discount] => 1599000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T09:00:31+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000785-224
+            [gross_amount] => 1784000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T09:09:31+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1881
+    [store_id] => 1
+    [created_at] => 2016-04-01 09:08:11
+    [updated_at] => 2016-04-01 09:09:29
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 2
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 903900.0000
+    [base_grand_total] => 903900.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000786
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 698900.0000
+    [base_subtotal] => 698900.0000
+    [subtotal_with_discount] => 698900.0000
+    [base_subtotal_with_discount] => 698900.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T09:09:31+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000786-225
+            [gross_amount] => 903900
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T09:14:39+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1882
+    [store_id] => 1
+    [created_at] => 2016-04-01 09:13:00
+    [updated_at] => 2016-04-01 09:14:37
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 499000.0000
+    [base_grand_total] => 499000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000787
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 499000.0000
+    [base_subtotal] => 499000.0000
+    [subtotal_with_discount] => 499000.0000
+    [base_subtotal_with_discount] => 499000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T09:14:39+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000787-226
+            [gross_amount] => 499000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T09:17:40+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1883
+    [store_id] => 1
+    [created_at] => 2016-04-01 09:17:04
+    [updated_at] => 2016-04-01 09:17:39
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 564000.0000
+    [base_grand_total] => 564000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000788
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 599000.0000
+    [base_subtotal] => 599000.0000
+    [subtotal_with_discount] => 599000.0000
+    [base_subtotal_with_discount] => 599000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T09:17:40+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000788-227
+            [gross_amount] => 564000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T09:25:09+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1883
+    [store_id] => 1
+    [created_at] => 2016-04-01 09:17:04
+    [updated_at] => 2016-04-01 09:25:07
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 564000.0000
+    [base_grand_total] => 564000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000788
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 599000.0000
+    [base_subtotal] => 599000.0000
+    [subtotal_with_discount] => 599000.0000
+    [base_subtotal_with_discount] => 599000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T09:25:09+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000788-228
+            [gross_amount] => 564000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T09:28:35+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1884
+    [store_id] => 1
+    [created_at] => 2016-04-01 09:27:47
+    [updated_at] => 2016-04-01 09:28:33
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 564000.0000
+    [base_grand_total] => 564000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000789
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 599000.0000
+    [base_subtotal] => 599000.0000
+    [subtotal_with_discount] => 599000.0000
+    [base_subtotal_with_discount] => 599000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T09:28:35+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000789-229
+            [gross_amount] => 564000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T09:35:21+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1885
+    [store_id] => 1
+    [created_at] => 2016-04-01 09:34:38
+    [updated_at] => 2016-04-01 09:35:20
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 564000.0000
+    [base_grand_total] => 564000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000790
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 599000.0000
+    [base_subtotal] => 599000.0000
+    [subtotal_with_discount] => 599000.0000
+    [base_subtotal_with_discount] => 599000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T09:35:21+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000790-230
+            [gross_amount] => 564000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-01T09:39:57+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1885
+    [store_id] => 1
+    [created_at] => 2016-04-01 09:34:38
+    [updated_at] => 2016-04-01 09:39:56
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 564000.0000
+    [base_grand_total] => 564000.0000
+    [checkout_method] => 
+    [customer_id] => 4207
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => nasi
+    [customer_middlename] => 
+    [customer_lastname] => merah
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000790
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 599000.0000
+    [base_subtotal] => 599000.0000
+    [subtotal_with_discount] => 599000.0000
+    [base_subtotal_with_discount] => 599000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => a:1:{i:0;a:4:{s:1:"i";s:3:"366";s:1:"c";s:12:"CVXYN7EMSF2U";s:1:"a";d:50000;s:2:"ba";s:10:"50000.0000";}}
+    [gift_cards_amount] => 50000.0000
+    [base_gift_cards_amount] => 50000.0000
+    [gift_cards_amount_used] => 50000.0000
+    [base_gift_cards_amount_used] => 50000.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 8877897
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-01T09:39:57+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000790-231
+            [gross_amount] => 564000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => nasi
+                    [last_name] => merah
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-04-22T06:28:49+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1954
+    [store_id] => 1
+    [created_at] => 2016-04-12 18:21:30
+    [updated_at] => 2016-04-22 06:28:47
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 1.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 614000.0000
+    [base_grand_total] => 614000.0000
+    [checkout_method] => 
+    [customer_id] => 4278
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 4
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => jermain
+    [customer_middlename] => 
+    [customer_lastname] => hahaha
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000791
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 599000.0000
+    [base_subtotal] => 599000.0000
+    [subtotal_with_discount] => 599000.0000
+    [base_subtotal_with_discount] => 599000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 76876876876
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => AR321456
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-04-22T06:28:49+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000791-234
+            [gross_amount] => 614000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => juragan
+            [last_name] => kolor
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 1233232313
+            [billing_address] => Array
+                (
+                    [first_name] => jermain
+                    [last_name] => hahaha
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => juragan
+                    [last_name] => kolor
+                    [address] => jalan kodok raya 15
+                    [city] => DKI JAKARTA
+                    [postal_code] => 76876876
+                    [phone] => 1233232313
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-05-02T06:24:37+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1958
+    [store_id] => 1
+    [created_at] => 2016-04-22 09:27:09
+    [updated_at] => 2016-05-02 06:24:35
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 1048000.0000
+    [base_grand_total] => 1048000.0000
+    [checkout_method] => 
+    [customer_id] => 4281
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 0
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => gengges
+    [customer_middlename] => 
+    [customer_lastname] => domo
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000792
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 998000.0000
+    [base_subtotal] => 998000.0000
+    [subtotal_with_discount] => 998000.0000
+    [base_subtotal_with_discount] => 998000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 98098098098
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-05-02T06:24:37+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000792-235
+            [gross_amount] => 1048000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => gengges
+                    [last_name] => domo
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+
+2016-05-02T06:24:50+00:00 DEBUG (7): QUOTE DATA:Array
+(
+    [entity_id] => 1958
+    [store_id] => 1
+    [created_at] => 2016-04-22 09:27:09
+    [updated_at] => 2016-05-02 06:24:49
+    [converted_at] => 
+    [is_active] => 1
+    [is_virtual] => 0
+    [is_multi_shipping] => 0
+    [items_count] => 1
+    [items_qty] => 2.0000
+    [orig_order_id] => 0
+    [store_to_base_rate] => 1.0000
+    [store_to_quote_rate] => 1.0000
+    [base_currency_code] => IDR
+    [store_currency_code] => IDR
+    [quote_currency_code] => IDR
+    [grand_total] => 1048000.0000
+    [base_grand_total] => 1048000.0000
+    [checkout_method] => 
+    [customer_id] => 4281
+    [customer_tax_class_id] => 3
+    [customer_group_id] => 0
+    [customer_email] => sutrisno.yao@gmail.com
+    [customer_prefix] => 
+    [customer_firstname] => gengges
+    [customer_middlename] => 
+    [customer_lastname] => domo
+    [customer_suffix] => 
+    [customer_dob] => 
+    [customer_note] => 
+    [customer_note_notify] => 1
+    [customer_is_guest] => 0
+    [remote_ip] => 127.0.0.1
+    [applied_rule_ids] => 
+    [reserved_order_id] => ODI100000792
+    [password_hash] => 
+    [coupon_code] => 
+    [global_currency_code] => IDR
+    [base_to_global_rate] => 1.0000
+    [base_to_quote_rate] => 1.0000
+    [customer_taxvat] => 
+    [customer_gender] => 1
+    [subtotal] => 998000.0000
+    [base_subtotal] => 998000.0000
+    [subtotal_with_discount] => 998000.0000
+    [base_subtotal_with_discount] => 998000.0000
+    [fooman_surcharge_amount] => 0.0000
+    [base_fooman_surcharge_amount] => 0.0000
+    [fooman_surcharge_description] => 
+    [is_changed] => 1
+    [trigger_recollect] => 0
+    [ext_shipping_info] => 
+    [gift_message_id] => 
+    [is_persistent] => 0
+    [customer_balance_amount_used] => 0.0000
+    [base_customer_bal_amount_used] => 0.0000
+    [use_customer_balance] => 
+    [base_customer_balance_virtual_amount] => 0.0000
+    [gift_cards] => N;
+    [gift_cards_amount] => 0.0000
+    [base_gift_cards_amount] => 0.0000
+    [gift_cards_amount_used] => 0.0000
+    [base_gift_cards_amount_used] => 0.0000
+    [gw_id] => 
+    [gw_allow_gift_receipt] => 0
+    [gw_add_card] => 0
+    [gw_base_price] => 0.0000
+    [gw_price] => 0.0000
+    [gw_items_base_price] => 0.0000
+    [gw_items_price] => 0.0000
+    [gw_card_base_price] => 0.0000
+    [gw_card_price] => 0.0000
+    [gw_base_tax_amount] => 0.0000
+    [gw_tax_amount] => 0.0000
+    [gw_items_base_tax_amount] => 0.0000
+    [gw_items_tax_amount] => 0.0000
+    [gw_card_base_tax_amount] => 0.0000
+    [gw_card_tax_amount] => 0.0000
+    [use_reward_points] => 0
+    [reward_points_balance] => 0
+    [base_reward_currency_amount] => 0.0000
+    [reward_currency_amount] => 0.0000
+    [pickup_datetime] => 
+    [ebizmarts_abandonedcart_counter] => 0
+    [ebizmarts_abandonedcart_flag] => 0
+    [ebizmarts_abandonedcart_token] => 
+    [base_customer_balance_amount_used] => 0.0000
+    [gw_add_printed_card] => 0
+    [gw_printed_card_base_price] => 0.0000
+    [gw_printed_card_price] => 0.0000
+    [gw_printed_card_base_tax_amount] => 0.0000
+    [gw_printed_card_tax_amount] => 0.0000
+    [customer_telephone] => 98098098098
+    [event_initialized] => 1
+    [customer_ebizmarts_reviews_cntr_total] => 
+    [customer_ebizmarts_reviews_coupon_total] => 
+    [customer_member_ace] => 
+    [customer_member_informa] => 
+    [customer_member_toyskingdom] => 
+    [x_forwarded_for] => 
+)
+
+2016-05-02T06:24:50+00:00 DEBUG (7): VT PARAMS:Array
+(
+    [payment_type] => bank_transfer
+    [bank_transfer] => Array
+        (
+            [bank] => bca
+            [free_text] => Array
+                (
+                    [inquiry] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => PASTIKAN NOMOR VIRTUAL ACCOUNT
+                                    [en] => PLEASE MAKE SURE YOU ENTERED
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => DAN JUMLAH PEMBAYARAN ANDA
+                                    [en] => CORRECT VIRTUAL ACCOUNT
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => SESUAI
+                                    [en] => NUMBER
+                                )
+
+                        )
+
+                    [payment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => TERIMA KASIH UNTUK PEMBAYARAN
+                                    [en] => THANK YOU FOR YOUR PAYMENT
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => ORDER ANDA DI RUPARUPA.COM
+                                    [en] => WE WILL PROCESS YOUR ORDER
+                                )
+
+                            [2] => Array
+                                (
+                                    [id] => PESANAN ANDA AKAN KAMI PROSES
+                                    [en] => ACCORDING TO OUR SHIPMENT
+                                )
+
+                            [3] => Array
+                                (
+                                    [id] => SESUAI DENGAN WAKTU PENGIRIMAN
+                                    [en] => POLICY TO YOUR ADDRESS
+                                )
+
+                            [4] => Array
+                                (
+                                    [id] => ALAMAT ANDA
+                                    [en] => .
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [transaction_details] => Array
+        (
+            [order_id] => RupaODI100000792-236
+            [gross_amount] => 1048000
+        )
+
+    [customer_details] => Array
+        (
+            [first_name] => Sutrisno
+            [last_name] => Yao
+            [email] => sutrisno.yao@gmail.com
+            [phone] => 081908803985
+            [billing_address] => Array
+                (
+                    [first_name] => gengges
+                    [last_name] => domo
+                    [address] => dummy
+                    [city] => dummy
+                    [postal_code] => 111111
+                    [phone] => 111111
+                    [country_code] => IDN
+                )
+
+            [shipping_address] => Array
+                (
+                    [first_name] => Sutrisno
+                    [last_name] => Yao
+                    [address] => Tanjung Duren Timur 3 street No 15 A
+                    [city] => DKI JAKARTA
+                    [postal_code] => 11470
+                    [phone] => 081908803985
+                    [country_code] => IDN
+                )
+
+        )
+
+)
+

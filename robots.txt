@@ -1,0 +1,36 @@
+User-agent: *
+Crawl-delay: 10
+
+Allow: /*?p=
+Allow: /catalog/seo_sitemap/category/
+Allow: /media/catalog/
+
+Disallow: /media/captcha/
+Disallow: /media/customer/
+Disallow: /media/dhl/
+Disallow: /media/downloadable/
+Disallow: /media/import/
+Disallow: /media/pdf/
+Disallow: /media/sales/
+Disallow: /media/tmp/
+Disallow: /media/wysiwyg/
+Disallow: /media/xmlconnect/
+Disallow: /scripts/
+Disallow: /stats/
+Disallow: /index.php/
+Disallow: /catalog/product_compare/
+Disallow: /catalog/category/view/
+Disallow: /catalog/product/view/
+Disallow: /catalog/product/gallery/
+Disallow: /catalogsearch/
+Disallow: /checkout/
+Disallow: /control/
+Disallow: /contacts/
+Disallow: /customer/
+Disallow: /customize/
+Disallow: /newsletter/
+Disallow: /poll/
+Disallow: /review/
+Disallow: /sendfriend/
+Disallow: /tag/
+Disallow: /wishlist/

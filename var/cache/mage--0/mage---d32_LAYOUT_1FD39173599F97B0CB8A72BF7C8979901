@@ -1,0 +1,35 @@
+<remove name="right"/>
+<remove name="left"/>
+<block type="checkout/onepage_payment_methods" name="root" output="toHtml" template="checkout/onepage/payment/methods.phtml">
+   <action method="setMethodFormTemplate">
+      <method>purchaseorder</method>
+      <template>payment/form/purchaseorder.phtml</template>
+   </action>
+   <block type="core/template" name="checkout.onepage.payment.methods.scripts" as="scripts"/>
+   <block type="core/template" name="checkout.onepage.payment.methods.additional" as="additional"/>
+</block>
+<reference name="checkout.onepage.payment.methods.scripts">
+   <block type="enterprise_customerbalance/checkout_onepage_payment_additional" template="customerbalance/checkout/onepage/payment/scripts.phtml" name="customerbalance_scripts"/>
+</reference>
+<reference name="checkout.onepage.payment.methods.scripts">
+   <block type="enterprise_giftcardaccount/checkout_onepage_payment_additional" template="giftcardaccount/onepage/payment/scripts.phtml" name="giftcardaccount_scripts"/>
+</reference>
+<reference name="checkout.onepage.payment.methods.additional">
+   <block type="enterprise_giftcardaccount/checkout_onepage_payment_additional" template="giftcardaccount/onepage/payment/additional.phtml" name="giftcardaccount_additional"/>
+</reference>
+<block type="enterprise_googleanalyticsuniversal/list_json" name="payment_progress_step_simple_checkout" template="googleanalyticsuniversal/checkout/step.phtml" output="toHtml">
+   <action method="setStepName">
+      <stepName>payment</stepName>
+   </action>
+</block>
+<reference name="checkout.onepage.payment.methods.scripts">
+   <block type="core/template" template="pbridge/checkout/payment/scripts.phtml" name="pbridge.scripts"/>
+</reference>
+<reference name="checkout.onepage.payment.methods.scripts">
+   <block type="enterprise_reward/checkout_payment_additional" template="reward/checkout/onepage/payment/scripts.phtml" name="reward.scripts" after="-"/>
+</reference>
+<reference name="root">
+   <action method="setTemplate">
+      <template>icube/customcheckout/onepage/payment/methods.phtml</template>
+   </action>
+</reference>

@@ -1,0 +1,306 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_icube
+ * @copyright   Copyright (c) 2012 Icubeonline.com
+ */
+?>
+<?php
+$limitTotal=Mage::getStoreConfig('payment/klikpay/total_amount');
+$order=Mage::helper('checkout')->getQuote()->getData();
+$grandTotal=$order['grand_total'];
+?>
+<?php $_code=$this->getMethodCode() ?>
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;">
+    <li>
+        <div class="input-box">
+            <div class="v-fix">
+                <?php $installments = unserialize(Mage::getStoreConfig('payment/vpaymentins/installment')); ?>
+                <select name="payment[insbank]" id="ins_bank">
+                    <option value="" ><?php echo $this->__('-- Select bank --') ?></option>
+                    <?php foreach($installments as $installment) { ?>
+                        <option value="<?php echo $installment['bank']; ?>" ><?php echo $this->__($installment['label']) ?></option>
+                    <?php } ?>
+                </select>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="input-box">
+            <div class="v-fix">
+                <select name="payment[instenor]" id="ins_tenor" class="required">
+                    <option value="" ><?php echo $this->__('-- Select tenor --') ?></option>
+                </select>
+            </div>
+        </div>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_cc_owner" class="required"><em>*</em><?php echo $this->__('Name on Card') ?></label>
+        <div class="input-box">
+            <input type="text" title="<?php echo $this->__('Name on Card') ?>" class="input-text required-entry" id="<?php echo $_code ?>_cc_owner" name="payment[cc_owner]" value="<?php echo $this->htmlEscape($this->getInfoData('cc_owner')) ?>" />
+        </div>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_cc_type" class="required"><em>*</em><?php echo $this->__('Credit Card Type') ?></label>
+        <div class="input-box">
+            <select id="<?php echo $_code ?>_cc_type" name="payment[cc_type]" title="<?php echo $this->__('Credit Card Type') ?>" class="required-entry validate-cc-type-select">
+                <option value=""><?php echo $this->__('--Please Select--') ?></option>
+                <?php $_ccType = $this->getInfoData('cc_type') ?>
+                <?php foreach ($this->getCcAvailableTypes() as $_typeCode => $_typeName): ?>
+                    <option value="<?php echo $_typeCode ?>"<?php if($_typeCode==$_ccType): ?> selected="selected"<?php endif ?>><?php echo $_typeName ?></option>
+                <?php endforeach ?>
+            </select>
+        </div>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_cc_number" class="required"><em>*</em><?php echo $this->__('Credit Card Number') ?></label>
+        <div class="input-box">
+            <input type="text" id="<?php echo $_code ?>_cc_number" name="payment[cc_number]" title="<?php echo $this->__('Credit Card Number') ?>" class="input-text validate-cc-number validate-cc-type card-number" value="" autocomplete="off" />
+        </div>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_cc_cid" class="required"><em>*</em><?php echo $this->__('Card Verification Number') ?></label>
+        <div class="input-box">
+            <div class="v-fix">
+                <input type="text" title="<?php echo $this->__('Card Verification Number') ?>" class="input-text cvv required-entry validate-cc-cvn card-cvv" id="<?php echo $_code ?>_cc_cid" name="payment[cc_cid]" value="" />
+            </div>
+            <a href="#" class="cvv-what-is-this"><?php echo $this->__('What is this?') ?></a>
+        </div>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_expiration" class="required"><em>*</em><?php echo $this->__('Expiration Date') ?></label>
+        <div class="input-box">
+            <div class="v-fix">
+                <select id="<?php echo $_code ?>_expiration" name="payment[cc_exp_month]" class="card-expiry-month month validate-cc-exp required-entry">
+                    <?php $_ccExpMonth = $this->getInfoData('cc_exp_month') ?>
+                    <?php foreach ($this->getCcMonths() as $k=>$v):
+                        $monthFrm=sprintf("%02d", $k);
+                        ?>
+                        <option value="<?php echo $monthFrm?$monthFrm:'' ?>"<?php if($monthFrm==$_ccExpMonth): ?> selected="selected"<?php endif ?>><?php echo $v ?></option>
+                    <?php endforeach ?>
+                </select>
+            </div>
+            <div class="v-fix">
+                <?php $_ccExpYear = $this->getInfoData('cc_exp_year') ?>
+                <select id="<?php echo $_code ?>_expiration_yr" name="payment[cc_exp_year]" class="card-expiry-year year required-entry">
+                    <option value="2015"<?php if("2015"==$_ccExpYear): ?> selected="selected"<?php endif ?>><?php echo "2015" ?></option>
+                    <?php foreach ($this->getCcYears() as $k=>$v): ?>
+                        <option value="<?php echo $k?$k:'' ?>"<?php if($k==$_ccExpYear): ?> selected="selected"<?php endif ?>><?php echo $v ?></option>
+                    <?php endforeach ?>
+                </select>
+                <input id="token_id_ins" name="payment[token_id]" type="hidden" />
+            </div>
+        </div>
+    </li>
+    <?php if($this->getPromoProgramCollection()->getSize() > 0) { ?>
+        <li>
+            <label><?php echo $this->__('Promo') ?></label>
+            <div class="input-box">
+                <?php echo $this->getPromoProgramHtml(); ?>
+            </div>
+        </li>
+    <?php } ?>
+</ul>
+
+<script type="text/javascript">
+    var grand_total = <?php echo round($grandTotal); ?>;
+    jQuery("input[name*='payment\[promo\]']").change(function() {
+        var promo_code = jQuery(this).val();
+        jQuery("#payment-buttons-container").find(".button").prop('disabled', true);
+        jQuery("input[name*='payment\[promo\]']").prop('disabled', true);
+        jQuery.ajax({
+            type: "POST",
+            url: "<?php echo Mage::getUrl('vpaymentins/payment/getquotegrandtotal',array('_secure'=>Mage::app()->getStore()->isCurrentlySecure())) ?>",
+            data: {
+                "id": "<?php echo $order['entity_id']?>",
+                "promo_code": promo_code
+            },
+            success: function(data){
+                jQuery.ajax({
+                    type: "POST",
+                    url: "<?php echo Mage::getUrl('vpaymentins/payment/calculatequoteajax',array('_secure'=>Mage::app()->getStore()->isCurrentlySecure())) ?>",
+                    data: {
+                        "id": "<?php echo $order['entity_id']?>"
+                    },
+                    success: function(data){
+                        var limitTotal=<?php if($limitTotal=='' or $limitTotal==0){$limitTotal=500000;}; echo round($limitTotal); ?>;
+
+                        var response = jQuery.parseJSON(data);
+                        grand_total = response.gt;
+
+                        var totalsShipping = $$('table.totals')[0];
+                        var totalsPayment = $$('table.totals')[1];
+                        var newTotals = response.totals;
+                        if(newTotals != null){
+                            totalsShipping.replace(newTotals);
+                            totalsPayment.replace(newTotals);
+                        }
+                        jQuery("#payment-buttons-container").find(".button").prop('disabled', false);
+                        jQuery("input[name*='payment\[promo\]']").prop('disabled', false);
+                    }
+                })
+            },
+            error: function(data){
+                jQuery("#payment-buttons-container").find(".button").prop('disabled', false);
+                jQuery("input[name*='payment\[promo\]']").prop('disabled', false);
+            },
+            timeout: function(data){
+                jQuery("#payment-buttons-container").find(".button").prop('disabled', false);
+                jQuery("input[name*='payment\[promo\]']").prop('disabled', false);
+            }
+        })
+    });
+    jQuery("input[name*='payment\[method\]']").change(function() {
+        var sel_method = jQuery("input[name*='payment\[method\]']:checked").val();
+        if(sel_method == 'vpaymentins') {
+
+            function changeBank(){
+                var sel_insbank = jQuery("#ins_bank").val();
+                var installmentsObj = <?php echo json_encode($installments) ?>;
+                var installments = Object.keys(installmentsObj).map(function (key) {return installmentsObj[key]});
+                var arrayLength = installments.length;
+                for (var i = 0; i < arrayLength; i++) {
+                    var installment = installments[i];
+                    if(sel_insbank == installment['bank']) {
+                        var str_select_tenor = '';
+                        var tenor_arr = installment['tenor'].split(",");
+                        var tenor_arr_length = tenor_arr.length;
+                        for (var j = 0; j < tenor_arr_length; j++) {
+                            str_select_tenor += '<option value="';
+                            str_select_tenor += tenor_arr[j];
+                            str_select_tenor += '" >';
+                            str_select_tenor += tenor_arr[j]+'<?php echo $this->__(' Month(s)')?>';
+                            str_select_tenor += '</option>';
+                        }
+                        jQuery("#ins_tenor").empty().append(str_select_tenor);
+                    }
+                }
+            }
+            jQuery("#ins_bank").on("change", changeBank);
+
+
+            jQuery("#payment-buttons-container").find(".button").prop('onclick',null).off('click').click(
+                function savePaymentIns(){
+                    var win;
+                    Veritrans.client_key = "<?php echo Mage::getStoreConfig('payment/vpaymentins/client');?>"; //add client-key from veritrans
+                    var secure = false;
+                    if('1' == '<?php echo Mage::getStoreConfig('payment/vpaymentins/secure_enable'); ?>') {
+                        secure = true;
+                    }
+                    var is_installment = false;
+                    var tenor = jQuery("#ins_tenor").val();
+                    var bank = jQuery("#ins_bank").val();
+                    if(tenor != '') {
+                        is_installment = true;
+                    }
+                    <?php if(Mage::getStoreConfig('payment/vpaymentins/authorize_only') == 1) { ?>
+                    function _cardSet(){
+                        return {
+                            "card_number" : $("vpaymentins_cc_number").value,
+                            "card_exp_month": $("vpaymentins_expiration").value,
+                            "card_exp_year" : $("vpaymentins_expiration_yr").value,
+                            "card_cvv" : $("vpaymentins_cc_cid").value,
+                            "secure"        : secure,
+                            "gross_amount"  : grand_total,
+                            "type" : "authorize",
+                            "installment"        : is_installment,
+                            'installment_term' : tenor,
+                            'bank'       : bank
+                        }
+                    };
+                    <?php } else { ?>
+                    function _cardSet(){
+                        return {
+                            "card_number" : $("vpaymentins_cc_number").value,
+                            "card_exp_month": $("vpaymentins_expiration").value,
+                            "card_exp_year" : $("vpaymentins_expiration_yr").value,
+                            "card_cvv" : $("vpaymentins_cc_cid").value,
+                            "secure"        : secure,
+                            "gross_amount"  : grand_total,
+                            "installment"        : is_installment,
+                            'installment_term' : tenor,
+                            'bank'       : bank
+                        }
+                    };
+                    <?php } ?>
+                    function _success(d){//alert('5:'+JSON.stringify(d));
+                        if (d.redirect_url) {
+                            if(secure) {
+                                jQuery.fancybox.open({
+                                    href: d.redirect_url,
+                                    type: 'iframe',
+                                    autoSize: true,
+                                    closeBtn: true
+                                });
+//                        win = window.open(d.redirect_url, '_blank');
+//                        win.focus();
+                            }
+                        } else if(d.status_code=='200'){
+                            if(secure) {
+                                jQuery.fancybox.close();
+//                        win.close();
+                            }
+                            $('token_id_ins').value = d.token_id; // store token data in input #token_id
+                            var timeout = setTimeout(function() {
+                                if(d.status_code=='200'){
+                                    payment.save();
+                                    if($("vpaymentins_cc_number")) {
+                                        $("vpaymentins_cc_cid").value = '';
+                                        $("vpaymentins_cc_number").value = '';
+                                    }
+                                }else{
+                                    _error(d);
+                                }
+                            }, 2000);
+                        }else{
+                            _error(d);
+                        }
+                    };
+                    function _error(d){//alert('12:'+JSON.stringify(d));
+                        mytext=d.status_message.replace('[','');
+                        mytext=mytext.replace(']','');
+                        //alert('error:'+JSON.stringify(d, null, 4));
+                        alert('error:'+mytext);
+                    };
+
+                    function setSession(res){
+                        if(res){
+                            //jQuery('#stat').val(1);
+                        }else{
+                            //jQuery('#stat').val(0);
+                        }
+                    }
+                    if(payment.currentMethod=='vpaymentins'){
+                        //jQuery('span#payment-please-wait').css('display','block');
+                        Veritrans.token(_cardSet, _success);
+                    }else{
+                        payment.save();
+                    }
+                }
+            );
+
+        }
+    });
+
+    jQuery(document).ready(function() {
+        jQuery("input[name*='payment\[method\]']").trigger("change");
+    });
+</script>

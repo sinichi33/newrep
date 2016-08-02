@@ -1,0 +1,30 @@
+<?php
+/** 
+
+ * Quickshop block 
+
+ * 
+
+ * @category Brainvire 
+
+ * @package Brainvire_Quickshop
+
+* @copyright Copyright (c) 2015 Brainvire Infotech Pvt Ltd
+ 
+ * 
+ */
+?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+	<head>
+		<?php echo $this->getChildHtml('head') ?>
+		<base target="_parent" />
+	</head>
+	<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+		<div class="quickshop-main">
+			<?php echo $this->getChildHtml('content') ?>
+		</div>
+		<?php echo $this->getChildHtml('before_body_end') ?>
+	</body>
+</html>
+
+

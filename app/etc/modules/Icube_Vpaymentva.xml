@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Icube_Vpaymentva>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Icube_Vpayment />
+                <Veritrans_Vtweb />
+            </depends>
+        </Icube_Vpaymentva>
+    </modules>
+</config> 

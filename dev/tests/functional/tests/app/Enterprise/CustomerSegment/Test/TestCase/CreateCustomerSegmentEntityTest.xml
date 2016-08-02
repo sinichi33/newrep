@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento Enterprise Edition
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Magento Enterprise Edition End User License Agreement
+ * that is bundled with this package in the file LICENSE_EE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magento.com/license/enterprise-edition
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Tests
+ * @package     Tests_Functional
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/etc/variations.xsd">
+    <testCase name="Enterprise\CustomerSegment\Test\TestCase\CreateCustomerSegmentEntityTest">
+        <variation name="CreateCustomerSegmentEntityTestVariation1">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by date of birth.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Date Of Birth|is|1990-01-01]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomer" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation2">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by firstname.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[First Name|is|John]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomer" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation3">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by gender.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Gender|is|Male]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomer" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation4">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by customer group.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Group|is|Retailer]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomer" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation5">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by lastname.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Last Name|is|Doe]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomer" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation6">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by newsletter subscription.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Newsletter Subscription|not subscribed]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomer" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation7">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by customer balance.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Store Credit|equals or greater than|500]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomer" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation8">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by shopping cart subtotal.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_unique</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Shopping Cart Total*|Subtotal*|greater than|90]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomerWithCart" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation9">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by shopping items.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_unique</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Number of Cart Line Items|equals or greater than|1]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomerWithCart" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation10">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by shopping cart products quantity.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_unique</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Products Quantity|equals or greater than|1]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomerWithCart" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation11">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by bunch of different conditions.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">{Customer Address|ALL:[City|is|%city%]}</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomer" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation12">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by bunch of different conditions.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">{Customer Address|ANY:[City|is|Binghamton]}{Customer Address:[Company|is|%company%]}{Customer Address:[Country|is|United States]}{Customer Address:[First Name|is|John]}{Customer Address:[Last Name|is|Doe]}{Customer Address:[State/Province|is|%province%]}{Customer Address:[Street Address|is|%address%]}{Customer Address:[Telephone|is|%telephone%]}{Customer Address:[Zip/Postal Code|is|%postcode%]}</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentMatchedCustomer" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation13">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by cart subtotal.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">[Shopping Cart Total*|Subtotal|is|100]</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation14">
+            <data name="description" xsi:type="string">Create inactive customer segment matched to customers by customer company.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Inactive</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">{Customer Address|ANY:[Company|is|%company%]}</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">100</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsNotApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+        <variation name="CreateCustomerSegmentEntityTestVariation15">
+            <data name="description" xsi:type="string">Create customer segment matched to customers by bunch of different conditions.</data>
+            <data name="product/dataSet" xsi:type="string">order_default</data>
+            <data name="customer/dataSet" xsi:type="string">johndoe_conditions</data>
+            <data name="customerSegment/data/name" xsi:type="string">Segment Name %isolation%</data>
+            <data name="customerSegment/data/is_active" xsi:type="string">Active</data>
+            <data name="customerSegmentConditions/data/conditions_serialized" xsi:type="string">{Customer Address|ANY:[City|is|Binghamton]}{Customer Address:[Company|is|%company%]}{Customer Address:[Country|is|United States]}{Customer Address:[First Name|is|John]}{Customer Address:[Last Name|is|Doe]}{Customer Address:[State/Province|is|%province%]}{Customer Address:[Street Address|is|%address%]}{Customer Address:[Telephone|is|%telephone%]}{Customer Address:[Zip/Postal Code|is|%postcode%]}</data>
+            <data name="customerSegment/data/apply_to" xsi:type="string">Visitors and Registered Customers</data>
+            <data name="salesRule/conditions_serialized" xsi:type="string">[Customer Segment|matches|%customerSegmentName%]</data>
+            <data name="cart/data/grand_total" xsi:type="string">50</data>
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentSuccessSaveMessage" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentForm" />
+            <constraint name="Enterprise\CustomerSegment\Test\Constraint\AssertCustomerSegmentInCartPriceRuleIsApplying" />
+            <constraint name="Mage\Checkout\Test\Constraint\AssertGrandTotalInShoppingCart" />
+        </variation>
+    </testCase>
+</config>

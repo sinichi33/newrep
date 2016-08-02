@@ -1,0 +1,438 @@
+/* ==========================================================================
+   GENERAL STYLE
+========================================================================== */ 
+body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #69696E;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-height: calc(690px * (90/150));
+    height: 75vh;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+section{
+    position: relative;
+    overflow: hidden;
+}
+
+/*------------------------------------------*/
+/*   Links
+/*------------------------------------------*/
+a, 
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+    color: #439fe0;
+    text-decoration: none;
+    outline: 0;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+a.inverse, 
+.inverse a,
+i.inverse {
+    color: #ffffff !important;
+}
+
+/*------------------------------------------------------------------*/
+/*   Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix
+/*-----------------------------------------------------------------*/
+@-webkit-viewport { 
+    width: device-width; 
+}
+
+@-moz-viewport { 
+    width: device-width; 
+}
+
+@-ms-viewport { 
+    width: device-width; 
+}
+
+@-o-viewport { 
+    width: device-width; 
+}
+
+@viewport { 
+    width: device-width; 
+}
+
+
+
+/* ==========================================================================
+   TYPOGRAPHY
+========================================================================== */
+/* set margin for optimize vertical-align-middle */
+h1, .h1, 
+h2, .h2, 
+h3, .h3, 
+h4, .h4, 
+h5, .h5,
+h6, .h6,
+p, .lead {
+	padding:0px;
+}
+
+h1, .h1 {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 18px;
+}
+
+h2, .h2 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 42px;
+    margin-top: 28px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 18px;\
+}
+
+.l-spacing {
+    letter-spacing: 2px;
+}
+
+/*------------------------------------------------------------------*/
+/*   Font Weight
+/*-----------------------------------------------------------------*/
+.f-w-300 {
+    font-weight: 300;
+}
+
+.f-w-400 {
+    font-weight: 400;
+}
+
+.f-w-700 {
+    font-weight: 700;
+}
+
+.f-w-900 {
+    font-weight: 900;
+}
+
+/*------------------------------------------------------------------*/
+/*   Contextual Colors
+/*-----------------------------------------------------------------*/
+.text-white {
+    color: #ffffff;
+}
+
+.text-black {
+    color: #69696E;!important;
+}
+
+/*------------------------------------------------------------------*/
+/*   line height
+/*-----------------------------------------------------------------*/
+
+.l-height {
+	line-height: 40px;
+}
+
+/* ==========================================================================
+   BACKGROUNDS
+========================================================================== */
+
+
+.bg-white {
+    background-color: #FFF;
+}
+
+.bg-grey {
+	background:#545761;
+}
+
+.bg-grey p {
+	color:#FFFFFF;
+}
+
+.bg-orange {
+	background: url(../images/bg.png) no-repeat;
+	background-size:cover;
+}
+
+.block {
+	height: 330px;
+    display: block;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+	
+}
+
+.block-title {
+	height: 60px;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding: 20px 0;
+}
+
+.block-title p {
+	font-size: 24px;
+}
+
+.indent {
+    line-height: 32px;
+}
+
+/*==========================================================================
+   FORMS
+========================================================================== */
+.form-control {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px;
+    width:100%;
+    height: auto;
+    outline: 0;
+    border: 1px solid #ababab;
+    box-shadow: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    background: #ffffff;
+    border-color: #008ccf;
+    box-shadow: none;
+}
+
+.form-white .form-control {
+    background: #ffffff;
+    border-color: #ababab;
+    color: #657380;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.form-white .form-control:focus {
+    border-color: #008ccf;
+}
+
+
+.form-group button {
+    width: 100%;
+}
+
+.form-inline .form-group, 
+.form-inline .form-group input {
+    margin-bottom: 15px;
+	width:100%;
+}
+ 
+.form-inline .form-group input:focus {
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(0,141,207,1);
+	-moz-box-shadow: 0px 0px 8px 1px rgba(0,141,207,1);
+	box-shadow: 0px 0px 8px 1px rgba(0,141,207,1);
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+	}
+
+.form-inline button {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.form-inline.double-input .form-group {
+    width: 100%;
+}
+
+.form-inline.double-input .form-control {
+    width: 49%;
+}
+
+.form-inline.double-input button {
+    width: 99%;
+}
+
+textarea { 
+    resize:vertical; 
+}
+
+.form-inline .btn {
+	display: block;
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   HEADER NAVIGATION
+========================================================================== */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border: none;
+    margin-bottom: 0;
+    padding: 20px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-brand {
+    padding: 3px 0 0;
+    height: auto;
+}
+
+
+.navbar-nav>li {
+	background:none;!important;
+}
+
+.navbar-nav>li:focus {
+    background-color: transparent;
+}
+
+
+/*------------------------------------------*/
+/*   Navbar Transparent/ Navbar Color
+/*------------------------------------------*/
+
+.navbar.bg-white {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+
+/* ==========================================================================
+   HERO SECTION
+========================================================================== */
+.hero {
+    min-height: 100%;
+}
+
+.hero.height-800, 
+.hero.height-800-fix {
+    height: 800px;
+}
+
+
+.hero .btn a {
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.hero p.small a {
+    font-size: 15px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.hero.hero-countdown {
+    height: auto;
+    padding-top: 10.5%;
+    position: relative;
+
+}
+
+
+/* ==========================================================================
+   FOOTER SECTION
+=========================================================================== */
+footer .align-center {
+	padding: 8px 0;
+}
+
+footer .align-center p {
+    font-size: 14px;
+    font-weight: 300;
+	text-align:center;
+	margin-top:8px;
+}
+
+.footer a {
+    color: #69696E;
+}
+
+.footer ul {
+    padding-left:0;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+/* Word rotator */
+
+.text-container {
+	height:auto;
+}
+
+.container-white {
+	padding: 5px 0;
+	background-color:#FFFFFF;
+}
+
+.text-rotator  {
+	font-size:38px;
+	font-weight:900;
+}
+
+.thumb {
+	margin-top:30px;
+	z-index:-100;
+	float:right;
+}
+
+.shell {
+	float:left;
+}
+
+/* Warning, Label, Error */
+
+.warning {
+	color:red;
+}
+
+form label.error, label.error {
+	color: red;
+	font-weight:400;
+	font-size:12px;
+	float:left;
+	margin-top:-15px;
+}
+div.error {
+	display: none;
+}
+
+.hidden-2 {
+	visibility:hidden;
+	height:100px;
+}

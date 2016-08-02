@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Icube_Shippingbeta>
+			<version>0.1.0</version>
+		</Icube_Shippingbeta>
+	</modules>
+	<global>
+		<models>
+			<shippingbeta>
+				<class>Icube_Shippingbeta_Model</class>
+				<resourceModel>shippingbeta_mysql4</resourceModel>
+			</shippingbeta>
+			<shippingbeta_mysql4>
+                <class>Icube_Shippingbeta_Model_Mysql4</class>
+                <entities>
+                    <handlingrate>
+                        <table>icube_shippinghandling_rate</table>
+                    </handlingrate>
+                </entities>
+            </shippingbeta_mysql4>        
+		</models>
+		<helpers>
+			<shippingbeta>
+				<class>Icube_Shippingbeta_Helper</class>
+			</shippingbeta>
+		</helpers>
+		<resources>
+            <icube_shippingbeta_setup>
+                <setup>
+                    <module>Icube_Shippingbeta</module>
+                </setup>
+            </icube_shippingbeta_setup>
+        </resources>
+	</global>
+	<default>
+		<carriers>
+			<sap>
+				<active>0</active>
+				<model>shippingbeta/shipping</model>
+				<method_name>Beta Shipping Method</method_name>
+				<title>SAP</title>
+			</sap>
+			<jne>
+				<active>0</active>
+				<model>shippingbeta/jne</model>
+				<method_name>JNE Shipping Method</method_name>
+				<title>JNE</title>
+			</jne>
+		</carriers>
+	</default>
+</config>

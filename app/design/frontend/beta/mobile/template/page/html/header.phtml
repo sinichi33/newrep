@@ -1,0 +1,44 @@
+<?php
+/**
+ * Footer Template
+ *
+ * Description:
+ * - override Beta/default
+ * 
+ */
+?>
+
+<div class="header-announcement-background">
+    <div class="content-list">
+        <?php echo $this->getChildHtml('header_announcement') ?>
+    </div>
+    <span class="close-announcement"></span>
+</div>
+
+<div class="main-header-background">
+    <header id="header" class="page-header header-container">
+        
+        <a href="#mobile-menu" class="flaticon-three mobile-menu"></a>
+
+        <!-- logo -->
+        
+        <a class="logo" href="<?php echo $this->getUrl('') ?>">
+            <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
+        </a>
+
+        <!-- Cart -->
+
+        <?php echo $this->getChildHtml('minicart_head'); ?>
+
+        <!-- Search -->
+
+        <a href="javascript:void(0)" class="flaticon-tool mobile-search"></a>
+        
+        <div id="header-search">
+            <?php echo $this->getChildHtml('topSearch') ?>
+        </div>
+
+    </header>
+</div>
+
+<?php echo $this->getChildHtml('topContainer'); ?>

@@ -1,0 +1,10 @@
+<?php 
+$item = $this->getItem(); 
+$product = $item->getProduct();
+
+if ($product->isSaleable()) {
+	echo $this->__('In Stock');
+}else{
+	echo $this->__('Out of Stock');
+}
+?>

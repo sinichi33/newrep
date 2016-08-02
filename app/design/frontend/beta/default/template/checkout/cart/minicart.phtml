@@ -1,0 +1,35 @@
+<?php
+/**
+ * Mini Cart link Template
+ *
+ * Description:
+ * - Override rwd/default
+ * - Add onclick event to minicart link
+ */
+
+/**
+ * Shoping cart sidebar
+ *
+ * @see Mage_Checkout_Block_Cart_Sidebar
+ */
+
+?>
+
+<?php
+    $_cartQty = $this->getSummaryCount();
+    if(empty($_cartQty)) {
+        $_cartQty = 0;
+    }
+?>
+
+<a href="<?php echo $this->helper('checkout/cart')->getCartUrl(); ?>" data-target-element="#header-cart" class="cart <?php if($_cartQty <= 0): ?> no-count<?php endif; ?>" onclick="miniCartLinkOnClick(this,event)">
+    <?php echo $this->__('<span>%s<span> items<br/>in Your Cart',$_cartQty); ?> 
+</a>
+
+<div id="header-cart" class="block block-cart skip-content">
+    <?php echo $this->getChildHtml('minicart_content');?>
+</div>
+
+<script type="text/javascript">
+	Translator.add('Item has been added successfully.','<?php echo Mage::helper("Checkout")->__("Item has been added successfully.")?>');
+</script>

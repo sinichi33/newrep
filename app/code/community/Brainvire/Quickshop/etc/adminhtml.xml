@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- 
+
+@author Brainvire Team 
+
+@copyright Brainvire 
+
+@package Brainvire_Quickshop
+
+-->
+<config>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <Brainvire_Quickshop>
+                        <title>Quickshop Module</title>
+                        <sort_order>10</sort_order>
+                    </Brainvire_Quickshop>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <quickshop translate="title" module="quickshop">
+                                        <title>Brainvire quickshop</title>
+                                    </quickshop>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

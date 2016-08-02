@@ -1,0 +1,27 @@
+<?php
+/**
+ * Footer Template
+ *
+ * Description:
+ * - override beta/default
+ * - Call categpry menu from cms block instead of from renderer (performance issue)
+ * 
+ */
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see Mage_Page_Block_Html_Topmenu
+ */
+?>
+<?php $_menu = $this->getHtml('level-top','') ?>
+
+<?php if($_menu): ?>
+	<a href="javascript:void(0)" class="category-link"><?php echo $this->__('Kategori') ?></a>
+    <!-- <ul> -->
+        <?php //echo $_menu ?>
+        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('category-top-menu')->toHtml();  ?>
+
+    <!-- </ul> -->
+<?php endif ?>

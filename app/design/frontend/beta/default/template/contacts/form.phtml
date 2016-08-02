@@ -1,0 +1,115 @@
+<?php
+/**
+ * Contacts Template
+ *
+ * Description:
+ * - Override rwd/base
+ * - Add contact detail
+ * - Make name to first & last name
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<?php 
+    /*
+    $customerFirstName = '';
+    $customerLastName = '';
+    if (Mage::getSingleton('customer/session')->isLoggedIn()) {
+        $customer = Mage::getSingleton('customer/session')->getCustomer();
+        $customerData = Mage::getModel('customer/customer')->load($customer->getId())->getData();
+        $customerFirstName = $customerData['firstname'];
+        $customerLastName = $customerData['lastname'];
+    }
+    */
+?>
+<div class="contact-content-wrapper">
+    <div class="page-title">
+        <h1><?php echo Mage::helper('contacts')->__('Contact Us') ?></h1>
+    </div>
+    <div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
+
+    <div class="call">
+        <strong>help@ruparupa.com</strong><br/>
+        (021) 582-9191
+    </div>
+
+    <div class="contact-form">
+        <form action="<?php echo $this->getFormAction(); ?>" id="contactForm" method="post">
+            <div class="fieldset">
+                <div class="left">
+                    <ul class="form-list">
+                        <li>   
+                            <label for="topic" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Pilih Topik Anda') ?></label>
+                            <div class="input-box">
+                                <select name="topic" id="topic" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Topic')) ?>" value="" class="required-entry">
+                                    <option value="refund"><?php echo Mage::helper('contacts')->__('Exchange / Refund / Return') ?></option>
+                                    <option value="info-dan-servis"><?php echo Mage::helper('contacts')->__('Info Produk & Servis') ?></option>
+                                    <option value="delivery-dan-payment"><?php echo Mage::helper('contacts')->__('Delivery & Payment') ?></option>
+                                    <option value="saran-dan-masukan"><?php echo Mage::helper('contacts')->__('Saran & Masukan') ?></option>
+                                    <option value="other"><?php echo Mage::helper('contacts')->__('Lainnya') ?></option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="left">
+                    <ul class="form-list">
+                        <li class="fields">
+                            <div class="field">
+                                <label for="name" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Name') ?></label>
+                                <div class="input-box">
+                                    <input name="name" id="name" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Name')) ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry" type="text" />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="email" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Email') ?></label>
+                                <div class="input-box">
+                                    <input name="email" id="email" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Email')) ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email" type="text" />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul class="form-list">
+                        <li>
+                            <div class="field">
+                                <label for="telephone"><?php echo Mage::helper('contacts')->__('Telephone') ?></label>
+                                <div class="input-box">
+                                    <input name="telephone" id="telephone" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Telephone')) ?>" value="" class="input-text" type="text" />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <ul class="form-list">
+                    <li class="wide">
+                        <div class="field">
+                            <label for="comment" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Comment') ?></label>
+                            <div class="input-box">
+                                <textarea name="comment" id="comment" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Comment')) ?>" class="required-entry input-text" cols="5" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="buttons-set">
+                    <p class="required"><?php echo Mage::helper('contacts')->__('* Required Fields') ?></p>
+                    <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
+                    <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Submit')) ?>" class="button"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+    var contactForm = new VarienForm('contactForm', true);
+//]]>
+</script>

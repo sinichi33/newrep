@@ -1,0 +1,436 @@
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+.cms-page-view .main {
+
+    h1 {
+        display: none;
+    }
+    
+    h2,
+    h3,
+    h4 {
+    }
+
+    h2 {
+    }
+
+    h3 {
+        @include responsive-font-size(14);
+    }
+
+    h4 {
+    }
+
+    .col2-set {
+
+        .col-1,
+        .col-2 {
+        }
+
+        .border-left {
+        }
+
+        .buttons-set {
+        }
+    }
+
+    .form-list {
+
+    }
+
+    .buttons-set {
+    }
+
+    .std {
+
+        p {
+            line-height: 1.5;
+        }
+    }
+
+    .col-main {
+        padding: 10px;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Table
+/*----------------------------------------------------------------------------*/
+
+table.table-lines {
+    display: block;
+
+    tr,
+    tbody,
+    tfoot,
+    tr,
+    th,
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tfoot {
+
+        td {
+            display: inline-block;
+            width: auto;
+        }
+    }
+    
+    tbody {
+
+        td {
+            border: none;
+            padding: 0;
+
+            &:before {
+                content: attr(data-rwd);
+                content: attr(data-rwd-label);
+                display: block;
+                font-weight: bold;
+                line-height: 1.2;
+            }
+
+            + td {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    tr {
+        padding: 30px 10px 10px;
+        border: solid 1px #52555f;
+        position: relative;
+
+        + tr {
+            margin-top: 15px;
+        }
+    }
+
+    td:first-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 2px 10px;
+        background: #52555f;
+        color: #fff;
+
+        &:before {
+            display: inline-block;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+    }
+}
+
+.table-note {
+}
+
+table {
+}
+
+/*----------------------------------------------------------------------------*/
+/* Accordion
+/*----------------------------------------------------------------------------*/
+
+.accordion {
+}
+
+/*----------------------------------------------------------------------------*/
+/* CMS Nav
+/*----------------------------------------------------------------------------*/
+
+#cms-nav {
+	padding: 0;
+    background: none;
+    position: relative;
+    margin: -10px 0 0;
+
+    .title {
+        display: block;
+        @include responsive-font-size(16);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .block {
+        display: none;
+        background: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        z-index: 1;
+        box-shadow: 0px 2px 7px #a9a9a9;
+
+        li.active {
+            display: none;
+        }
+
+        li.active:first-child + li{
+            border-top: 0;
+        }
+    }
+
+    #mob-active-cmsmenu {
+        background: #fff;
+        padding: 5px 10px;
+        border-radius: $button-radius;
+        cursor: pointer;
+        position: relative;
+
+        li {
+            list-style: none;
+            color: $c-text;
+
+            &.active {
+                color: $c-text;
+            }
+        }
+
+        &:after {
+            content: "\f107";
+            color: $c-orange;
+            font: normal normal normal 24px/1 FontAwesome;
+            right: 10px;
+            position: absolute;
+            top: 15px;
+        }
+
+        &.clicked:after {
+            content: "\f106";
+        }
+    }
+
+    li {
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* About Us
+/*----------------------------------------------------------------------------*/
+
+.cms-about-us .main {
+
+    h1 {
+        display: block;
+    }
+
+    @include breakpoint(max,639px) {
+
+        table,
+        tr,
+        td {
+            display: block;
+            width: 100% !important;
+            padding: 0;
+        }
+
+        td:first-child {
+
+            p:last-child {
+
+                img {
+                    display: none;
+                }
+            }
+        }
+
+        td:last-child {
+            
+            img {
+                height: 435px;
+            }
+        }
+    }
+
+}
+
+/*----------------------------------------------------------------------------*/
+/* Info Karir
+/*----------------------------------------------------------------------------*/
+
+.cms-career .main {
+
+    .col-main {
+        padding: 0;
+    }
+
+    .content-wrapper {
+        padding: 10px;
+
+        .left,
+        .right {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    .std p + ul {
+        margin-top: 5px;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* How To Shop
+/*----------------------------------------------------------------------------*/
+
+.cms-how-to-shop {
+
+}
+
+.cms-how-to-shop .std > table,
+.cms-page-view table.progress {
+
+    tr,
+    tbody,
+    td {
+        display: block;
+        float: left;
+    }
+
+    tr {
+        position: relative;
+    }
+
+    td {
+        padding: 10px 0;
+        line-height: 1.3;
+    }
+
+    td:first-child {
+        width: 30%;
+        max-width: 110px;
+        padding-left: 25px;
+    }
+
+    td:nth-child(2) {
+        display: block;
+        position: absolute;
+        left: -14px;
+        top: -10px;
+        padding: 0;
+    }
+
+    td:nth-child(3) {
+        width: 70%;
+        padding-left: 10px;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Pembayaran
+/*----------------------------------------------------------------------------*/
+
+.cms-payment .main .std {
+
+    .accordion {
+
+        .block-content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    h2,
+    h3 {
+        @include responsive-font-size(14);
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* 404
+/*----------------------------------------------------------------------------*/
+
+.cms-index-noroute .std {
+    padding: 150px 10px 10px;
+    background-size: 115px;
+    background-position-x: center;
+    background-position-y: 25px;
+    text-align: center;
+
+    h1 {
+        @include responsive-font-size(54);
+    }
+    
+    h4.subtitle {
+        @include responsive-font-size(23);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    img {
+        margin: 10px auto !important;
+        width: 50px;
+    }
+
+    .search-prolog,
+    #search_mini_form,
+    .category-list-wrapper {
+        display: none;
+    }
+
+    a.button {
+        color: #fff;
+        line-height: 40px;
+        padding: 0;
+        height: 40px;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+}
+
+/*----------------------------------------------------------------------------*/
+/* Pengembalian / RMA
+/*----------------------------------------------------------------------------*/
+
+#return-type-list {
+
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6) {
+
+        &:before {
+            display: inline-block;
+            margin-right: 7px;
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* FAQ
+/*----------------------------------------------------------------------------*/
+
+.cms-faq .main {
+
+    .accordion {
+
+        .block-title {
+            padding-right: 15px !important;
+
+            &:after {
+                right: 0;
+            }
+        }
+
+        .block-content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

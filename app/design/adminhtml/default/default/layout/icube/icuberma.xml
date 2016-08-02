@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout>
+	<adminhtml_rma_edit>
+		<reference name="enterprise_rma_edit_tabs">
+			<block type="icube_rma/adminhtml_rma_edit_tab_images" name="rma_edit_tab_images" template="icube/rma/edit/images.phtml" />
+            <action method="addTab"><name>images_section</name><block>rma_edit_tab_images</block></action>
+        </reference>
+	</adminhtml_rma_edit>
+	<adminhtml_rma_new>
+		<reference name="enterprise_rma_edit_tabs">
+			<block type="icube_rma/adminhtml_rma_new_tab_images" name="rma_new_tab_images" template="icube/rma/new/images.phtml" />
+            <action method="addTab"><name>images_section</name><block>rma_new_tab_images</block></action>
+        </reference>
+        <reference name="head">
+	        <action method="addJs"><script>icube/adminhtml/rma.js</script></action>
+	    </reference>
+	</adminhtml_rma_new>
+</layout>

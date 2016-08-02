@@ -1,0 +1,72 @@
+<!--@subject {{var store.getFrontendName()}}: Pesanan Sudah Diambil # {{var order.increment_id}} @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$order.getCustomerName()":"Customer Name",
+"var store.getFrontendName()":"Store Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var order.increment_id":"Order Id",
+"var order.getCreatedAtFormated('long')":"Order Created At (datetime)",
+"var order.getBillingAddress().format('html')":"Billing Address",
+"var payment_html":"Payment Details",
+"var order.getShippingAddress().format('html')":"Shipping Address",
+"var order.getShippingDescription()":"Shipping Description",
+"layout handle=\"sales_email_order_items\" order=$order":"Order Items Grid",
+"var order.getEmailCustomerNote()":"Email Order Note"}
+@-->
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<!-- If VA payment -->
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr class="section">
+        <td>
+            <h1>Hi {{var order.getCustomerFirstname()}},</h1>
+            <p style="font-size:14px; line-height:22px;">Terima  kasih telah berbelanja di Ruparupa, pesanan Anda dengan nomor pesanan <span style="color:#229bd5; font-weight:bold">{{var order.getIncrementId()}}</span> telah diambil per hari ini <strong>{{var date}}</strong> berdasarkan data yang ada di sistem kami.
+       </p>
+        </td>
+    </tr>
+    <tr class="order-information section">
+        <td>
+            <hr style="margin-bottom:15px" />
+           <h2>RINCIAN PESANAN</h2>
+
+            {{if order.getEmailCustomerNote()}}
+            <table cellspacing="0" cellpadding="0" class="message-container">
+                <tr>
+                    <td>{{var order.getEmailCustomerNote()}}</td>
+                </tr>
+            </table>
+            {{/if}}
+            <table>
+                {{layout handle="sales_email_order_invoice_bopis_items" invoices=$invoices order=$order}}
+            </table>
+        </td>
+    </tr>
+    <tr class="section">
+        <td><br><br>
+            <table class="signature">
+                <tbody>
+                <tr>
+                    <td>Terima Kasih</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid #E1E1E1; padding-bottom:5px; color:#F36525;">Sisca</td>
+                </tr>
+                <tr>
+                    <td>Ruparupa.com</td>
+                </tr>
+               </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

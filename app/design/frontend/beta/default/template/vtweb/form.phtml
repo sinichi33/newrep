@@ -1,0 +1,60 @@
+<?php
+/**
+ * Veritrans VT Web Model Standard
+ *
+ * ICUBE:
+ * - delete default content, remove with content form cms block
+ *
+ * @category   Mage
+ * @package    vtweb/form.phtml
+ * @author     Kisman Hong, plihplih.com
+ * this template is rendered when Veritrans payment method is chosen. This is description about Veritrans Payment Method
+ */
+?>
+<?php
+$enable_payment = $this->getEnablePayment();
+$direct_debit = $this->getDirectDebit();
+$emoney = $this->getEmoney();
+$cc =  $this->getCreditCard();
+$bank_trans = $this->getBankTransfer();
+$cstore = $this->getCstore();
+?>
+
+<style>
+.border
+{
+    border-style:solid;
+    border-width:1px;
+    border-color:#cccccc;
+    height: 38px;
+}
+.image
+{
+    height:30px;
+    width:50px;
+    margin:10px 3px;
+    padding:0 0 0 4;
+}
+.float
+{
+    float:left;
+}
+.float-group
+{
+    float:left;
+    margin:10px 8px 0 0;
+
+}
+.displayed
+{
+    display: block;
+    margin: auto;
+}
+</style>
+<ul class="form-list" id="payment_form_<?php echo $this->getMethodCode() ?>" style="display:none;">
+    <li class="wide">   
+        <div id="payment-bank_transfer_accounts">
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('payment-ibanking_emoney')->toHtml(); ?>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<theme>
+    <parent>rwd/enterprise</parent>
+    <layout>
+        <updates>
+            <default>
+                <file>local.xml</file>
+            </default>
+        </updates>
+    </layout>
+</theme>

@@ -1,0 +1,253 @@
+
+/*----------------------------------------------------------------------------*/
+/* Ticker
+/*----------------------------------------------------------------------------*/
+
+.event-container {
+
+    .event {
+
+        &.open {
+        }
+
+    	.status {
+    	}
+    	
+    	.event-ticker {
+
+    		span {
+    		}
+
+    		.days,
+    		.hour,
+    		.minute,
+    		.second {
+    			
+    		}
+    	}
+
+        &.upcoming,
+        &.closed {
+        }
+    }
+
+    .event-dates {
+
+        .start,
+        .end {
+        }
+
+        .date-part {
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Ticker on catalog
+/*----------------------------------------------------------------------------*/
+
+body.catalog-category-view {
+
+    .event-container {
+        margin: 0 0 15px;
+
+        .event {
+            padding: 10px;
+
+            .event-ticker {
+
+                span {
+                    @include responsive-font-size(30);
+                    margin-top: 5px;
+                }
+
+                .days,
+                .hour,
+                .minute,
+                .second {
+                    
+                    &:after {
+                        bottom: -9px;
+                        @include responsive-font-size(8);
+                    }
+                }
+            }
+        }
+
+        .event-dates {
+            
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Ticker on PDP
+/*----------------------------------------------------------------------------*/
+
+
+body.catalog-product-view {
+
+    .event-container {
+        padding: 10px;
+        margin: 15px 0;
+
+        &.container-open {
+            display: block;
+            border: 1px solid $c-orange;
+            padding-left: 15%;
+
+            &:before {
+                content: '';
+                @include use-sprite('flashsale-timer-logo');
+                position: absolute;
+                left: 4%;
+            }
+        }
+
+        .event {
+
+            .event-ticker span {
+                @include responsive-font-size(22);
+                width: 15%;
+            }
+
+            .event-ticker span:after {
+                @include responsive-font-size(9);
+            }
+
+            .event-ticker {
+                
+                .days,
+                .hour,
+                .minute,
+                .second {
+                    
+                    &:after {
+                        bottom: -12px;
+                        @include responsive-font-size(8);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Product list
+/*----------------------------------------------------------------------------*/
+
+.flash-sale {
+
+    li {
+        width: 100%;
+        float: none;
+        margin-top: 10px !important;
+    }
+
+    .product-info {
+        width: 63%;
+        padding: 4px 15px;
+    }
+
+    .product-image {
+        width: 37%;
+    }
+
+    .product-name {
+        height: 30px;
+        margin-bottom: 0;
+
+        a {
+            line-height: 1.1;
+            display: block;
+        }
+    }
+
+    .label.discount {
+        line-height: 1.4;
+
+        .value {
+            @include responsive-font-size(26);
+        }
+
+        .percent {
+            @include responsive-font-size(10);
+            line-height: 1.2;
+            margin: 5px 8px 5px 3px;
+        }
+    }
+
+    .price-wrapper {
+        margin-bottom: 3px;
+    }
+
+    .price-box {
+
+        .special-price,
+        .regular-price {
+
+            .price {
+                @include responsive-font-size(14);
+            } 
+        }
+
+        .regular-price {
+            margin: 7px 0;
+            display: block;
+        }
+
+        .old-price .price {
+            @include responsive-font-size(8);
+        }
+    }
+}
+
+.event-container {
+    min-height: 30px;
+
+    .event {
+        min-height: 30px;
+        margin: 0 !important;
+
+        .event-ticker {
+            @include responsive-font-size(13);
+
+            span {
+                @include responsive-font-size(13);
+                width: 22px;
+                top: -3px;
+            }
+
+            .days:after, 
+            .hour:after, 
+            .minute:after, 
+            .second:after {
+                @include responsive-font-size(6);
+                bottom: -7px;
+            } 
+        }
+
+        &.upcoming,
+        &.closed {
+            @include responsive-font-size(9);
+            padding: 5px;
+            padding-top: 5px;
+        }
+    }
+}
+
+.cms-index-index.cms-home .event-container .event.upcoming, 
+.cms-index-index.cms-home .event-container .event.closed {
+    padding: 5px;
+    padding-top: 5px;
+}
+
+.cms-index-index.cms-home .event-container .event {
+
+    &.upcoming .event-dates .start, 
+    &.closed .event-dates .start, 
+    &.upcoming .event-dates .start .time-part, 
+    &.closed .event-dates .start .time-part {
+        @include responsive-font-size(9);
+    }
+}

@@ -1,0 +1,12 @@
+<?php
+/**
+ * Mini Account Template
+ *
+ * Description:
+ * - created from scratch
+ * 
+ */
+?>
+<?php if(Mage::getSingleton('customer/session')->isLoggedIn()): ?>
+	<li><i class="flaticon-arrows"></i><a href="<?php echo Mage::helper('customer')->getLogoutUrl(); ?>"><?php echo 'Keluar'; ?></a></li>
+<?php endif; ?>

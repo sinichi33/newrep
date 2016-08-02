@@ -1,0 +1,29 @@
+<?php
+/**
+ * Mini Cart link Template
+ *
+ * Description:
+ * - Override beta/default
+ * - show only link
+ */
+
+/**
+ * Shoping cart sidebar
+ *
+ * @see Mage_Checkout_Block_Cart_Sidebar
+ */
+
+?>
+
+<?php
+    $_cartQty = $this->getSummaryCount();
+    if(empty($_cartQty)) {
+        $_cartQty = 0;
+    }
+?>
+
+<a href="<?php echo $this->helper('checkout/cart')->getCartUrl(); ?>" class="flaticon-commerce mobile-cart <?php if($_cartQty <= 0): ?> no-count<?php endif; ?>">
+	<span>
+    	<?php echo $_cartQty; ?> 
+    </span>
+</a>

@@ -1,0 +1,59 @@
+<?php
+/**
+ * Mini Search Form
+ *
+ * Description:
+ * - Override rwd/default
+ * - add category search
+ */
+
+/* @var $this Mage_Core_Block_Template */
+/* @var $catalogSearchHelper Mage_Catalogsearch_Helper_Data */
+$catalogSearchHelper =  $this->helper('catalogsearch');
+?>
+
+<?php
+    // get category options
+    $category = Mage::getModel('catalog/category');
+    if(is_object(Mage::registry('current_category'))){
+        $currentCategoryPath=Mage::registry('current_category')->getPathIds();
+    }else{
+        $currentCategoryPath = array();
+    }
+    $category->load(Mage::app()->getStore()->getRootCategoryId());
+    $childrenString = $category->getChildren();
+    $children = explode(',',$childrenString);
+    $categoryOptions=$selected='';
+    foreach($children as $c){
+        if($this->getRequest()->getParam('cat')==""){
+            $selected = (in_array($c, $currentCategoryPath))?'SELECTED':'';
+        }else{
+            $selected = ($this->getRequest()->getParam('cat')==$c)?'SELECTED':'';
+    }
+    // $categoryOptions.= '<option value="' . $c . '" ' . $selected . '>' . $category->load($c)->getName() . '</option>' . "\n";
+    $categoryOptions.= '<option value="' . $c . '" ' . '>' . $category->load($c)->getName() . '</option>' . "\n";
+    }
+?>
+
+<form id="search_mini_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
+    <div class="input-box">
+        <label for="search"><?php echo $this->__('Search:') ?></label>
+        <div class="cat-wrapper">
+            <select name="cat" id="cat">
+                <option value=""><?php echo $this->__('All Categories') ?></option>
+                <?php echo $categoryOptions ?>
+            </select>
+        </div>
+        <input id="search" type="search" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text required-entry" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
+        <button type="submit" title="<?php echo $this->__('Search') ?>" class="button search-button btn-orange"><span><span class="flaticon-magnifying42"><?php echo $this->__('Search') ?></span></span></button>
+    </div>
+
+    <div id="search_autocomplete" class="search-autocomplete"></div>
+
+    <script type="text/javascript">
+    //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+        searchForm.initAutocomplete('<?php echo $catalogSearchHelper->getSuggestUrl() ?>', 'search_autocomplete');
+    //]]>
+    </script>
+</form>

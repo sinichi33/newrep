@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+	<Icube_Catalog>
+	  <version>0.1.0</version>
+	</Icube_Catalog>
+  </modules>
+	<global>
+		<models>
+			<enterprise_catalog>
+			    <rewrite>
+			        <index_action_category_flat_refresh>Icube_Catalog_Model_Refresh</index_action_category_flat_refresh>
+			    </rewrite>
+			</enterprise_catalog>
+		</models>
+	</global>
+</config>

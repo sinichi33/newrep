@@ -1,0 +1,15 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+
+$_attributes = $this->getAttributes();
+?>
+<?php if (is_array($_attributes) && !empty($_attributes)): ?>
+    <br />
+    <?php foreach($_attributes as $label => $value): ?>
+        <?php echo $label; ?>: <?php echo nl2br(htmlentities(preg_replace('/\$/','\\\$', $value), ENT_COMPAT, "UTF-8")); ?><br />
+    <?php endforeach; ?>
+<?php endif; ?>

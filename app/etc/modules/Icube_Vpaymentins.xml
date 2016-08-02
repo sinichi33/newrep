@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Icube_Vpaymentins>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Icube_Vpayment />
+            </depends>
+        </Icube_Vpaymentins>
+    </modules>
+</config> 

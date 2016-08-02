@@ -1,0 +1,27 @@
+<?php
+/**
+ * Order Buttons on order detail
+ *
+ * Description:
+ * - override base/default
+ * - hide link-print and separator by adding class "hidden" (task: http://teamwork.icubeonline.com/tasks/6307277)
+ * 
+ * 
+ * @category    design
+ * @package     base_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+
+<?php  $_order = $this->getOrder() ?>
+<?php if($this->helper('rss/order')->isStatusNotificationAllow()): ?>
+    <a href="<?php echo $this->helper('rss/order')->getStatusHistoryRssUrl($_order) ?>" class="link-rss f-none"><?php echo $this->__('Subscribe to Order Status') ?></a>
+    <span class="separator hidden">|</span>
+<?php endif; ?>
+<?php if ($this->helper('sales/reorder')->canReorder($_order)) : ?>
+    <a href="<?php echo $this->getReorderUrl($_order) ?>" class="link-reorder"><?php echo $this->__('Reorder') ?></a>
+    <span class="separator hidden">|</span>
+<?php endif ?>
+<a href="<?php echo $this->getPrintUrl($_order) ?>" class="link-print hidden" onclick="this.target='_blank';"><?php echo $this->__('Print Order') ?></a>
+<?php echo $this->getChildHtml(); ?>

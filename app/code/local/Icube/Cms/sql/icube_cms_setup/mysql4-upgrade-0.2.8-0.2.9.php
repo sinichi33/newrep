@@ -1,0 +1,31 @@
+<?php
+/*
+ * - Payment Bank Transfer Account List
+ */
+$installer = $this;
+$installer->startSetup();
+
+/* Bank Transfer Account List */
+$cmsBlock = Mage::getModel('cms/block')->load('payment-bank_transfer_accounts', 'identifier');
+
+$content =<<<EOF
+<p>
+    <img src="{{skin url="images/sample/checkout/payment-transfer-bca.png"}}" alt="BCA" title="BCA" />
+    <img src="{{skin url="images/sample/checkout/payment-transfer-mandiri.png"}}" alt="Mandiri" title="Mandiri"" />
+    <img src="{{skin url="images/sample/checkout/payment-transfer-permata.png"}}" alt="Permata" title="Permata" />
+</p>
+EOF;
+
+if(!$cmsBlock->getId()){
+    $cmsBlock->setTitle('Payment - Bank Transfer Accounts');
+}
+
+$cmsBlock->setStores(array(0))
+        ->setIdentifier('payment-bank_transfer_accounts')
+        ->setContentHeading('Payment - Bank Transfer Accounts')
+        ->setContent($content)
+        ->setIsActive(1)
+        ->save();
+
+
+$installer->endSetup();

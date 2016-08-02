@@ -1,0 +1,69 @@
+<?php $order = Mage::getSingleton('sales/order'); ?>
+<?php $order->loadByIncrementId(Mage::getSingleton('checkout/session')->getLastRealOrderId()); ?>
+
+<?php if ($order->getPayment()->getVanumber() && $order->getPayment()->getVabank() == 'bca'):
+
+    $notif = '<div id="#va-instruction"><p>
+        Pembayaran melalui BCA - Virtual Account dapat dilakukan dengan mengikuti petunjuk berikut:</p>
+        <br>
+        <p><strong>PEMBAYARAN MELALUI JARINGAN ATM BCA / ANT / SETAR-Setor Tarik</strong></p>
+        <br>
+        <ol class="va-steps">
+        <li>Pilih menu Transfer Ke Rek BCA Virtual Account</li>
+        <li>Masukkan Nomor BCA Virtual Account, dalam hal ini Nomor BCA Virtual Account Anda: <strong>'.$order->getPayment()->getVanumber().'</strong> lalu pilih Benar</li>
+        <li>Layar ATM akan menampilkan konfirmasi transaksi, pilih Ya untuk setuju melakukan pembayaran
+        </li>
+        <li>Ikuti langkah selanjutnya sampai transaksi selesai</li>
+        </ol>
+        <br>
+        <p><strong>PEMBAYARAN MELALUI KlikBCA Individu (Desktop site atau m.klikbca.com)</strong></p>
+        <br>
+        <ol class="va-steps">
+        <li>Pilih menu Transfer Ke Rek BCA Virtual Account</li>
+        <li>Masukkan Nomor BCA Virtual Account, dalam hal ini Nomor BCA Virtual Account Anda: <strong>'.$order->getPayment()->getVanumber().'</strong> lalu pilih Benar</li>
+        <li>Akan tampil konfirmasi transaksi</li>
+        <li>Ikuti langkah selanjutnya sampai transaksi selesai</li>
+        </ol>
+        <br>
+        <p><strong>PEMBAYARAN MELALUI m-BCA (BCA Mobile)</p></strong>
+        <br>
+        <ol class="va-steps">
+        <li>Pilih m-Transfer</li>
+        <li>Pilih Transfer BCA Virtual Account</li>
+        <li>Pilih nomor rekening yang akan didebet</li>
+        <li>Masukkan Nomor BCA Virtual Account, dalam hal ini Nomor BCA Virtual Account Anda: <strong>'.$order->getPayment()->getVanumber().'</strong> lalu pilih OK</li>
+        <li>Tampil konfirmasi nomor BCA Virtual Account dan rekening pendebetan, lalu Kirim
+        Tampil konfirmasi pembayaran, lalu pilih OK</li>
+        <li>Ikuti langkah selanjutnya sampai transaksi selesai</li>
+        </ol></div>';
+
+    $notif = str_replace("\r\n","",$notif);
+
+    ?>
+    <style>
+        div#va-instruction {
+            text-align: left !important;
+        }
+        ol.va-steps {
+            list-style: decimal;
+            text-align: left;
+        }
+        ol.va-steps li {
+            text-align: left;
+        }
+    </style>
+    <script type="text/javascript">
+        jQuery(".buttons-set").before('<?php echo $notif; ?>');
+    </script>
+<?php endif;?>
+
+<?php if ($order->getPayment()->getVanumber() && $order->getPayment()->getVabank() != 'bca'):?>
+<script type="text/javascript">
+    jQuery(".buttons-set").before( "<p>Mohon selesaikan pembayaran melalui Transfer dalam waktu 24 jam</p><p><?php echo $this->__('Bank Transfer - Virtual Account Detail :'); ?></p><ul class='disc'><li><?php echo $this->__('Virtual Account Bank : %s.', $order->getPayment()->getVabank())?></li><li><?php echo $this->__('Virtual Account Number : %s.', $order->getPayment()->getVanumber())?></li></ul>" );
+</script>
+<?php endif;?>
+<?php if ($order->getPayment()->getBillercode()):?>
+    <script type="text/javascript">
+        jQuery(".buttons-set").before( "<p><?php echo $this->__('Mandiri Bill Payment Detail :'); ?></p><ul class='disc'><li><?php echo $this->__('Biller code : %s.', $order->getPayment()->getBillercode())?></li><li><?php echo $this->__('Bill key : %s.', $order->getPayment()->getBillkey())?></li></ul>" );
+    </script>
+<?php endif;?>

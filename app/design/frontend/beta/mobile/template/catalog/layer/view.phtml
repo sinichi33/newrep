@@ -1,0 +1,47 @@
+<?php
+/**
+ * Layer State Template
+ *
+ * Description:
+ * - Override beta/default
+ * - Transform to from dt-dd to ul-li for bulding mmenu-popup purpose
+ */
+?>
+<?php
+/**
+ * Category layered navigation
+ *
+ * @see Mage_Catalog_Block_Layer_View
+ */
+?>
+<?php  
+    $_categoryName = Mage::getModel('catalog/layer')->getCurrentCategory()->getName();
+?>
+<?php if($this->canShowBlock()): ?>
+<div class="block block-layered-nav<?php if (!$this->getLayer()->getState()->getFilters()): ?> block-layered-nav--no-filters<?php endif; ?>">
+    <div class="block-content toggle-content">
+        <?php /* This element below (#currently-filter) will be moved to right before top toolbar via js */ ?>
+        <div id="currently-filter">
+            <?php echo $this->getStateHtml() ?>
+        </div>
+        <?php if($this->canShowOptions()): ?>
+            <ul id="narrow-by-list">
+                <?php $_filters = $this->getFilters() ?>
+                <?php foreach ($_filters as $_filter): ?>
+                <?php if($_filter->getItemsCount()): ?>
+                    <?php $_filterClass = strtolower(str_replace( " ", "", $_filter->getName())) ?>
+                    <li class="<?php echo (!$_filter->getAttributeModel())? 'not-attr':$_filterClass ?>">
+                        <a href="javascript:void(0)"><?php echo $this->__($_filter->getName()) ?></a>
+                        <?php echo $_filter->getHtml() ?>
+                    </li>
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+    </div>
+
+    <div class="buttons-set">
+        <button class="button cancel btn-dark-grey"><?php echo $this->__('Kembali') ?></button>
+    </div>
+</div>
+<?php endif; ?>

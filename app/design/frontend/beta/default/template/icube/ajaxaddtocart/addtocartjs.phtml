@@ -1,0 +1,41 @@
+<?php
+$storeId = Mage::app()->getStore()->getId();
+$configValue = Mage::getStoreConfig('addtocartajax/option/addtocartajax_enabled', $storeId);
+?>
+<?php if($configValue) : ?>
+<script type="text/javascript" >
+//src="<?php echo $this->getSkinUrl('js/icube/admin_customcreateorder.js') ?>"
+//var optionsPrice = new Product.OptionsPrice($j.parseJSON($j('#optionPrice').text()));
+productAddToCartForm.submit = function (button, url) {
+    if (this.validator.validate()) {
+    var form = this.form;
+    var oldUrl = form.action;
+
+    if (url) {
+    form.action = url;
+    }
+var e = null;
+//Start of our new ajax code
+if(!url){
+    url = jQuery('#product_addtocart_form').attr('action');
+}
+var data = jQuery('#product_addtocart_form').serialize();
+data += '&isAjax=1';
+try {
+    addToCartPdp(url,data);
+} catch (e) {
+}
+//End of our new ajax code
+this.form.action = oldUrl;
+if (e) {
+    throw e;
+    }
+
+if (button && button != 'undefined') {
+    button.disabled = false;
+    }
+}
+}.bind(productAddToCartForm);
+
+</script>
+<?php endif; ?>

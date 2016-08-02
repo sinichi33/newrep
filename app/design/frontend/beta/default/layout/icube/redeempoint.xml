@@ -1,0 +1,54 @@
+<layout version="0.1.0">
+    <redeempoint_customer_index translate="label">
+        <label>Redeem Point</label>
+        <reference name="head">
+            <action method="setTitle"><title>Redeem Point</title></action> <!--Page Title-->
+        </reference>
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="redeempoint/customer" name="redeempoint" template="icube/redeempoint/redeempoint.phtml" >
+                <block type="redeempoint/customer" name="select.company" before="-" template="icube/redeempoint/company-selection.phtml"/>
+                <block type="redeempoint/customer" name="redeempoint.available" template="icube/redeempoint/available.phtml" />
+                <block type="customgiftcard/list" name="customgiftcard_list" template="icube/customgiftcard/list.phtml" />  
+            </block>  
+        </reference>
+    </redeempoint_customer_index>
+
+    <redeempoint_customer_available translate="label">
+        <label>Redeem Point</label>
+        <reference name="head">
+            <action method="setTitle"><title>Redeem Point</title></action> <!--Page Title-->
+        </reference>
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="redeempoint/customer" name="redeempoint" template="icube/redeempoint/available.phtml">
+                <block type="redeempoint/customer" name="select.company" before="-" template="icube/redeempoint/company-selection.phtml"/>
+            </block>
+        </reference>
+    </redeempoint_customer_available>
+
+    <redeempoint_customer_success translate="label">
+        <label>Redeem Point</label>
+        <reference name="head">
+            <action method="setTitle"><title>Redeem Point</title></action> <!--Page Title-->
+        </reference>
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="redeempoint/customer" name="redeempoint" template="icube/redeempoint/success.phtml">
+                <block type="redeempoint/customer" name="select.company" before="-" template="icube/redeempoint/company-selection.phtml"/>
+            </block>
+        </reference>
+    </redeempoint_customer_success>
+
+    <customer_account_index>
+        <reference name="content">
+            <reference name="customer_account_dashboard">
+                <block type="redeempoint/customer" name="redeempoint" template="icube/redeempoint/redeempoint.phtml" >
+                    <block type="redeempoint/customer" name="select.company" before="-" template="icube/redeempoint/company-selection.phtml"/>
+                    <block type="redeempoint/customer" name="redeempoint.available" template="icube/redeempoint/available.phtml" />
+                    <block type="customgiftcard/list" name="customgiftcard_list" template="icube/customgiftcard/list.phtml" />  
+                </block>
+            </reference>
+        </reference>
+    </customer_account_index>
+</layout> 

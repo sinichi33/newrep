@@ -1,0 +1,45 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+
+$attributes = $this->getAttributes();
+?>
+<?php if (!empty($attributes)): ?>
+    <div class="col2-set">
+        <div class="col-1">
+            <!-- BEGIN Order Print `Amasty: Order Attributes` -->
+            <h2><?php echo $this->__('Additional Info'); ?></h2>
+            <table border="0" style="margin-bottom: 20px;" width="100%">
+                <tbody>
+                    <?php foreach ($attributes as $label => $value): ?>
+                    <tr>
+                        <td style="padding-left: 0;">
+                            <?php echo $label; ?>:
+                        </td>
+                        <td style="padding-left: 0;">
+                            <?php echo nl2br(htmlentities(preg_replace('/\$/','\\\$', $value), ENT_COMPAT, "UTF-8")); ?>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+            <!-- END Order Print `Amasty: Order Attributes` -->
+        </div>
+    <?php if ($deliveryDate = Mage::registry('AmastyDeliveryDatePrint')) { ?>
+        <div class="col-2">
+            <?php echo $deliveryDate; ?>
+        </div>
+    </div>
+    <?php } else { ?>
+        </div>
+    <?php } ?>
+<?php elseif ($deliveryDate = Mage::registry('AmastyDeliveryDatePrint')): ?>
+    <div class="col2-set">
+        <div class="col-1">
+        <?php echo $deliveryDate; ?>
+        </div>
+    </div>
+<?php endif; ?>

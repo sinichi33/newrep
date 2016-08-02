@@ -1,0 +1,117 @@
+<!--subject {{var store.getFrontendName()}}: Payment Confirmation # {{var order.increment_id}} -->
+<!--@subject Pembayaran telah diterima @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$order.getCustomerName()":"Customer Name",
+"var store.getFrontendName()":"Store Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var order.increment_id":"Order Id",
+"var order.getCreatedAtFormated('long')":"Order Created At (datetime)",
+"var order.getBillingAddress().format('html')":"Billing Address",
+"var payment_html":"Payment Details",
+"var order.getShippingAddress().format('html')":"Shipping Address",
+"var order.getShippingDescription()":"Shipping Description",
+"layout handle=\"sales_email_order_items\" order=$order":"Order Items Grid",
+"var order.getEmailCustomerNote()":"Email Order Note"}
+@-->
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<!-- If VA payment -->
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr class="section">
+        <td>
+            <h1>Hi {{var order.getCustomerFirstname()}},</h1>
+            <p>Terima kasih, pembayaran untuk pesanan Anda telah kami terima. Berikut informasi transaksi Anda :</p>
+        </td>
+    </tr>
+    <tr class="section">
+        <td class="order-info">
+            <h2>INFORMASI PESANAN</h2>
+            <table>
+                <tr>
+                    <td>Nomor Pesanan</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">{{var order.getIncrementId()}}</td>
+                </tr>
+                <tr>
+                    <td>Metode Transaksi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">{{var order.getPayment().getMethodInstance().getTitle()}}</td>
+                </tr>
+                <tr>
+                    <td>Status Transaksi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">Sukses</td>
+                </tr>
+                <tr>
+                    <td>Waktu Transaksi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">{{var order.getCreatedAtFormated('long')}}</td>
+                </tr>
+                <tr>
+                    <td>Jumlah Transaksi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">{{layout handle="sales_email_helper_formatprice" price=$order.getGrandTotal()}}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr class="order-information section">
+        <td>
+           <hr>
+           <h2>RINCIAN PRODUK</h2>
+
+            {{if order.getEmailCustomerNote()}}
+            <table cellspacing="0" cellpadding="0" class="message-container">
+                <tr>
+                    <td>{{var order.getEmailCustomerNote()}}</td>
+                </tr>
+            </table>
+            {{/if}}
+            <table>
+                {{layout handle="sales_email_order_items" order=$order}}
+            </table>
+        </td>
+    </tr>
+    {{depend order.getIsNotVirtual()}}
+        <tr class="section">
+            <td style="padding: 20px 0 35px;">
+                <div class="contact-if">
+                   <hr>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="width:300px; padding:10px 0 7px;" class="bold"><b>Alamat Pengiriman</b></td>
+                                <td style="width:300px; padding:10px 0 7px;" class="bold"><b>Estimasi Barang Sampai</b></td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:text-top; padding-top:10px; line-height:20px;">
+                                    {{var order.getShippingAddress().format('html')}}
+                                </td>
+                                <td style="padding-top:10px; vertical-align:text-top; line-height:20px;">2-5 hari untuk wilayah <b>Jabodetabek</b> dan <br/>5-14 hari untuk wilayah <b>luar Jabodetabek</b></td>
+                            </tr>
+                        </tbody>
+                     </table>
+                </div>
+            </td>
+        </tr>
+    {{/depend}}
+    <tr class="section">
+        <td>
+            <table class="signature">
+                <tbody>
+                <tr>
+                    <td>Terima Kasih</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid #E1E1E1; padding-bottom:5px; color:#F36525;">Sisca</td>
+                </tr>
+                <tr>
+                    <td>Ruparupa.com</td>
+                </tr>
+               </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

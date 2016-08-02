@@ -1,0 +1,6579 @@
+2016-03-22T02:31:13+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 658
+)
+
+2016-03-22T02:31:13+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 658
+)
+
+2016-03-22T02:31:13+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 658
+)
+
+2016-03-22T02:31:13+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 658
+)
+
+2016-03-22T02:31:14+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 658
+)
+
+2016-03-22T02:31:14+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 658
+)
+
+2016-03-22T02:31:15+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 658
+)
+
+2016-03-22T02:31:15+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 658
+)
+
+2016-03-22T02:31:15+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 658
+)
+
+2016-03-22T02:31:15+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 658
+)
+
+2016-03-22T02:31:15+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 658
+)
+
+2016-03-22T02:31:15+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 658
+)
+
+2016-03-22T03:22:56+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 697
+)
+
+2016-03-22T03:22:56+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 697
+)
+
+2016-03-22T03:22:56+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 697
+)
+
+2016-03-22T03:22:56+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 697
+)
+
+2016-03-22T03:22:57+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 697
+)
+
+2016-03-22T03:22:57+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 697
+)
+
+2016-03-22T03:27:54+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1210
+)
+
+2016-03-22T03:27:54+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1210
+)
+
+2016-03-22T03:27:54+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1210
+)
+
+2016-03-22T03:27:54+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1210
+)
+
+2016-03-22T03:27:54+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1210
+)
+
+2016-03-22T03:27:54+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1210
+)
+
+2016-03-23T03:34:32+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1471
+)
+
+2016-03-23T03:34:32+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1471
+)
+
+2016-03-23T03:34:32+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1471
+)
+
+2016-03-23T03:34:32+00:00 DEBUG (7): Array
+(
+    [0] => kuda@susu.com
+    [__pid] => 1471
+)
+
+2016-03-23T03:34:33+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1471
+)
+
+2016-03-23T03:34:33+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "kuda@susu.com" in your account, code 232
+    [__pid] => 1471
+)
+
+2016-03-23T06:43:49+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1530
+)
+
+2016-03-23T06:43:49+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1530
+)
+
+2016-03-23T06:43:49+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1530
+)
+
+2016-03-23T06:43:49+00:00 DEBUG (7): Array
+(
+    [0] => kuda@susu.com
+    [__pid] => 1530
+)
+
+2016-03-23T06:43:50+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1530
+)
+
+2016-03-23T06:43:50+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "kuda@susu.com" in your account, code 232
+    [__pid] => 1530
+)
+
+2016-03-23T08:51:34+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1530
+)
+
+2016-03-23T08:51:34+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1530
+)
+
+2016-03-23T08:51:34+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1530
+)
+
+2016-03-23T08:51:34+00:00 DEBUG (7): Array
+(
+    [0] => kambing@susu.com
+    [__pid] => 1530
+)
+
+2016-03-23T08:51:35+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1530
+)
+
+2016-03-23T08:51:35+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "kambing@susu.com" in your account, code 232
+    [__pid] => 1530
+)
+
+2016-03-23T08:56:18+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2834
+)
+
+2016-03-23T08:56:18+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2834
+)
+
+2016-03-23T08:56:18+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2834
+)
+
+2016-03-23T08:56:18+00:00 DEBUG (7): Array
+(
+    [0] => kuda@ajaib.com
+    [__pid] => 2834
+)
+
+2016-03-23T08:56:18+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2834
+)
+
+2016-03-23T08:56:18+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "kuda@ajaib.com" in your account, code 232
+    [__pid] => 2834
+)
+
+2016-03-23T09:24:28+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3799
+)
+
+2016-03-23T09:24:28+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3799
+)
+
+2016-03-23T09:24:28+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3799
+)
+
+2016-03-23T09:24:28+00:00 DEBUG (7): Array
+(
+    [0] => susujumbo@gmail.com
+    [__pid] => 3799
+)
+
+2016-03-23T09:24:29+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3799
+)
+
+2016-03-23T09:24:29+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "susujumbo@gmail.com" in your account, code 232
+    [__pid] => 3799
+)
+
+2016-03-23T09:29:41+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3799
+)
+
+2016-03-23T09:29:41+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3799
+)
+
+2016-03-23T09:29:41+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3799
+)
+
+2016-03-23T09:29:41+00:00 DEBUG (7): Array
+(
+    [0] => susukambing@bing.com
+    [__pid] => 3799
+)
+
+2016-03-23T09:29:41+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3799
+)
+
+2016-03-23T09:29:41+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "susukambing@bing.com" in your account, code 232
+    [__pid] => 3799
+)
+
+2016-03-23T09:31:11+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2834
+)
+
+2016-03-23T09:31:11+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2834
+)
+
+2016-03-23T09:31:11+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2834
+)
+
+2016-03-23T09:31:11+00:00 DEBUG (7): Array
+(
+    [0] => susukambing@bing.com
+    [__pid] => 2834
+)
+
+2016-03-23T09:31:11+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2834
+)
+
+2016-03-23T09:31:11+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "susukambing@bing.com" in your account, code 232
+    [__pid] => 2834
+)
+
+2016-03-24T03:24:07+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 758
+)
+
+2016-03-24T03:24:07+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 758
+)
+
+2016-03-24T03:24:07+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 758
+)
+
+2016-03-24T03:24:07+00:00 DEBUG (7): Array
+(
+    [0] => susu@kuda.com
+    [__pid] => 758
+)
+
+2016-03-24T03:24:08+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 758
+)
+
+2016-03-24T03:24:08+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "susu@kuda.com" in your account, code 232
+    [__pid] => 758
+)
+
+2016-03-24T04:10:20+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1285
+)
+
+2016-03-24T04:10:20+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1285
+)
+
+2016-03-24T04:10:20+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1285
+)
+
+2016-03-24T04:10:20+00:00 DEBUG (7): Array
+(
+    [0] => test@test.com
+    [__pid] => 1285
+)
+
+2016-03-24T04:10:22+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1285
+)
+
+2016-03-24T04:10:22+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "test@test.com" in your account, code 232
+    [__pid] => 1285
+)
+
+2016-03-24T04:23:12+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1214
+)
+
+2016-03-24T04:23:12+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1214
+)
+
+2016-03-24T04:23:12+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1214
+)
+
+2016-03-24T04:23:12+00:00 DEBUG (7): Array
+(
+    [0] => testbaru@baru.com
+    [__pid] => 1214
+)
+
+2016-03-24T04:23:13+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1214
+)
+
+2016-03-24T04:23:13+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "testbaru@baru.com" in your account, code 232
+    [__pid] => 1214
+)
+
+2016-03-24T04:23:47+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1225
+)
+
+2016-03-24T04:23:47+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1225
+)
+
+2016-03-24T04:23:47+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1225
+)
+
+2016-03-24T04:23:47+00:00 DEBUG (7): Array
+(
+    [0] => testbaru@baru.com
+    [__pid] => 1225
+)
+
+2016-03-24T04:23:48+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1225
+)
+
+2016-03-24T04:23:48+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "testbaru@baru.com" in your account, code 232
+    [__pid] => 1225
+)
+
+2016-03-24T04:37:44+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 785
+)
+
+2016-03-24T04:37:44+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 785
+)
+
+2016-03-24T04:37:44+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 785
+)
+
+2016-03-24T04:37:44+00:00 DEBUG (7): Array
+(
+    [0] => baru@lama.com
+    [__pid] => 785
+)
+
+2016-03-24T04:37:45+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 785
+)
+
+2016-03-24T04:37:45+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "baru@lama.com" in your account, code 232
+    [__pid] => 785
+)
+
+2016-03-24T04:44:18+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1357
+)
+
+2016-03-24T04:44:18+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1357
+)
+
+2016-03-24T04:44:18+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1357
+)
+
+2016-03-24T04:44:18+00:00 DEBUG (7): Array
+(
+    [0] => bira@baru.com
+    [__pid] => 1357
+)
+
+2016-03-24T04:44:19+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1357
+)
+
+2016-03-24T04:44:19+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "bira@baru.com" in your account, code 232
+    [__pid] => 1357
+)
+
+2016-03-24T04:51:52+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 760
+)
+
+2016-03-24T04:51:52+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 760
+)
+
+2016-03-24T04:51:52+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 760
+)
+
+2016-03-24T04:51:52+00:00 DEBUG (7): Array
+(
+    [0] => susu@sapi.com
+    [__pid] => 760
+)
+
+2016-03-24T04:51:53+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 760
+)
+
+2016-03-24T04:51:53+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "susu@sapi.com" in your account, code 232
+    [__pid] => 760
+)
+
+2016-03-24T04:53:33+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 760
+)
+
+2016-03-24T04:53:33+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 760
+)
+
+2016-03-24T04:53:33+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 760
+)
+
+2016-03-24T04:53:33+00:00 DEBUG (7): Array
+(
+    [0] => siap@saoip.com
+    [__pid] => 760
+)
+
+2016-03-24T04:53:33+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 760
+)
+
+2016-03-24T04:53:33+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "siap@saoip.com" in your account, code 232
+    [__pid] => 760
+)
+
+2016-03-24T05:05:57+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1585
+)
+
+2016-03-24T05:05:57+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1585
+)
+
+2016-03-24T05:05:57+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1585
+)
+
+2016-03-24T05:05:57+00:00 DEBUG (7): Array
+(
+    [0] => selempang@gmail.com
+    [__pid] => 1585
+)
+
+2016-03-24T05:05:57+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1585
+)
+
+2016-03-24T05:05:57+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "selempang@gmail.com" in your account, code 232
+    [__pid] => 1585
+)
+
+2016-03-24T05:08:10+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1214
+)
+
+2016-03-24T05:08:10+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1214
+)
+
+2016-03-24T05:08:10+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1214
+)
+
+2016-03-24T05:08:10+00:00 DEBUG (7): Array
+(
+    [0] => ss@sss.com
+    [__pid] => 1214
+)
+
+2016-03-24T05:08:11+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1214
+)
+
+2016-03-24T05:08:11+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ss@sss.com" in your account, code 232
+    [__pid] => 1214
+)
+
+2016-03-24T06:12:37+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1225
+)
+
+2016-03-24T06:12:37+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1225
+)
+
+2016-03-24T06:12:37+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1225
+)
+
+2016-03-24T06:12:37+00:00 DEBUG (7): Array
+(
+    [0] => susu@liar.com
+    [__pid] => 1225
+)
+
+2016-03-24T06:12:38+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1225
+)
+
+2016-03-24T06:12:38+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "susu@liar.com" in your account, code 232
+    [__pid] => 1225
+)
+
+2016-03-24T06:15:00+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1440
+)
+
+2016-03-24T06:15:00+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1440
+)
+
+2016-03-24T06:15:00+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1440
+)
+
+2016-03-24T06:15:00+00:00 DEBUG (7): Array
+(
+    [0] => test@asu.com
+    [__pid] => 1440
+)
+
+2016-03-24T06:15:01+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1440
+)
+
+2016-03-24T06:15:01+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "test@asu.com" in your account, code 232
+    [__pid] => 1440
+)
+
+2016-03-24T06:21:10+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1322
+)
+
+2016-03-24T06:21:10+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1322
+)
+
+2016-03-24T06:21:10+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1322
+)
+
+2016-03-24T06:21:10+00:00 DEBUG (7): Array
+(
+    [0] => s@s.com
+    [__pid] => 1322
+)
+
+2016-03-24T06:21:10+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1322
+)
+
+2016-03-24T06:21:10+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "s@s.com" in your account, code 232
+    [__pid] => 1322
+)
+
+2016-03-24T06:25:03+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1225
+)
+
+2016-03-24T06:25:03+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1225
+)
+
+2016-03-24T06:25:03+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1225
+)
+
+2016-03-24T06:25:03+00:00 DEBUG (7): Array
+(
+    [0] => d@d.com
+    [__pid] => 1225
+)
+
+2016-03-24T06:25:04+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1225
+)
+
+2016-03-24T06:25:04+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "d@d.com" in your account, code 232
+    [__pid] => 1225
+)
+
+2016-03-24T06:27:15+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1440
+)
+
+2016-03-24T06:27:15+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1440
+)
+
+2016-03-24T06:27:15+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1440
+)
+
+2016-03-24T06:27:15+00:00 DEBUG (7): Array
+(
+    [0] => a@sjkj.com
+    [__pid] => 1440
+)
+
+2016-03-24T06:27:15+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1440
+)
+
+2016-03-24T06:27:15+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "a@sjkj.com" in your account, code 232
+    [__pid] => 1440
+)
+
+2016-03-24T06:32:54+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1440
+)
+
+2016-03-24T06:32:54+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1440
+)
+
+2016-03-24T06:32:54+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1440
+)
+
+2016-03-24T06:32:54+00:00 DEBUG (7): Array
+(
+    [0] => deded@sss.com
+    [__pid] => 1440
+)
+
+2016-03-24T06:32:54+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1440
+)
+
+2016-03-24T06:32:54+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "deded@sss.com" in your account, code 232
+    [__pid] => 1440
+)
+
+2016-03-24T06:34:45+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1260
+)
+
+2016-03-24T06:34:45+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1260
+)
+
+2016-03-24T06:34:45+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1260
+)
+
+2016-03-24T06:34:45+00:00 DEBUG (7): Array
+(
+    [0] => tesss@hsuhs.com
+    [__pid] => 1260
+)
+
+2016-03-24T06:34:45+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1260
+)
+
+2016-03-24T06:34:45+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "tesss@hsuhs.com" in your account, code 232
+    [__pid] => 1260
+)
+
+2016-03-24T06:38:59+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1225
+)
+
+2016-03-24T06:38:59+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1225
+)
+
+2016-03-24T06:38:59+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1225
+)
+
+2016-03-24T06:38:59+00:00 DEBUG (7): Array
+(
+    [0] => v@x.com
+    [__pid] => 1225
+)
+
+2016-03-24T06:39:00+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1225
+)
+
+2016-03-24T06:39:00+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "v@x.com" in your account, code 232
+    [__pid] => 1225
+)
+
+2016-03-24T06:48:51+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2323
+)
+
+2016-03-24T06:48:51+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2323
+)
+
+2016-03-24T06:48:51+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2323
+)
+
+2016-03-24T06:48:51+00:00 DEBUG (7): Array
+(
+    [0] => gul@d.com
+    [__pid] => 2323
+)
+
+2016-03-24T06:48:52+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2323
+)
+
+2016-03-24T06:48:52+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "gul@d.com" in your account, code 232
+    [__pid] => 2323
+)
+
+2016-03-24T06:54:27+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1260
+)
+
+2016-03-24T06:54:27+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1260
+)
+
+2016-03-24T06:54:27+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1260
+)
+
+2016-03-24T06:54:27+00:00 DEBUG (7): Array
+(
+    [0] => w@aaa.com
+    [__pid] => 1260
+)
+
+2016-03-24T06:54:28+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1260
+)
+
+2016-03-24T06:54:28+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "w@aaa.com" in your account, code 232
+    [__pid] => 1260
+)
+
+2016-03-24T07:02:46+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1225
+)
+
+2016-03-24T07:02:46+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1225
+)
+
+2016-03-24T07:02:46+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1225
+)
+
+2016-03-24T07:02:46+00:00 DEBUG (7): Array
+(
+    [0] => drrd@www.com
+    [__pid] => 1225
+)
+
+2016-03-24T07:02:49+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1225
+)
+
+2016-03-24T07:02:49+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "drrd@www.com" in your account, code 232
+    [__pid] => 1225
+)
+
+2016-03-24T07:19:02+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2378
+)
+
+2016-03-24T07:19:02+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2378
+)
+
+2016-03-24T07:19:02+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2378
+)
+
+2016-03-24T07:19:02+00:00 DEBUG (7): Array
+(
+    [0] => wwwww@aa.com
+    [__pid] => 2378
+)
+
+2016-03-24T07:19:04+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2378
+)
+
+2016-03-24T07:19:04+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "wwwww@aa.com" in your account, code 232
+    [__pid] => 2378
+)
+
+2016-03-24T07:22:28+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2687
+)
+
+2016-03-24T07:22:28+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2687
+)
+
+2016-03-24T07:22:28+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2687
+)
+
+2016-03-24T07:22:28+00:00 DEBUG (7): Array
+(
+    [0] => ayam@gede.com
+    [__pid] => 2687
+)
+
+2016-03-24T07:22:29+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2687
+)
+
+2016-03-24T07:22:29+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ayam@gede.com" in your account, code 232
+    [__pid] => 2687
+)
+
+2016-03-24T07:25:59+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2880
+)
+
+2016-03-24T07:25:59+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2880
+)
+
+2016-03-24T07:25:59+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2880
+)
+
+2016-03-24T07:25:59+00:00 DEBUG (7): Array
+(
+    [0] => ayam@gede.com
+    [__pid] => 2880
+)
+
+2016-03-24T07:26:00+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2880
+)
+
+2016-03-24T07:26:00+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ayam@gede.com" in your account, code 232
+    [__pid] => 2880
+)
+
+2016-03-24T07:26:02+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2880
+)
+
+2016-03-24T07:26:02+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2880
+)
+
+2016-03-24T07:26:02+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2880
+)
+
+2016-03-24T07:26:02+00:00 DEBUG (7): Array
+(
+    [0] => ayam@gede.com
+    [__pid] => 2880
+)
+
+2016-03-24T07:26:02+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2880
+)
+
+2016-03-24T07:26:02+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ayam@gede.com" in your account, code 232
+    [__pid] => 2880
+)
+
+2016-03-24T07:33:28+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1285
+)
+
+2016-03-24T07:33:28+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1285
+)
+
+2016-03-24T07:33:28+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1285
+)
+
+2016-03-24T07:33:28+00:00 DEBUG (7): Array
+(
+    [0] => test@hahaha.com
+    [__pid] => 1285
+)
+
+2016-03-24T07:33:30+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1285
+)
+
+2016-03-24T07:33:30+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "test@hahaha.com" in your account, code 232
+    [__pid] => 1285
+)
+
+2016-03-24T09:04:07+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3002
+)
+
+2016-03-24T09:04:07+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3002
+)
+
+2016-03-24T09:04:07+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3002
+)
+
+2016-03-24T09:04:07+00:00 DEBUG (7): Array
+(
+    [0] => ss@sssywys7wy.com
+    [__pid] => 3002
+)
+
+2016-03-24T09:04:08+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3002
+)
+
+2016-03-24T09:04:08+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ss@sssywys7wy.com" in your account, code 232
+    [__pid] => 3002
+)
+
+2016-03-24T09:09:36+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1357
+)
+
+2016-03-24T09:09:36+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1357
+)
+
+2016-03-24T09:09:36+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1357
+)
+
+2016-03-24T09:09:36+00:00 DEBUG (7): Array
+(
+    [0] => iman@hahaha.com
+    [__pid] => 1357
+)
+
+2016-03-24T09:10:08+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2840
+)
+
+2016-03-24T09:10:08+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2840
+)
+
+2016-03-24T09:10:08+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2840
+)
+
+2016-03-24T09:10:08+00:00 DEBUG (7): Array
+(
+    [0] => dsdsad@sassa.com
+    [__pid] => 2840
+)
+
+2016-03-24T09:10:09+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2840
+)
+
+2016-03-24T09:10:09+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "dsdsad@sassa.com" in your account, code 232
+    [__pid] => 2840
+)
+
+2016-03-24T09:28:45+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2840
+)
+
+2016-03-24T09:28:45+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2840
+)
+
+2016-03-24T09:28:45+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2840
+)
+
+2016-03-24T09:28:45+00:00 DEBUG (7): Array
+(
+    [0] => sales@juraganwebhosting.com
+    [__pid] => 2840
+)
+
+2016-03-24T09:28:46+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2840
+)
+
+2016-03-24T09:28:46+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sales@juraganwebhosting.com" in your account, code 232
+    [__pid] => 2840
+)
+
+2016-03-24T10:39:58+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1260
+)
+
+2016-03-24T10:39:58+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1260
+)
+
+2016-03-24T10:39:58+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1260
+)
+
+2016-03-24T10:39:58+00:00 DEBUG (7): Array
+(
+    [0] => sales@juraganwebhosting.com
+    [__pid] => 1260
+)
+
+2016-03-24T10:39:58+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1260
+)
+
+2016-03-24T10:39:58+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sales@juraganwebhosting.com" in your account, code 232
+    [__pid] => 1260
+)
+
+2016-03-24T10:52:09+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3558
+)
+
+2016-03-24T10:52:09+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3558
+)
+
+2016-03-24T10:52:09+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3558
+)
+
+2016-03-24T10:52:09+00:00 DEBUG (7): Array
+(
+    [0] => sales@juraganwebhosting.com
+    [__pid] => 3558
+)
+
+2016-03-24T10:52:10+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3558
+)
+
+2016-03-24T10:52:10+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sales@juraganwebhosting.com" in your account, code 232
+    [__pid] => 3558
+)
+
+2016-03-24T10:56:44+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1285
+)
+
+2016-03-24T10:56:44+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1285
+)
+
+2016-03-24T10:56:44+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1285
+)
+
+2016-03-24T10:56:44+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1285
+)
+
+2016-03-24T10:56:44+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1285
+)
+
+2016-03-24T10:56:44+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1285
+)
+
+2016-03-24T11:00:13+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3002
+)
+
+2016-03-24T11:00:13+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3002
+)
+
+2016-03-24T11:00:13+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3002
+)
+
+2016-03-24T11:00:13+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3002
+)
+
+2016-03-24T11:00:14+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3002
+)
+
+2016-03-24T11:00:14+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 3002
+)
+
+2016-03-24T11:03:19+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3002
+)
+
+2016-03-24T11:03:19+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3002
+)
+
+2016-03-24T11:03:19+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3002
+)
+
+2016-03-24T11:03:19+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3002
+)
+
+2016-03-24T11:03:20+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3002
+)
+
+2016-03-24T11:03:20+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 3002
+)
+
+2016-03-24T12:28:44+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2840
+)
+
+2016-03-24T12:28:44+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2840
+)
+
+2016-03-24T12:28:44+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2840
+)
+
+2016-03-24T12:28:44+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2840
+)
+
+2016-03-24T12:28:45+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2840
+)
+
+2016-03-24T12:28:45+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2840
+)
+
+2016-03-24T12:47:13+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1260
+)
+
+2016-03-24T12:47:13+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1260
+)
+
+2016-03-24T12:47:13+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1260
+)
+
+2016-03-24T12:47:13+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1260
+)
+
+2016-03-24T12:47:14+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1260
+)
+
+2016-03-24T12:47:14+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1260
+)
+
+2016-03-24T13:02:02+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1285
+)
+
+2016-03-24T13:02:02+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1285
+)
+
+2016-03-24T13:02:02+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1285
+)
+
+2016-03-24T13:02:02+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1285
+)
+
+2016-03-24T13:02:03+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1285
+)
+
+2016-03-24T13:02:03+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1285
+)
+
+2016-03-24T13:15:37+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 4570
+)
+
+2016-03-24T13:15:37+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 4570
+)
+
+2016-03-24T13:15:37+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 4570
+)
+
+2016-03-24T13:15:37+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 4570
+)
+
+2016-03-24T13:15:37+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 4570
+)
+
+2016-03-24T13:15:37+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 4570
+)
+
+2016-03-24T13:19:16+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 5226
+)
+
+2016-03-24T13:19:16+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 5226
+)
+
+2016-03-24T13:19:16+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 5226
+)
+
+2016-03-24T13:19:16+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 5226
+)
+
+2016-03-24T13:19:17+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 5226
+)
+
+2016-03-24T13:19:17+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 5226
+)
+
+2016-03-24T13:21:17+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:17+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:17+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:17+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [error] => Bad Response.  Got This: <HTML><HEAD>
+<TITLE>Internal Server Error</TITLE>
+</HEAD><BODY>
+<H1>Internal Server Error - Read</H1>
+The server encountered an internal error or misconfiguration and was unable to
+complete your request.<P>
+Reference&#32;&#35;3&#46;12a20017&#46;1458825679&#46;a1b0ba5
+</BODY></HTML>
+
+    [code] => -99
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => listUpdateMember
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => Bad Response.  Got This: <HTML><HEAD>
+<TITLE>Internal Server Error</TITLE>
+</HEAD><BODY>
+<H1>Internal Server Error - Read</H1>
+The server encountered an internal error or misconfiguration and was unable to
+complete your request.<P>
+Reference&#32;&#35;3&#46;12a20017&#46;1458825679&#46;a1b0ba5
+</BODY></HTML>
+
+    [1] => sutrisno.yao@gmail.com
+    [2] => Array
+        (
+            [FNAME] => burung
+            [LNAME] => onta
+            [GENDER] => Male
+            [STOREID] => 1
+            [WEBSITE] => 1
+            [DOP] => 03/22/2016
+            [STORECRED] => 0
+            [CGROUP] => General
+            [TELEPHONE] => 2132212
+            [EMAIL] => sutrisno.yao@gmail.com
+            [GROUPINGS] => Array
+                (
+                )
+
+        )
+
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => Error: Invalid MailChimp List ID: Bad Response.  Got This: <HTML><HEAD>
+<TITLE>Internal Server Error</TITLE>
+</HEAD><BODY>
+<H1>Internal Server Error - Read</H1>
+The server encountered an internal error or misconfiguration and was unable to
+complete your request.<P>
+Reference&#32;&#35;3&#46;12a20017&#46;1458825679&#46;a1b0ba5
+</BODY></HTML>
+, code 200
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => listUpdateMember
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:20+00:00 DEBUG (7): Array
+(
+    [0] => -99
+    [1] => sutrisno.yao@gmail.com
+    [2] => Array
+        (
+            [FNAME] => burung
+            [LNAME] => onta
+            [GENDER] => Male
+            [STOREID] => 1
+            [WEBSITE] => 1
+            [DOP] => 03/22/2016
+            [STORECRED] => 0
+            [CGROUP] => General
+            [TELEPHONE] => 2132212
+            [EMAIL] => sutrisno.yao@gmail.com
+            [GROUPINGS] => Array
+                (
+                )
+
+        )
+
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:21+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3558
+)
+
+2016-03-24T13:21:21+00:00 DEBUG (7): Array
+(
+    [0] => Error: Invalid MailChimp List ID: -99, code 200
+    [__pid] => 3558
+)
+
+2016-03-24T13:27:02+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1260
+)
+
+2016-03-24T13:27:02+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1260
+)
+
+2016-03-24T13:27:02+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1260
+)
+
+2016-03-24T13:27:02+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1260
+)
+
+2016-03-24T13:27:04+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1260
+)
+
+2016-03-24T13:27:04+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1260
+)
+
+2016-03-24T13:32:19+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3002
+)
+
+2016-03-24T13:32:19+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3002
+)
+
+2016-03-24T13:32:19+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3002
+)
+
+2016-03-24T13:32:19+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3002
+)
+
+2016-03-24T13:32:20+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3002
+)
+
+2016-03-24T13:32:20+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 3002
+)
+
+2016-03-24T13:58:05+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3002
+)
+
+2016-03-24T13:58:05+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3002
+)
+
+2016-03-24T13:58:05+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3002
+)
+
+2016-03-24T13:58:05+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3002
+)
+
+2016-03-24T13:58:06+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3002
+)
+
+2016-03-24T13:58:06+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 3002
+)
+
+2016-03-24T14:00:59+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 5625
+)
+
+2016-03-24T14:00:59+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 5625
+)
+
+2016-03-24T14:00:59+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 5625
+)
+
+2016-03-24T14:00:59+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 5625
+)
+
+2016-03-24T14:01:01+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 5625
+)
+
+2016-03-24T14:01:01+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 5625
+)
+
+2016-03-24T14:07:00+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 4568
+)
+
+2016-03-24T14:07:00+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 4568
+)
+
+2016-03-24T14:07:00+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 4568
+)
+
+2016-03-24T14:07:00+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 4568
+)
+
+2016-03-24T14:07:01+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 4568
+)
+
+2016-03-24T14:07:01+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 4568
+)
+
+2016-03-24T14:26:29+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2840
+)
+
+2016-03-24T14:26:29+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2840
+)
+
+2016-03-24T14:26:29+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2840
+)
+
+2016-03-24T14:26:29+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2840
+)
+
+2016-03-24T14:26:30+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2840
+)
+
+2016-03-24T14:26:30+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2840
+)
+
+2016-03-24T17:47:44+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2840
+)
+
+2016-03-24T17:47:44+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2840
+)
+
+2016-03-24T17:47:44+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2840
+)
+
+2016-03-24T17:47:44+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2840
+)
+
+2016-03-24T17:47:45+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2840
+)
+
+2016-03-24T17:47:45+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2840
+)
+
+2016-03-24T17:54:02+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1285
+)
+
+2016-03-24T17:54:02+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1285
+)
+
+2016-03-24T17:54:02+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1285
+)
+
+2016-03-24T17:54:02+00:00 DEBUG (7): Array
+(
+    [0] => sales@juraganwebhosting.com
+    [__pid] => 1285
+)
+
+2016-03-24T17:54:03+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1285
+)
+
+2016-03-24T17:54:03+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sales@juraganwebhosting.com" in your account, code 232
+    [__pid] => 1285
+)
+
+2016-03-24T17:58:10+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 5409
+)
+
+2016-03-24T17:58:10+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 5409
+)
+
+2016-03-24T17:58:10+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 5409
+)
+
+2016-03-24T17:58:10+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 5409
+)
+
+2016-03-24T17:58:11+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 5409
+)
+
+2016-03-24T17:58:11+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 5409
+)
+
+2016-03-24T18:05:50+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 4568
+)
+
+2016-03-24T18:05:50+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 4568
+)
+
+2016-03-24T18:05:50+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 4568
+)
+
+2016-03-24T18:05:50+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 4568
+)
+
+2016-03-24T18:05:50+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 4568
+)
+
+2016-03-24T18:05:50+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 4568
+)
+
+2016-03-24T18:30:04+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 5889
+)
+
+2016-03-24T18:30:04+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 5889
+)
+
+2016-03-24T18:30:04+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 5889
+)
+
+2016-03-24T18:30:04+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 5889
+)
+
+2016-03-24T18:30:05+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 5889
+)
+
+2016-03-24T18:30:05+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 5889
+)
+
+2016-03-25T16:49:27+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 676
+)
+
+2016-03-25T16:49:27+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 676
+)
+
+2016-03-25T16:49:27+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 676
+)
+
+2016-03-25T16:49:27+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 676
+)
+
+2016-03-25T16:49:28+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 676
+)
+
+2016-03-25T16:49:28+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 676
+)
+
+2016-03-25T16:53:26+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 800
+)
+
+2016-03-25T16:53:26+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 800
+)
+
+2016-03-25T16:53:26+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 800
+)
+
+2016-03-25T16:53:26+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 800
+)
+
+2016-03-25T16:53:27+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 800
+)
+
+2016-03-25T16:53:27+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 800
+)
+
+2016-03-25T16:59:09+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 783
+)
+
+2016-03-25T16:59:09+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 783
+)
+
+2016-03-25T16:59:09+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 783
+)
+
+2016-03-25T16:59:09+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 783
+)
+
+2016-03-25T16:59:11+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 783
+)
+
+2016-03-25T16:59:11+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 783
+)
+
+2016-03-27T07:22:41+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 885
+)
+
+2016-03-27T07:22:41+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 885
+)
+
+2016-03-27T07:22:41+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 885
+)
+
+2016-03-27T07:22:41+00:00 DEBUG (7): Array
+(
+    [0] => jugan@jagin.com
+    [__pid] => 885
+)
+
+2016-03-27T07:22:41+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 885
+)
+
+2016-03-27T07:22:41+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "jugan@jagin.com" in your account, code 232
+    [__pid] => 885
+)
+
+2016-03-27T07:23:19+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 587
+)
+
+2016-03-27T07:23:19+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 587
+)
+
+2016-03-27T07:23:19+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 587
+)
+
+2016-03-27T07:23:19+00:00 DEBUG (7): Array
+(
+    [0] => jugan@jagin.com
+    [__pid] => 587
+)
+
+2016-03-27T07:23:47+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 622
+)
+
+2016-03-27T07:23:47+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 622
+)
+
+2016-03-27T07:23:47+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 622
+)
+
+2016-03-27T07:23:47+00:00 DEBUG (7): Array
+(
+    [0] => jugan@jagin.com
+    [__pid] => 622
+)
+
+2016-03-27T07:23:47+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 622
+)
+
+2016-03-27T07:23:47+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "jugan@jagin.com" in your account, code 232
+    [__pid] => 622
+)
+
+2016-03-27T07:29:11+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 590
+)
+
+2016-03-27T07:29:11+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 590
+)
+
+2016-03-27T07:29:11+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 590
+)
+
+2016-03-27T07:29:11+00:00 DEBUG (7): Array
+(
+    [0] => goho@aaa.com
+    [__pid] => 590
+)
+
+2016-03-27T07:29:11+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 590
+)
+
+2016-03-27T07:29:11+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "goho@aaa.com" in your account, code 232
+    [__pid] => 590
+)
+
+2016-03-28T06:23:04+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:04+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:04+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:04+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:04+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:04+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:05+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:05+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:05+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:05+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:05+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1749
+)
+
+2016-03-28T06:23:05+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1749
+)
+
+2016-03-28T06:28:17+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:17+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:17+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:17+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:17+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:17+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:18+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:18+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:18+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:18+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:18+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1748
+)
+
+2016-03-28T06:28:18+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1748
+)
+
+2016-03-30T07:23:34+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 697
+)
+
+2016-03-30T07:23:34+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 697
+)
+
+2016-03-30T07:23:34+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 697
+)
+
+2016-03-30T07:23:34+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 697
+)
+
+2016-03-30T07:23:38+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 697
+)
+
+2016-03-30T07:23:38+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 61: Connection refused), code -99
+    [__pid] => 697
+)
+
+2016-03-30T07:23:39+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 697
+)
+
+2016-03-30T07:23:39+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 697
+)
+
+2016-03-30T07:23:39+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 697
+)
+
+2016-03-30T07:23:39+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 697
+)
+
+2016-03-30T07:23:39+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 697
+)
+
+2016-03-30T07:23:39+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 61: Connection refused), code -99
+    [__pid] => 697
+)
+
+2016-04-01T03:46:15+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1650
+)
+
+2016-04-01T03:46:15+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1650
+)
+
+2016-04-01T03:46:15+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1650
+)
+
+2016-04-01T03:46:15+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1650
+)
+
+2016-04-01T03:47:05+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1813
+)
+
+2016-04-01T03:47:05+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1813
+)
+
+2016-04-01T03:47:05+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1813
+)
+
+2016-04-01T03:47:06+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1813
+)
+
+2016-04-01T03:47:06+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1813
+)
+
+2016-04-01T03:47:06+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1813
+)
+
+2016-04-01T06:17:06+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2300
+)
+
+2016-04-01T06:17:06+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2300
+)
+
+2016-04-01T06:17:06+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2300
+)
+
+2016-04-01T06:17:06+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2300
+)
+
+2016-04-01T06:17:07+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2300
+)
+
+2016-04-01T06:17:07+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2300
+)
+
+2016-04-01T06:17:54+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1660
+)
+
+2016-04-01T06:17:54+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1660
+)
+
+2016-04-01T06:17:54+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1660
+)
+
+2016-04-01T06:17:54+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1660
+)
+
+2016-04-01T06:17:55+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1660
+)
+
+2016-04-01T06:17:55+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1660
+)
+
+2016-04-01T06:23:26+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2302
+)
+
+2016-04-01T06:23:26+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2302
+)
+
+2016-04-01T06:23:26+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2302
+)
+
+2016-04-01T06:23:26+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2302
+)
+
+2016-04-01T06:23:28+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2302
+)
+
+2016-04-01T06:23:28+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2302
+)
+
+2016-04-01T07:01:16+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2302
+)
+
+2016-04-01T07:01:16+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2302
+)
+
+2016-04-01T07:01:16+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2302
+)
+
+2016-04-01T07:01:16+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2302
+)
+
+2016-04-01T07:01:17+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2302
+)
+
+2016-04-01T07:01:17+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2302
+)
+
+2016-04-01T08:28:26+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 786
+)
+
+2016-04-01T08:28:26+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 786
+)
+
+2016-04-01T08:28:26+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 786
+)
+
+2016-04-01T08:28:26+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 786
+)
+
+2016-04-01T08:28:29+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 786
+)
+
+2016-04-01T08:28:29+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 786
+)
+
+2016-04-01T08:47:21+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2302
+)
+
+2016-04-01T08:47:21+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2302
+)
+
+2016-04-01T08:47:21+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2302
+)
+
+2016-04-01T08:47:21+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2302
+)
+
+2016-04-01T08:47:22+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2302
+)
+
+2016-04-01T08:47:22+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2302
+)
+
+2016-04-01T09:00:32+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1512
+)
+
+2016-04-01T09:00:32+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1512
+)
+
+2016-04-01T09:00:32+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1512
+)
+
+2016-04-01T09:00:32+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1512
+)
+
+2016-04-01T09:00:33+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1512
+)
+
+2016-04-01T09:00:33+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1512
+)
+
+2016-04-01T09:09:32+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2301
+)
+
+2016-04-01T09:09:32+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2301
+)
+
+2016-04-01T09:09:32+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2301
+)
+
+2016-04-01T09:09:32+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2301
+)
+
+2016-04-01T09:09:33+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2301
+)
+
+2016-04-01T09:09:33+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2301
+)
+
+2016-04-01T09:14:42+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2301
+)
+
+2016-04-01T09:14:42+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2301
+)
+
+2016-04-01T09:14:42+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2301
+)
+
+2016-04-01T09:14:42+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2301
+)
+
+2016-04-01T09:14:42+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2301
+)
+
+2016-04-01T09:14:42+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2301
+)
+
+2016-04-01T09:25:10+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 1660
+)
+
+2016-04-01T09:25:10+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 1660
+)
+
+2016-04-01T09:25:10+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 1660
+)
+
+2016-04-01T09:25:10+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 1660
+)
+
+2016-04-01T09:25:11+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 1660
+)
+
+2016-04-01T09:25:11+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 1660
+)
+
+2016-04-01T09:28:36+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2301
+)
+
+2016-04-01T09:28:36+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2301
+)
+
+2016-04-01T09:28:36+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2301
+)
+
+2016-04-01T09:28:36+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2301
+)
+
+2016-04-01T09:28:37+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2301
+)
+
+2016-04-01T09:28:37+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2301
+)
+
+2016-04-01T09:39:58+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2302
+)
+
+2016-04-01T09:39:58+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2302
+)
+
+2016-04-01T09:39:58+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2302
+)
+
+2016-04-01T09:39:58+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2302
+)
+
+2016-04-01T09:39:59+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2302
+)
+
+2016-04-01T09:39:59+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2302
+)
+
+2016-04-01T16:02:58+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3965
+)
+
+2016-04-01T16:02:58+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3965
+)
+
+2016-04-01T16:02:58+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3965
+)
+
+2016-04-01T16:02:58+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3965
+)
+
+2016-04-01T16:02:59+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3965
+)
+
+2016-04-01T16:02:59+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 3965
+)
+
+2016-04-01T16:03:00+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3965
+)
+
+2016-04-01T16:03:00+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3965
+)
+
+2016-04-01T16:03:00+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3965
+)
+
+2016-04-01T16:03:00+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3965
+)
+
+2016-04-01T16:03:00+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3965
+)
+
+2016-04-01T16:03:00+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:44+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:44+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:44+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:44+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:45+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:45+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:45+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:45+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:45+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:45+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:46+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3965
+)
+
+2016-04-01T16:08:46+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 3965
+)
+
+2016-04-02T07:10:54+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:54+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:54+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:54+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:55+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:55+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:55+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:55+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:55+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:55+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:56+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7648
+)
+
+2016-04-02T07:10:56+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 7648
+)
+
+2016-04-04T06:31:13+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2903
+)
+
+2016-04-04T06:31:13+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2903
+)
+
+2016-04-04T06:31:13+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2903
+)
+
+2016-04-04T06:31:13+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2903
+)
+
+2016-04-04T06:31:18+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2903
+)
+
+2016-04-04T06:31:18+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2903
+)
+
+2016-04-04T06:38:00+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2904
+)
+
+2016-04-04T06:38:00+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2904
+)
+
+2016-04-04T06:38:00+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2904
+)
+
+2016-04-04T06:38:00+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2904
+)
+
+2016-04-04T06:38:00+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2904
+)
+
+2016-04-04T06:38:00+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2904
+)
+
+2016-04-06T08:45:05+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3975
+)
+
+2016-04-06T08:45:05+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3975
+)
+
+2016-04-06T08:45:05+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3975
+)
+
+2016-04-06T08:45:05+00:00 DEBUG (7): Array
+(
+    [0] => sapi@susu.su
+    [__pid] => 3975
+)
+
+2016-04-06T08:45:06+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3975
+)
+
+2016-04-06T08:45:06+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sapi@susu.su" in your account, code 232
+    [__pid] => 3975
+)
+
+2016-04-07T02:18:49+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3978
+)
+
+2016-04-07T02:18:49+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3978
+)
+
+2016-04-07T02:18:49+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3978
+)
+
+2016-04-07T02:18:49+00:00 DEBUG (7): Array
+(
+    [0] => liar@kuda.com
+    [__pid] => 3978
+)
+
+2016-04-07T02:18:50+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3978
+)
+
+2016-04-07T02:18:50+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "liar@kuda.com" in your account, code 232
+    [__pid] => 3978
+)
+
+2016-04-07T02:22:01+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3963
+)
+
+2016-04-07T02:22:01+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3963
+)
+
+2016-04-07T02:22:01+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3963
+)
+
+2016-04-07T02:22:01+00:00 DEBUG (7): Array
+(
+    [0] => sapi@bagan.com
+    [__pid] => 3963
+)
+
+2016-04-07T02:22:01+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3963
+)
+
+2016-04-07T02:22:01+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sapi@bagan.com" in your account, code 232
+    [__pid] => 3963
+)
+
+2016-04-07T02:23:33+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3963
+)
+
+2016-04-07T02:23:33+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3963
+)
+
+2016-04-07T02:23:33+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3963
+)
+
+2016-04-07T02:23:33+00:00 DEBUG (7): Array
+(
+    [0] => sssss@ss111ss.com
+    [__pid] => 3963
+)
+
+2016-04-07T02:23:33+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3963
+)
+
+2016-04-07T02:23:33+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sssss@ss111ss.com" in your account, code 232
+    [__pid] => 3963
+)
+
+2016-04-07T02:25:22+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3963
+)
+
+2016-04-07T02:25:22+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3963
+)
+
+2016-04-07T02:25:22+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3963
+)
+
+2016-04-07T02:25:22+00:00 DEBUG (7): Array
+(
+    [0] => kuda@nenen.com
+    [__pid] => 3963
+)
+
+2016-04-07T02:25:23+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3963
+)
+
+2016-04-07T02:25:23+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "kuda@nenen.com" in your account, code 232
+    [__pid] => 3963
+)
+
+2016-04-07T02:52:25+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3977
+)
+
+2016-04-07T02:52:25+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3977
+)
+
+2016-04-07T02:52:25+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3977
+)
+
+2016-04-07T02:52:25+00:00 DEBUG (7): Array
+(
+    [0] => testmem@mem.com
+    [__pid] => 3977
+)
+
+2016-04-07T02:52:26+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3977
+)
+
+2016-04-07T02:52:26+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "testmem@mem.com" in your account, code 232
+    [__pid] => 3977
+)
+
+2016-04-07T02:55:52+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 3963
+)
+
+2016-04-07T02:55:52+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 3963
+)
+
+2016-04-07T02:55:52+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 3963
+)
+
+2016-04-07T02:55:52+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 3963
+)
+
+2016-04-07T02:55:53+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 3963
+)
+
+2016-04-07T02:55:53+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 3963
+)
+
+2016-04-07T07:59:11+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7562
+)
+
+2016-04-07T07:59:11+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7562
+)
+
+2016-04-07T07:59:11+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7562
+)
+
+2016-04-07T07:59:11+00:00 DEBUG (7): Array
+(
+    [0] => susu.kuda@sapi.com
+    [__pid] => 7562
+)
+
+2016-04-07T07:59:12+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7562
+)
+
+2016-04-07T07:59:12+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "susu.kuda@sapi.com" in your account, code 232
+    [__pid] => 7562
+)
+
+2016-04-07T08:15:10+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7595
+)
+
+2016-04-07T08:15:10+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7595
+)
+
+2016-04-07T08:15:10+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7595
+)
+
+2016-04-07T08:15:10+00:00 DEBUG (7): Array
+(
+    [0] => sapi@susu.com
+    [__pid] => 7595
+)
+
+2016-04-07T08:15:11+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7595
+)
+
+2016-04-07T08:15:11+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sapi@susu.com" in your account, code 232
+    [__pid] => 7595
+)
+
+2016-04-07T08:43:40+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7563
+)
+
+2016-04-07T08:43:40+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7563
+)
+
+2016-04-07T08:43:40+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7563
+)
+
+2016-04-07T08:43:40+00:00 DEBUG (7): Array
+(
+    [0] => sipa@susu.com
+    [__pid] => 7563
+)
+
+2016-04-07T08:43:41+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7563
+)
+
+2016-04-07T08:43:41+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sipa@susu.com" in your account, code 232
+    [__pid] => 7563
+)
+
+2016-04-07T08:48:10+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7566
+)
+
+2016-04-07T08:48:10+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7566
+)
+
+2016-04-07T08:48:10+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7566
+)
+
+2016-04-07T08:48:10+00:00 DEBUG (7): Array
+(
+    [0] => tul@tul.com
+    [__pid] => 7566
+)
+
+2016-04-07T08:48:11+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7566
+)
+
+2016-04-07T08:48:11+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "tul@tul.com" in your account, code 232
+    [__pid] => 7566
+)
+
+2016-04-07T09:42:16+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7597
+)
+
+2016-04-07T09:42:16+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7597
+)
+
+2016-04-07T09:42:16+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7597
+)
+
+2016-04-07T09:42:16+00:00 DEBUG (7): Array
+(
+    [0] => ssssss@sss.com
+    [__pid] => 7597
+)
+
+2016-04-07T09:42:17+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7597
+)
+
+2016-04-07T09:42:17+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ssssss@sss.com" in your account, code 232
+    [__pid] => 7597
+)
+
+2016-04-07T10:19:35+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7590
+)
+
+2016-04-07T10:19:35+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7590
+)
+
+2016-04-07T10:19:35+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7590
+)
+
+2016-04-07T10:19:35+00:00 DEBUG (7): Array
+(
+    [0] => susu@sipa.com
+    [__pid] => 7590
+)
+
+2016-04-07T10:19:36+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7590
+)
+
+2016-04-07T10:19:36+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 61: Connection refused), code -99
+    [__pid] => 7590
+)
+
+2016-04-07T10:22:02+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7934
+)
+
+2016-04-07T10:22:02+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7934
+)
+
+2016-04-07T10:22:02+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7934
+)
+
+2016-04-07T10:22:02+00:00 DEBUG (7): Array
+(
+    [0] => siap@saip.com
+    [__pid] => 7934
+)
+
+2016-04-07T10:22:03+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7934
+)
+
+2016-04-07T10:22:03+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 61: Connection refused), code -99
+    [__pid] => 7934
+)
+
+2016-04-07T11:01:50+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9064
+)
+
+2016-04-07T11:01:50+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9064
+)
+
+2016-04-07T11:01:50+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9064
+)
+
+2016-04-07T11:01:50+00:00 DEBUG (7): Array
+(
+    [0] => sihir@sapu.com
+    [__pid] => 9064
+)
+
+2016-04-07T11:01:51+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 9064
+)
+
+2016-04-07T11:01:51+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sihir@sapu.com" in your account, code 232
+    [__pid] => 9064
+)
+
+2016-04-07T13:47:41+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7590
+)
+
+2016-04-07T13:47:41+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7590
+)
+
+2016-04-07T13:47:41+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7590
+)
+
+2016-04-07T13:47:41+00:00 DEBUG (7): Array
+(
+    [0] => jok@la.com
+    [__pid] => 7590
+)
+
+2016-04-07T13:47:43+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7590
+)
+
+2016-04-07T13:47:43+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "jok@la.com" in your account, code 232
+    [__pid] => 7590
+)
+
+2016-04-07T13:48:39+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9064
+)
+
+2016-04-07T13:48:39+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9064
+)
+
+2016-04-07T13:48:39+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9064
+)
+
+2016-04-07T13:48:39+00:00 DEBUG (7): Array
+(
+    [0] => tetek@rurur.com
+    [__pid] => 9064
+)
+
+2016-04-07T13:48:40+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 9064
+)
+
+2016-04-07T13:48:40+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "tetek@rurur.com" in your account, code 232
+    [__pid] => 9064
+)
+
+2016-04-07T13:50:21+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 8800
+)
+
+2016-04-07T13:50:21+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 8800
+)
+
+2016-04-07T13:50:21+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 8800
+)
+
+2016-04-07T13:50:21+00:00 DEBUG (7): Array
+(
+    [0] => kimpul@jo.com
+    [__pid] => 8800
+)
+
+2016-04-07T13:51:11+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7562
+)
+
+2016-04-07T13:51:11+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7562
+)
+
+2016-04-07T13:51:11+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7562
+)
+
+2016-04-07T13:51:11+00:00 DEBUG (7): Array
+(
+    [0] => ass@sss.com
+    [__pid] => 7562
+)
+
+2016-04-07T13:51:12+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7562
+)
+
+2016-04-07T13:51:12+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ass@sss.com" in your account, code 232
+    [__pid] => 7562
+)
+
+2016-04-07T13:55:32+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7598
+)
+
+2016-04-07T13:55:32+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7598
+)
+
+2016-04-07T13:55:32+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7598
+)
+
+2016-04-07T13:55:32+00:00 DEBUG (7): Array
+(
+    [0] => sqws@sss.com
+    [__pid] => 7598
+)
+
+2016-04-07T13:55:35+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7598
+)
+
+2016-04-07T13:55:35+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sqws@sss.com" in your account, code 232
+    [__pid] => 7598
+)
+
+2016-04-07T14:31:05+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7562
+)
+
+2016-04-07T14:31:05+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7562
+)
+
+2016-04-07T14:31:05+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7562
+)
+
+2016-04-07T14:31:05+00:00 DEBUG (7): Array
+(
+    [0] => ssss@sss.com
+    [__pid] => 7562
+)
+
+2016-04-07T14:31:05+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7562
+)
+
+2016-04-07T14:31:05+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ssss@sss.com" in your account, code 232
+    [__pid] => 7562
+)
+
+2016-04-07T14:34:45+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7593
+)
+
+2016-04-07T14:34:45+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7593
+)
+
+2016-04-07T14:34:45+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7593
+)
+
+2016-04-07T14:34:45+00:00 DEBUG (7): Array
+(
+    [0] => jin@jun.com
+    [__pid] => 7593
+)
+
+2016-04-07T14:34:46+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7593
+)
+
+2016-04-07T14:34:46+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "jin@jun.com" in your account, code 232
+    [__pid] => 7593
+)
+
+2016-04-07T14:36:34+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9996
+)
+
+2016-04-07T14:36:34+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9996
+)
+
+2016-04-07T14:36:34+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9996
+)
+
+2016-04-07T14:36:34+00:00 DEBUG (7): Array
+(
+    [0] => sss@sss.com
+    [__pid] => 9996
+)
+
+2016-04-07T14:36:35+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 9996
+)
+
+2016-04-07T14:36:35+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sss@sss.com" in your account, code 232
+    [__pid] => 9996
+)
+
+2016-04-07T15:00:55+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7597
+)
+
+2016-04-07T15:00:55+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7597
+)
+
+2016-04-07T15:00:55+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7597
+)
+
+2016-04-07T15:00:55+00:00 DEBUG (7): Array
+(
+    [0] => qwdqwd@sss.com
+    [__pid] => 7597
+)
+
+2016-04-07T15:00:57+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7597
+)
+
+2016-04-07T15:00:57+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "qwdqwd@sss.com" in your account, code 232
+    [__pid] => 7597
+)
+
+2016-04-07T15:14:41+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9997
+)
+
+2016-04-07T15:14:41+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9997
+)
+
+2016-04-07T15:14:41+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9997
+)
+
+2016-04-07T15:14:41+00:00 DEBUG (7): Array
+(
+    [0] => www@sss.com
+    [__pid] => 9997
+)
+
+2016-04-07T15:14:42+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 9997
+)
+
+2016-04-07T15:14:42+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "www@sss.com" in your account, code 232
+    [__pid] => 9997
+)
+
+2016-04-07T15:28:21+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9997
+)
+
+2016-04-07T15:28:21+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9997
+)
+
+2016-04-07T15:28:21+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9997
+)
+
+2016-04-07T15:28:21+00:00 DEBUG (7): Array
+(
+    [0] => test@sss.com
+    [__pid] => 9997
+)
+
+2016-04-07T15:28:21+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 9997
+)
+
+2016-04-07T15:28:21+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "test@sss.com" in your account, code 232
+    [__pid] => 9997
+)
+
+2016-04-07T15:29:18+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7564
+)
+
+2016-04-07T15:29:18+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7564
+)
+
+2016-04-07T15:29:18+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7564
+)
+
+2016-04-07T15:29:18+00:00 DEBUG (7): Array
+(
+    [0] => wedwed@sss.com
+    [__pid] => 7564
+)
+
+2016-04-07T15:29:20+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7564
+)
+
+2016-04-07T15:29:20+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "wedwed@sss.com" in your account, code 232
+    [__pid] => 7564
+)
+
+2016-04-07T15:30:11+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7598
+)
+
+2016-04-07T15:30:11+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7598
+)
+
+2016-04-07T15:30:11+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7598
+)
+
+2016-04-07T15:30:11+00:00 DEBUG (7): Array
+(
+    [0] => wqdqw@sss.com
+    [__pid] => 7598
+)
+
+2016-04-07T15:30:12+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7598
+)
+
+2016-04-07T15:30:12+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "wqdqw@sss.com" in your account, code 232
+    [__pid] => 7598
+)
+
+2016-04-07T15:35:49+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 10259
+)
+
+2016-04-07T15:35:49+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 10259
+)
+
+2016-04-07T15:35:49+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 10259
+)
+
+2016-04-07T15:35:49+00:00 DEBUG (7): Array
+(
+    [0] => weqw@sss.com
+    [__pid] => 10259
+)
+
+2016-04-07T15:35:51+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 10259
+)
+
+2016-04-07T15:35:51+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "weqw@sss.com" in your account, code 232
+    [__pid] => 10259
+)
+
+2016-04-07T15:38:17+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9997
+)
+
+2016-04-07T15:38:17+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9997
+)
+
+2016-04-07T15:38:17+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9997
+)
+
+2016-04-07T15:38:17+00:00 DEBUG (7): Array
+(
+    [0] => wsqws@sss.com
+    [__pid] => 9997
+)
+
+2016-04-07T15:38:18+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 9997
+)
+
+2016-04-07T15:38:18+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "wsqws@sss.com" in your account, code 232
+    [__pid] => 9997
+)
+
+2016-04-07T15:47:04+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7593
+)
+
+2016-04-07T15:47:04+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7593
+)
+
+2016-04-07T15:47:04+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7593
+)
+
+2016-04-07T15:47:04+00:00 DEBUG (7): Array
+(
+    [0] => edewd@sss.com
+    [__pid] => 7593
+)
+
+2016-04-07T15:47:05+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7593
+)
+
+2016-04-07T15:47:05+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "edewd@sss.com" in your account, code 232
+    [__pid] => 7593
+)
+
+2016-04-07T15:53:31+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9996
+)
+
+2016-04-07T15:53:31+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9996
+)
+
+2016-04-07T15:53:31+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9996
+)
+
+2016-04-07T15:53:31+00:00 DEBUG (7): Array
+(
+    [0] => wewe@sss.com
+    [__pid] => 9996
+)
+
+2016-04-07T15:53:32+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 9996
+)
+
+2016-04-07T15:53:32+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "wewe@sss.com" in your account, code 232
+    [__pid] => 9996
+)
+
+2016-04-07T15:57:03+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 10259
+)
+
+2016-04-07T15:57:03+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 10259
+)
+
+2016-04-07T15:57:03+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 10259
+)
+
+2016-04-07T15:57:03+00:00 DEBUG (7): Array
+(
+    [0] => qweqw@sss.com
+    [__pid] => 10259
+)
+
+2016-04-07T15:57:04+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 10259
+)
+
+2016-04-07T15:57:04+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "qweqw@sss.com" in your account, code 232
+    [__pid] => 10259
+)
+
+2016-04-07T15:58:19+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9996
+)
+
+2016-04-07T15:58:19+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9996
+)
+
+2016-04-07T15:58:19+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9996
+)
+
+2016-04-07T15:58:19+00:00 DEBUG (7): Array
+(
+    [0] => ewfwe@sss.com
+    [__pid] => 9996
+)
+
+2016-04-07T15:58:19+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 9996
+)
+
+2016-04-07T15:58:19+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ewfwe@sss.com" in your account, code 232
+    [__pid] => 9996
+)
+
+2016-04-07T16:00:02+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7564
+)
+
+2016-04-07T16:00:02+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7564
+)
+
+2016-04-07T16:00:02+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7564
+)
+
+2016-04-07T16:00:02+00:00 DEBUG (7): Array
+(
+    [0] => ewdwed@dewdwe.om
+    [__pid] => 7564
+)
+
+2016-04-07T16:00:03+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7564
+)
+
+2016-04-07T16:00:03+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ewdwed@dewdwe.om" in your account, code 232
+    [__pid] => 7564
+)
+
+2016-04-07T16:02:29+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7562
+)
+
+2016-04-07T16:02:29+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7562
+)
+
+2016-04-07T16:02:29+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7562
+)
+
+2016-04-07T16:02:29+00:00 DEBUG (7): Array
+(
+    [0] => ssqw@sss.com
+    [__pid] => 7562
+)
+
+2016-04-07T16:02:30+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7562
+)
+
+2016-04-07T16:02:30+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "ssqw@sss.com" in your account, code 232
+    [__pid] => 7562
+)
+
+2016-04-07T16:30:40+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9998
+)
+
+2016-04-07T16:30:40+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9998
+)
+
+2016-04-07T16:30:40+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9998
+)
+
+2016-04-07T16:30:40+00:00 DEBUG (7): Array
+(
+    [0] => susu@asikuda.com
+    [__pid] => 9998
+)
+
+2016-04-07T16:32:31+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 11510
+)
+
+2016-04-07T16:32:31+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 11510
+)
+
+2016-04-07T16:32:31+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 11510
+)
+
+2016-04-07T16:32:31+00:00 DEBUG (7): Array
+(
+    [0] => susu@asikudas.com
+    [__pid] => 11510
+)
+
+2016-04-07T16:32:32+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 11510
+)
+
+2016-04-07T16:32:32+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "susu@asikudas.com" in your account, code 232
+    [__pid] => 11510
+)
+
+2016-04-07T16:39:41+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 11270
+)
+
+2016-04-07T16:39:41+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 11270
+)
+
+2016-04-07T16:39:41+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 11270
+)
+
+2016-04-07T16:39:41+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 11270
+)
+
+2016-04-07T16:39:42+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 11270
+)
+
+2016-04-07T16:39:42+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 11270
+)
+
+2016-04-07T16:43:31+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 11510
+)
+
+2016-04-07T16:43:31+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 11510
+)
+
+2016-04-07T16:43:31+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 11510
+)
+
+2016-04-07T16:43:31+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 11510
+)
+
+2016-04-07T16:43:32+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 11510
+)
+
+2016-04-07T16:43:32+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 11510
+)
+
+2016-04-08T02:45:17+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 9997
+)
+
+2016-04-08T02:45:17+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 9997
+)
+
+2016-04-08T02:45:17+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 9997
+)
+
+2016-04-08T02:45:17+00:00 DEBUG (7): Array
+(
+    [0] => dis.dus@das.com
+    [__pid] => 9997
+)
+
+2016-04-08T02:45:47+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 9997
+)
+
+2016-04-08T02:45:47+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 0: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known), code -99
+    [__pid] => 9997
+)
+
+2016-04-11T09:22:02+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 15703
+)
+
+2016-04-11T09:22:02+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 15703
+)
+
+2016-04-11T09:22:02+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 15703
+)
+
+2016-04-11T09:22:02+00:00 DEBUG (7): Array
+(
+    [0] => dis@sapi.com
+    [__pid] => 15703
+)
+
+2016-04-11T09:22:08+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 15703
+)
+
+2016-04-11T09:22:08+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "dis@sapi.com" in your account, code 232
+    [__pid] => 15703
+)
+
+2016-04-11T09:23:42+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2509
+)
+
+2016-04-11T09:23:42+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2509
+)
+
+2016-04-11T09:23:42+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2509
+)
+
+2016-04-11T09:23:42+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2509
+)
+
+2016-04-11T09:23:48+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2509
+)
+
+2016-04-11T09:23:48+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2509
+)
+
+2016-04-11T09:26:46+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2842
+)
+
+2016-04-11T09:26:46+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2842
+)
+
+2016-04-11T09:26:46+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2842
+)
+
+2016-04-11T09:26:46+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2842
+)
+
+2016-04-11T09:26:52+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2842
+)
+
+2016-04-11T09:26:52+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2842
+)
+
+2016-04-11T09:31:26+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2523
+)
+
+2016-04-11T09:31:26+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2523
+)
+
+2016-04-11T09:31:26+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2523
+)
+
+2016-04-11T09:31:26+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2523
+)
+
+2016-04-11T09:31:32+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2523
+)
+
+2016-04-11T09:31:32+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2523
+)
+
+2016-04-11T10:14:03+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 15209
+)
+
+2016-04-11T10:14:03+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 15209
+)
+
+2016-04-11T10:14:03+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 15209
+)
+
+2016-04-11T10:14:03+00:00 DEBUG (7): Array
+(
+    [0] => sipsip@sap.com
+    [__pid] => 15209
+)
+
+2016-04-11T10:14:08+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 15209
+)
+
+2016-04-11T10:14:08+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 61: Connection refused), code -99
+    [__pid] => 15209
+)
+
+2016-04-12T06:57:35+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2519
+)
+
+2016-04-12T06:57:35+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2519
+)
+
+2016-04-12T06:57:35+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2519
+)
+
+2016-04-12T06:57:35+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2519
+)
+
+2016-04-12T06:58:54+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 15165
+)
+
+2016-04-12T06:58:54+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 15165
+)
+
+2016-04-12T06:58:54+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 15165
+)
+
+2016-04-12T06:58:54+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 15165
+)
+
+2016-04-12T06:58:54+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 15165
+)
+
+2016-04-12T06:58:54+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 61: Connection refused), code -99
+    [__pid] => 15165
+)
+
+2016-04-12T07:04:06+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 15209
+)
+
+2016-04-12T07:04:06+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 15209
+)
+
+2016-04-12T07:04:06+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 15209
+)
+
+2016-04-12T07:04:06+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 15209
+)
+
+2016-04-12T07:04:06+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 15209
+)
+
+2016-04-12T07:04:06+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 15209
+)
+
+2016-04-12T07:10:21+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 16283
+)
+
+2016-04-12T07:10:21+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 16283
+)
+
+2016-04-12T07:10:21+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 16283
+)
+
+2016-04-12T07:10:21+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 16283
+)
+
+2016-04-12T07:10:21+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 16283
+)
+
+2016-04-12T07:10:21+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 16283
+)
+
+2016-04-12T07:19:05+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2523
+)
+
+2016-04-12T07:19:05+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2523
+)
+
+2016-04-12T07:19:05+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2523
+)
+
+2016-04-12T07:19:05+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2523
+)
+
+2016-04-12T07:19:05+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 2523
+)
+
+2016-04-12T07:19:05+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 2523
+)
+
+2016-04-12T07:42:05+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 15209
+)
+
+2016-04-12T07:42:05+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 15209
+)
+
+2016-04-12T07:42:05+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 15209
+)
+
+2016-04-12T07:42:05+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 15209
+)
+
+2016-04-12T07:42:06+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 15209
+)
+
+2016-04-12T07:42:06+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 15209
+)
+
+2016-04-12T07:49:42+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 21410
+)
+
+2016-04-12T07:49:42+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 21410
+)
+
+2016-04-12T07:49:42+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 21410
+)
+
+2016-04-12T07:49:42+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 21410
+)
+
+2016-04-12T07:49:42+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 21410
+)
+
+2016-04-12T07:49:42+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 21410
+)
+
+2016-04-12T07:56:17+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 15165
+)
+
+2016-04-12T07:56:17+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 15165
+)
+
+2016-04-12T07:56:17+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 15165
+)
+
+2016-04-12T07:56:17+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 15165
+)
+
+2016-04-12T07:56:18+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 15165
+)
+
+2016-04-12T07:56:18+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 15165
+)
+
+2016-04-12T08:03:42+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 16283
+)
+
+2016-04-12T08:03:42+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 16283
+)
+
+2016-04-12T08:03:42+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 16283
+)
+
+2016-04-12T08:03:42+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 16283
+)
+
+2016-04-12T08:06:57+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 21776
+)
+
+2016-04-12T08:06:57+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 21776
+)
+
+2016-04-12T08:06:57+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 21776
+)
+
+2016-04-12T08:06:57+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 21776
+)
+
+2016-04-12T08:12:33+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 21410
+)
+
+2016-04-12T08:12:33+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 21410
+)
+
+2016-04-12T08:12:33+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 21410
+)
+
+2016-04-12T08:12:33+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 21410
+)
+
+2016-04-12T08:12:33+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 21410
+)
+
+2016-04-12T08:12:33+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 21410
+)
+
+2016-04-12T08:27:43+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 22611
+)
+
+2016-04-12T08:27:43+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 22611
+)
+
+2016-04-12T08:27:43+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 22611
+)
+
+2016-04-12T08:27:43+00:00 DEBUG (7): Array
+(
+    [0] => susu@kukus.com
+    [__pid] => 22611
+)
+
+2016-04-12T08:27:48+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 22611
+)
+
+2016-04-12T08:27:48+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "susu@kukus.com" in your account, code 232
+    [__pid] => 22611
+)
+
+2016-04-12T08:33:02+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 22785
+)
+
+2016-04-12T08:33:02+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 22785
+)
+
+2016-04-12T08:33:02+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 22785
+)
+
+2016-04-12T08:33:02+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 22785
+)
+
+2016-04-12T08:33:03+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 22785
+)
+
+2016-04-12T08:33:03+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 22785
+)
+
+2016-04-12T08:36:28+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 23275
+)
+
+2016-04-12T08:36:28+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 23275
+)
+
+2016-04-12T08:36:28+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 23275
+)
+
+2016-04-12T08:36:28+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 23275
+)
+
+2016-04-12T08:36:33+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 23275
+)
+
+2016-04-12T08:36:33+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 23275
+)
+
+2016-04-12T09:54:33+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 21412
+)
+
+2016-04-12T09:54:33+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 21412
+)
+
+2016-04-12T09:54:33+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 21412
+)
+
+2016-04-12T09:54:33+00:00 DEBUG (7): Array
+(
+    [0] => kacung@kampret.com
+    [__pid] => 21412
+)
+
+2016-04-12T09:54:33+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 21412
+)
+
+2016-04-12T09:54:33+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 61: Connection refused), code -99
+    [__pid] => 21412
+)
+
+2016-04-12T17:30:59+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 24204
+)
+
+2016-04-12T17:30:59+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 24204
+)
+
+2016-04-12T17:30:59+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 24204
+)
+
+2016-04-12T17:30:59+00:00 DEBUG (7): Array
+(
+    [0] => sukur@sukir.com
+    [__pid] => 24204
+)
+
+2016-04-12T17:31:00+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 24204
+)
+
+2016-04-12T17:31:00+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 0: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known), code -99
+    [__pid] => 24204
+)
+
+2016-04-12T17:52:27+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 23275
+)
+
+2016-04-12T17:52:27+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 23275
+)
+
+2016-04-12T17:52:27+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 23275
+)
+
+2016-04-12T17:52:27+00:00 DEBUG (7): Array
+(
+    [0] => cim@com.com
+    [__pid] => 23275
+)
+
+2016-04-12T17:52:29+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 23275
+)
+
+2016-04-12T17:52:29+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "cim@com.com" in your account, code 232
+    [__pid] => 23275
+)
+
+2016-04-12T18:11:17+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 24866
+)
+
+2016-04-12T18:11:17+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 24866
+)
+
+2016-04-12T18:11:17+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 24866
+)
+
+2016-04-12T18:11:17+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 24866
+)
+
+2016-04-12T18:11:18+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 24866
+)
+
+2016-04-12T18:11:18+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 24866
+)
+
+2016-04-12T18:14:05+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 25351
+)
+
+2016-04-12T18:14:05+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 25351
+)
+
+2016-04-12T18:14:05+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 25351
+)
+
+2016-04-12T18:14:05+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 25351
+)
+
+2016-04-12T18:14:06+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 25351
+)
+
+2016-04-12T18:14:06+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 25351
+)
+
+2016-04-12T18:16:44+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 22611
+)
+
+2016-04-12T18:16:44+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 22611
+)
+
+2016-04-12T18:16:44+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 22611
+)
+
+2016-04-12T18:16:44+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 22611
+)
+
+2016-04-12T18:16:45+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 22611
+)
+
+2016-04-12T18:16:45+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 22611
+)
+
+2016-04-12T18:21:31+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 25351
+)
+
+2016-04-12T18:21:31+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 25351
+)
+
+2016-04-12T18:21:31+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 25351
+)
+
+2016-04-12T18:21:31+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 25351
+)
+
+2016-04-12T18:21:32+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 25351
+)
+
+2016-04-12T18:21:32+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "sutrisno.yao@gmail.com" in your account, code 232
+    [__pid] => 25351
+)
+
+2016-04-22T06:26:41+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:41+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:41+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:41+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:42+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:42+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:42+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:42+00:00 DEBUG (7): Array
+(
+    [0] => listUpdateMember
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:42+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [1] => sutrisno.yao@gmail.com
+    [2] => Array
+        (
+            [FNAME] => jermain
+            [LNAME] => hahaha
+            [GENDER] => Male
+            [STOREID] => 1
+            [WEBSITE] => 1
+            [DOP] => 04/01/2016
+            [STORECRED] => 0
+            [CGROUP] => ace
+            [TELEPHONE] => 76876876876
+            [EMAIL] => sutrisno.yao@gmail.com
+            [GROUPINGS] => Array
+                (
+                )
+
+        )
+
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:42+00:00 DEBUG (7): Array
+(
+    [0] => 1
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:43+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:43+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:43+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:43+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:43+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:43+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:43+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:43+00:00 DEBUG (7): Array
+(
+    [0] => listUpdateMember
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:43+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [1] => sutrisno.yao@gmail.com
+    [2] => Array
+        (
+            [FNAME] => jermain
+            [LNAME] => hahaha
+            [GENDER] => Male
+            [STOREID] => 1
+            [WEBSITE] => 1
+            [DOP] => 04/01/2016
+            [STORECRED] => 0
+            [CGROUP] => ace
+            [TELEPHONE] => 76876876876
+            [EMAIL] => sutrisno.yao@gmail.com
+            [GROUPINGS] => Array
+                (
+                )
+
+        )
+
+    [__pid] => 2685
+)
+
+2016-04-22T06:26:44+00:00 DEBUG (7): Array
+(
+    [0] => 1
+    [__pid] => 2685
+)
+
+2016-04-22T06:28:53+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2687
+)
+
+2016-04-22T06:28:53+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2687
+)
+
+2016-04-22T06:28:53+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 2687
+)
+
+2016-04-22T06:28:53+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 2687
+)
+
+2016-04-22T06:28:54+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [__pid] => 2687
+)
+
+2016-04-22T06:28:54+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 2687
+)
+
+2016-04-22T06:28:54+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 2687
+)
+
+2016-04-22T06:28:54+00:00 DEBUG (7): Array
+(
+    [0] => listUpdateMember
+    [__pid] => 2687
+)
+
+2016-04-22T06:28:54+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [1] => sutrisno.yao@gmail.com
+    [2] => Array
+        (
+            [FNAME] => jermain
+            [LNAME] => hahaha
+            [BILLING] => Array
+                (
+                    [addr1] => dummy
+                    [addr2] => 
+                    [city] => dummy
+                    [state] => dummy
+                    [zip] => 111111
+                    [country] => ID
+                )
+
+            [TELEPHONE] => 76876876876
+            [COUNTRY] => ID
+            [SHIPPING] => Array
+                (
+                    [addr1] => jalan kodok raya 15
+                    [addr2] => 
+                    [city] => DKI JAKARTA
+                    [state] => DKI JAKARTA
+                    [zip] => 76876876
+                    [country] => ID
+                )
+
+            [GENDER] => Male
+            [STOREID] => 1
+            [WEBSITE] => 1
+            [DOP] => 04/01/2016
+            [STORECRED] => 0
+            [CGROUP] => ace
+            [EMAIL] => sutrisno.yao@gmail.com
+            [GROUPINGS] => Array
+                (
+                )
+
+            [HASCLICKED] => No
+        )
+
+    [3] => 
+    [4] => 
+    [__pid] => 2687
+)
+
+2016-04-22T06:28:54+00:00 DEBUG (7): Array
+(
+    [0] => 1
+    [__pid] => 2687
+)
+
+2016-04-22T08:17:26+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 6831
+)
+
+2016-04-22T08:17:26+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 6831
+)
+
+2016-04-22T08:17:26+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 6831
+)
+
+2016-04-22T08:17:26+00:00 DEBUG (7): Array
+(
+    [0] => momo@momo.com
+    [__pid] => 6831
+)
+
+2016-04-22T08:17:27+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 6831
+)
+
+2016-04-22T08:17:27+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "momo@momo.com" in your account, code 232
+    [__pid] => 6831
+)
+
+2016-04-22T09:19:56+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 5757
+)
+
+2016-04-22T09:19:56+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 5757
+)
+
+2016-04-22T09:19:56+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 5757
+)
+
+2016-04-22T09:19:56+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 5757
+)
+
+2016-04-22T09:19:57+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [__pid] => 5757
+)
+
+2016-04-22T09:19:57+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 5757
+)
+
+2016-04-22T09:19:57+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 5757
+)
+
+2016-04-22T09:19:57+00:00 DEBUG (7): Array
+(
+    [0] => listUpdateMember
+    [__pid] => 5757
+)
+
+2016-04-22T09:19:57+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [1] => sutrisno.yao@gmail.com
+    [2] => Array
+        (
+            [FNAME] => gengong
+            [LNAME] => gongging
+            [GENDER] => Male
+            [STOREID] => 1
+            [WEBSITE] => 1
+            [DOP] => 04/22/2016
+            [STORECRED] => 0
+            [CGROUP] => General
+            [TELEPHONE] => 98098098
+            [EMAIL] => sutrisno.yao@gmail.com
+            [GROUPINGS] => Array
+                (
+                )
+
+        )
+
+    [__pid] => 5757
+)
+
+2016-04-22T09:19:57+00:00 DEBUG (7): Array
+(
+    [0] => 1
+    [__pid] => 5757
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 6354
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 6354
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 6354
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 6354
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [__pid] => 6354
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 6354
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 6354
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => listUpdateMember
+    [__pid] => 6354
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [1] => sutrisno.yao@gmail.com
+    [2] => Array
+        (
+            [FNAME] => gengges
+            [LNAME] => domo
+            [GENDER] => Male
+            [STOREID] => 1
+            [WEBSITE] => 1
+            [DOP] => 04/22/2016
+            [STORECRED] => 0
+            [CGROUP] => General
+            [TELEPHONE] => 98098098098
+            [EMAIL] => sutrisno.yao@gmail.com
+            [GROUPINGS] => Array
+                (
+                )
+
+        )
+
+    [__pid] => 6354
+)
+
+2016-04-22T09:27:10+00:00 DEBUG (7): Array
+(
+    [0] => 1
+    [__pid] => 6354
+)
+
+2016-04-22T10:44:19+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 7619
+)
+
+2016-04-22T10:44:19+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 7619
+)
+
+2016-04-22T10:44:19+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 7619
+)
+
+2016-04-22T10:44:19+00:00 DEBUG (7): Array
+(
+    [0] => jono@jujur.com
+    [__pid] => 7619
+)
+
+2016-04-22T10:44:20+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 7619
+)
+
+2016-04-22T10:44:20+00:00 DEBUG (7): Array
+(
+    [0] => Error: There is no record of the email address "jono@jujur.com" in your account, code 232
+    [__pid] => 7619
+)
+
+2016-05-01T09:33:42+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 28021
+)
+
+2016-05-01T09:33:42+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 28021
+)
+
+2016-05-01T09:33:42+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 28021
+)
+
+2016-05-01T09:33:42+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 28021
+)
+
+2016-05-01T09:33:43+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [__pid] => 28021
+)
+
+2016-05-01T09:33:43+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 28021
+)
+
+2016-05-01T09:33:43+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 28021
+)
+
+2016-05-01T09:33:43+00:00 DEBUG (7): Array
+(
+    [0] => listUpdateMember
+    [__pid] => 28021
+)
+
+2016-05-01T09:33:43+00:00 DEBUG (7): Array
+(
+    [0] => d7617b5940
+    [1] => sutrisno.yao@gmail.com
+    [2] => Array
+        (
+            [FNAME] => gengges
+            [LNAME] => domo
+            [GENDER] => Male
+            [STOREID] => 1
+            [WEBSITE] => 1
+            [DOP] => 04/22/2016
+            [STORECRED] => 0
+            [CGROUP] => NOT LOGGED IN
+            [TELEPHONE] => 98098098098
+            [EMAIL] => sutrisno.yao@gmail.com
+            [GROUPINGS] => Array
+                (
+                )
+
+        )
+
+    [__pid] => 28021
+)
+
+2016-05-01T09:33:44+00:00 DEBUG (7): Array
+(
+    [0] => 1
+    [__pid] => 28021
+)
+
+2016-05-02T06:22:40+00:00 DEBUG (7): Array
+(
+    [0] => us12.api.mailchimp.com
+    [__pid] => 33107
+)
+
+2016-05-02T06:22:40+00:00 DEBUG (7): Array
+(
+    [0] => 2ab433aad2a74ebd2c08086640fa7104-us12
+    [__pid] => 33107
+)
+
+2016-05-02T06:22:40+00:00 DEBUG (7): Array
+(
+    [0] => listsForEmail
+    [__pid] => 33107
+)
+
+2016-05-02T06:22:40+00:00 DEBUG (7): Array
+(
+    [0] => sutrisno.yao@gmail.com
+    [__pid] => 33107
+)
+
+2016-05-02T06:22:41+00:00 DEBUG (7): Array
+(
+    [0] => 
+    [__pid] => 33107
+)
+
+2016-05-02T06:22:41+00:00 DEBUG (7): Array
+(
+    [0] => Error: Could not connect (ERR 0: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known), code -99
+    [__pid] => 33107
+)
+

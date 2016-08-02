@@ -1,0 +1,48 @@
+/* 
+ * Custom variable:
+ * - All overridden/new variables can be added here
+ */
+
+/*----------------------------------------------------------------------------*/
+/* Override Default Magento Vars
+/*----------------------------------------------------------------------------*/
+
+/* Primary breakpoint */
+$bp-xsmall: 479px;
+$bp-small: 639px;
+$bp-medium: 767px;
+$bp-large: 1023px;
+$bp-xlarge: 1179px;
+
+/* Base Values */
+$max-content-width: 1033px;
+
+/* Typography */
+$f-stack-sans: 'Open Sans', sans-serif;
+$f-stack-serif: 'Open Sans', sans-serif;
+$f-stack-special: $f-stack-sans;
+$f-stack-default: $f-stack-sans;
+
+/* Text */
+$c-text-white: #fff;
+$c-text-black: #52555f;
+$c-text-black-alt: #676b78;
+$c-text-grey: #a9a9a9;
+$c-text: $c-text-black;
+
+/*----------------------------------------------------------------------------*/
+/* New Custom Vars
+/*----------------------------------------------------------------------------*/
+
+/* body */
+$c-body: #edf1f2;
+
+/* colors */
+$c-orange: #f36525;
+$c-orange-dark: #dd581d;
+$c-blue: #008ccf;
+$c-blue-dark: #0184c3;
+
+$button-radius: 4px;
+
+$c-link: $c-blue;

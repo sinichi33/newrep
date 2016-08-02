@@ -1,0 +1,73 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 21/03/2016 10:55
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./flaticon.eot");
+  src: url("./flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./flaticon.woff") format("woff"),
+       url("./flaticon.ttf") format("truetype"),
+       url("./flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-add64:before { content: "\f100"; }
+.flaticon-arrows:before { content: "\f101"; }
+.flaticon-black:before { content: "\f102"; }
+.flaticon-box118:before { content: "\f103"; }
+.flaticon-cart3:before { content: "\f104"; }
+.flaticon-checked19:before { content: "\f105"; }
+.flaticon-checked21:before { content: "\f106"; }
+.flaticon-circle:before { content: "\f107"; }
+.flaticon-commerce:before { content: "\f108"; }
+.flaticon-construction:before { content: "\f109"; }
+.flaticon-credit48:before { content: "\f10a"; }
+.flaticon-credit82:before { content: "\f10b"; }
+.flaticon-cross93:before { content: "\f10c"; }
+.flaticon-curriculum3:before { content: "\f10d"; }
+.flaticon-delivery18:before { content: "\f10e"; }
+.flaticon-delivery33:before { content: "\f10f"; }
+.flaticon-eyes12:before { content: "\f110"; }
+.flaticon-fashion:before { content: "\f111"; }
+.flaticon-heart13:before { content: "\f112"; }
+.flaticon-lock:before { content: "\f113"; }
+.flaticon-magnifying42:before { content: "\f114"; }
+.flaticon-mail59:before { content: "\f115"; }
+.flaticon-money146:before { content: "\f116"; }
+.flaticon-money15:before { content: "\f117"; }
+.flaticon-pencil124:before { content: "\f118"; }
+.flaticon-person213:before { content: "\f119"; }
+.flaticon-shipping:before { content: "\f11a"; }
+.flaticon-shopping:before { content: "\f11b"; }
+.flaticon-signs:before { content: "\f11c"; }
+.flaticon-situation:before { content: "\f11d"; }
+.flaticon-speech132:before { content: "\f11e"; }
+.flaticon-star-shape1:before { content: "\f11f"; }
+.flaticon-telemarketer1:before { content: "\f120"; }
+.flaticon-telephone:before { content: "\f121"; }
+.flaticon-three:before { content: "\f122"; }
+.flaticon-three-1:before { content: "\f123"; }
+.flaticon-tool:before { content: "\f124"; }
+.flaticon-tool-1:before { content: "\f125"; }
+.flaticon-transport325:before { content: "\f126"; }
+.flaticon-user146:before { content: "\f127"; }
+.flaticon-web:before { content: "\f128"; }
+.flaticon-woman105:before { content: "\f129"; }

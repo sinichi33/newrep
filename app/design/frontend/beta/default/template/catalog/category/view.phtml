@@ -1,0 +1,95 @@
+<?php
+/**
+ * Category View Template
+ *
+ * Description:
+ * - Override base/default
+ * - Add category icon
+ * - Add logic for Inspiration
+ */
+?>
+<?php
+/**
+ * Category view template
+ *
+ * @see Mage_Catalog_Block_Category_View
+ */
+?>
+<?php
+    $_helper    = $this->helper('catalog/output');
+    $_category  = $this->getCurrentCategory();
+    $_imgHtml   = '';
+    if ($_imgUrl = $_category->getImageUrl()) {
+        $_imgHtml = '<p class="category-image"><img src="'.$_imgUrl.'" alt="'.$this->escapeHtml($_category->getName()).'" title="'.$this->escapeHtml($_category->getName()).'" /></p>';
+        $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
+    }
+
+    // check if the top parent is "Inspirations" or "Promotion"
+    $_isChildOfInspiration = $_isChildOfPromotion = false;
+    foreach ($_category->getParentCategories() as $parent) {
+        if ($parent->getRequestPath() == "inspirations") {
+            $_isChildOfInspiration = true;
+        }
+
+        if ($parent->getRequestPath() == "promotion") {
+            $_isChildOfPromotion = true;
+        }
+    }
+?>
+
+<?php if ($_isChildOfInspiration) : ?>
+    <div class="page-title">
+        <div class="h1">
+            <?php echo $this->__('Inspiration') ?>
+        </div>
+    </div>
+<?php endif ?>
+
+<?php if($_imgUrl): ?>
+    <?php echo $_imgHtml ?>
+<?php endif; ?>
+
+<div class="page-title category-title">
+    <?php if($this->IsRssCatalogEnable() && $this->IsTopCategory()): ?>
+        <a href="<?php echo $this->getRssLink() ?>" class="link-rss"><?php echo $this->__('Subscribe to RSS Feed') ?></a>
+    <?php endif; ?>
+
+    <?php
+        /* get icon */
+        if ($_icon = $_category->getIcon()) {
+            $_iconHtml = '<i class="icon"><img src="' . Mage::getBaseUrl('media') . 'catalog' . DS . 'category' . DS . $_icon . '" /></i>';
+        }
+    ?>
+    <h1 class="<?php echo ($_icon = $_category->getIcon())? 'has-icon': ''; echo ($_isChildOfInspiration)? 'hidden':''; ?>">
+        <?php if ($_icon = $_category->getIcon()) {
+            echo $_iconHtml;
+        }?>
+        <?php echo $_helper->categoryAttribute($_category, $_category->getName(), 'name') ?>
+    </h1>
+</div>
+
+<?php echo $this->getMessagesBlock()->toHtml() ?>
+
+<?php if($this->isContentMode()): ?>
+    <?php echo $this->getCmsBlockHtml() ?>
+
+<?php elseif($this->isMixedMode()): ?>
+    <?php echo $this->getProductListHtml() ?>
+    
+    <?php if ($_isChildOfInspiration || $_isChildOfPromotion) : ?>
+        <div class="cms-inspiration">
+    <?php endif ?>
+        <?php echo $this->getCmsBlockHtml() ?>
+    <?php if ($_isChildOfInspiration || $_isChildOfPromotion) : ?>
+        </div>
+    <?php endif ?>
+<?php else: ?>
+    <?php echo $this->getProductListHtml() ?>
+<?php endif; ?>
+
+
+<?php if($_description=$this->getCurrentCategory()->getDescription()): ?>
+    <div class="category-description std">
+        <?php echo $_helper->categoryAttribute($_category, $_description, 'description') ?>
+    </div>
+<?php endif; ?>

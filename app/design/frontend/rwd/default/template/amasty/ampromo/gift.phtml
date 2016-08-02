@@ -1,0 +1,32 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (https://www.amasty.com)
+ * @package Amasty_Promo
+ */
+?>
+<ul class="ampromo-gift">
+<?php
+    foreach($this->getProducts() as $product){
+
+
+
+        $product->getAttributeRawValue($product->getId(), $this->getAttributeHeader(), 1);
+
+        $id = uniqid("ampromo-gift-img-");
+?> <li><a class="product-image" href="<?php echo $product->getProductUrl()?>">
+        <img id="<?php echo $id;?>" width="<?php echo $this->getWidth();?>" height="<?php echo $this->getHeight();?>" src="<?php echo Mage::helper('catalog/image')->init($product, 'thumbnail')->resize($this->getWidth(), $this->getHeight()); ?>"/>
+        <div id="<?php echo $id;?>-data" style="display: none;">
+            <div class="ampromo-product-name"><?php echo $product->getResource()->getAttribute($this->getAttributeHeader())->getFrontend()->getValue($product);?></div>
+            <div class="ampromo-short-description"><?php echo $product->getResource()->getAttribute($this->getAttributeDescription())->getFrontend()->getValue($product);?></div>
+        </div>
+</a></li><?php
+    }
+?>
+</ul>
+<script>
+    $$('.ampromo-gift img').each(function (img){
+        img.observe('mouseover', ampromo_tooltip_show);
+        img.observe('mouseout', ampromo_tooltip_hide);
+    });
+</script>

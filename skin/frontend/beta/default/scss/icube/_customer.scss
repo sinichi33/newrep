@@ -1,0 +1,1853 @@
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+body.customer-account {
+
+	.messages {
+		margin-bottom: 20px;
+	}
+
+	.col-main {
+		margin-top: 45px;
+
+		a {
+			color: $c-blue;
+
+			&:hover {
+				color: $c-orange;
+			}
+		}
+		
+		.section {
+			background: #fff;
+			padding: 30px 25px;
+
+			+ .section {
+				margin-top: 15px;
+			}
+			
+			.section-title {
+			
+				h1,
+				h2 {
+					@include responsive-font-size(21);
+					font-weight: bold;
+					text-transform: uppercase;
+					margin-bottom: 15px;
+				}
+			}
+
+			&.link {
+				padding: 0;
+
+				a {
+					display: block;
+					@include responsive-font-size(14);
+					padding: 25px 25px 25px 100px;
+    				position: relative;
+    				color: $c-text;
+    				text-decoration: none;
+
+					strong {
+						@include responsive-font-size(21);
+						text-transform: uppercase;
+						display: block;
+					}
+
+					&:before {
+						position: absolute;
+					    left: 25px;
+					    font-size: 50px;
+					    line-height: 1;
+					    vertical-align: top;
+					}
+
+					&:hover {
+						background: $c-orange;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.section-2cols {
+			margin-top: 15px;
+
+			&:after {
+				@include clearfix;
+			}
+
+			.section {
+				width: 49%;
+				margin-top: 0 !important;
+
+				&:first-child {
+					float: left;
+				}
+
+				&:last-child {
+					float: right;
+				}
+			}
+
+			+ .section {
+				margin-top: 15px;
+			}
+		}
+
+		.page-title {
+
+			h1 {
+				@include responsive-font-size(21);
+			}
+		}
+
+		.box-account {
+			padding-bottom: 0;
+		    border-bottom: 0;
+		    margin-bottom: 0;
+
+			p, 
+			address {
+				font-style: normal;
+			}
+
+			.box-head {
+				margin: 0 0 10px;
+				border: none;
+
+				h2,
+				h3 {
+				    @include responsive-font-size(21);
+				    text-transform: uppercase;
+				    font-weight: bold;
+				}
+			}
+
+			.box-content {
+				padding: 10px 25px 35px;
+				border-radius: 4px;
+				position: relative;
+
+				&:after {
+					@include clearfix;
+				}
+
+				&:not(.empty) {
+					border: 1px solid #e6e6e6;
+				}
+
+				&.empty {
+					padding: 0;
+					height:  30px !important;
+
+					.actions {
+						left: 0;
+						right: auto;
+					}
+				}
+			}
+
+			.col2-set {
+
+				.col-1,
+				.col-2 {
+					padding: 0;
+
+					h3 {
+						color: $c-text;
+					}
+
+					.box-title {
+
+						&:after {
+							@include clearfix;
+						}
+
+						h2,
+						h3 {
+							float: left;
+						}
+
+						a {
+							float: right;
+						}
+					}
+
+					.actions {
+						position: absolute;
+						right: 10px;
+						bottom: 10px;
+						margin: 0;
+						padding: 0;
+
+						a {
+							position: relative;
+							padding-left: 14px;
+
+							+ a {
+								margin-left: 10px;
+							}
+
+							&:before {
+								position: absolute;
+								font-size: 10px;
+								left: 0;
+								bottom: 50%;
+								margin-bottom: -8px;
+								
+							}
+						}
+					}
+				}
+
+				.col-1 {
+					padding-right: 6%;
+				}
+
+				.col-2 {
+					padding-left: 6%;
+				}
+
+				+ .col2-set {
+					margin-top: 20px;
+				}
+			}
+		}
+
+		.buttons-set {
+			border: none;
+
+	 		.back-link a {
+	 			color: #0d91d1;
+	 			font-weight: bold;
+	 			@include responsive-font-size(14);
+	 			background: none !important;
+	 			position: relative;
+	 			padding-left: 16px;
+	 			text-transform: none;
+	 			text-decoration: none !important;
+
+	 			small {
+	 				display: none;
+	 			}
+	 			
+	 			&:before {
+	 				content: "\f053";
+	                font: normal normal normal 14px/1 FontAwesome;
+	                position: absolute;
+	                left: 0;
+	                @include transition();
+	                top: 50%;
+	                margin-top: -6px;
+	 			}
+
+	 			&:hover:before {
+	 				left: -5px;
+	 			}
+	 		}
+
+	 		.button {
+	 			border-radius: 5px;
+	 		}
+		}
+
+		.fieldset {
+			margin: 0;
+
+			.legend {
+				border: none;
+			    @include responsive-font-size(16);
+			    font-weight: 600;
+			    color: $c-text;
+			    margin-bottom: 0;
+			}
+
+			p.required {
+				display: none;
+			}
+
+			.col2-set {
+
+				div.select {
+
+					.select-bg {
+						width: 100% !important;
+					}
+				}
+
+				.col-1 {
+					padding: 0 6% 0 0;
+				}
+
+				.col-2 {
+					padding: 0 0 0 6%;
+				}
+			}
+		}
+
+		.form-list {
+			
+			label {
+				font-weight: 400;
+			}
+
+			.control {
+
+				label {
+					background: none;
+					padding: 2px 10px 2px 20px;
+				}
+
+				input {
+					margin-left: 0;
+					margin-top: 6px;
+
+					&.checkbox {
+						margin-top: 8px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Login Page
+/*----------------------------------------------------------------------------*/
+
+.account-login {
+	margin-top: 30px;
+
+	a.button {
+		line-height: 37px;
+		padding: 0 15px;
+		text-decoration: none;
+	}
+
+	&.login-only {
+
+		.registered-users {
+			padding: 0;
+			
+			.buttons-set {
+				border: none;
+				margin-top: 40px;
+				text-align: left;
+
+				.button {
+					margin: 0;
+					float: none;
+				}
+			}
+		}
+	}
+}
+
+div.inchoo-socialconnect-login {
+
+	.content {
+		min-height: 0;
+	}
+
+	.buttons-set {
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+	.col2-set {
+
+		.col-1,
+		.col-2 {
+			margin-top: 0;
+		}
+	}
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Registration Page
+/*----------------------------------------------------------------------------*/
+
+.customer-account-create .account-create {
+
+	.section {
+		background: #fff;
+		padding: 30px 100px;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		@include responsive-font-size(21);
+		font-weight: bold;
+	}
+
+	.fieldset,
+	.buttons-set {
+		margin-left: 0;
+	}
+
+	input[type=email], 
+	input[type=number], 
+	input[type=password], 
+	input[type=tel], 
+	input[type=text] {
+		width: 100%;
+	}
+
+	.buttons-set {
+		max-width: 100%;
+		border: none;
+		text-align: center;
+		margin-top: 30px;
+
+		p {
+			@include responsive-font-size(12);
+			color: $c-text-black-alt;
+			margin-bottom: 8px;
+
+			a {
+				color: $c-blue;
+			}
+		}
+
+		.back-link {
+			display: none;
+		}
+
+		.button {
+			float: none;
+			margin: 0;
+			border-radius: $button-radius;
+		}
+	}
+
+	p.required {
+		display: none;
+	}
+
+	label {
+		font-weight: 400;
+
+		&.required:after {
+			display: none;
+		}
+	}
+
+	.input-box {
+		position: relative;
+
+		.tooltip {
+			position: absolute;
+		    top: 50%;
+		    margin-top: -8px;
+		    right: -25px;
+		}
+	}
+
+	.col-1,
+	.col-2 {
+		padding-top: 0;
+	}
+
+	.col-1 {
+		padding-right: 0;
+		position: relative;
+
+		.fieldset {
+			padding-right: 22%;
+			border-right: 1px solid #a9a9a9;
+		}
+	}
+
+	.col-2 {
+		padding-left: 11%;
+	}
+
+	.form-list {
+
+		li {
+			margin-bottom: 15px;
+		}
+
+		li.integratememberid {
+			margin-top: 15px;
+
+			label {
+				text-transform: uppercase;
+				margin-left: 5px;
+			}
+		}
+
+		li.memberid {
+			margin-top: 15px;
+		}
+	}
+
+	/* Social Connect */
+	.inchoo-socialconnect-register {
+		margin-top: 0;
+
+		p {
+			margin-bottom: 15px;
+		}
+
+		> div {
+			margin-top: 10px;
+		}
+	}
+
+	.form-list {
+
+		.control {
+
+			label {
+				background: none;
+				padding: 5px 0 5px 20px;
+			}
+
+			input.checkbox {
+				margin-left: 0;
+				margin-top: 9px;
+			}
+		}
+
+		.tooltip {
+			display: inline-block;
+			margin-left: 10px;
+		}
+	}
+
+	.remember-me-popup {
+		// display: block;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Forgot Password
+/*----------------------------------------------------------------------------*/
+ 
+body.customer-account-forgotpassword .main {
+
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Navigation
+/*----------------------------------------------------------------------------*/
+
+body.customer-account .sidebar {
+
+	.block-title {
+		background: none;
+		padding: 0 0 15px !important;
+
+		span {
+			@include responsive-font-size(30);
+			font-weight: bold;
+			line-height: 1;
+		}
+	}
+
+	.block-content {
+		padding: 15px 10px;
+		background: #fff;
+		font-weight: 800;
+
+		li {
+			margin: 0;
+			line-height: 1.3;
+			position: relative;
+			min-height: 42px;
+
+			+ li {
+				border-top: 1px solid #dfdfdf;
+			}
+
+			a {
+				@include vertical-center();
+				padding-left: 40px;
+				padding-right: 5px;
+				display: block;
+
+				&:hover {
+					color: $c-orange;
+					text-decoration: none;
+				}
+
+				&:before {
+					position: absolute;
+					left: 9px;
+					@include vertical-center();
+				}
+
+				&.informasiakun:before {
+					@include flaticon('\e007',26px);
+				}
+
+				&.keanggotaanvoucher:before {
+					@include flaticon('\e002',26px);
+				}
+
+				&.addressbook:before {
+					@include flaticon('\e004',26px);
+				}
+
+				&.pesanansaya:before {
+					@include flaticon('\e001',26px);
+				}
+
+				&.ulasanproduk:before {
+					@include flaticon('\e005',26px);
+				}
+
+				&.langganannewsletter:before {
+					@include flaticon('\e007',26px);
+				}
+			}
+		}
+	}
+
+	.block-account {
+
+		li {
+
+			&.current {
+
+				a:before {
+					color: $c-orange;
+				}
+			}
+
+			strong {
+				color: $c-orange;
+				font-weight: 800;
+			}
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - My Order details
+/*----------------------------------------------------------------------------*/
+
+body.sales-order-view .main ,
+body.sales-order-invoice .main,
+body.sales-order-shipment .main,
+body.sales-order-creditmemo .main,
+body.enterprise-rma-return-returns .main {
+	
+	.table-caption {
+		margin-bottom: 15px;
+	}
+
+	.data-table {
+		
+		.product-name {
+			text-transform: initial;
+			font-weight: 400;
+			@include responsive-font-size(14);
+			margin-bottom: 5px;
+		}
+
+		thead th,
+		tbody td {
+			text-align: left !important;
+		}
+
+		dl.item-options {
+			margin: 0;
+
+			dt {
+				font-style: initial;
+				font-weight: 400;
+				min-width: 70px;
+				position: relative;
+
+				&:after {
+					position: absolute;
+					right: 0;
+				}
+			}
+
+			dd {
+				padding-left: 7px;
+				margin: 0;
+			}
+		}
+
+		th.sku,
+		td.sku {
+			display: none;
+		}
+	}
+
+	table.total {
+		margin-top: 10px;
+		width: 100%;
+
+		td:first-child {
+			text-transform: uppercase;
+			padding: 5px 20px 5px 0;
+		}
+
+		td:last-child {
+			width: 150px;
+			text-align: left;
+			padding: 5px 0 5px 20px;
+		}
+	}
+
+	.order-details .order-links {
+		margin-bottom: 5px;
+	}
+
+	.section.amorderattr {
+		margin-top: -10px !important;
+
+		.order-info-box {
+			margin-top: 0;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Dashboard
+/*----------------------------------------------------------------------------*/
+
+body.customer-account-index {
+
+	.col-main {
+
+		.my-account {
+			background: none;
+			padding: 0;
+		}
+
+		.page-title {
+			display: none;
+		}
+
+		.section {
+
+			// .messages {
+			// 	display: none;
+			// }
+		}
+	}
+}
+
+.dashboard {
+
+	.buttons-set {
+
+		.back-link {
+			display: none;
+		}
+	}
+
+	.col2-set {
+
+		.col-1 {
+			padding: 0 6% 0 0;
+		}
+
+		.col-2 {
+			padding: 0 0 0 6%;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Customer Account Edit
+/*----------------------------------------------------------------------------*/
+
+.section.customer-account-edit {
+
+	.messages {
+		display: none;
+	}
+
+	.fieldset {
+
+		.col2-set {
+
+			.col-1 {
+				padding: 0 7% 0 0;
+			}
+
+			.col-2 {
+				padding: 0 0 0 7%;
+				border-left: 1px solid #b4b4b4;
+			}
+		}
+
+		.legend {
+			display: none;
+		}
+
+		#change_password {
+			z-index: -999;
+
+			+ label {
+				width: 100%;
+				padding: 0;
+				text-align: right;
+				cursor: pointer;
+				color: $c-blue;
+			}
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Address Book
+/*----------------------------------------------------------------------------*/
+
+/* Address Book Index */
+
+body.customer-address-index .main {
+
+}
+
+/* Address Form */
+
+body.customer-address-form .main {
+
+	.section {
+		 
+		 &:after {
+		 	@include clearfix;
+		 }
+	}
+
+	.fieldset {
+		float: left;
+		width: 50%;
+		padding-right: 2%;
+
+		&.right {
+			padding-right: 0;
+			padding-left: 2%;
+		}
+
+		.input-text {
+			width: 100%;
+		}
+
+		.select .select-bg {
+			width: 100% !important;
+		}
+
+		textarea {
+			min-height: 93px;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Order History
+/*----------------------------------------------------------------------------*/
+
+body.sales-order-history .main {
+
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Order Detail
+/*----------------------------------------------------------------------------*/
+
+body.sales-order-view .main,
+body.sales-order-invoice .main,
+body.sales-order-shipment .main,
+body.sales-order-creditmemo .main,
+body.enterprise-rma-return-returns .main {
+	
+	.section {
+
+		+ .section {
+			margin-top: 0;
+			padding-top: 0;
+		}
+	}
+
+	.order-info {
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+	}
+
+	.page-title.title-buttons {
+
+		&:after {
+			@include clearfix;
+		}
+
+		h1 {
+			float: left;
+			margin-bottom: 10px;
+			@include responsive-font-size(18);
+			padding-bottom: 0;
+		}
+
+		a {
+			top: 0;
+		}
+
+		span.separator {
+			top: -2px;
+		}
+	}
+
+	.my-account {
+
+		.order-details {
+
+			h2 {
+				text-transform: uppercase;
+			    @include responsive-font-size(14);
+			    font-weight: bold;
+			}
+
+			h3 {
+			    @include responsive-font-size(14);
+			}
+		}
+	}
+
+	.order-date {
+		text-transform: initial;
+	}
+}
+
+.order-info-box {
+	margin: 30px 0 0;
+	
+	.box {
+
+		+ .box {
+			margin-top: 20px;
+		}
+	}
+
+	.box-title,
+	.box-content {
+		float: none;
+		width: 100%;
+	}
+
+	.box-title {
+
+		h2 {
+			text-transform: uppercase;
+			margin-bottom: 10px;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.box-content {
+
+		address {
+			line-height: 1.3;
+		}
+
+		td {
+			padding-left: 0;
+		}
+	}
+
+	.col-1 {
+		padding-right: 6%;
+	}
+
+	.col-2 {
+		padding-left: 6%;
+		border-left: 1px solid #e3e3e3;
+	}
+
+	#order_attributes {
+		max-width: 48%;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Newsletter Subscription
+/*----------------------------------------------------------------------------*/
+
+body.newsletter-manage-index .main {
+
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Newsletter Subscription Magemonkey
+/*----------------------------------------------------------------------------*/
+
+.monkey-additional-lists {
+
+	div.interest-groupings  {
+		margin-left: 0;
+
+		div.grouping {
+
+			> strong {
+				display: none;
+			}
+
+			ul {
+
+				&:after {
+					@include clearfix;
+				}
+
+				li {
+					display: block !important;
+					margin-left: 0;
+					width: 50%;
+					float: left;
+					padding: 3px 0;
+
+					label {
+						margin-left: 3px;
+					}
+				}
+			}
+		}
+	}
+
+	.listdata {
+
+		> label,
+		> input {
+			display: none;
+		}
+	}
+}
+
+.monkey-multisubscribe {
+
+	.col2-set {
+
+		.col-1,
+		.col-2 {
+			padding: 0;
+		}
+
+		.col-1 {
+			padding-right: 6%;
+		}
+
+		.col-2 {
+			padding-left: 6%;
+			border-left: 1px solid #e3e3e3;
+		}
+	}
+}
+
+body.monkey-customer-account-index .main {
+
+	.buttons-set {
+
+		.buttons-set {
+			float: left;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Product Review
+/*----------------------------------------------------------------------------*/
+
+body.review-customer-index .main {
+	
+	#my-reviews-table {
+
+		.product-name {
+			margin: 2px 0 0;
+		}
+	}
+}
+
+body.review-customer-view .main {
+
+	.section {
+
+		&:after {
+			@include clearfix;
+		}
+	}
+
+	.product-img-box {
+		float: left;
+		width: 33%;
+		padding: 0;
+	}
+
+	.product-details {
+		float: right;
+		width: 64%;
+		padding: 0;
+	}		
+
+	.ratings-table {
+		@include rating-box;
+	}
+
+	.product-review .product-details h2 {
+		color: $c-text;
+		padding-bottom: 0;
+		border: none;
+	}
+
+	h3 {
+		@include responsive-font-size(14);
+	}
+
+	.product-review .ratings-description dt {
+		@include responsive-font-size(14);
+		padding-bottom: 5px;
+		border: none;
+		margin-top: 10px;
+	}
+
+	.product-review .product-img-box p.label {
+		@include responsive-font-size(14);
+		padding-bottom: 0;
+		border: none;	
+		display: none;
+	}
+
+	.product-review .product-img-box .ratings {
+		display: none;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Product Review Detail
+/*----------------------------------------------------------------------------*/
+
+body.review-customer-view .main .product-review {
+	
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Wishlist
+/*----------------------------------------------------------------------------*/
+
+#wishlist-view-form {
+
+	.buttons-set {
+		display: none;
+	}
+}
+
+#wishlist-table {
+
+	thead {
+
+		th {
+			text-align: left;
+		}
+	}
+
+	.customer-wishlist-item-info {
+
+		.wishlist-sku,
+		textarea,
+		.item-manage {
+			display: none;
+		}
+	}
+
+	.customer-wishlist-item-cart {
+
+		p {
+			display: none;
+		}
+	}
+
+	.product-image {
+		border: 1px solid #eaeaea;
+		width: 80px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.product-name {
+		margin: 2px 0 0;
+
+		a {
+
+			&:hover {
+				color: $c-orange;
+			}
+		}
+	}
+
+	.price-box {
+		margin: 0;
+		font-family: $f-stack-default;
+
+		p {
+			margin-bottom: 0;
+		}
+
+		.price {
+			color: $c-text;
+			@include responsive-font-size(14);
+		}
+
+		.special-price {
+			padding-left: 0;
+
+			.price {
+				color: $c-text;
+				@include responsive-font-size(14);
+			}
+		}
+
+		.old-price {
+
+			.price {
+				color: $c-text-grey;
+				@include responsive-font-size(14);
+			}
+		}
+	}
+
+	.btn-remove {
+		background: none;
+    	font-size: 0;
+    	text-decoration: none;
+
+		&:before {
+			content: 'X';
+			color: $c-orange;
+		    font-weight: 800;
+		    font-size: 12px;
+		    background: none;
+		    text-indent: 0;
+		    display: block;
+		    line-height: 1;
+		}
+	}
+
+	td.customer-wishlist-item-price {
+		text-align: left;
+	}
+
+	td.customer-wishlist-item-cart {
+
+		.button {
+			border-radius: 5px;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* My Account - Share Wishlist
+/*----------------------------------------------------------------------------*/
+
+body.wishlist-index-share {
+	
+}
+
+/*----------------------------------------------------------------------------*/
+/* Redeem
+/*----------------------------------------------------------------------------*/
+
+.section.redeempoint {
+	
+	.company-selection {
+		border-bottom: 1px solid #e5e5e5;
+		margin-bottom: 20px;
+
+		ul:after {
+			@include clearfix;
+		}
+
+		li {
+			
+			a {
+				font-size: 0;
+				display: block;
+				float: left;
+				padding: 10px 30px;
+				margin-bottom: -1px;
+				border: 1px solid transparent;
+
+				&.selected {
+					border: 1px solid #e5e5e5
+				}
+
+				&.ace {
+
+					&:after {
+						content: '';
+						@include use-sprite('logo-ace-grey');
+					}
+
+					&:hover:after,
+					&.selected:after {
+						@include use-sprite('logo-ace');
+					}
+				}
+
+				&.informa{
+
+					&:after {
+						content: '';
+						@include use-sprite('logo-informa-grey');
+					}
+
+					&:hover:after,
+					&.selected:after {
+						@include use-sprite('logo-informa');
+					}
+				}
+
+				&.toyskingdom {
+
+					&:after {
+						content: '';
+						@include use-sprite('logo-toyskingdom-grey');
+					}
+
+					&:hover:after,
+					&.selected:after {
+						@include use-sprite('logo-toyskingdom');
+					}
+				}
+			}
+		}
+	}
+
+	.form-wrapper {
+
+		.input-text {
+			width: 100%;
+		}
+	}
+
+	.col2-set {
+
+		.col-1 {
+			border-right: 1px solid #b4b4b4;
+		}
+	}
+
+	.form-list {
+
+		.control {
+
+			div.input-box {
+				float: none;
+				width: 100%;
+			}
+		}
+
+		.control.border {
+			border: 1px solid #b4b4b4;
+		    padding: 5px 25px;
+		    border-radius: 5px;
+		}
+	}
+
+	#redeem-confirm-passkey {
+		text-align: center;
+
+		.popup-content {
+			width: 440px;
+		    height: 240px;
+		    margin-left: -220px;
+		    margin-top: -120px;
+
+		    p {
+		    	margin: 20px 0;
+
+		    	&:first-child {
+		    		margin-top: 10px;
+		    	}
+		    }
+
+		    .buttons-set {
+		    	margin-top: 20px;
+		    }
+
+		    .input-box {
+		    	position: relative;
+		    	padding: 0 20px;
+		    }
+
+		    .validation-advice {
+		    	position: absolute;
+		    	left: 20px;
+		    }
+		}
+	}
+
+	.button {
+		min-width: 140px;
+		border-radius: 4px;
+	}
+
+	p.info {
+		color: $c-text-grey;
+		text-align: right;
+		@include responsive-font-size(11);
+	}
+
+	h3 {
+		@include responsive-font-size(14);
+		font-weight: bold;
+	}
+
+	.step-1 {
+
+		.buttons-set {
+			display: none;
+		}
+	}
+
+	.step-2 {
+
+		&.disable {
+			position: relative;
+
+			&:before {
+				content: '';
+				background: rgba(255,255,255,0.6);
+				height: 100%;
+				width: 100%;
+		        position: absolute;
+		        width: 100%;
+		        height: 100%;
+		        left: 0;
+		        top: 0;
+			}
+
+			.button {
+				background-color: $c-text-grey;
+			}
+		}
+
+		.buttons-set {
+			text-align: center;
+			margin: 10px 0 0;
+
+			.button {
+				margin: 0;
+				float: none;
+			}
+		}
+	}
+
+	.step-3 {
+		margin-top: 35px;
+	}
+
+	.point-ace,
+	.point-informa,
+	.point-toyskingdom {
+		display: none;
+	}
+}
+
+#redeem-confirm-success {
+	max-width: 440px;
+
+	.buttons-set {
+		text-align: center;
+		border: none;
+
+		.button {
+			border-radius: 4px;
+			float: none;
+			width: 140px;
+			letter-spacing: 0;
+			padding: 0;
+		}
+	}
+
+	p.title {
+		margin-bottom: 25px;
+		text-transform: uppercase;
+	}
+
+	p {
+		margin-bottom: 15px;
+	}
+
+	p.info {
+		@include responsive-font-size(11);
+		color: $c-text-grey;
+
+		a {
+			color: $c-blue;
+		}
+	}
+
+	#redeem-confirm-success-value {
+		font-weight: bold;
+	}
+
+	.mfp-close {
+		display: none;
+	}
+
+	#reeem-rest-points {
+		font-weight: bold;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Data table
+/*----------------------------------------------------------------------------*/
+
+body.customer-account {
+
+	.data-table-wrapper {
+		padding: 0 12px;
+		border: 1px solid #d7d7d7;
+		border-radius: 4px;
+	}
+
+	.data-table {
+
+		th,
+		td {
+			padding: 9px;
+		}
+
+		thead {
+
+			th {
+				padding: 15px 9px 5px;
+				background: none;
+				font-weight: bold;
+				text-transform: initial;
+				border-bottom: 0;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&.warranty {
+					min-width: 100px;
+				}
+			}
+		}
+
+		tbody {
+
+			td {
+				border-top: solid 1px #e1e1e1;
+				border-bottom: 0;
+				vertical-align: middle;
+
+				a {
+					font-family: $f-stack-default;
+				}
+				
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&.view {
+
+					a {
+						text-transform: none;
+					}
+				}
+
+				&.ship {
+
+					height: 40px;
+					overflow: hidden;
+				}
+			}
+		}
+
+		tfoot {
+
+			tr {
+				background: none;
+			}
+
+			td {
+				border-top: solid 1px #e1e1e1;
+			}
+		}
+
+		span.nobr {
+			white-space: nowrap;
+		}
+
+		.price-box .price, 
+		.price {
+			white-space: nowrap;
+		}
+
+		.product-name {
+			font-family: $f-stack-default;
+			font-weight: bold;
+
+			a {
+				color: $c-text;
+
+				&:hover {
+					color: $c-orange;
+				}
+			}
+		}
+
+		.warranty-part,
+		.warranty-services {
+			margin-top: 5px;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Gender Widget
+/*----------------------------------------------------------------------------*/
+
+.form-list {
+
+	li.gender {
+
+		> label {
+			padding-left: 0 !important;
+		}
+
+		.input-box {
+			width: 100%;
+			margin-top: 5px;
+
+			label {
+				float: left;
+				width: 50%;
+				position: relative;
+				padding: 2px 10px 2px 45px !important;
+				position: relative;
+				
+				&:before {
+					font-family: Flaticon;
+			        font-size: 20px;
+					font-style: normal;
+					position: absolute;
+					left: 20px;
+					color: $c-text;
+					top: 50%;
+					margin-top: -15px;
+				}
+			}
+
+			input[type=radio] {
+				float: left;
+			    margin-right: -40px;
+			    margin-top: 6px;
+			}
+		}
+
+		#gender-female {
+
+			+ label:before {
+				content: "";
+				@include use-sprite('icon-gender-female');
+			}
+		}
+
+		#gender-male {
+
+			+ label:before {
+				content: "";
+				@include use-sprite('icon-gender-male');
+			}
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Dob Widget
+/*----------------------------------------------------------------------------*/
+.form-list {
+	
+	.customer-dob {
+		
+		&:after {
+			@include clearfix;
+		}
+
+		div.select {
+			width: 30%;
+			float: left;
+
+			+div.select {
+				margin-left: 5%;
+			}
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Pager
+/*----------------------------------------------------------------------------*/
+
+.my-account .pager {
+
+	.count-container {
+		width: 100%;
+		border-top: solid 1px #d7d7d7;
+	    border-bottom: solid 1px #d7d7d7;
+	    margin-bottom: 6px;
+	    padding: 3px 0;
+
+		&:after {
+			@include clearfix;
+		}
+	}
+
+	.amount {
+		display: block;
+		float: left;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+
+	.limiter {
+		float: right;
+		font-family: $f-stack-default;
+		margin-bottom: 0;
+
+		label {
+			font-weight: bold;
+
+			&:after {
+				margin-left: 5px;
+			}
+		}
+
+		div.select {
+			width: 60px;
+			vertical-align: top;
+
+			select,
+			.select-bg {
+				width: 100% !important;
+			}
+
+			.select-bg {
+				border: none;
+			    color: $c-text;
+			    font-weight: bold;
+			}
+		}
+	}
+
+	.pages {
+		width: 100%;
+		text-align: center;
+
+		a {
+			color: $c-black;
+		}
+	}
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Dob Widget
+/*----------------------------------------------------------------------------*/
+
+div.inchoo-socialconnect-google,
+div.inchoo-socialconnect-facebook {
+	float: none;
+	background-image: none !important;
+	max-width: 265px;
+	position: relative;
+	height: 40px !important;
+
+	&:before {
+		font: normal normal normal 20px/1 FontAwesome;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -9px;
+        left: 5%;
+        color: #fff;
+	}
+}
+
+div.inchoo-socialconnect-google-inner,
+div.inchoo-socialconnect-facebook-inner,
+div.inchoo-socialconnect-google-right,
+div.inchoo-socialconnect-facebook-right {
+	background-image: none !important;
+}
+
+div.inchoo-socialconnect-google-right,
+div.inchoo-socialconnect-facebook-right {
+	display: none;
+}
+
+div.inchoo-socialconnect-google-inner,
+div.inchoo-socialconnect-facebook-inner {
+	height: 40px !important;
+	width: 85%;
+	margin-left: 15% !important;
+	padding-right: 0 !important;
+	padding-left: 6% !important;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+div.inchoo-socialconnect-google-inner a,
+div.inchoo-socialconnect-facebook-inner a {
+	text-shadow: none;
+	text-transform: uppercase;
+	line-height: 40px !important;
+	font-weight: 300;
+	@include responsive-font-size(13);
+	display: block;
+}
+
+div.inchoo-socialconnect-facebook {
+    background: #354f88 !important;
+
+	&:before {
+		content: "\f09a";
+	}
+}
+
+div.inchoo-socialconnect-facebook-inner {
+	background: #3b5998 !important;
+
+	&:hover {
+        background: #354f88 !important;
+	}
+}
+
+div.inchoo-socialconnect-google {
+	background: #ce3e26 !important;
+
+	&:before {
+		content: "\f0d5";
+	}
+}
+
+div.inchoo-socialconnect-google-inner {
+	background: #de4c34 !important;
+
+	&:hover {
+        background: #ce3e26 !important;
+	}
+}

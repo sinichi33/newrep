@@ -1,0 +1,107 @@
+<?php
+/**
+ * Coupon Template
+ *
+ * Description:
+ * - Override rwd/default
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<form id="discount-coupon-form" method="post">
+    <div class="discount">
+        <h2><?php echo $this->__('Discount Codes') ?></h2>
+        <span id="coupon-message"></span>
+        <div class="discount-form">
+            <div class="clearfix">
+                <div class="left">
+                    <label for="coupon_code"><?php echo $this->__('Have Discount Codes?') ?></label>
+                    <span class="tooltip tooltip-coupon" title="Voucher yang Anda miliki sebagai alat pembayaran.<br/>Misal: <strong>140005689</strong>"></span>
+                </div>
+                <div class="right">
+                    <input type="hidden" name="remove" id="remove-coupone" value="0" />
+                    <div class="field-wrapper">
+                        <input class="input-text required-entry" type="text" id="coupon_code" name="coupon_code" value="<?php echo $this->escapeHtml($this->getCouponCode()) ?>" />
+                        <div class="button-wrapper">
+                            <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Apply')) ?>" class="button2" onclick="discountForm.submit(false); return false;" value="<?php echo $this->__('Apply') ?>" id="apply-coupon"><span><span><?php echo $this->__('Apply') ?></span></span></button>
+                        </div>
+                    </div>
+                    <?php if(strlen($this->getCouponCode())): ?>
+                        <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Cancel')) ?>" class="button btn-blue cancel-coupon" onclick="discountForm.submit(true)" value="<?php echo $this->__('Cancel') ?>"><?php echo $this->__('Cancel') ?>
+                        </button>
+                    <?php endif;?>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+var discountForm = new VarienForm('discount-coupon-form');
+discountForm.submit = function (isRemove) {
+    if (isRemove) {
+        $('coupon_code').removeClassName('required-entry');
+        $('remove-coupone').value = "1";
+    } else {
+        $('coupon_code').addClassName('required-entry');
+        $('remove-coupone').value = "0";
+    }
+    
+    if (discountForm.validator && !discountForm.validator.validate()) {
+        return false;
+    }
+
+    new Ajax.Request("<?php echo Mage::getBaseUrl().'customorder/checkout/couponPostAjax' ?>", {
+        parameters: discountForm.form.serialize(),
+        method     : 'post',
+        onCreate: function() {
+            //show loader
+            $('discount-coupon-form').addClassName('loading');
+        },
+        onComplete : function(transport) {
+            var response = JSON.parse(transport.responseText);
+            var totalsShipping = $$('table.totals')[0];
+            var totalsPayment = $$('table.totals')[1];
+            var newTotals = response.totals;
+            if(newTotals != null){
+                totalsShipping.replace(newTotals);
+                totalsPayment.replace(newTotals);
+            }
+            if(discountForm.form.remove.value == 1){
+                $('coupon_code').value = '';
+                $$('.cancel-coupon')[0].remove();
+            }
+            else if(discountForm.form.remove.value == 0){
+                var cancelbutton = new Element('buton', {'class' : 'button btn-blue cancel-coupon', 'title' : 'Cancel', 'type' : 'button', 'onclick' : 'discountForm.submit(true)', 'value' : 'Cancel'}).update('Cancel');
+
+                if ($$('.discount-form .right .cancel-coupon')[0]) {
+                    $$('.discount-form .right .cancel-coupon')[0].remove();
+                };
+                    
+                if (response.success) {
+                    $$('.discount-form .right')[0].insert(cancelbutton);
+                }
+            }
+            // document.getElementById('coupon_code').value="";
+            $('coupon-message').update(response.message);
+            
+            // hide loader
+            $('discount-coupon-form').removeClassName('loading');
+        }
+    });
+}
+
+jQuery(document).ready(function(e) {
+
+    jQuery('#discount-coupon-form .input-text').keypress(function (e) {
+      if (e.which == 13) {
+        jQuery('#apply-coupon').click();
+        return false;    //<---- Add this line
+      }
+    });
+});
+//]]>
+</script>

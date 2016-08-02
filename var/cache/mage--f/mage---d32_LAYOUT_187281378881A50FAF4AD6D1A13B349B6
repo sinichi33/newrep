@@ -1,0 +1,8 @@
+<remove name="right"/>
+<remove name="left"/>
+<block type="checkout/onepage_shipping_method_available" name="root" output="toHtml" template="checkout/onepage/shipping_method/available.phtml"/>
+<block type="enterprise_googleanalyticsuniversal/list_json" name="shippingmethod_progress_step_simple_checkout" template="googleanalyticsuniversal/checkout/step.phtml" output="toHtml">
+   <action method="setStepName">
+      <stepName>shipping_method</stepName>
+   </action>
+</block>

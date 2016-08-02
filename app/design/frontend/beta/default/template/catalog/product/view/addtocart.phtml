@@ -1,0 +1,34 @@
+<?php
+/**
+ * Add to Cart Template
+ *
+ * Descriptiton:
+ * - Change qty label
+ * - Add wishlist button
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<?php $_product = $this->getProduct(); ?>
+<?php $buttonTitle = Mage::helper('core')->quoteEscape($this->__('Add to Cart')); ?>
+<?php $_wishlistSubmitUrl = $this->helper('wishlist')->getAddUrl($_product); ?>
+<?php if($_product->isSaleable()): ?>
+    <div class="add-to-cart">
+        <?php if(!$_product->isGrouped()): ?>
+        <div class="qty-wrapper">
+            <label for="qty"><?php echo $this->__('Quantity') ?></label>
+            <input type="text" pattern="\d*" name="qty" id="qty" maxlength="5" value="<?php echo max($this->getProductDefaultQty() * 1, 1) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Qty')) ?>" class="required-entry validate-not-negative-number input-text qty" />
+        </div>
+        <?php endif; ?>
+        <div class="add-to-cart-buttons">
+            <?php if ($this->helper('wishlist')->isAllow()) : ?>
+                <a href="<?php echo $_wishlistSubmitUrl ?>" onclick="productAddToCartForm.submitLight(this, this.href); return false;" class="link-wishlist btn-line-blue"><?php echo $this->__('Add to Wishlist') ?></a>
+            <?php endif; ?>
+            <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
+            <?php echo $this->getChildHtml('', true, true) ?>
+        </div>
+    </div>
+<?php endif; ?>

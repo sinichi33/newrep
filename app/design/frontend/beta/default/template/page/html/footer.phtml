@@ -1,0 +1,38 @@
+<?php
+/**
+ * Footer Template
+ *
+ * Description:
+ * - override RWD/default
+ * 
+ */
+?>
+
+<div id="footer-top">
+	<div class="footer-container">
+		<?php echo $this->getChildHtml('newsletter') ?>
+		<?php echo $this->getChildHtml('footer_socmed') ?>
+	</div>
+</div>
+
+<div id="footer-mid">
+	<div class="footer-container">
+		<div class="footer-links-wrapper">
+	        <?php echo $this->getChildHtml('footer_about_us') ?>
+	        <?php echo $this->getChildHtml('footer_shopping_info') ?>
+	        <?php echo $this->getChildHtml('footer_cicilan') ?>
+	        <?php echo $this->getChildHtml('footer_metode_pembayaran') ?>
+	        <?php echo $this->getChildHtml('footer_keamanan_berbelanja') ?>
+	        <?php echo $this->getChildHtml('footer_jasa_pengiriman') ?>
+	    </div>
+	    <div class="footer-text">
+			<?php echo $this->getChildHtml('footer_text') ?>
+	    </div>
+	</div>
+</div>
+
+<div id="footer-bottom">
+	<div class="footer-container">
+		<address class="copyright"><?php echo $this->getCopyright() ?></address>
+	</div>
+</div>

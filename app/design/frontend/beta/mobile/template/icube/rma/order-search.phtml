@@ -1,0 +1,100 @@
+<?php
+/*
+ * RMA Order Search Form Template
+ *
+ * Description :
+ * - Override beta/default
+ * 
+ *
+ */
+?>
+
+<div class="content-section" id="rma-order-search-section">
+
+<?php if (!Mage::getSingleton('customer/session')->isLoggedIn()): ?>
+	<div class="col2-set user-not-logged-in-tabs">
+		<div class="col-1 active">
+			<h4><?php echo $this->__('Form Pengembalian Barang') ?></h4>
+		</div>
+		<div class="col-2">
+			<h4><?php echo $this->__('Login untuk Melihat List Order Anda') ?></h4>
+		</div>
+	</div>
+	<div class="col2-set user-not-logged-in">
+		<div class="col-1">
+			<h2><?php echo $this->__('Pengembalian') ?></h2>
+
+			<form id="rma-order-search" action="<?php echo Mage::getBaseUrl(). 'return'.DS.'return'.DS.'create';?>" method="get">
+				<ul class="form-list">
+					<li>
+						<label for="order-number" class="required"><?php echo $this->__('Nomor Order') ?><em>*</em></label>
+						<div class="input-box">
+							<input type="text" class="input-text required-entry" name="order_number" id="order-number" />
+						</div>
+					</li>
+					<li>
+						<label for="rma-email" class="required"><?php echo $this->__('Email') ?><em>*</em></label>
+						<div class="input-box">
+							<input type="text" class="input-text required-entry" name="email" id="rma-email" />
+						</div>
+					</li>
+				</ul>
+				<div class="buttons-set">
+					<button type="submit" class="button"><span><span><?php echo $this->__('Lihat Order') ?></span></span></button>
+				</div>
+			</form>
+
+	        <script type="text/javascript">
+	        //<![CDATA[
+	            var dataForm = new VarienForm('rma-order-search', true);
+	        //]]>
+	        </script>
+		</div>
+		<div class="col-2" style="display: none;">
+			<p class="a-center"><?php echo $this->__('Login ke website ruparupa dan Anda dapat melihat semua order yang sudah Anda lakukan di ruparupa') ?></p>
+
+			<div class="buttons-set">
+				<button class="button" id="mob-rma-btn-login" onclick="window.location.replace('<?php echo Mage::getUrl('customer/account/login', array('referer' => Mage::helper('core')->urlEncode($this->getUrl("return/return/search/")))) ?>')"><span><span><?php echo $this->__('Masuk') ?></span></span></button>
+			</div>
+		</div>
+	</div>
+<?php else: ?>	
+	<div class="user-logged-in">
+		<h2><?php echo $this->__('Pengembalian') ?></h2>
+		<h4><?php echo $this->__('Form Pengembalian Barang') ?></h4>
+
+		<form id="rma-order-search-not-logged-in" action="<?php echo Mage::getBaseUrl(). 'return'.DS.'return'.DS.'create';?>" method="get">
+			<ul class="form-list">
+				<li>
+					<label><?php echo $this->__('Nomor Order') ?></label>
+					<div class="input-box">
+						<?php 
+							$_orders = Mage::getResourceModel('sales/order_collection')
+					        ->addFieldToSelect(array('increment_id','entity_id'))
+					        ->addFieldToFilter('customer_id', Mage::getSingleton('customer/session')->getCustomer()->getId())
+					        ->addFieldToFilter('state', array(array('eq' => Mage_Sales_Model_Order::STATE_COMPLETE), array('eq' => Mage_Sales_Model_Order::STATE_CLOSED)))
+					        ->setOrder('created_at', 'desc');
+						?>
+						<select name="order_number" id="rma-order-number" class="">
+							<option value=""><?php echo $this->__('Pilih Nomor Order Anda') ?></option>
+						<?php foreach ($_orders as $order): ?>
+							<option value="<?php echo $order->getIncrementId() ?>"># <?php echo $order->getIncrementId() ?></option>
+						<?php endforeach ?>
+						</select>
+					</div>
+				</li>
+			</ul>
+			<div class="buttons-set">
+				<button type="submit" class="button"><span><span><?php echo $this->__('Lihat Order') ?></span></span></button>
+			</div>
+		</form>
+
+        <script type="text/javascript">
+        //<![CDATA[
+            var validate = new VarienForm('rma-order-search-not-logged-in', true);
+        //]]>
+        </script>
+	</div>
+<?php endif ?>
+
+</div>

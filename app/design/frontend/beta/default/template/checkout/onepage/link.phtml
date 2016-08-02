@@ -1,0 +1,68 @@
+<?php
+/**
+ * Checkout button/link Template
+ *
+ * Description:
+ * - Override base/default
+ * - Change wording
+ * - Add shipping method validation on submit
+ *
+ * 
+ * @category    design
+ * @package     base_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<?php if ($this->isPossibleOnepageCheckout()):?>
+    <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Checkout')) ?>" class="button btn-proceed-checkout btn-checkout<?php if ($this->isDisabled()):?> no-checkout<?php endif; ?>"<?php if ($this->isDisabled()):?> disabled="disabled"<?php endif; ?> onclick="submitCart();"><span><span><?php echo $this->__('Proceed to Checkout') ?></span></span></button>
+
+	<script type="text/javascript">
+		function submitCart() {
+			var valid = shippingMethodValidation();
+
+			if (valid) {
+				window.location='<?php echo $this->getCheckoutUrl() ?>';
+			}else{
+				jQuery('html, body').animate({
+			        scrollTop: jQuery("#shopping-cart-table .validation-advice").first().first().closest('tr').offset().top
+			    }, 500);
+			}
+		}
+
+		function shippingMethodValidation() {
+			valid = true;
+
+			jQuery('#shopping-cart-table td.shipping').each(function() {
+				var methodIsSelected = jQuery(this).find('.radio:checked').length;
+
+				// validate: select one shipping method
+				if (methodIsSelected < 1) {
+					valid = false;
+					var errorMsg = '<?php echo $this->__("Please select the shipping method.") ?>'
+					var errorHtml = '<div class="validation-advice">'+errorMsg+'</div>';
+					jQuery(this).find('.validation-advice').remove();
+					jQuery(this).append(errorHtml);
+					return valid;
+				};
+				
+				// validate: if shipping method is pickupstore, one store must be select
+				var pickupstoreIsSelected = jQuery(this).find('.s_method_pickupstore:checked').length;
+				if (pickupstoreIsSelected) {
+					var selectedStore = jQuery(this).find('select.select-store').val();
+
+					if (!selectedStore || selectedStore=='' || selectedStore=='DC') {
+						valid = false;
+						var errorMsg = '<?php echo $this->__("Please select the store.") ?>'
+						var errorHtml = '<div class="validation-advice">'+errorMsg+'</div>';
+						jQuery(this).find('.validation-advice').remove();
+						jQuery(this).append(errorHtml);
+						return valid;
+					};
+				};
+			});
+
+			return valid;
+		}
+	</script>
+<?php endif?>

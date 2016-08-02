@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+ 
+<config>
+    <modules>
+        <Icube_Warehouse>
+            <version>0.1.0</version>
+        </Icube_Warehouse>
+    </modules>
+ 
+    <global>
+        <models>
+            <icube_warehouse>
+                <class>Icube_Warehouse_Model</class>
+                <resourceModel>icube_warehouse_resource</resourceModel>
+            </icube_warehouse>
+        </models>
+ 
+        <resources>
+            <icube_warehouse_setup>
+                <setup>
+                    <module>Icube_Warehouse</module>
+                </setup>
+            </icube_warehouse_setup>
+        </resources>
+ 
+        <blocks>
+            <icube_warehouse>
+                <class>Icube_Warehouse_Block</class>
+            </icube_warehouse>
+        </blocks>
+ 
+        <helpers>
+            <icube_warehouse>
+                <class>Icube_Warehouse_Helper</class>
+            </icube_warehouse>
+        </helpers>
+    </global>
+ 
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <icube_warehouse before="Mage_Adminhtml">Icube_Warehouse_Adminhtml</icube_warehouse>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <events>
+            <adminhtml_block_html_before>
+                <observers>
+                    <icube_warehouse_custombutton>
+                        <type>singleton</type>
+                        <class>icube_warehouse/observer</class>
+                        <method>customButton</method>
+                    </icube_warehouse_custombutton>
+                </observers>
+            </adminhtml_block_html_before>
+        </events>
+    </adminhtml>
+</config>

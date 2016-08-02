@@ -1,0 +1,42 @@
+<?php
+/**
+ * Mini Search Form
+ *
+ * Description:
+ * - Override beta/default
+ * - Remove search by category
+ * - Add placeholder
+ */
+
+/* @var $this Mage_Core_Block_Template */
+/* @var $catalogSearchHelper Mage_Catalogsearch_Helper_Data */
+$catalogSearchHelper =  $this->helper('catalogsearch');
+?>
+
+<?php
+    // get category options
+    $category = Mage::getModel('catalog/category');
+    if(is_object(Mage::registry('current_category'))){
+        $currentCategoryPath=Mage::registry('current_category')->getPathIds();
+    }else{
+        $currentCategoryPath = array();
+    }
+?>
+
+<form id="search_mini_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
+    <span class="triangle"></span>
+    <div class="input-box">
+        <label for="search"><?php echo $this->__('Search:') ?></label>
+        <input id="search" type="search" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text required-entry" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" placeholder="<?php echo $this->__('Cari barang...') ?>" />
+        <button type="submit" title="<?php echo $this->__('Search') ?>" class="button search-button btn-orange"><span><span class="flaticon-magnifying42"><?php echo $this->__('Search') ?></span></span></button>
+    </div>
+
+    <div id="search_autocomplete" class="search-autocomplete"></div>
+
+    <script type="text/javascript">
+    //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+        searchForm.initAutocomplete('<?php echo $catalogSearchHelper->getSuggestUrl() ?>', 'search_autocomplete');
+    //]]>
+    </script>
+</form>

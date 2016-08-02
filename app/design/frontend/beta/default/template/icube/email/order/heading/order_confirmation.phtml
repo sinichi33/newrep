@@ -1,0 +1,23 @@
+<?php
+/**
+ * Heading template for Order Confirmation email
+ *
+ * Description:
+ * - Created from scratch
+ * - VA Payment has different content with CC payment
+ */
+?>
+
+<?php  
+$_customerFirstName = $this->getCustomerFirstName();
+$_order = $this->getOrder();
+$_payment = $_order->getPayment()->getData();
+?>
+
+<?php if ($_payment['method'] == 'vpaymentva'): ?>
+	<h1>Hi <?php echo $_customerFirstName ?>,</h1>
+	<p>Terima kasih telah berbelanja di Ruparupa. Pesanan Anda akan segera kami proses setelah melakukan pembayaran melalui nomor rekening dibawah ini. Mohon selesaikan pembayaran dalam waktu <b>1 x 24 jam</b>.</p>
+<?php else: ?>
+	<h1>Hi <?php echo $_customerFirstName ?>,</h1>
+	<p>Terima kasih, pembayaran untuk pesanan Anda telah kami terima. Berikut informasi transaksi Anda :</p>
+<?php endif ?>

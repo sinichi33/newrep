@@ -1,0 +1,25 @@
+<?php
+$helper = Mage::helper("cadence_fbpixel");
+if (!$helper->isConversionPixelEnabled()) {
+    return;
+}
+$id = $helper->getVisitorPixelId();
+?>
+<?php
+$order_id = Mage::getSingleton('checkout/session')->getLastOrderId();
+if (!$order_id || intval($order_id) < 1) {
+    //Failsafe for bad order id
+    return;
+}
+/** @var Mage_Sales_Model_Order $order */
+$order = Mage::getModel('sales/order')->load($order_id);
+$grand_total = round($order->getGrandTotal(), 2);
+$currency_code = Mage::app()->getStore()->getCurrentCurrencyCode();
+?>
+<!-- Facebook Conversion Code for Conversions -->
+<script>
+    fbq('track', 'Purchase', {value: '<?php echo $grand_total ?>', currency: '<?php echo $currency_code ?>'});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=<?php echo $id ?>&ev=Purchase&value=<?php echo $grand_total ?>&currency=<?php echo $currency_code ?>&noscript=1"
+        /></noscript>

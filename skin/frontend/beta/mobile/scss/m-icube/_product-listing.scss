@@ -1,0 +1,125 @@
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+ul.products-grid,
+ol.products-list {
+	
+}
+
+/*----------------------------------------------------------------------------*/
+/* Product Grid
+/*----------------------------------------------------------------------------*/
+
+ul.products-grid {
+
+	&:after {
+		@include clearfix;
+	}
+
+	li {
+		width: 48.5%;
+		float: left;
+		clear: none !important;
+		margin-bottom: 10px;
+		margin: 0 0 10px;
+
+		&:nth-child(2n) {
+			float: right;
+		}
+
+		/* product image */
+		.product-image {
+		}
+
+		/* product info */
+		.product-info {
+		}
+
+		/* product name */
+		.product-name {
+		    @include responsive-font-size(12);
+		    height: 30px;
+		    line-height: 1.2;
+		}
+
+		/* rating */
+		.ratings {
+		}
+
+		/* price wrapper */
+		.price-wrapper {
+			min-height: 27px;
+
+			&.has-sale .price-box {
+			}
+
+			&.has-sale .sale {
+			}
+		}
+
+		/* price */
+		.price-box {
+			min-height: 27px;
+
+			.old-price {
+
+				.price {
+					@include responsive-font-size(8);
+				}
+			}
+
+			p {
+				line-height: 1;
+			}
+
+			.regular-price,
+			.special-price {
+
+				.price {
+					@include responsive-font-size(12);
+				}
+			}
+		}
+
+		/* bottom part */
+		.bottom-part {
+			height: 20px;
+			padding-top: 3px;
+		}
+
+		.actions {
+			display: none !important;
+		}
+
+		/* labels */
+		.label.sale {
+			@include responsive-font-size(9);
+			padding: 2px;
+			bottom: 5px;
+		}
+
+		.label.installment {
+			@include responsive-font-size(8);
+			line-height: 1;
+		}
+
+		.label.new {
+			@include responsive-font-size(8);
+			line-height: 1;
+		}
+	}
+
+	&.products-grid--max-4-col > li:nth-child(even), 
+	&.products-grid--max-4-col > li:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Product List
+/*----------------------------------------------------------------------------*/
+
+ol.products-list {
+
+}

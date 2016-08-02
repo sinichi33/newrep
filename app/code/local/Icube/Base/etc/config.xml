@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Icube_Base>
+			<version>0.1.0</version>
+		</Icube_Base>
+	</modules>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<icube_base before="Mage_Adminhtml">Icube_Base_Adminhtml</icube_base>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	<adminhtml>
+        <layout>
+            <updates>
+                <city>
+                    <file>icube/base.xml</file>
+                </city>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

@@ -1,0 +1,293 @@
+/*----------------------------------------------------------------------------*/
+/* Global Mixins
+/*----------------------------------------------------------------------------*/
+
+@mixin font-family($font-family) {
+    font-family: "#{$font-family}", sans-serif;
+}
+
+@mixin transition($what: all, $time: 0.3s, $type: ease) {
+    -webkit-transition: $what $time $type; 
+    -moz-transition: $what $time $type; 
+    -o-transition: $what $time $type; 
+    transition: $what $time $type; 
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }  
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $left $top $blur $color;
+    -moz-box-shadow:inset $left $top $blur $color;
+    box-shadow:inset $left $top $blur $color;
+  } @else {
+    -webkit-box-shadow: $left $top $blur $color;
+    -moz-box-shadow: $left $top $blur $color;
+    box-shadow: $left $top $blur $color;
+  }
+}
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/*----------------------------------------------------------------------------*/
+/* Messages
+/*----------------------------------------------------------------------------*/
+
+.messages {
+    
+    /* success */
+
+    /* error */
+}
+
+/*----------------------------------------------------------------------------*/
+/* Breadcrumbs
+/*----------------------------------------------------------------------------*/
+
+.breadcrumbs {
+    
+}
+
+/*----------------------------------------------------------------------------*/
+/* Forms, Input, Validation.
+/*----------------------------------------------------------------------------*/
+
+input {
+}
+
+input[type=email], 
+input[type=search], 
+input[type=number], 
+input[type=password], 
+input[type=tel], 
+input[type=text] {
+  height: 30px;
+  color: $c-text;
+}
+
+.input-text {
+  color: $c-text;
+  @include responsive-font-size(14);
+  border-color: #a9a9a9;
+
+  &:focus {
+    border-color: $c-orange;
+  }
+}
+
+select {
+  height: 30px;
+}
+
+div.select .select-bg {
+  height: 30px !important;
+  line-height: 30px !important;
+  @include responsive-font-size(14);
+  border-color: #a9a9a9;
+  color: $c-text;
+}
+
+textarea {
+  color: $c-text;
+
+}
+
+label {
+
+}
+
+p.required {
+    
+}
+
+::-webkit-input-placeholder {
+    color: $c-text;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $c-text;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $c-text;  
+}
+
+:-ms-input-placeholder {  
+   color: $c-text;  
+}
+
+.select.validation-failed {
+
+  .select-bg {
+    border-color: $c-danger;
+  }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Global Styles
+/*----------------------------------------------------------------------------*/
+
+/* remove default dotted border while focusing to a link */
+a:active,
+a:focus, 
+*:focus {
+    outline: none;
+    color: inherit;
+    noFocusLine: expression(this.onFocus=this.blur());
+}
+
+.no-touch .product-image:hover {
+  border: none;
+}
+
+.clearfix {
+
+  &:after {
+    @include clearfix;
+  }
+
+  .left {
+    float: left;
+    width: 49%;
+  }
+
+  .right {
+    float: right;
+    width: 49%;
+  }
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.input-box-inner.email {
+  position: relative;
+
+  &:after {
+    content: "\f007";
+    font: normal normal normal 14px/1 FontAwesome;
+    right: 15px;
+    top: 50%;
+    margin-top: -7px;
+    color: #ececec;
+    position: absolute;
+  }
+}
+
+.input-box-inner.password {
+  position: relative;
+  
+  &:after {
+    content: "\f023";
+    font: normal normal normal 14px/1 FontAwesome;
+    right: 15px;
+    top: 50%;
+    margin-top: -7px;
+    color: #ececec;
+    position: absolute;
+  }
+}
+
+.content-section {
+    background: #fff;
+    padding: 30px;
+
+    + .content-section {
+      margin-top: 30px;
+    }
+}
+
+.desc-list {
+
+    label {
+      display: inline-block;
+      font-weight: 400;
+      width: 140px;
+      position: relative;
+
+      &:after {
+        content: ' :';
+        margin-right: 5px;
+        position: absolute;
+        right: 0;
+      }
+    }
+}
+
+.line {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #c6c6c6;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.mob-only {
+  display: none;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Flaticon
+/*----------------------------------------------------------------------------*/
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  margin-left: initial;
+}
+
+@mixin flaticon($content, $font-size) {
+  font-family: Flaticon;
+  font-size: $font-size;
+  font-style: normal;
+  content: $content;
+}

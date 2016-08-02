@@ -1,0 +1,14 @@
+<remove name="right"/>
+<remove name="left"/>
+<block type="checkout/onepage_progress" name="root" output="toHtml" template="checkout/onepage/progress/payment.phtml">
+   <block type="checkout/onepage_payment_info" name="payment_info">
+      <action method="setInfoTemplate">
+         <method/>
+         <template/>
+      </action>
+   </block>
+   <action method="setInfoTemplate">
+      <method/>
+      <template/>
+   </action>
+</block>

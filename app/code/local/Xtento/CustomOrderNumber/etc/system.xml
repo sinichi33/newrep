@@ -1,0 +1,785 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <xtento translate="label">
+            <label><![CDATA[<img src="//www.xtento.com/media/images/extension_logo.png" alt="XTENTO" height="20" style="vertical-align:bottom;margin-left:-1px;"/> XTENTO Extensions]]></label>
+            <sort_order>650</sort_order>
+        </xtento>
+    </tabs>
+    <sections>
+        <customordernumber translate="label" module="xtento_customordernumber">
+            <label>Order Number Customizer</label>
+            <tab>xtento</tab>
+            <sort_order>250</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>Extension Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <!-- -->
+                    <frontend_model>xtcore/system_config_form_xtento_module</frontend_model>
+                    <data_model>xtento_customordernumber/system_config_backend_import_server</data_model>
+                    <module_name>Xtento_CustomOrderNumber</module_name>
+                    <!-- -->
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <expanded>1</expanded>
+                    <comment>
+                        <![CDATA[
+                    <script>
+                    function setCommentHtml(message) {
+                        if (Prototype.Browser.IE) {
+                            $('customordernumber_general_serial').next('p').outerHTML = message;
+                        } else {
+                            $('customordernumber_general_serial').next('p').innerHTML = message;
+                        }
+                    }
+                    Event.observe(window, 'load', function() {
+                        if ($('customordernumber_general_server_name')) {
+                            $('customordernumber_general_server_name').style.backgroundColor='#f0f0f0';
+                            $('customordernumber_general_server_name').disable();
+                            if ($('row_customordernumber_general_server')) {
+                                $('row_customordernumber_general_server').hide();
+                            }
+                        }
+
+                        if ($('customordernumber_general_serial') && $('customordernumber_general_serial').value !== '' && $('customordernumber_general_server') && $('customordernumber_general_server').value !== '') {
+                            if ($('customordernumber_general_serial').value.length !== 40) {
+                                setCommentHtml('<a href="http://www.xtento.com" target="_blank"><img src="//www.xtento.com/license/check/?d='+$('customordernumber_general_server').value+'" border="0" style="margin-top: 4px;"/></a>');
+                            } else {
+                                if (typeof $('customordernumber_general_serial').nextSibling !== 'undefined' && typeof $('customordernumber_general_serial').nextSibling.nextSibling !== 'undefined') {
+                                    setCommentHtml('<a href="http://www.xtento.com" target="_blank"><img src="//www.xtento.com/license/check/?d='+$('customordernumber_general_server').value+'" border="0" style="margin-top: 4px;"/></a>');
+                                }
+                            }
+                        } else {
+                            setCommentHtml('<a href="http://www.xtento.com" target="_blank"><img src="//www.xtento.com/license/check/?d='+$('customordernumber_general_server').value+'" border="0" style="margin-top: 4px;"/></a>');
+                        }
+                    });
+                    </script>
+                    ]]>
+                    </comment>
+                    <fields>
+                        <heading translate="label">
+                            <label>General Configuration</label>
+                            <frontend_model>xtcore/system_config_form_field_heading</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                        </heading>
+                        <server_name translate="label">
+                            <label>Server Name</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>xtento_customordernumber/system_config_backend_import_servername</backend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </server_name>
+                        <serial translate="label">
+                            <label>License Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Enter your license key here</comment>
+                        </serial>
+                        <enabled translate="label">
+                            <label>Module Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <backend_model>xtento_customordernumber/system_config_backend_import_enabled</backend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>A valid license key is required in order to enable the module. If the module is disabled, your order numbers will use the default Magento order number format.</comment>
+                        </enabled>
+                        <server translate="label">
+                            <label/>
+                            <frontend_type>hidden</frontend_type>
+                            <backend_model>xtento_customordernumber/system_config_backend_import_server</backend_model>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </server>
+                    </fields>
+                </general>
+                <order translate="label">
+                    <label>Order # Settings</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enable Custom Order Number</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Can be enabled/disabled per website/store view. <strong>Make sure to enable this if you want to use any of the below configuration/features.</strong>]]></comment>
+                        </enabled>
+                        <!-- Same as order -->
+                        <id_format>
+                            <label>Order Number Format</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[
+                            <strong>Sample formats:</strong><br/>
+                            ORD%counter% (if %counter% is 10043 this outputs ORD10043)<br/>
+                            O-%YYYY%-%counter% (if %counter% is 1001 and year is 2014 this outputs O-2014-1001)<br/><br/>
+                            <strong>Important note:</strong><br/>
+                            Always make sure your order numbers are unique somehow. It is recommended to at least use the %counter% variable in the order number to avoid duplicate order numbers, as this variable is unique and incrementing.<br/><br/>
+                            <strong>The following variables can be used:</strong><br/>
+                            %d% (day of the month, no leading 0)<br/>
+                            %dd% (day of the month, 2 digits always)<br/>
+                            %m% (month of the year, no leading 0)<br/>
+                            %mm% (month of the year, 2 digits always)<br/>
+                            %yy% (current year, 2 digits)<br/>
+                            %yyyy% (current year, 4 digits)<br/>
+                            %h% (current time: hour, no leading 0)<br/>
+                            %hh% (current time: hour, 2 digits always)<br/>
+                            %ii% (current time: minute, 2 digits always)<br/>
+                            %ss% (current time: seconds, 2 digits always)<br/>
+                            %store_id% (Store ID the order was placed in)<br/>
+                            %counter% (An incrementing number, configuration below)<br/>
+                            %rand3% (Random number between 100 and 999)<br/>
+                            %rand4% (Random number between 1000 and 9999)<br/>
+                            %rand5% (Random number between 10000 and 99999)<br/>
+                            %rand6% (Random number between 100000 and 999999)<br/>
+                            %rand7% (Random number between 1000000 and 9999999)<br/>
+                            %rand8% (Random number between 10000000 and 99999999)<br/>
+                            %rand9% (Random number between 100000000 and 999999999)
+                            ]]></comment>
+                        </id_format>
+                        <count_from>
+                            <label>Counter: Start counting from</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This is the %counter% variable that can be used in the custom order number format field above. This configures from which number the %counter% variable begins counting. If you use "Reset counter", the %counter% variable will start from the value entered here after being reset.</comment>
+                        </count_from>
+                        <unique_per_website>
+                            <label>Counter: Unique per website</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>33</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>This website should have its own counter.</comment>
+                        </unique_per_website>
+                        <unique_per_store>
+                            <label>Counter: Unique per store view</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>37</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This store view should have its own counter.</comment>
+                        </unique_per_store>
+                        <increment_by>
+                            <label>Counter: Increment by</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If set to 1, the %counter% variable increases by 1 for every new order placed. If set to 7, the %counter% variable increases by 7 for every new order placed.</comment>
+                        </increment_by>
+                        <padding>
+                            <label>Counter: Number Padding</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If you want the %counter% variable to be 6 digits long with zeros at the beginning of the counter, enter 6 in this field. For example if the counter is at 12, it would output 000012 then, so it's always a 6 digit number (6 is the padding).</comment>
+                        </padding>
+                        <reset_counter>
+                            <label>Counter: Reset counter automatically</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>xtento_customordernumber/system_config_source_counter_reset</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>How often should the %counter% variable be reset? Make sure to have dynamic parts (like the date) in the order number format to avoid duplicate order numbers!</comment>
+                        </reset_counter>
+                        <force_reset_counter>
+                            <label>Counter: Force counter reset now</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If set to "Yes", the %counter% variable will be reset when the next increment ID is generated and will then deactivate this option automatically. This means the %counter% variable is just reset for the next increment ID.</comment>
+                        </force_reset_counter>
+                    </fields>
+                </order>
+                <invoice translate="label">
+                    <label>Invoice # Settings</label>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enable Custom Invoice Number</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Can be enabled/disabled per website/store view. <strong>Make sure to enable this if you want to use any of the below configuration/features.</strong>]]></comment>
+                        </enabled>
+                        <same_as_order>
+                            <label>Same as order number</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If enabled, the invoice number will use the order number the invoice belongs to, which means the invoice number is the same as the order number.</comment>
+                        </same_as_order>
+                        <id_prefix>
+                            <label>Invoice Prefix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The prefix entered here will be added in front of the invoice ID. If the order number is 2014-1245, and you enter INV- as the prefix, the invoice ID will be INV-2014-1245</comment>
+                            <depends>
+                                <same_as_order>1</same_as_order>
+                            </depends>
+                        </id_prefix>
+                        <replace_in_id>
+                            <label>Replace in order number</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If you want to replace something in the order number (which will be used as the invoice number), you can enter it here. If your order number is ORD-1234 you can enter ORD- here and ORD- would then be replaced when used as the invoice number.</comment>
+                            <depends>
+                                <same_as_order>1</same_as_order>
+                            </depends>
+                        </replace_in_id>
+                        <id_format>
+                            <label>Invoice Number Format</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[
+                            <strong>Sample formats:</strong><br/>
+                            ORD%counter% (if %counter% is 10043 this outputs INV10043)<br/>
+                            I-%YYYY%-%counter% (if %counter% is 1001 and year is 2014 this outputs I-2014-1001)<br/><br/>
+                            <strong>Important note:</strong><br/>
+                            Always make sure your invoice numbers are unique somehow. It is recommended to at least use the %counter% variable in the invoice number to avoid duplicate invoice numbers, as this variable is unique and incrementing.<br/><br/>
+                            <strong>The following variables can be used:</strong><br/>
+                            %d% (day of the month, no leading 0)<br/>
+                            %dd% (day of the month, 2 digits always)<br/>
+                            %m% (month of the year, no leading 0)<br/>
+                            %mm% (month of the year, 2 digits always)<br/>
+                            %yy% (current year, 2 digits)<br/>
+                            %yyyy% (current year, 4 digits)<br/>
+                            %h% (current time: hour, no leading 0)<br/>
+                            %hh% (current time: hour, 2 digits always)<br/>
+                            %ii% (current time: minute, 2 digits always)<br/>
+                            %ss% (current time: seconds, 2 digits always)<br/>
+                            %store_id% (Store ID the invoice was created in)<br/>
+                            %counter% (An incrementing number, configuration below)<br/>
+                            %rand3% (Random number between 100 and 999)<br/>
+                            %rand4% (Random number between 1000 and 9999)<br/>
+                            %rand5% (Random number between 10000 and 99999)<br/>
+                            %rand6% (Random number between 100000 and 999999)<br/>
+                            %rand7% (Random number between 1000000 and 9999999)<br/>
+                            %rand8% (Random number between 10000000 and 99999999)<br/>
+                            %rand9% (Random number between 100000000 and 999999999)
+                            ]]></comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </id_format>
+                        <count_from>
+                            <label>Counter: Start counting from</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This is the %counter% variable that can be used in the custom invoice number format field above. This configures from which number the %counter% variable begins counting. If you use "Reset counter", the %counter% variable will start from the value entered here after being reset.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </count_from>
+                        <unique_per_website>
+                            <label>Counter: Unique per website</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>33</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>This website should have its own counter.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </unique_per_website>
+                        <unique_per_store>
+                            <label>Counter: Unique per store view</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>37</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This store view should have its own counter.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </unique_per_store>
+                        <increment_by>
+                            <label>Counter: Increment by</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If set to 1, the %counter% variable increases by 1 for every new invoice placed. If set to 7, the %counter% variable increases by 7 for every new invoice placed.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </increment_by>
+                        <padding>
+                            <label>Counter: Number Padding</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If you want the %counter% variable to be 6 digits long with zeros at the beginning of the counter, enter 6 in this field. For example if the counter is at 12, it would output 000012 then, so it's always a 6 digit number (6 is the padding).</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </padding>
+                        <reset_counter>
+                            <label>Counter: Reset counter automatically</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>xtento_customordernumber/system_config_source_counter_reset</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>How often should the %counter% variable be reset? Make sure to have dynamic parts (like the date) in the invoice number format to avoid duplicate invoice numbers!</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </reset_counter>
+                        <force_reset_counter>
+                            <label>Counter: Force counter reset now</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If set to "Yes", the %counter% variable will be reset when the next increment ID is generated and will then deactivate this option automatically. This means the %counter% variable is just reset for the next increment ID.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </force_reset_counter>
+                    </fields>
+                </invoice>
+                <shipment translate="label">
+                    <label>Shipment # Settings</label>
+                    <sort_order>150</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enable Custom Shipment Number</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Can be enabled/disabled per website/store view. <strong>Make sure to enable this if you want to use any of the below configuration/features.</strong>]]></comment>
+                        </enabled>
+                        <same_as_order>
+                            <label>Same as order number</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If enabled, the shipment number will use the order number the shipment belongs to, which means the shipment number is the same as the order number.</comment>
+                        </same_as_order>
+                        <id_prefix>
+                            <label>Shipment Prefix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The prefix entered here will be added in front of the shipment ID. If the order number is 2014-1245, and you enter INV- as the prefix, the shipment ID will be INV-2014-1245</comment>
+                            <depends>
+                                <same_as_order>1</same_as_order>
+                            </depends>
+                        </id_prefix>
+                        <replace_in_id>
+                            <label>Replace in order number</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If you want to replace something in the order number (which will be used as the shipment number), you can enter it here. If your order number is ORD-1234 you can enter ORD- here and ORD- would then be replaced when used as the shipment number.</comment>
+                            <depends>
+                                <same_as_order>1</same_as_order>
+                            </depends>
+                        </replace_in_id>
+                        <id_format>
+                            <label>Shipment Number Format</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[
+                            <strong>Sample formats:</strong><br/>
+                            SHI%counter% (if %counter% is 10043 this outputs SHI10043)<br/>
+                            S-%YYYY%-%counter% (if %counter% is 1001 and year is 2014 this outputs S-2014-1001)<br/><br/>
+                            <strong>Important note:</strong><br/>
+                            Always make sure your shipment numbers are unique somehow. It is recommended to at least use the %counter% variable in the shipment number to avoid duplicate shipment numbers, as this variable is unique and incrementing.<br/><br/>
+                            <strong>The following variables can be used:</strong><br/>
+                            %d% (day of the month, no leading 0)<br/>
+                            %dd% (day of the month, 2 digits always)<br/>
+                            %m% (month of the year, no leading 0)<br/>
+                            %mm% (month of the year, 2 digits always)<br/>
+                            %yy% (current year, 2 digits)<br/>
+                            %yyyy% (current year, 4 digits)<br/>
+                            %h% (current time: hour, no leading 0)<br/>
+                            %hh% (current time: hour, 2 digits always)<br/>
+                            %ii% (current time: minute, 2 digits always)<br/>
+                            %ss% (current time: seconds, 2 digits always)<br/>
+                            %store_id% (Store ID the shipment was created in)<br/>
+                            %counter% (An incrementing number, configuration below)<br/>
+                            %rand3% (Random number between 100 and 999)<br/>
+                            %rand4% (Random number between 1000 and 9999)<br/>
+                            %rand5% (Random number between 10000 and 99999)<br/>
+                            %rand6% (Random number between 100000 and 999999)<br/>
+                            %rand7% (Random number between 1000000 and 9999999)<br/>
+                            %rand8% (Random number between 10000000 and 99999999)<br/>
+                            %rand9% (Random number between 100000000 and 999999999)
+                            ]]></comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </id_format>
+                        <count_from>
+                            <label>Counter: Start counting from</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This is the %counter% variable that can be used in the custom shipment number format field above. This configures from which number the %counter% variable begins counting. If you use "Reset counter", the %counter% variable will start from the value entered here after being reset.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </count_from>
+                        <unique_per_website>
+                            <label>Counter: Unique per website</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>33</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>This website should have its own counter.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </unique_per_website>
+                        <unique_per_store>
+                            <label>Counter: Unique per store view</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>37</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This store view should have its own counter.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </unique_per_store>
+                        <increment_by>
+                            <label>Counter: Increment by</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If set to 1, the %counter% variable increases by 1 for every new shipment placed. If set to 7, the %counter% variable increases by 7 for every new shipment placed.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </increment_by>
+                        <padding>
+                            <label>Counter: Number Padding</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If you want the %counter% variable to be 6 digits long with zeros at the beginning of the counter, enter 6 in this field. For example if the counter is at 12, it would output 000012 then, so it's always a 6 digit number (6 is the padding).</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </padding>
+                        <reset_counter>
+                            <label>Counter: Reset counter automatically</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>xtento_customordernumber/system_config_source_counter_reset</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>How often should the %counter% variable be reset? Make sure to have dynamic parts (like the date) in the shipment number format to avoid duplicate shipment numbers!</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </reset_counter>
+                        <force_reset_counter>
+                            <label>Counter: Force counter reset now</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If set to "Yes", the %counter% variable will be reset when the next increment ID is generated and will then deactivate this option automatically. This means the %counter% variable is just reset for the next increment ID.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </force_reset_counter>
+                    </fields>
+                </shipment>
+                <creditmemo translate="label">
+                    <label>Credit Memo # Settings</label>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enable Custom Credit Memo Number</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Can be enabled/disabled per website/store view. <strong>Make sure to enable this if you want to use any of the below configuration/features.</strong>]]></comment>
+                        </enabled>
+                        <same_as_order>
+                            <label>Same as order number</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If enabled, the credit memo number will use the order number the credit memo belongs to, which means the credit memo number is the same as the order number.</comment>
+                        </same_as_order>
+                        <id_prefix>
+                            <label>Credit Memo Prefix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The prefix entered here will be added in front of the credit memo ID. If the order number is 2014-1245, and you enter INV- as the prefix, the credit memo ID will be INV-2014-1245</comment>
+                            <depends>
+                                <same_as_order>1</same_as_order>
+                            </depends>
+                        </id_prefix>
+                        <replace_in_id>
+                            <label>Replace in order number</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If you want to replace something in the order number (which will be used as the credit memo number), you can enter it here. If your order number is ORD-1234 you can enter ORD- here and ORD- would then be replaced when used as the credit memo number.</comment>
+                            <depends>
+                                <same_as_order>1</same_as_order>
+                            </depends>
+                        </replace_in_id>
+                        <id_format>
+                            <label>Credit Memo Number Format</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[
+                            <strong>Sample formats:</strong><br/>
+                            CRE%counter% (if %counter% is 10043 this outputs CRE10043)<br/>
+                            C-%YYYY%-%counter% (if %counter% is 1001 and year is 2014 this outputs C-2014-1001)<br/><br/>
+                            <strong>Important note:</strong><br/>
+                            Always make sure your credit memo numbers are unique somehow. It is recommended to at least use the %counter% variable in the credit memo number to avoid duplicate credit memo numbers, as this variable is unique and incrementing.<br/><br/>
+                            <strong>The following variables can be used:</strong><br/>
+                            %d% (day of the month, no leading 0)<br/>
+                            %dd% (day of the month, 2 digits always)<br/>
+                            %m% (month of the year, no leading 0)<br/>
+                            %mm% (month of the year, 2 digits always)<br/>
+                            %yy% (current year, 2 digits)<br/>
+                            %yyyy% (current year, 4 digits)<br/>
+                            %h% (current time: hour, no leading 0)<br/>
+                            %hh% (current time: hour, 2 digits always)<br/>
+                            %ii% (current time: minute, 2 digits always)<br/>
+                            %ss% (current time: seconds, 2 digits always)<br/>
+                            %store_id% (Store ID the credit memo was created in)<br/>
+                            %counter% (An incrementing number, configuration below)<br/>
+                            %rand3% (Random number between 100 and 999)<br/>
+                            %rand4% (Random number between 1000 and 9999)<br/>
+                            %rand5% (Random number between 10000 and 99999)<br/>
+                            %rand6% (Random number between 100000 and 999999)<br/>
+                            %rand7% (Random number between 1000000 and 9999999)<br/>
+                            %rand8% (Random number between 10000000 and 99999999)<br/>
+                            %rand9% (Random number between 100000000 and 999999999)
+                            ]]></comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </id_format>
+                        <count_from>
+                            <label>Counter: Start counting from</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This is the %counter% variable that can be used in the custom credit memo number format field above. This configures from which number the %counter% variable begins counting. If you use "Reset counter", the %counter% variable will start from the value entered here after being reset.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </count_from>
+                        <unique_per_website>
+                            <label>Counter: Unique per website</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>33</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>This website should have its own counter.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </unique_per_website>
+                        <unique_per_store>
+                            <label>Counter: Unique per store view</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>37</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This store view should have its own counter.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </unique_per_store>
+                        <increment_by>
+                            <label>Counter: Increment by</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If set to 1, the %counter% variable increases by 1 for every new credit memo placed. If set to 7, the %counter% variable increases by 7 for every new credit memo placed.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </increment_by>
+                        <padding>
+                            <label>Counter: Number Padding</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If you want the %counter% variable to be 6 digits long with zeros at the beginning of the counter, enter 6 in this field. For example if the counter is at 12, it would output 000012 then, so it's always a 6 digit number (6 is the padding).</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </padding>
+                        <reset_counter>
+                            <label>Counter: Reset counter automatically</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>xtento_customordernumber/system_config_source_counter_reset</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>How often should the %counter% variable be reset? Make sure to have dynamic parts (like the date) in the credit memo number format to avoid duplicate credit memo numbers!</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </reset_counter>
+                        <force_reset_counter>
+                            <label>Counter: Force counter reset now</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If set to "Yes", the %counter% variable will be reset when the next increment ID is generated and will then deactivate this option automatically. This means the %counter% variable is just reset for the next increment ID.</comment>
+                            <depends>
+                                <same_as_order>0</same_as_order>
+                            </depends>
+                        </force_reset_counter>
+                    </fields>
+                </creditmemo>
+            </groups>
+        </customordernumber>
+    </sections>
+</config>
+<!--
+/**
+ * Product:       Xtento_CustomOrderNumber (1.0.6)
+ * ID:            8xAf+oCns/QOEdaiZub3aLgVCGFua6nB8AAizsm8sRY=
+ * Packaged:      2016-02-24T02:27:18+00:00
+ * Last Modified: 2014-10-28T15:39:22+01:00
+ * File:          app/code/local/Xtento/CustomOrderNumber/etc/system.xml
+ * Copyright:     Copyright (c) 2014 XTENTO GmbH & Co. KG <info@xtento.com> / All rights reserved.
+ */
+-->

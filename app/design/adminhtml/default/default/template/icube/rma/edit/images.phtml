@@ -1,0 +1,30 @@
+<?php /** @var $this Icube_Rma_Block_Adminhtml_Rma_Edit_Tab_Images */ ?>
+<?php $images = $this->getImages(); ?>
+<div class="entry-edit">
+    <div class="entry-edit-head">
+        <h4 class="fieldset-legend <?php echo ($this->getHeaderCssClass()) ? $this->getHeaderCssClass().' icon-head' : '' ?>"><?php echo $this->getHeaderText() ?></h4>
+    </div>
+    <div class="fieldset">
+        <div id="rma-proof-images" >
+			<div class="grid">
+			<table cellspacing="0" class="data border" id="image_table_grid" width="100%">
+			    <col width="1" />
+			    <tbody id="image_list">
+			    <?php if($images->getSize() > 0) : ?>
+			    	<?php foreach ($images as $image) : ?>
+			        <tr id="image_template" class="template">
+			        <?php $fileUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'customer_return'.DS.$image->getData('images'); ?>
+			                <td class="cell-image"><a href="<?php echo $fileUrl; ?>" title="proof" target="_blank"><img src="<?php echo $fileUrl; ?>" width="200" alt="" /></a></td>
+			        </tr>
+			       	<?php endforeach; ?>
+			    <?php else : ?>
+			        <tr id="table-image-0">
+			                <td class="cell-image"><?php echo Mage::helper('icube_rma')->__('No image') ?></td>
+			        </tr>
+			    <?php endif; ?>
+			    </tbody>
+			</table>
+			</div>
+		</div>
+    </div>
+</div>

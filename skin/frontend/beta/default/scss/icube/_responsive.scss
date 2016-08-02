@@ -1,0 +1,95 @@
+/*----------------------------------------------------------------------------*/
+/* Responsive
+/*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*/
+/* Global
+/*----------------------------------------------------------------------------*/
+
+html {
+    font-size: 100%; // Most devices default to 16px.
+}
+
+/*----------------------------------------------------------------------------*/
+/* Update Magento default breakpoints here: ../_var.scss
+/* Breakpoint mixin and width variables (no units).
+/*----------------------------------------------------------------------------*/
+
+$desktopWidth: ($bp-xlarge + 1);
+$desktopSmallWidth: ($bp-xlarge);
+$tabletWidth: ($bp-large);
+$tabletWidthLandscape: (1024px);
+$tabletSmallWidth: ($bp-medium);
+$mobileWidth: ($bp-small);
+$phoneWidth: ($bp-xsmall);
+
+@mixin breakpoint($type, $width: $desktopWidth) {
+
+    $media: 'handheld, screen';
+
+    @if $mq-support == true {
+
+        @if $type == 'desktop' {
+            @media #{$media} and (min-width: #{$desktopWidth}) {
+                @content;
+            }
+        } @else if $type == 'desktop-small' {
+            @media #{$media} and (max-width: #{$desktopSmallWidth}) {
+                @content;
+            }
+        } @else if $type == 'tablet' {
+            @media #{$media} and (max-width: #{$tabletWidth}) {
+                @content;
+            }
+        } @else if $type == 'tablet-small' {
+            @media #{$media} and (max-width: #{$tabletSmallWidth}) {
+                @content;
+            }
+        } @else if $type == 'tabletLandscape' {
+            @media #{$media} and (max-width: #{$tabletWidthLandscape}) {
+                @content;
+            }
+        } @else if $type == 'mobile' {
+            @media #{$media} and (max-width: #{$mobileWidth}) {
+                @content;
+            }
+        } @else if $type == 'phone' {
+            @media #{$media} and (max-width: #{$phoneWidth}) {
+                @content;
+            }
+        } @else if $type == 'min' or $type == 'max' {
+            @media #{$media} and (#{$type}-width: #{$width}) {
+                @content;
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Images
+/*----------------------------------------------------------------------------*/
+
+@mixin responsive-img {
+    max-width: 100%;
+    height: auto !important; // Force correct aspect ratio.
+}
+
+/*----------------------------------------------------------------------------*/
+/* Font size and related styles. Use mixin to set all font sizes/styles.
+/*----------------------------------------------------------------------------*/
+
+// Use rems with fallback to px for IE8.
+@mixin responsive-font-size($pixelFontSize) {
+    $remValue: ($pixelFontSize / 16);
+    $pxValue: $pixelFontSize;
+    font-size: #{$pxValue}px;
+    font-size: #{$remValue}rem;
+}
+
+// Use rems with fallback to px for IE8.
+@mixin responsive-line-height($pixelFontSize) {
+    $remValue: ($pixelFontSize / 16);
+    $pxValue: $pixelFontSize;
+    line-height: #{$pxValue}px;
+    line-height: #{$remValue}rem;
+}

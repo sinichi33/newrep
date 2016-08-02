@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <icube translate="label">
+            <label>Icube</label>
+            <sort_order>100</sort_order>
+        </icube>
+    </tabs>
+</config>

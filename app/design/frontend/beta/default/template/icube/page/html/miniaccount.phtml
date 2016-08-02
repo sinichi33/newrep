@@ -1,0 +1,30 @@
+<?php
+/**
+ * Mini Account Template
+ *
+ * Description:
+ * - created from scratch
+ * 
+ */
+?>
+<?php if(!Mage::getSingleton('customer/session')->isLoggedIn()): ?>
+<div class="links">
+        <a href="<?php echo Mage::getUrl('customer/account/login') ?>"><?php echo $this->__('Login') ?> / <br/><?php echo $this->__('Register') ?></a>
+</div>
+<?php else: ?>
+<div class="links loggedin">
+        <?php 
+            $_customer = Mage::getSingleton('customer/session')->getCustomer();
+            $_customerFirtsName = $_customer->getFirstname();
+        ?>
+        <a href="javascript:void(0)"><?php echo $this->__('Hi,') ?><br/>
+        <?php echo $_customerFirtsName ?></a>
+</div>
+
+<div class="myaccount-menu skip-content">
+    <a href="<?php echo Mage::getBaseUrl().'customer/account/index/' ?>"><?php echo $this->__('Account Panel') ?></a>
+    <a href="<?php echo Mage::getBaseUrl().'sales/order/history/' ?>"><?php echo $this->__('My Orders') ?></a>
+    <a href="<?php echo Mage::getBaseUrl().'wishlist/' ?>"><?php echo $this->__('Wishlist') ?></a>
+    <a href="<?php echo Mage::getBaseUrl().'customer/account/logout/' ?>"><?php echo $this->__('Log Out') ?></a>
+</div>
+<?php endif; ?>

@@ -1,0 +1,222 @@
+/*----------------------------------------------------------------------------*/
+/* Define project button mixins. Add/subtract/customize as needed by project.
+/*----------------------------------------------------------------------------*/
+
+// Main orange button.
+@mixin button-orange($width: auto, $height: 37px, $border-radius: 0) {
+    @include button-color($width, $height, $font-size: 14, $color: #fff, $background-color: $c-orange, $hover-color: #fff, $hover-background: $c-orange-dark, $border-radius: $border-radius);
+    text-transform: uppercase;
+}
+@mixin button-blue($width: auto, $height: 37px, $border-radius: 0) {
+    @include button-color($width, $height, $font-size: 14, $color: #fff, $background-color: $c-blue, $hover-color: #fff, $hover-background: $c-blue-dark, $border-radius: $border-radius);
+    text-transform: uppercase;
+}
+@mixin button-line-blue($width: auto, $height: 37px, $border-radius: 0) {
+    @include button-color($width, $height, $font-size: 14, $color: $c-blue, $background-color: transparent, $hover-color: #fff, $hover-background: $c-blue, $border-radius: $border-radius);
+    text-transform: uppercase;
+    border: 2px solid #0287d2;
+}
+@mixin button-line-black($width: auto, $height: 37px, $border-radius: 0) {
+    @include button-color($width, $height, $font-size: 14, $color: #676b78, $background-color: transparent, $hover-color: #676b78, $hover-background: #F6F6F6, $border-radius: $border-radius);
+    text-transform: uppercase;
+    border: 1px solid #676b78;
+}
+// Display link as b1.
+@mixin button-blink1($width: auto, $height: 54px, $font-size: 14) {
+    @include button-from-link($width, $height, $font-size, $color: #302d26, $background-color: #fed807, $hover-background: #fed807, $border-radius: 0);
+    padding: 0 30px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+// Display link as b2.
+@mixin button-blink2($width: auto, $height: 54px, $font-size: 14) {
+    @include button-from-link($width, $height, $font-size, $color: #666666, $background-color: #edecea, $hover-background: #edecea, $border-radius: 0);
+    padding: 0 30px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Standard button styles. In general, do not modify these.
+/*----------------------------------------------------------------------------*/
+
+@mixin button-image($width, $height, $image) {
+
+    > span {
+        width: $width;
+        height: $height;
+        line-height: $height;
+        background-image: url($image);
+        display: block;
+        text-indent: -999px;
+        overflow: hidden;
+        font-size: 1px;
+        line-height: 1px;
+    }
+}
+
+@mixin button-color($width, $height, $font-size, $color, $background-color, $hover-color, $hover-background, $border-radius) {
+    width: $width;
+    height: $height;
+    @include responsive-font-size($font-size);
+    line-height: 1;
+    text-decoration: none;
+    color: $color;
+    background-color: $background-color;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
+    cursor: pointer;
+    padding-left: 17px;
+    padding-right: 17px;
+    letter-spacing: 1.5px;
+    @include transition(all, 0.2s, ease);
+    font-family: $f-stack-sans;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $hover-color;
+        background-color: $hover-background;
+    }
+
+    span {
+        width: auto;
+        height: auto !important;
+        padding: 0 !important;
+        font-family: inherit;
+        font-size: inherit;
+        text-transform: inherit;
+        text-decoration: inherit;
+        color: inherit;
+        background-image: none;
+
+        span {
+            width: auto;
+            height: auto !important;
+            padding: 0 !important;
+            font-family: inherit;
+            font-size: inherit;
+            text-transform: inherit;
+            text-decoration: inherit;
+            background-image: none;
+            color: inherit;
+        }
+    }
+}
+
+@mixin button-gradient($width, $height, $font-size, $color, $color-from, $color-to, $border-radius) {
+
+    > span {
+        width: $width;
+        height: $height;
+        line-height: $height;
+
+        -webkit-border-radius: $border-radius;
+        -moz-border-radius: $border-radius;
+        border-radius: $border-radius;
+        background: $color-from;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from($color-from), to($color-to));
+        background: -webkit-linear-gradient($color-from, $color-to);
+        background: -moz-linear-gradient($color-from, $color-to);
+        background: -ms-linear-gradient($color-from, $color-to);
+        background: -o-linear-gradient($color-from, $color-to);
+        background: linear-gradient($color-from, $color-to);
+        //-pie-background: linear-gradient($color-from, $color-to);
+        //behavior: url(/skin/frontend/preserve/master/css/PIE.htc);
+    }
+
+    span span {
+        width: $width;
+        height: $height;
+        line-height: $height;
+        @include responsive-font-size($font-size);
+        font-weight: bold;
+        text-transform: none;
+        color: #ffffff;
+        background-image: none;
+    }
+}
+
+@mixin button-to-link($font-size, $color) {
+    letter-spacing: 1.5px;
+    @include transition(all, 0.2s, ease);
+    
+    span {
+        background-image: none;
+    }
+
+    span span {
+        @include responsive-font-size($font-size);
+        color: $color;
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus span span {
+        text-decoration: underline;
+    }
+}
+
+@mixin button-from-link($width, $height, $font-size, $color, $background-color, $hover-background, $border-radius) {
+    display: inline-block;
+    width: $width;
+    height: $height;
+    line-height: $height;
+    @include responsive-font-size($font-size);
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color;
+    cursor: pointer;
+
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
+    background: $background-color;
+    //behavior: url(/skin/frontend/preserve/master/css/PIE.htc);
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        background-color: $hover-background;
+    }
+}
+
+@mixin link-to-button-image($width, $height, $image) {
+    width: $width;
+    height: $height;
+    line-height: $height;
+    background-image: url($image);
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 1px;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Button
+/*----------------------------------------------------------------------------*/
+
+
+.button,
+.btn-orange {
+    @include button-orange();
+}
+
+.btn-blue {
+    @include button-blue();
+}
+
+.btn-line-blue {
+    @include button-line-blue();
+}
+
+.btn-line-black {
+    @include button-line-black();
+}

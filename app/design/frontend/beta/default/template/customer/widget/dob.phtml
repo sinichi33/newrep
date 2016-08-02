@@ -1,0 +1,100 @@
+<label for="<?php echo $this->getFieldId('month')?>"<?php if ($this->isRequired()) echo ' class="required"' ?>><?php if ($this->isRequired()) echo '<em>*</em>' ?><?php echo $this->__('Date of Birth') ?></label>
+<div class="input-box customer-dob">
+	<?php
+    // days
+    echo "<select id=\"sDay\" name=\"sDay\" rel=\"".str_replace(":","\:",$this->getFieldId('day'))."\" class=\"dateselect validate-custom\">";
+	$selected = (!$this->getDay()) ? "selected=\"selected\"" : "";
+	echo "<option value=\"\" ".$selected.">Day</option>";
+    for ($i = 1; $i <= 31; $i++) {
+        $ti = str_pad($i, 2, "0", STR_PAD_LEFT);
+		$selected = ($this->getDay() == $ti) ? "selected=\"selected\"" : "";
+        echo "<option value=\"".$ti."\" ".$selected.">".$i."</option>";
+    }
+    echo "</select>";
+    ?>
+    
+    <?php
+    // months
+    $months = array(
+        '01'=>'January',
+        '02'=>'February',
+        '03'=>'March',
+        '04'=>'April',
+        '05'=>'May',
+        '06'=>'June',
+        '07'=>'July',
+        '08'=>'August',
+        '09'=>'September',
+        '10'=>'October',
+        '11'=>'November',
+        '12'=>'December',
+    );
+    echo "<select id=\"sMonth\" name=\"sMonth\" rel=\"".str_replace(":","\:",$this->getFieldId('month'))."\" class=\"dateselect validate-custom\">";
+	$selected = (!$this->getMonth()) ? "selected=\"selected\"" : "";
+	echo "<option value=\"\" ".$selected.">Month</option>";
+    foreach ($months as $key=>$var)
+    {
+        $selected = ($this->getMonth() == $key) ? "selected=\"selected\"" : "";
+        echo "<option value=\"".$key."\" ".$selected.">".$var."</option>";
+    }
+    echo "</select>";
+    ?>
+    
+    <?php
+    // years
+    $year_end = date('Y');
+    $year_start = $year_end-99;
+	echo "<select id=\"sYear\" name=\"sYear\" rel=\"".str_replace(":","\:",$this->getFieldId('year'))."\" class=\"dateselect validate-custom\">";
+	$selected = (!$this->getYear()) ? "selected=\"selected\"" : "";
+	echo "<option value=\"\" ".$selected.">Year</option>";
+    for ($i = $year_end; $i >= $year_start; $i--) {
+        $selected = ($this->getYear() == $i) ? "selected=\"selected\"" : "";
+        echo "<option value=\"".$i."\" ".$selected.">".$i."</option>";
+    }
+    echo "</select>";
+	
+    ?>
+    <div class="dob-full" style="display:none;">
+        <div class="dob-day"><input type="hidden" id="<?php echo $this->getFieldId('day')?>" name="<?php echo $this->getFieldName('day')?>" value="<?php echo $this->getDay()?>" /></div>
+        <div class="dob-month"><input type="hidden" id="<?php echo $this->getFieldId('month')?>" name="<?php echo $this->getFieldName('month')?>" value="<?php echo $this->getMonth()?>" /></div>
+        <div class="dob-year"><input type="hidden" id="<?php echo $this->getFieldId('year')?>" name="<?php echo $this->getFieldName('year')?>" value="<?php echo $this->getYear()?>" /></div>
+        <input type="hidden" id="<?php echo $this->getFieldId('dob')?>" name="<?php echo $this->getFieldName('dob')?>" />
+    </div>
+    <div class="validation-advice" style="display:none;"></div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+Varien.DOB.prototype.initialize = function(selector, required, format) {
+    var el = $$(selector)[0];
+    var container       = {};
+    container.day       = Element.select(el, '#sDay')[0];
+    container.month     = Element.select(el, '#sMonth')[0];
+    container.year      = Element.select(el, '#sYear')[0];
+    container.full      = Element.select(el, '.dob-full input')[0];
+    container.advice    = Element.select(el, '.validation-advice')[0];
+
+    new Varien.DateElement('container', container, required, format);
+}
+
+var customer_dob = new Varien.DOB('.customer-dob', <?php echo $this->isRequired() ? 'true' : 'false' ?>, '<?php echo $this->getDateFormat() ?>');
+jQuery(document).ready(function() {
+	// on load set field values
+	jQuery( ".dateselect" ).each(function() {
+	  related_field_id = jQuery(this).attr('rel');
+	  current_value = jQuery( "#"+related_field_id ).val();
+	  jQuery(this).val(current_value);
+	});
+	  jQuery( "#<?php echo str_replace(":","\:",$this->getFieldId('dob'));?>" ).val(jQuery("#<?php echo str_replace(":","\:",$this->getFieldId('day'));?>").val()+'/'+jQuery("#<?php echo str_replace(":","\:",$this->getFieldId('month'));?>").val()+'/'+jQuery("#<?php echo str_replace(":","\:",$this->getFieldId('year'));?>").val());
+	// on change set field values
+	jQuery( ".dateselect" ).change(function() {
+	  current_value = jQuery(this).val();
+	  related_field_id = jQuery(this).attr('rel');
+	  jQuery( "#"+related_field_id ).val(current_value);
+	  jQuery( "#<?php echo str_replace(":","\:",$this->getFieldId('dob'));?>" ).val(jQuery("#<?php echo str_replace(":","\:",$this->getFieldId('day'));?>").val()+'/'+jQuery("#<?php echo str_replace(":","\:",$this->getFieldId('month'));?>").val()+'/'+jQuery("#<?php echo str_replace(":","\:",$this->getFieldId('year'));?>").val());
+	});
+});
+
+//]]>
+</script>

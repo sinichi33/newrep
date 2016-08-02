@@ -1,0 +1,36 @@
+<?php
+/**
+ * Product's return & refund policy template
+ *
+ * Description:
+ * - Created from scratch
+ *
+ */
+?>
+<?php $_product = $this->getProduct(); ?>
+
+<h2><?php echo $this->__('Pengembalian') ?></h2>
+
+<?php if ($_product->offsetExists('return_refund_policy')): ?>
+	<?php  
+		$_attribute = Mage::getModel('catalog/resource_eav_attribute')->loadByCode(Mage_Catalog_Model_Product::ENTITY, 'return_refund_policy');
+		$_label    	= $_attribute->getFrontendLabel();
+		$_content  	= $_product->getAttributeText("return_refund_policy"); 
+	?>
+	<?php if ($_content): ?>
+		<table class="data-table">
+	        <col width="25%" />
+	        <col />
+	        <tbody>
+	            <tr>
+	                <th class="label"><?php echo $_label;?></th>
+	                <td class="data"><?php echo $_product->getAttributeText("return_refund_policy");?></td>
+	            </tr>
+	        </tbody>
+	    </table>
+	<?php endif ?>
+<?php endif ?>
+
+<div class="std">
+	<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('return_refund_policy')->toHtml(); ?> 
+</div>

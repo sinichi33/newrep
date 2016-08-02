@@ -1,0 +1,56 @@
+<?php
+/**
+ * Layer State Template
+ *
+ * Description:
+ * - Override rwd/default
+ * - Modify subtitle to display category name
+ */
+?>
+<?php
+/**
+ * Category layered navigation
+ *
+ * @see Mage_Catalog_Block_Layer_View
+ */
+?>
+<?php  
+    $_categoryName = Mage::getModel('catalog/layer')->getCurrentCategory()->getName();
+?>
+<?php if($this->canShowBlock()): ?>
+<div class="block block-layered-nav<?php if (!$this->getLayer()->getState()->getFilters()): ?> block-layered-nav--no-filters<?php endif; ?>">
+    <div class="block-content toggle-content">
+        <?php echo $this->getStateHtml() ?>
+        <?php if ($this->getLayer()->getState()->getFilters()): ?>
+            <div class="actions"><a href="<?php echo $this->getClearUrl() ?>"><?php echo $this->__('Clear All') ?></a></div>
+        <?php endif; ?>
+        <?php if($this->canShowOptions()): ?>
+            <div class="block-title">
+                <?php if (!empty($_categoryName)): ?>
+                    <?php echo $_categoryName ?>
+                <?php else: ?>
+                    <?php echo $this->__('Filter') ?>
+                <?php endif ?>
+            </div>
+            <p class="block-subtitle block-subtitle--filter">
+                <?php echo $this->__('Shop By') ?>
+            </p>
+            
+            <?php $_filters = $this->getFilters() ?>
+            <?php foreach ($_filters as $_filter): ?>
+            <?php if($_filter->getItemsCount()): ?>
+                <?php $_filterClass = strtolower(str_replace( " ", "", $_filter->getName())) ?>
+                <?php if($_filter->getName() != 'Sister Company'): ?>
+                    <dl id="narrow-by-list">
+                        <dt class="<?php echo (!$_filter->getAttributeModel())? 'not-attr':$_filterClass ?>"><?php echo $this->__($_filter->getName()) ?></dt>
+                        <dd class="<?php echo (!$_filter->getAttributeModel())? 'not-attr':$_filterClass ?>"><?php echo $_filter->getHtml() ?></dd>
+                    </dl>
+                <?php endif; ?>
+            <?php endif; ?>
+            <?php endforeach; ?>
+            
+            <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+        <?php endif; ?>
+    </div>
+</div>
+<?php endif; ?>

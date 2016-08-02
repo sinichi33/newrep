@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Icube_ProductAjax>
+			<version>0.1.0</version>
+		</Icube_ProductAjax>
+	</modules>
+	<frontend>
+        <layout>
+            <updates>
+                <productajax module="Icube_ProductAjax">
+                    <file>icube/addtocart.xml</file>
+                </productajax>
+            </updates>
+        </layout>
+        <routers>
+			<checkout>
+				<args>
+					<modules>
+						<productajax before="Mage_Checkout">Icube_ProductAjax</productajax>
+					</modules>
+				</args>
+			</checkout>
+		</routers>
+    </frontend>
+	<global>
+		<helpers>
+            <productajax>
+                <class>Icube_ProductAjax_Helper</class>
+            </productajax>
+        </helpers>
+	</global>
+</config>

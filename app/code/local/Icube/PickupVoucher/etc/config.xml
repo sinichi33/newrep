@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Icube_PickupVoucher>
+			<version>0.1.0</version>
+		</Icube_PickupVoucher>
+	</modules>
+	<frontend>
+		<routers>
+			<pickupvoucher>
+				<use>standard</use>
+				<args>
+					<module>Icube_PickupVoucher</module>
+					<frontName>pickup</frontName>
+				</args>
+			</pickupvoucher>
+		</routers>
+	</frontend>
+	<global>
+		<helpers>
+			<pickupvoucher>
+				<class>Icube_PickupVoucher_Helper</class>
+			</pickupvoucher>
+		</helpers>
+		<models>
+			<pickupvoucher>
+				<class>Icube_PickupVoucher_Model</class>
+			</pickupvoucher>
+		</models>
+	</global>
+</config>

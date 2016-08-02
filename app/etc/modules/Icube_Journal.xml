@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Icube_Journal>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Icube_Journal>
+	</modules>
+</config>

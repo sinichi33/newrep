@@ -1,0 +1,66 @@
+<!--@subject Welcome, {{var customer.name}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var customer.email":"Customer Email",
+"htmlescape var=$customer.password":"Customer Password"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr style="width:554px;">
+        <td>
+             <p style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#52555f; font-size:18px; margin-bottom:10px; margin-top:10px; font-weight:bold;">Registrasi Anda telah berhasil!</p>
+        </td>
+    </tr>
+    <tr style="width:554px;">
+        <td>
+             <p style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#52555f; font-size:14px; margin-bottom:10px; margin-top:10px; font-weight:bold;">Hi {{var name}},</p>
+        </td>
+    </tr>
+    <tr style="width:554px;">
+        <td>
+             <p class="biasa">Selamat datang di Ruparupa! Kami informasikan bahwa registrasi Anda telah berhasil dan Anda bisa klik <a href="https://www.ruparupa.com/customer/account/index/">disini</a> untuk mengubah informasi akun atau berbelanja di Ruparupa.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr style="width:554px;">
+        <td>
+             <p class="biasa">Jika Anda menemukan kesulitan atau mempunyai pertanyaan, silakan kunjungi laman <a href="https://www.ruparupa.com/faq/">FAQ</a> kami.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr class="section">
+        <td>
+            <table class="signature">
+                <tbody>
+                <tr>
+                    <td>Terima Kasih</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid #E1E1E1; padding-bottom:5px; color:#F36525;">Sisca</td>
+                </tr>
+                <tr>
+                    <td>Ruparupa.com</td>
+                </tr>
+               </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

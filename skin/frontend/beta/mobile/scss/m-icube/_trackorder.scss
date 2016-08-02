@@ -1,0 +1,262 @@
+
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+body.trackorder-tracking-index,
+body.trackorder-tracking-result {
+
+	.page-title {
+		display: none;
+	}
+
+}
+
+/*----------------------------------------------------------------------------*/
+/* The Form page
+/*----------------------------------------------------------------------------*/
+
+body.trackorder-tracking-index .col-main {
+	padding: 10px;
+
+	h2 {
+		@include responsive-font-size(14);
+		margin-bottom: 0;
+	}
+
+	.button {
+		width: 100%;
+	}
+
+	.fieldset {
+		margin: 0;
+	    padding: 10px 0;
+	    border: none;
+	}
+
+	.form-list {
+
+		li {
+			margin-bottom: 5px;
+		}
+
+		label {
+			float: none;
+			width: auto;
+		}
+
+		.input-box {
+			width: 100%;
+			float: none;
+		}
+
+		.validation-advice {
+			position: relative;
+			display: inline-block;
+		}
+	}
+
+	.button[type="submit"] {
+		margin-top: -10px;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* The result page
+/*----------------------------------------------------------------------------*/
+
+.trackorder-result {
+
+	h2 {
+		text-transform: uppercase;
+		@include responsive-font-size(16);
+	}
+
+	h3 {
+	}
+
+	.result-section {
+		padding: 10px !important;
+
+		&.top {
+		}
+
+		&.bottom {
+		}
+
+		&.invoice {
+			margin-top: 20px;
+		}
+
+		&.invoice.first-invoice {
+		}
+
+		&.invoice.last-invoice {
+		}
+
+		div.hr {
+		}
+	}
+
+	.order-date {
+		display: block;
+	    padding: 0;
+	    margin: 0;
+	    border: none;
+	    line-height: 1.3;
+	}
+
+	.total-payment {
+	}
+
+	.box {
+		padding: 0;
+	}
+
+	.products {
+		margin-top: 20px;
+		padding: 0 10px 10px;
+
+		li {
+			width: 100%;
+			float: none;
+			margin-top: 10px;
+
+			@include breakpoint(min, 640px) {
+				width: 50%;
+				float: left;
+			}
+		}
+
+		.product-image {
+		}
+
+		.product-info {
+			padding: 0;
+		}
+
+		.product-name {
+		}
+	}
+
+	.col2-set {
+
+		.col-1,
+		.col-2 {
+			width: 100%;
+			float: none;
+			padding: 0;
+			border: none;
+		}
+
+		.col-2 {
+			margin-top: 20px;
+		}
+	}
+
+	.buttons-set {
+
+		.button {
+			width: 100%;
+		}
+	}
+
+	table.payment-information {
+		margin-top: 0;
+
+		a {
+			color: $c-blue;
+		}
+
+		td {
+			line-height: 1.3;
+			vertical-align: top;
+
+			&:first-child {
+				width: 120px;
+			}
+		}
+
+	  	.indent-colon {
+		}
+
+	  	.tebal {
+		}
+
+	    a:hover {
+		}
+
+		tr:last-child {
+
+			td {
+				padding: 10px 0 0;
+			}
+		}
+	}
+
+	table.trackorder-status {
+		width: 279px;
+		margin: 20px auto;
+		
+		strong {
+		}
+
+		tr {
+			display: block;
+
+			&:after {
+				@include clearfix;
+			}
+		}
+
+		td {
+			display: block;
+			width: 25%;
+			float: left;
+
+			&.hidden {
+				visibility: hidden;
+			}
+		}
+
+		.icons {
+
+			td {
+
+				i:before {
+					font-size: 25px;
+				}
+
+				span {
+					@include responsive-font-size(10);
+				}
+			}
+		}
+
+		.progress-line {
+
+			td {
+
+				&.done:not(:first-child):before {
+					width: 57px;
+					right: 39px;
+				}
+			}
+		}
+
+		.desc {
+		}
+	}
+
+	.result-section.pickup {
+
+		table.trackorder-status {
+			width: 207px;
+
+			td {
+				width: 33.33%;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,1589 @@
+<block name="formkey" type="core/template" template="core/formkey.phtml"/>
+<label>All Pages</label>
+<block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
+   <block type="page/html_head" name="head" as="head">
+      <action method="addJs">
+         <script>prototype/prototype.js</script>
+      </action>
+      <action method="addJs">
+         <script>lib/jquery/jquery-1.10.2.min.js</script>
+      </action>
+      <action method="addJs">
+         <script>lib/jquery/noconflict.js</script>
+      </action>
+      <action method="addJs">
+         <script>lib/ccard.js</script>
+      </action>
+      <action method="addJs">
+         <script>prototype/validation.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/builder.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/effects.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/dragdrop.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/controls.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/slider.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/js.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/form.js</script>
+      </action>
+      <action method="addJs">
+         <script>mage/translate.js</script>
+      </action>
+      <action method="addJs">
+         <script>mage/cookies.js</script>
+      </action>
+      <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
+      <action method="removeItem">
+         <type>skin_js</type>
+         <name>js/ie6.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lib/modernizr.custom.min.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lib/selectivizr.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lib/matchMedia.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lib/matchMedia.addListener.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lib/enquire.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/app.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lib/jquery.cycle2.min.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lib/jquery.cycle2.swipe.min.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/slideshow.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lib/imagesloaded.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/scripts.js</name>
+      </action>
+      <action method="addLinkRel">
+         <rel>stylesheet</rel>
+         <href>//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600</href>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/minicart.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/styles-ie8.css</name>
+         <params/>
+         <if> (lte IE 8) &amp; (!IEMobile)</if>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/enterprise-ie8.css</name>
+         <params/>
+         <if> (lte IE 8) &amp; (!IEMobile)</if>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/enterprise.css</name>
+         <params/>
+         <if>&lt;!--[if (gte IE 9) | (IEMobile)]&gt;&lt;!--&gt;</if>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/madisonisland-ie8.css</name>
+         <params/>
+         <if> (lte IE 8) &amp; (!IEMobile)</if>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/styles.css</name>
+         <params/>
+         <if>&lt;!--[if (gte IE 9) | (IEMobile)]&gt;&lt;!--&gt;</if>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/madisonisland.css</name>
+         <params/>
+         <if>&lt;!--[if (gte IE 9) | (IEMobile)]&gt;&lt;!--&gt;</if>
+      </action>
+      <block type="core/text" name="head.viewport">
+         <action method="setText">
+            <text>&lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1.0, width=device-width&quot; /&gt;
+</text>
+         </action>
+      </block>
+   </block>
+   <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
+      <label>Page Top</label>
+   </block>
+   <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml"/>
+   <block type="page/html_header" name="header" as="header">
+      <block type="page/template_links" name="top.links" as="topLinks"/>
+      <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>
+      <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
+         <label>Navigation Bar</label>
+         <block type="page/html_topmenu" name="catalog.topnav" template="page/html/topmenu.phtml">
+            <block type="page/html_topmenu_renderer" name="catalog.topnav.renderer" template="page/html/topmenu/renderer.phtml"/>
+         </block>
+      </block>
+      <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">
+         <label>Page Header</label>
+         <action method="setElementClass">
+            <value>top-container</value>
+         </action>
+      </block>
+      <block type="page/html_welcome" name="welcome" as="welcome"/>
+   </block>
+   <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
+   <block type="core/text_list" name="left_first" as="left_first" translate="label">
+      <label>Left Column First (shows above main column on smaller screens)</label>
+   </block>
+   <block type="core/text_list" name="left" as="left" translate="label">
+      <label>Left Column</label>
+   </block>
+   <block type="core/messages" name="global_messages" as="global_messages"/>
+   <block type="core/messages" name="messages" as="messages"/>
+   <block type="core/text_list" name="content" as="content" translate="label">
+      <label>Main Content Area</label>
+   </block>
+   <block type="core/text_list" name="right" as="right" translate="label">
+      <label>Right Column</label>
+   </block>
+   <block type="page/html_wrapper" name="footer.before" as="footer_before" translate="label">
+      <label>Page Footer</label>
+      <action method="setElementClass">
+         <value>footer-before-container</value>
+      </action>
+   </block>
+   <block type="page/html_footer" name="footer" as="footer" template="page/html/footer.phtml">
+      <block type="page/html_wrapper" name="bottom.container" as="bottomContainer" translate="label">
+         <label>Page Footer</label>
+         <action method="setElementClass">
+            <value>bottom-container</value>
+         </action>
+      </block>
+      <block type="page/switch" name="store_switcher" as="store_switcher" after="*" template="page/switch/stores.phtml"/>
+      <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml">
+         <action method="setTitle">
+            <title>Quick Links</title>
+         </action>
+      </block>
+      <block type="page/template_links" name="footer_links2" as="footer_links2" template="page/template/links.phtml">
+         <action method="setTitle">
+            <title>Account</title>
+         </action>
+      </block>
+   </block>
+   <block type="core/text_list" name="before_body_end" as="before_body_end" translate="label">
+      <label>Page Bottom</label>
+      <block type="page/html_cookieNotice" name="global_cookie_notice" as="global_cookie_notice" template="page/html/cookienotice.phtml" before="-"/>
+   </block>
+</block>
+<block type="core/profiler" output="toHtml" name="core_profiler"/>
+<reference name="head">
+   <block type="core/template" name="optional_zip_countries" as="optional_zip_countries" template="directory/js/optional_zip_countries.phtml"/>
+</reference>
+<reference name="header">
+   <block type="directory/currency" name="currency" as="currency_switcher" template="directory/currency.phtml"/>
+</reference>
+<reference name="footer">
+   <block type="directory/currency" name="footer_currency" after="footer_store_language" template="directory/currency.phtml"/>
+</reference>
+<reference name="footer">
+   <block type="cms/block" name="cms_footer_links" before="footer_links">
+      <action method="setBlockId">
+         <block_id>footer_links_company</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="cms_footer_links_sm" after="footer_links2">
+      <action method="setBlockId">
+         <block_id>footer_links_sm</block_id>
+      </action>
+   </block>
+</reference>
+<reference name="top.links">
+   <action method="addLink" translate="label title" module="customer">
+      <label>My Account</label>
+      <url helper="customer/getAccountUrl"/>
+      <title>My Account</title>
+      <prepare/>
+      <urlParams/>
+      <position>10</position>
+   </action>
+   <action method="addLink" translate="label title before_text" module="customer">
+      <label>Register</label>
+      <url helper="customer/getRegisterUrl"/>
+      <title>Register</title>
+      <prepare/>
+      <urlParams/>
+      <position>100</position>
+      <li/>
+      <a/>
+   </action>
+</reference>
+<reference name="footer_links2">
+   <action method="addLink" translate="label title" module="catalog">
+      <label>My Account</label>
+      <url helper="customer/getAccountUrl"/>
+      <title>My Account</title>
+   </action>
+</reference>
+<reference name="left">
+            
+                
+                
+                
+            
+        </reference>
+<reference name="right">
+   <block type="catalog/product_compare_sidebar" before="cart_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="catalog" ifconfig="catalog/seo/site_map">
+      <label>Site Map</label>
+      <url helper="catalog/map/getCategoryUrl"/>
+      <title>Site Map</title>
+   </action>
+</reference>
+<block type="catalog/product_price_template" name="catalog_product_price_template"/>
+<reference name="head">
+   <action method="addItem" ifconfig="sales/msrp/enabled">
+      <type>skin_js</type>
+      <name>js/msrp.js</name>
+   </action>
+   <action method="addItem" ifconfig="sales/msrp/enabled">
+      <type>skin_js</type>
+      <name>js/msrp_rwd.js</name>
+   </action>
+</reference>
+<reference name="content">
+   <block type="core/template" template="catalog/msrp/popup.phtml" name="product.tooltip"/>
+</reference>
+<reference name="catalog_product_price_template">
+   <action method="addPriceBlockType">
+      <type>msrp</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp.phtml</template>
+   </action>
+   <action method="addPriceBlockType">
+      <type>msrp_item</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp_item.phtml</template>
+   </action>
+   <action method="addPriceBlockType">
+      <type>msrp_noform</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp_noform.phtml</template>
+   </action>
+</reference>
+<reference name="header">
+   <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="catalogsearch" ifconfig="catalog/seo/search_terms">
+      <label>Search Terms</label>
+      <url helper="catalogsearch/getSearchTermUrl"/>
+      <title>Search Terms</title>
+   </action>
+   <action method="addLink" translate="label title" module="catalogsearch">
+      <label>Advanced Search</label>
+      <url helper="catalogsearch/getAdvancedSearchUrl"/>
+      <title>Advanced Search</title>
+   </action>
+</reference>
+<reference name="footer_links2">
+   <block type="sales/guest_links" name="return_link"/>
+   <action method="addLinkBlock">
+      <blockName>return_link</blockName>
+   </action>
+</reference>
+<reference name="top.links">
+   <block type="checkout/links" name="checkout_cart_link">
+      <action method="addCartLink"/>
+      <action method="addCheckoutLink"/>
+   </block>
+</reference>
+<reference name="header">
+   <block type="checkout/cart_minicart" name="minicart_head" template="checkout/cart/minicart.phtml" before="-">
+      <block type="checkout/cart_sidebar" name="minicart_content" template="checkout/cart/minicart/items.phtml">
+         <action method="addItemRender">
+            <type>default</type>
+            <block>checkout/cart_item_renderer</block>
+            <template>checkout/cart/minicart/default.phtml</template>
+         </action>
+         <action method="addItemRender">
+            <type>simple</type>
+            <block>checkout/cart_item_renderer</block>
+            <template>checkout/cart/minicart/default.phtml</template>
+         </action>
+         <action method="addItemRender">
+            <type>grouped</type>
+            <block>checkout/cart_item_renderer_grouped</block>
+            <template>checkout/cart/minicart/default.phtml</template>
+         </action>
+         <action method="addItemRender">
+            <type>configurable</type>
+            <block>checkout/cart_item_renderer_configurable</block>
+            <template>checkout/cart/minicart/default.phtml</template>
+         </action>
+         <block type="core/text_list" name="cart_sidebar.cart_promotion" as="cart_promotion" translate="label" module="checkout">
+            <label>Mini-cart promotion block</label>
+         </block>
+         <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout">
+            <label>Shopping Cart Sidebar Extra Actions</label>
+         </block>
+      </block>
+   </block>
+</reference>
+<reference name="right">
+            
+                
+                
+                
+                
+                    
+                
+            
+        </reference>
+<reference name="topCart.extra_actions">
+   <block type="paypal/express_shortcut" name="paypal.partner.top_cart.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="cart_sidebar.extra_actions">
+   <block type="paypal/express_shortcut" name="paypal.partner.cart_sidebar.shortcut" template="paypal/express/minicart/shortcut.phtml"/>
+</reference>
+<reference name="right">
+   <block type="poll/activePoll" name="right.poll">
+      <action method="setPollTemplate">
+         <template>poll/active.phtml</template>
+         <type>poll</type>
+      </action>
+      <action method="setPollTemplate">
+         <template>poll/result.phtml</template>
+         <type>results</type>
+      </action>
+   </block>
+</reference>
+<reference name="left">
+   <block type="tag/popular" name="tags_popular" template="tag/popular.phtml"/>
+</reference>
+<reference name="right">
+   <block type="reports/product_viewed" before="right.permanent.callout" name="right.reports.product.viewed" template="reports/product_viewed.phtml"/>
+   <block type="reports/product_compared" before="right.permanent.callout" name="right.reports.product.compared" template="reports/product_compared.phtml"/>
+</reference>
+<reference name="head" before="-">
+   <block type="googleanalytics/ga" name="google_analytics" as="google_analytics" template="googleanalytics/ga.phtml"/>
+</reference>
+<reference name="top.links">
+   <block type="wishlist/links" name="wishlist_link"/>
+   <action method="addLinkBlock">
+      <blockName>wishlist_link</blockName>
+   </action>
+</reference>
+<reference name="right">
+   <block type="wishlist/customer_sidebar" name="wishlist_sidebar" as="wishlist" after="cart_sidebar" template="wishlist/sidebar.phtml"/>
+</reference>
+<reference name="topCart.extra_actions">
+   <block type="paypaluk/express_shortcut" name="paypaluk.partner.top_cart.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="cart_sidebar.extra_actions">
+   <block type="paypaluk/express_shortcut" name="paypaluk.partner.cart_sidebar.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<block type="rss/list" name="head_rss" ifconfig="rss/config/active"/>
+<reference name="minicart_head">
+   <action method="addItemRender">
+      <type>bundle</type>
+      <block>bundle/checkout_cart_item_renderer</block>
+      <template>checkout/cart/minicart/default.phtml</template>
+   </action>
+</reference>
+<reference name="cart_sidebar">
+   <action method="addItemRender">
+      <type>bundle</type>
+      <block>bundle/checkout_cart_item_renderer</block>
+      <template>checkout/cart/sidebar/default.phtml</template>
+   </action>
+</reference>
+<reference name="wishlist_sidebar">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="catalog_product_price_template">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="footer">
+   <block type="newsletter/subscribe" name="footer.newsletter" as="newsletter" before="footer_store_language" template="newsletter/subscribe.phtml"/>
+</reference>
+<reference name="header">
+   <block type="page/template_links" name="account.links" as="accountLinks" template="persistent/header/links.phtml"/>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <name>css/amasty/ampromo/styles.css</name>
+   </action>
+   <action method="addJs">
+      <script>amasty/ampromo/items.js</script>
+   </action>
+</reference>
+<block name="ampromo_notification" type="ampromo/notification" template="amasty/ampromo/notification.phtml" before="-"/>
+<reference name="content">
+   <action ifconfig="ampromo/messages/display_notification" method="append">
+      <block>ampromo_notification</block>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <stylesheet>css/amshopby.css</stylesheet>
+   </action>
+   <action method="addJs">
+      <script>scriptaculous/slider.js</script>
+   </action>
+</reference>
+<reference name="head">
+   <block type="page/html" name="top.Js" as="topJs" template="brainvire_quickshop/page/html/jshead.phtml"/>
+   <action method="addJs">
+      <name>brainvire/quickshop/jquery.js</name>
+   </action>
+   <action method="addJs">
+      <name>brainvire/quickshop/brainvire_quickshop.js</name>
+   </action>
+   <action method="addCss">
+      <stylesheet>bv_quickshop/colorbox/colorbox.css</stylesheet>
+   </action>
+   <action method="addJs">
+      <name>brainvire/quickshop/jquery.colorbox.js</name>
+   </action>
+</reference>
+<reference name="head">
+   <block type="core/template" template="cadence/fbpixel/visitor.phtml"/>
+</reference>
+<reference name="top.links">
+   <action method="addLink" translate="label title" module="clarion_storelocator" ifconfig="clarion_storelocator_general_setting/clarion_storelocator_status/enable">
+      <label>Store Locator</label>
+      <url>storelocator</url>
+      <title>Store Locator</title>
+      <prepare>true</prepare>
+      <position>10</position>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addJs" ifconfig="ebizmarts_abandonedcart/emailcatcher/popup_general">
+      <script>prototype/window.js</script>
+   </action>
+   <action method="addJs" ifconfig="ebizmarts_abandonedcart/emailcatcher/popup_general">
+      <script>scriptaculous/scriptaculous.js</script>
+   </action>
+   <action method="addItem" ifconfig="ebizmarts_abandonedcart/emailcatcher/popup_general">
+      <type>js_css</type>
+      <script>prototype/windows/themes/default.css</script>
+   </action>
+   <action method="addItem" ifconfig="ebizmarts_abandonedcart/emailcatcher/popup_general">
+      <type>js_css</type>
+      <script>ebizmarts/abandonedcart/popup.css</script>
+   </action>
+</reference>
+<reference name="content">
+   <block type="ebizmarts_abandonedcart/popup_emailcatcher" name="emailcatcher" template="ebizmarts_abandonedcart/popup/emailcatcher.phtml"/>
+</reference>
+<reference name="head">
+   <action method="addJs" module="monkey">
+      <script helper="monkey/getCanShowCampaignJs"/>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/enterprise/catalogevent.js</name>
+   </action>
+</reference>
+<reference name="wishlist_sidebar">
+   <action method="addPriceBlockType">
+      <type>giftcard</type>
+      <block>enterprise_giftcard/catalog_product_price</block>
+      <template>giftcard/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="catalog_product_price_template">
+   <action method="addPriceBlockType">
+      <type>giftcard</type>
+      <block>enterprise_giftcard/catalog_product_price</block>
+      <template>giftcard/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<remove name="google_analytics"/>
+<reference name="head">
+   <action method="addJs" ifconfig="google/analytics/active">
+      <script>google/ga.js</script>
+   </action>
+</reference>
+<reference name="after_body_start">
+   <block type="enterprise_googleanalyticsuniversal/ga" name="google_analyticsuniversal" as="google_analyticsuniversal" template="googleanalyticsuniversal/ga.phtml"/>
+</reference>
+<reference name="minicart_content">
+   <block type="enterprise_googleanalyticsuniversal/list_json" name="update_cart_analytics" template="googleanalyticsuniversal/cart/update.phtml">
+      <action method="setBlockName">
+         <block>checkout.cart.tag.manager</block>
+      </action>
+   </block>
+</reference>
+<reference name="before_body_end">
+   <block type="enterprise_googleanalyticsuniversal/list_json" name="banner_impression" template="googleanalyticsuniversal/promotion.phtml">
+      <action method="setVariableName">
+         <name>staticPromotions</name>
+      </action>
+   </block>
+</reference>
+<reference name="top.links">
+   <action method="removeLinkBlock">
+      <blockName>wishlist_link</blockName>
+   </action>
+   <block type="enterprise_wishlist/links" name="wishlist_link"/>
+   <action method="addLinkBlock">
+      <blockName>wishlist_link</blockName>
+   </action>
+</reference>
+<block type="enterprise_wishlist/customer_sidebar" name="wishlist_sidebar" template="wishlist/sidebar.phtml"/>
+<reference name="head">
+   <action method="addItem">
+      <type>skin_js</type>
+      <script>js/enterprise/wishlist.js</script>
+   </action>
+</reference>
+<reference name="before_body_end">
+   <block type="core/template" name="wishlist.multiple.wrapper" template="wishlist/catalog/product/wrapper.phtml" ifconfig="wishlist/general/multiple_enabled"/>
+   <block type="enterprise_wishlist/behaviour" name="wishlist_behaviour" as="wishlist_behaviour" template="wishlist/behaviour.phtml"/>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.ajaxaddtocart.js</name>
+   </action>
+</reference>
+<reference name="header">
+   <block type="core/template" name="trackorder.search.form.mini" template="icube/trackorder/search/form.mini.phtml"/>
+</reference>
+<reference name="head">
+   <action ifconfig="youamaajaxlogin/settings/power" method="addCss">
+      <stylesheet>css/youama/ajaxlogin/ajaxlogin.css</stylesheet>
+   </action>
+   <action ifconfig="youamaajaxlogin/settings/jquery" method="addItem">
+      <type>skin_js</type>
+      <script>js/youama/ajaxlogin/jquery-1-11-1.js</script>
+   </action>
+   <action ifconfig="youamaajaxlogin/settings/jqueryui" method="addItem">
+      <type>skin_js</type>
+      <script>js/youama/ajaxlogin/jquery-ui-1-10-4.js</script>
+   </action>
+   <action ifconfig="youamaajaxlogin/settings/power" method="addItem">
+      <type>skin_js</type>
+      <script>js/youama/ajaxlogin/ajaxlogin.js</script>
+   </action>
+</reference>
+<reference name="content">
+   <block ifconfig="youamaajaxlogin/settings/power" type="youama_ajaxlogin/ajaxlogin" name="youamaajaxlogin" as="youamaajaxlogin">
+      <action ifconfig="youamaajaxlogin/settings/power" method="setTemplate">
+         <template>youama/ajaxlogin/ajaxlogin.phtml</template>
+      </action>
+   </block>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="contacts" ifconfig="zendesk/frontend_features/footer_link_enabled">
+      <label>Support</label>
+      <url>zendesk</url>
+      <title>Support</title>
+      <prepare>true</prepare>
+   </action>
+</reference>
+<reference name="before_body_end">
+   <block type="zendesk/webWidget" name="zendesk_web_widget"/>
+</reference>
+<reference name="head">
+   <remove name="head.viewport"/>
+   <block type="core/text_tag" name="responsive-viewport">
+      <action method="setTagName">
+         <name>meta</name>
+      </action>
+      <action method="setTagParam">
+         <param>name</param>
+         <value>viewport</value>
+      </action>
+      <action method="setTagParam">
+         <param>content</param>
+         <value>width=device-width, initial-scale=1.0</value>
+      </action>
+   </block>
+   <action method="removeItem">
+      <type>skin_css</type>
+      <name>css/madisonisland.css</name>
+   </action>
+   <action method="removeItem">
+      <type>skin_css</type>
+      <name>css/madisonisland-ie8.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/bxslider/jquery.bxslider.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/fonts/flaticon/flaticon.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/fonts/font-awesome/font-awesome.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/jquery.mCustomScrollbar.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/magnific-popup.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/tooltipster.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/styles_2.css</name>
+      <params/>
+      <if>&lt;!--[if (gte IE 9) | (IEMobile)]&gt;&lt;!--&gt;</if>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/styles-ie8_2.css</name>
+      <params/>
+      <if> (lte IE 8) &amp; (!IEMobile)</if>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/kl-general.css</name>
+      <params/>
+      <if>&lt;!--[if (gte IE 9) | (IEMobile)]&gt;&lt;!--&gt;</if>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery-ui-1.11.0.custom.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.cookie.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.debouncedresize.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.throttledresize.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jqmodal.js</name>
+   </action>
+   <action method="removeItem">
+      <type>skin_js</type>
+      <name>js/lib/jquery.cycle2.min.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.cycle2.js</name>
+   </action>
+   <action method="removeItem">
+      <type>skin_js</type>
+      <name>js/lib/jquery.cycle2.swipe.min.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.cycle2.swipe.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.bxslider.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/select.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.dotdotdot.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.mCustomScrollbar.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.magnific-popup.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.tooltipster.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.placeholder.min.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.helper.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.store.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.responsive.js</name>
+   </action>
+   <action method="removeItem">
+      <type>skin_js</type>
+      <name>js/slideshow.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.icube.bannerenhanced.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.app.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.validation.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.homepage.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.pdp.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.customer.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.redeem.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.header.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.main.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/main.js</name>
+   </action>
+   <action method="addLinkRel">
+      <rel>stylesheet</rel>
+      <href>//fonts.googleapis.com/css?family=Open+Sans:400,600,700</href>
+   </action>
+</reference>
+<reference name="after_body_start">
+        </reference>
+<reference name="before_body_end">
+        </reference>
+<reference name="root">
+   <action method="setTemplate">
+      <template>page/1column.phtml</template>
+   </action>
+</reference>
+<reference name="header">
+   <block type="cms/block" name="header_announcement">
+      <action method="setBlockId">
+         <block_id>header-announcement</block_id>
+      </action>
+   </block>
+   <block type="customisation/link" name="miniaccount_head" as="miniaccount_head" template="icube/page/html/miniaccount.phtml"/>
+   <action method="insert">
+      <name>youamaajaxlogin</name>
+   </action>
+</reference>
+<reference name="content">
+   <action method="unsetChild">
+      <name>youamaajaxlogin</name>
+   </action>
+</reference>
+<reference name="footer">
+   <remove name="footer_links"/>
+   <remove name="footer_links2"/>
+   <remove name="cms_footer_links"/>
+   <remove name="cms_footer_links_sm"/>
+   <block type="newsletter/subscribe" name="footer.newsletter" as="newsletter" template="newsletter/subscribe.phtml"/>
+   <block type="cms/block" name="footer_socmed">
+      <action method="setBlockId">
+         <block_id>footer-socmed_links</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_about_us">
+      <action method="setBlockId">
+         <block_id>footer-about_us_links</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_shopping_info">
+      <action method="setBlockId">
+         <block_id>footer-shopping_info_links</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_cicilan">
+      <action method="setBlockId">
+         <block_id>footer-cicilan_list</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_metode_pembayaran">
+      <action method="setBlockId">
+         <block_id>footer-metode_pembayaran_list</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_keamanan_berbelanja">
+      <action method="setBlockId">
+         <block_id>footer-keamanan_berbelanja_list</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_jasa_pengiriman">
+      <action method="setBlockId">
+         <block_id>footer-jasa_pengiriman_list</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_text">
+      <action method="setBlockId">
+         <block_id>footer-text</block_id>
+      </action>
+   </block>
+</reference>
+<reference name="head">
+   <remove name="head.viewport"/>
+   <block type="core/text_tag" name="responsive-viewport">
+      <action method="setTagName">
+         <name>meta</name>
+      </action>
+      <action method="setTagParam">
+         <param>name</param>
+         <value>viewport</value>
+      </action>
+      <action method="setTagParam">
+         <param>content</param>
+         <value>width=device-width, initial-scale=1.0</value>
+      </action>
+   </block>
+   <action method="removeItem">
+      <type>skin_css</type>
+      <name>css/madisonisland.css</name>
+   </action>
+   <action method="removeItem">
+      <type>skin_css</type>
+      <name>css/madisonisland-ie8.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/bxslider/jquery.bxslider.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/fonts/flaticon/flaticon.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/fonts/font-awesome/font-awesome.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/jquery.mCustomScrollbar.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/magnific-popup.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/tooltipster.css</name>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/styles_2.css</name>
+      <params/>
+      <if>&lt;!--[if (gte IE 9) | (IEMobile)]&gt;&lt;!--&gt;</if>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/styles-ie8_2.css</name>
+      <params/>
+      <if> (lte IE 8) &amp; (!IEMobile)</if>
+   </action>
+   <action method="addItem">
+      <type>skin_css</type>
+      <name>css/kl-general.css</name>
+      <params/>
+      <if>&lt;!--[if (gte IE 9) | (IEMobile)]&gt;&lt;!--&gt;</if>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery-ui-1.11.0.custom.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.cookie.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.debouncedresize.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.throttledresize.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jqmodal.js</name>
+   </action>
+   <action method="removeItem">
+      <type>skin_js</type>
+      <name>js/lib/jquery.cycle2.min.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.cycle2.js</name>
+   </action>
+   <action method="removeItem">
+      <type>skin_js</type>
+      <name>js/lib/jquery.cycle2.swipe.min.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.cycle2.swipe.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.bxslider.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/select.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.dotdotdot.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.mCustomScrollbar.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.magnific-popup.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.tooltipster.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.placeholder.min.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.helper.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.store.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.responsive.js</name>
+   </action>
+   <action method="removeItem">
+      <type>skin_js</type>
+      <name>js/slideshow.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.icube.bannerenhanced.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.app.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.validation.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.homepage.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.pdp.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.customer.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.redeem.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/icube.header.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.main.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/main.js</name>
+   </action>
+   <action method="addLinkRel">
+      <rel>stylesheet</rel>
+      <href>//fonts.googleapis.com/css?family=Open+Sans:400,600,700</href>
+   </action>
+</reference>
+<reference name="after_body_start">
+        </reference>
+<reference name="before_body_end">
+        </reference>
+<reference name="root">
+   <action method="setTemplate">
+      <template>page/1column.phtml</template>
+   </action>
+</reference>
+<reference name="header">
+   <block type="cms/block" name="header_announcement">
+      <action method="setBlockId">
+         <block_id>header-announcement</block_id>
+      </action>
+   </block>
+   <block type="customisation/link" name="miniaccount_head" as="miniaccount_head" template="icube/page/html/miniaccount.phtml"/>
+   <action method="insert">
+      <name>youamaajaxlogin</name>
+   </action>
+</reference>
+<reference name="content">
+   <action method="unsetChild">
+      <name>youamaajaxlogin</name>
+   </action>
+</reference>
+<reference name="footer">
+   <remove name="footer_links"/>
+   <remove name="footer_links2"/>
+   <remove name="cms_footer_links"/>
+   <remove name="cms_footer_links_sm"/>
+   <block type="newsletter/subscribe" name="footer.newsletter" as="newsletter" template="newsletter/subscribe.phtml"/>
+   <block type="cms/block" name="footer_socmed">
+      <action method="setBlockId">
+         <block_id>footer-socmed_links</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_about_us">
+      <action method="setBlockId">
+         <block_id>footer-about_us_links</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_shopping_info">
+      <action method="setBlockId">
+         <block_id>footer-shopping_info_links</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_cicilan">
+      <action method="setBlockId">
+         <block_id>footer-cicilan_list</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_metode_pembayaran">
+      <action method="setBlockId">
+         <block_id>footer-metode_pembayaran_list</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_keamanan_berbelanja">
+      <action method="setBlockId">
+         <block_id>footer-keamanan_berbelanja_list</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_jasa_pengiriman">
+      <action method="setBlockId">
+         <block_id>footer-jasa_pengiriman_list</block_id>
+      </action>
+   </block>
+   <block type="cms/block" name="footer_text">
+      <action method="setBlockId">
+         <block_id>footer-text</block_id>
+      </action>
+   </block>
+</reference>
+<label>Customer My Account (All Pages)</label>
+<reference name="root">
+   <action method="setTemplate">
+      <template>page/2columns-left.phtml</template>
+   </action>
+   <action method="addBodyClass">
+      <class>customer-account</class>
+   </action>
+</reference>
+<reference name="content">
+   <block type="page/html_wrapper" name="my.account.wrapper" translate="label">
+      <label>My Account Wrapper</label>
+      <action method="setElementClass">
+         <value>my-account</value>
+      </action>
+   </block>
+</reference>
+<reference name="left_first">
+   <block type="customer/account_navigation" name="customer_account_navigation" before="-" template="customer/account/navigation.phtml">
+      <action method="addLink" translate="label" module="customer">
+         <name>account</name>
+         <path>customer/account/</path>
+         <label>Account Dashboard</label>
+      </action>
+      <action method="addLink" translate="label" module="customer">
+         <name>account_edit</name>
+         <path>customer/account/edit/</path>
+         <label>Account Information</label>
+      </action>
+      <action method="addLink" translate="label" module="customer">
+         <name>address_book</name>
+         <path>customer/address/</path>
+         <label>Address Book</label>
+      </action>
+   </block>
+</reference>
+<reference name="left">
+   <block type="catalog/product_compare_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
+   <remove name="tags_popular"/>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="sales">
+      <name>orders</name>
+      <path>sales/order/history/</path>
+      <label>My Orders</label>
+   </action>
+</reference>
+<reference name="left">
+   <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label">
+      <name>billing_agreements</name>
+      <path>sales/billing_agreement/</path>
+      <label>Billing Agreements</label>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label">
+      <name>recurring_profiles</name>
+      <path>sales/recurring_profile/</path>
+      <label>Recurring Profiles</label>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="review">
+      <name>reviews</name>
+      <path>review/customer</path>
+      <label>My Product Reviews</label>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="tag">
+      <name>tags</name>
+      <path>tag/customer/</path>
+      <label>My Tags</label>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="wishlist" ifconfig="wishlist/general/active">
+      <name>wishlist</name>
+      <path>wishlist/</path>
+      <label>My Wishlist</label>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="oauth">
+      <name>OAuth Customer Tokens</name>
+      <path>oauth/customer_token</path>
+      <label>My Applications</label>
+   </action>
+</reference>
+<reference name="cart_sidebar">
+   <action method="addItemRender">
+      <type>bundle</type>
+      <block>bundle/checkout_cart_item_renderer</block>
+      <template>checkout/cart/sidebar/default.phtml</template>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="newsletter">
+      <name>newsletter</name>
+      <path>newsletter/manage/</path>
+      <label>Newsletter Subscriptions</label>
+   </action>
+</reference>
+<remove name="left.newsletter"/>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="downloadable">
+      <name>downloadable_products</name>
+      <path>downloadable/customer/products</path>
+      <label>My Downloadable Products</label>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" ifconfig="ebizmarts_autoresponder/general/active" translate="label" module="ebizmarts_autoresponder">
+      <name>autoresponderlists</name>
+      <path>ebizautoresponder/autoresponder/index</path>
+      <label>Autoresponder lists</label>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>magemonkey/monkey.js</name>
+      <params/>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" ifconfig="monkey/general/active" translate="label" module="monkey">
+      <name>mailchimp</name>
+      <path>monkey/customer_account/index</path>
+      <label>Newsletter Subscriptions</label>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="enterprise_customerbalance">
+      <name>enterprise_customerbalance</name>
+      <path>enterprise_customerbalance/info/</path>
+      <label>Store Credit</label>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="enterprise_giftcardaccount">
+      <name>enterprise_giftcardaccount</name>
+      <path>enterprise_giftcardaccount/customer/</path>
+      <label>Gift Card</label>
+   </action>
+</reference>
+<block type="enterprise_giftregistry/link" name="giftregistry_link_dashboard">
+   <action method="addDashboardLink" translate="label" module="enterprise_giftregistry">
+      <block>customer_account_navigation</block>
+      <name>giftregistry</name>
+      <path>enterprise_giftregistry/</path>
+      <label>Gift Registry</label>
+   </action>
+</block>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="enterprise_pbridge" ifconfig="payment/pbridge/profilestatus">
+      <name>pbridge_payment_profile</name>
+      <path>enterprise_pbridge/payment_profile/</path>
+      <label>My Credit Cards</label>
+   </action>
+</reference>
+<block type="enterprise_reward/customer_account" name="enterprise.reward.customer.account"/>
+<block type="enterprise_rma/link" name="enterprise_rma_link_dashboard">
+   <action method="addDashboardLink" translate="label" module="enterprise_rma">
+      <block>customer_account_navigation</block>
+      <name>return</name>
+      <path>rma/return/history/</path>
+      <label>My Returns</label>
+   </action>
+</block>
+<block type="enterprise_invitation/link" name="invitation_link_dashboard">
+   <action method="addDashboardLink" translate="label" module="enterprise_invitation">
+      <block>customer_account_navigation</block>
+      <name>invitations</name>
+      <path>enterprise_invitation/</path>
+      <label>My Invitations</label>
+   </action>
+</block>
+<reference name="customer_account_navigation">
+   <action method="addLink" translate="label" module="enterprise_wishlist" ifconfig="wishlist/general/multiple_enabled">
+      <name>wishlist</name>
+      <path>wishlist/</path>
+      <label>My Wishlists</label>
+   </action>
+</reference>
+<reference name="customer_account_navigation">
+   <action method="addLink" ifconfig="zendesk/frontend_features/customer_tickets" translate="label" module="zendesk">
+      <name>customertickets</name>
+      <path>zendesk/customer_tickets/index</path>
+      <label>My Tickets</label>
+   </action>
+</reference>
+<block type="enterprise_checkout/customer_link" name="customer_link_sku">
+   <action method="addDashboardLink" translate="label" module="enterprise_checkout">
+      <block>customer_account_navigation</block>
+      <name>checkout</name>
+      <path>enterprise_checkout/sku</path>
+      <label>Order by SKU</label>
+   </action>
+</block>
+<reference name="root">
+   <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs">
+      <action method="addCrumb" translate="crumbinfo.label crumbinfo.title">
+         <crumbname>Home</crumbname>
+         <crumbinfo>
+            <label>Home</label>
+            <title>Home</title>
+            <link>/</link>
+         </crumbinfo>
+      </action>
+   </block>
+</reference>
+<reference name="left_first">
+   <action method="unsetChild">
+      <alias>customer_account_navigation</alias>
+   </action>
+   <block type="customer/account_navigation" name="customer_account_navigation" before="-" template="customer/account/navigation.phtml">
+      <action method="addLink" translate="label" module="customer">
+         <name>account_edit</name>
+         <path>customer/account/</path>
+         <label>Dashboard</label>
+      </action>
+      <action method="addLink" translate="label" module="customer">
+         <name>address_book</name>
+         <path>customer/address/</path>
+         <label>Address Book</label>
+      </action>
+      <action method="addLink" translate="label" module="sales">
+         <name>orders</name>
+         <path>sales/order/history/</path>
+         <label>My Order</label>
+      </action>
+      <action method="addLink" translate="label" module="review">
+         <name>reviews</name>
+         <path>review/customer</path>
+         <label>Review History</label>
+      </action>
+      <action method="addLink" translate="label" module="newsletter">
+         <name>newsletter</name>
+         <path>monkey/customer_account/index/</path>
+         <label>Newsletter Subscription</label>
+      </action>
+      <action method="addLink" translate="label" module="customer">
+         <name>wishlist</name>
+         <path>wishlist/</path>
+         <label>Wishlist</label>
+      </action>
+   </block>
+</reference>
+<remove name="left"/>
+<reference name="root">
+   <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs">
+      <action method="addCrumb" translate="crumbinfo.label crumbinfo.title">
+         <crumbname>Home</crumbname>
+         <crumbinfo>
+            <label>Home</label>
+            <title>Home</title>
+            <link>/</link>
+         </crumbinfo>
+      </action>
+   </block>
+</reference>
+<reference name="left_first">
+   <action method="unsetChild">
+      <alias>customer_account_navigation</alias>
+   </action>
+   <block type="customer/account_navigation" name="customer_account_navigation" before="-" template="customer/account/navigation.phtml">
+      <action method="addLink" translate="label" module="customer">
+         <name>account_edit</name>
+         <path>customer/account/</path>
+         <label>Dashboard</label>
+      </action>
+      <action method="addLink" translate="label" module="customer">
+         <name>address_book</name>
+         <path>customer/address/</path>
+         <label>Address Book</label>
+      </action>
+      <action method="addLink" translate="label" module="sales">
+         <name>orders</name>
+         <path>sales/order/history/</path>
+         <label>My Order</label>
+      </action>
+      <action method="addLink" translate="label" module="review">
+         <name>reviews</name>
+         <path>review/customer</path>
+         <label>Review History</label>
+      </action>
+      <action method="addLink" translate="label" module="newsletter">
+         <name>newsletter</name>
+         <path>monkey/customer_account/index/</path>
+         <label>Newsletter Subscription</label>
+      </action>
+      <action method="addLink" translate="label" module="customer">
+         <name>wishlist</name>
+         <path>wishlist/</path>
+         <label>Wishlist</label>
+      </action>
+   </block>
+</reference>
+<remove name="left"/>
+<label>Customer My Account Dashboard</label>
+<update handle="customer_account"/>
+<reference name="root">
+   <action method="setTemplate">
+      <template>page/2columns-left.phtml</template>
+   </action>
+</reference>
+<reference name="my.account.wrapper">
+   <block type="customer/account_dashboard" name="customer_account_dashboard" template="customer/account/dashboard.phtml">
+      <block type="customer/account_dashboard_hello" name="customer_account_dashboard_hello" as="hello" template="customer/account/dashboard/hello.phtml"/>
+      <block type="core/template" name="customer_account_dashboard_top" as="top"/>
+      <block type="customer/account_dashboard_info" name="customer_account_dashboard_info" as="info" template="customer/account/dashboard/info.phtml"/>
+      <block type="customer/account_dashboard_newsletter" name="customer_account_dashboard_newsletter" as="newsletter" template="customer/account/dashboard/newsletter.phtml"/>
+      <block type="customer/account_dashboard_address" name="customer_account_dashboard_address" as="address" template="customer/account/dashboard/address.phtml"/>
+   </block>
+</reference>
+<reference name="right">
+   <action method="unsetChild">
+      <name>catalog.compare.sidebar</name>
+   </action>
+</reference>
+<reference name="customer_account_dashboard">
+   <block type="sales/order_recent" name="customer_account_dashboard_top" as="top" template="sales/order/recent.phtml"/>
+</reference>
+<reference name="right">
+   <action method="unsetChild">
+      <name>right.poll</name>
+   </action>
+</reference>
+<reference name="customer_account_dashboard">
+   <block type="review/customer_recent" name="customer_account_dashboard_info1" as="info1" template="review/customer/recent.phtml"/>
+</reference>
+<reference name="customer_account_dashboard">
+   <action method="unsetChild">
+      <name>customer_account_dashboard_info2</name>
+   </action>
+   <block type="tag/customer_recent" name="customer_account_dashboard_info2" as="info2" template="tag/customer/recent.phtml"/>
+</reference>
+<reference name="right">
+   <action method="unsetChild">
+      <name>wishlist</name>
+   </action>
+</reference>
+<reference name="content">
+   <reference name="customer_account_dashboard">
+      <block type="redeempoint/customer" name="redeempoint" template="icube/redeempoint/redeempoint.phtml">
+         <block type="redeempoint/customer" name="select.company" before="-" template="icube/redeempoint/company-selection.phtml"/>
+         <block type="redeempoint/customer" name="redeempoint.available" template="icube/redeempoint/available.phtml"/>
+         <block type="customgiftcard/list" name="customgiftcard_list" template="icube/customgiftcard/list.phtml"/>
+      </block>
+   </reference>
+</reference>
+<reference name="root">
+   <reference name="breadcrumbs">
+      <action method="addCrumb" translate="crumbinfo.label crumbinfo.title">
+         <crumbname>My Account</crumbname>
+         <crumbinfo>
+            <label>My Account</label>
+            <title>My Account</title>
+         </crumbinfo>
+      </action>
+   </reference>
+</reference>
+<reference name="content">
+   <remove name="hello"/>
+   <remove name="top"/>
+   <remove name="info1"/>
+   <remove name="info2"/>
+   <reference name="customer_account_dashboard">
+      <block type="customer/form_edit" name="customer_edit" template="customer/form/edit.phtml"/>
+   </reference>
+</reference>
+<reference name="root">
+   <reference name="breadcrumbs">
+      <action method="addCrumb" translate="crumbinfo.label crumbinfo.title">
+         <crumbname>My Account</crumbname>
+         <crumbinfo>
+            <label>My Account</label>
+            <title>My Account</title>
+         </crumbinfo>
+      </action>
+   </reference>
+</reference>
+<reference name="content">
+   <remove name="hello"/>
+   <remove name="top"/>
+   <remove name="info1"/>
+   <remove name="info2"/>
+   <reference name="customer_account_dashboard">
+      <block type="customer/form_edit" name="customer_edit" template="customer/form/edit.phtml"/>
+   </reference>
+</reference>
+<reference name="top.links">
+   <action method="removeLinkByUrl">
+      <url helper="customer/getRegisterUrl"/>
+   </action>
+   <action method="addLink" translate="label title" module="customer">
+      <label>Log Out</label>
+      <url helper="customer/getLogoutUrl"/>
+      <title>Log Out</title>
+      <prepare/>
+      <urlParams/>
+      <position>100</position>
+   </action>
+</reference>
+<reference name="right">
+   <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>js</type>
+      <name>varien/weee.js</name>
+   </action>
+</reference>
+<block type="enterprise_invitation/link" name="invitation_link_top">
+   <action method="addAccountLink" translate="label title" module="enterprise_invitation">
+      <block>account.links</block>
+      <label>Send Invitations</label>
+      <url helper="enterprise_invitation/data/getCustomerInvitationFormUrl"/>
+      <title>Send Invitations</title>
+      <prepare/>
+      <urlParams/>
+      <position>1</position>
+      <li>id=&quot;invitation-send-link&quot;</li>
+   </action>
+</block>

@@ -1,0 +1,35 @@
+<?php  
+/**
+ * Parent Category list for 404 page
+ *
+ * Description:
+ * - Created from scratch
+ * 
+ */
+?>
+
+<?php  
+$categories = Mage::getModel('catalog/category')->getCollection()
+    ->addAttributeToSelect('*')
+    ->addAttributeToFilter('level', 2)
+    ->addAttributeToFilter('is_active', 1);
+?>
+
+<div class="category-list-wrapper">
+	<h2><?php echo $this->__('Temukan Produk Menarik Kami Lainnya di Kategori Berikut') ?></h2>
+	<ul class="category-list">
+		<?php foreach ($categories as $category): ?>
+			<li>
+				<?php if ($category->getIcon()): ?>
+				<span class="icon"><?php echo '<i class="icon"><img src="' . Mage::getBaseUrl('media') . 'catalog' . DS . 'category' . DS . $category->getIcon() . '" /></i>' ?></span>
+				<?php endif ?>
+				<?php
+					$filter_cat = array('Inspirations','Cool Things for Your Home','Flash Sale','Company');
+					if (!in_array($category->getName(), $filter_cat)): 
+				?>
+						<span class="category-name"><?php echo $category->getName() ?></span>
+				<?php endif ?>
+			</li>
+		<?php endforeach ?>
+	</ul>
+</div>

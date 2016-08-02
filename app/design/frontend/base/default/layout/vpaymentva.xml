@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+    <checkout_onepage_index>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/jquery-2.1.4.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/fancybox/jquery.fancybox.js</name></action>
+            <action method="addCss"><stylesheet>js/fancybox/jquery.fancybox.css</stylesheet></action>
+            <block type="core/text" name="veritrans.js.lib">
+                <action method="setText">
+                    <text helper="vpaymentva/data/getVeritransJs"/>
+                </action>
+            </block>
+        </reference>
+    </checkout_onepage_index>
+
+	<vpaymentva_payment_process>
+		<reference name="root">
+			<action method="setTemplate">
+               <template>page/1column.phtml</template>
+           </action>
+		</reference>
+		<reference name="content">
+			<block type="vpaymentva/redirect" name="vpaymentva.redirect" template="vpaymentva/redirect.phtml"></block>
+		</reference>
+	</vpaymentva_payment_process>
+	
+	<vpaymentva_payment_success>
+		<reference name="root">
+			<action method="setTemplate">
+               <template>page/1column.phtml</template>
+           </action>
+		</reference>
+		<reference name="content">
+			<block type="vpaymentva/response" name="vpaymentva.success" template="vpaymentva/success.phtml"></block>
+		</reference>
+	</vpaymentva_payment_success>
+	
+	<vpaymentva_payment_cancel>
+		<reference name="root">
+			<action method="setTemplate">
+               <template>page/1column.phtml</template>
+           </action>
+		</reference>
+		<reference name="content">
+			<block type="vpaymentva/response" name="vpaymentva.cancel" template="vpaymentva/cancel.phtml"></block>
+		</reference>
+	</vpaymentva_payment_cancel>
+	
+	<vpaymentva_payment_error>
+		<reference name="root">
+			<action method="setTemplate">
+               <template>page/1column.phtml</template>
+           </action>
+		</reference>
+		<reference name="content">
+			<block type="vpaymentva/response" name="vpaymentva.error" template="vpaymentva/error.phtml"></block>
+		</reference>
+	</vpaymentva_payment_error>
+	
+	<vpaymentva_payment_unauthorized>
+		<reference name="root">
+			<action method="setTemplate">
+               <template>page/1column.phtml</template>
+           </action>
+		</reference>
+		<reference name="content">
+			<block type="vpaymentva/response" name="vpaymentva.unathorized" template="vpaymentva/unauthorized.phtml"></block>
+		</reference>
+	</vpaymentva_payment_unauthorized>
+
+    <checkout_onepage_success>
+        <reference name="before_body_end">
+            <block name="vpaymentva.vadetail" template="vpaymentva/vadetail.phtml" type="core/template" />
+        </reference>
+    </checkout_onepage_success>
+</layout>

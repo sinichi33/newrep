@@ -1,0 +1,217 @@
+<script type="text/javascript">
+    var checkboxClicked = false;
+</script>
+<style type="text/css">
+</style>
+<div class="entry-edit">
+    <div class="entry-edit-head">
+        <h4 class="icon-head head-edit-form fieldset-legend"><?php echo $this->__('Column Configuration') ?></h4>
+
+        <div class="form-buttons"></div>
+    </div>
+    <div class="fieldset fieldset-wide" id="base_fieldset">
+        <div class="hor-scroll grid">
+            <table cellpadding="0" cellspacing="0" border="0" class="data" id="column_table" width="100%">
+                <thead>
+                <tr class="headings">
+                    <th width="5%">Visible in grid</th>
+                    <th width="10%">Column Type</th>
+                    <th width="10%">Column ID</th>
+                    <!--<th width="10%">Field Name</th>-->
+                    <th>Column Header</th>
+                    <th width="5%">Renderer</th>
+                    <th width="5%">Filter</th>
+                    <th width="5%">Width</th>
+                    <th width="5%">Align</th>
+                    <th width="5%">Sort Order</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                $columns = $this->getColumns();
+                foreach ($columns as $column):
+                    ?>
+                    <tr>
+                        <td align="center" onclick="if (!checkboxClicked) { $(this).down().click(); } checkboxClicked = false;">
+                            <input type="checkbox" onclick="checkboxClicked = true;" name="columns[<?php echo $column['id'] ?>][is_visible]" value="1"<?php echo ($column['is_visible']) ? ' checked="checked"' : ''; ?>>
+                        </td>
+                        <td><?php echo ucfirst($column['origin']) ?></td>
+                        <td><?php echo $column['id'] ?></td>
+                        <!--<td><?php echo $column['index'] ?></td>-->
+                        <td>
+                            <input type="text" name="columns[<?php echo $column['id'] ?>][header]" value="<?php echo $column['header'] ?>" title="<?php echo $this->__("Default value: %s", @$column['header_default']) ?>" style="width: 100%"/>
+                        </td>
+                        <td>
+                            <?php if ($column['origin'] != 'grid' && @$column['change_renderer'] !== false): ?>
+                                <select name="columns[<?php echo $column['id'] ?>][renderer]" title="<?php echo $this->__("Default value: %s", @$column['renderer_default']) ?>">
+                                    <option value=""><?php echo $this->__("") ?></option>
+                                    <?php
+                                    $renderers = Mage::getSingleton('xtento_enhancedgrid/columns')->getRenderers();
+                                    foreach ($renderers as $rendererClass => $rendererName): ?>
+                                        ?>
+                                        <option value="<?php echo $rendererClass ?>"<?php if (@$column['renderer'] == $rendererClass): echo ' selected="selected"'; endif; ?>><?php echo $this->__($rendererName) ?></option>
+                                    <?php
+                                    endforeach;
+                                    ?>
+                                </select>
+                            <?php endif; ?>
+                        </td>
+                        <td>
+                            <?php if ($column['origin'] != 'grid' && @$column['change_filter'] !== false): ?>
+                                <select name="columns[<?php echo $column['id'] ?>][filter]" title="<?php echo $this->__("Default value: %s", @$column['filter_default']) ?>">
+                                    <option value=""><?php echo $this->__("") ?></option>
+                                    <?php
+                                    $filters = Mage::getSingleton('xtento_enhancedgrid/columns')->getFilters();
+                                    foreach ($filters as $filterClass => $filterName): ?>
+                                        ?>
+                                        <option value="<?php echo $filterClass ?>"<?php if (@$column['filter'] == $filterClass): echo ' selected="selected"'; endif; ?>><?php echo $this->__($filterName) ?></option>
+                                    <?php
+                                    endforeach;
+                                    ?>
+                                </select>
+                            <?php endif; ?>
+                        </td>
+                        <td>
+                            <input type="text" name="columns[<?php echo $column['id'] ?>][width]" value="<?php echo $column['width'] ?>" title="<?php echo $this->__("Default value: %s", @$column['width_default']) ?>" style="width:63px;"/>
+                        </td>
+                        <td>
+                            <select name="columns[<?php echo $column['id'] ?>][align]" title="<?php echo $this->__("Default value: %s", @$column['align_default']) ?>">
+                                <option value="left"<?php if (@$column['align'] == 'left'): echo ' selected="selected"'; endif; ?>><?php echo $this->__("Left") ?></option>
+                                <option value="center"<?php if (@$column['align'] == 'center'): echo ' selected="selected"'; endif; ?>><?php echo $this->__("Center") ?></option>
+                                <option value="right"<?php if (@$column['align'] == 'right'): echo ' selected="selected"'; endif; ?>><?php echo $this->__("Right") ?></option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="columns[<?php echo $column['id'] ?>][sort_order]" value="<?php echo $column['sort_order'] ?>" title="<?php echo $this->__("Default value: %s", @$column['sort_order_default']) ?>" style="width:63px;"/>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+
+            <script src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_JS); ?>xtento/enhancedgrid/jquery/jquery-1.8.3.min.js" type="text/javascript"></script>
+            <script type="text/javascript">$.noConflict();</script>
+            <script src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_JS); ?>xtento/enhancedgrid/jquery/jquery.dataTables.min.js" type="text/javascript"></script>
+            <script>
+                var columnTable = false;
+                jQuery(document).ready(function () {
+                    columnTable = jQuery('#column_table').dataTable({
+                        bPaginate: false,
+                        bSort: false,
+                        bFilter: true,
+                        aoColumns: [
+                            {bSearchable: false},
+                            {bSearchable: false},
+                            null,
+                            /*null,*/
+                            null,
+                            {bSearchable: false},
+                            {bSearchable: false},
+                            {bSearchable: false},
+                            {bSearchable: false},
+                            {bSearchable: false}
+                        ]
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    table.dataTable {
+        margin: 0 auto;
+        clear: both;
+        width: 100%;
+    }
+
+    table.dataTable thead th {
+        padding: 3px 18px 3px 10px;
+        border-bottom: 1px solid black;
+        font-weight: bold;
+        cursor: pointer;
+        *cursor: hand;
+    }
+
+    table.dataTable tfoot th {
+        padding: 3px 18px 3px 10px;
+        border-top: 1px solid black;
+        font-weight: bold;
+    }
+
+    table.dataTable td {
+        padding: 3px 10px;
+    }
+
+    table.dataTable td.center,
+    table.dataTable td.dataTables_empty {
+        text-align: center;
+    }
+
+    table.dataTable tr.odd {
+        background: #fff;
+    }
+
+    table.dataTable tr.even {
+        background: #f6f6f6;
+    }
+
+    table.dataTable tbody tr:hover {
+        background: #F0F0F0;
+    }
+
+    table.dataTable tr.odd td.sorting_1 {
+        background: #fff;
+    }
+
+    table.dataTable tr.even td.sorting_1 {
+        background: #f6f6f6;
+    }
+
+    .dataTables_info {
+        clear: both;
+        float: left;
+        margin-top: 5px;
+    }
+
+    .dataTables_wrapper {
+        position: relative;
+        clear: both;
+        *zoom: 1;
+    }
+
+    .dataTables_length {
+        float: left;
+    }
+
+    .dataTables_filter {
+        float: right;
+        text-align: right;
+        margin-bottom: 5px;
+    }
+
+    .dataTables_processing {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 30px;
+        margin-left: -125px;
+        margin-top: -15px;
+        padding: 14px 0 2px 0;
+        border: 1px solid #ddd;
+        text-align: center;
+        color: #999;
+        font-size: 14px;
+        background-color: white;
+    }
+
+    .dataTables_scroll {
+        clear: both;
+    }
+
+    .dataTables_scrollBody {
+        *margin-top: -1px;
+        -webkit-overflow-scrolling: touch;
+    }
+</style>

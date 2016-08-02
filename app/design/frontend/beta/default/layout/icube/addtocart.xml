@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/icube.ajaxaddtocart.js</name>
+            </action>
+        </reference>
+    </default>
+
+	<catalog_product_view>
+        <reference name="content">
+            <reference name="product.info">
+                <block type="core/template" template="icube/ajaxaddtocart/addtocartjs.phtml" name="addtocartjs" as="addtocartjs" output="toHtml"></block>
+            </reference>
+        </reference>
+    </catalog_product_view>
+
+    <catalog_category_default>
+	   <reference name="product_list">
+	        <action method="setTemplate"><template>icube/ajaxaddtocart/productlist.phtml</template></action>
+	   </reference>
+	</catalog_category_default>
+
+    <catalog_category_layered>
+        <reference name="product_list">
+	        <action method="setTemplate"><template>icube/ajaxaddtocart/productlist.phtml</template></action>
+	   </reference>
+    </catalog_category_layered>
+
+    <catalogsearch_result_index>
+    	<reference name="search_result_list">
+            <action method="setTemplate"><template>icube/ajaxaddtocart/productlist.phtml</template></action>
+        </reference>
+    </catalogsearch_result_index>
+    
+    <catalogsearch_advanced_result>
+    	<reference name="search_result_list">
+            <action method="setTemplate"><template>icube/ajaxaddtocart/productlist.phtml</template></action>
+        </reference>
+
+    </catalogsearch_advanced_result>
+</layout>

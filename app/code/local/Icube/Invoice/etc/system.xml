@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <icube_invoice translate="label" module="icube_invoice">
+            <label>Invoice Custom</label>
+            <tab>icube</tab>
+            <sort_order>2</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <invoice_csv translate="label" module="icube_invoice">
+                    <label>SO Number Invoice Directory</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <dir_csv translate="label">
+                            <label>Directory CSV  : </label>
+                            <comment>Default directory csv var/SAP/invoice</comment> 
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </dir_csv>
+                        <dir_archive translate="label">
+                            <label>Directory Archive  :  </label>
+                            <comment>Default directory archive var/SAP/invoice/archive</comment> 
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </dir_archive>
+                    </fields>
+                </invoice_csv>
+            </groups>
+            <groups>
+                <data_csv translate="label" module="icube_invoice">
+                    <label>Flat Order Directory</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <dir_csv translate="label">
+                            <label>Directory CSV  : </label>
+                            <comment>Default directory csv var/SAP/flatorder</comment> 
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </dir_csv>
+                        <dir_archive translate="label">
+                            <label>Directory Archive  :  </label>
+                            <comment>Default directory archive var/SAP/invoice/flatorder</comment> 
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </dir_archive>
+                    </fields>
+                </data_csv>
+            </groups>
+            <groups>
+                <awb_csv translate="label" module="icube_invoice">
+                    <label>Update AWB Number</label>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <dir_csv translate="label">
+                            <label>Directory CSV  : </label>
+                            <comment>Default directory csv var/SAP/shipment</comment> 
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </dir_csv>
+                        <dir_archive translate="label">
+                            <label>Directory Archive  :  </label>
+                            <comment>Default directory archive var/SAP/shipment/archive</comment> 
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </dir_archive>
+                    </fields>
+                </awb_csv>
+            </groups>
+        </icube_invoice>
+    </sections>
+</config>

@@ -1,0 +1,71 @@
+<?php
+/**
+ * Order Info template for Order Confirmation email
+ *
+ * Description:
+ * - Created from scratch
+ * - VA Payment has different content with CC payment
+ */
+?>
+
+<?php  
+$_order = $this->getOrder();
+$_payment = $_order->getPayment();
+?>
+
+<h2>INFORMASI PESANAN</h2>
+<?php if ($_payment['method'] == 'vpaymentva'): ?>
+    <?php /* Order Detail for VA Payment */ ?>
+    <table>
+        <tr>
+            <td>Nomor Pesanan</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold"><?php echo $_order->getIncrementId() ?></td>
+        </tr>
+        <tr>
+            <td>Tanggal Pesanan</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold"><?php echo $_order->getCreatedAtFormated('long') ?></td>
+        </tr>
+        <tr>
+            <td>Cara Pembayaran</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold"><?php echo $_order->getPayment()->getMethodInstance()->getTitle(); ?></td>
+        </tr>
+        <?php if ($_payment['vabank'] == 'bca'): ?>
+            <tr>
+                <td>Nomor Virtual Account BCA</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold"><?php echo $_payment['vanumber'] ?></td>
+            </tr>
+        <?php endif ?>
+        <?php if ($_payment['vabank'] == 'permata'): ?>
+            <tr>
+                <td>Nomor Virtual Account Permata</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold"><?php echo $_payment['vanumber'] ?></td>
+            </tr>
+        <?php endif ?>
+        <?php if ($_payment['vabank'] == 'echannel'): ?>
+            <tr>
+                <td>Nomor Mandiri Bill Payment</td>
+                <td style="width:20px; height:22px; text-align:center;">:</td>
+                <td class="bold"><?php echo $_payment['billercode'] ?></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td style="width:20px; height:22px; text-align:center;">&nbsp;</td>
+                <td class="bold"><?php echo $_payment['billkey'] ?></td>
+            </tr>
+        <?php endif ?>
+    </table>
+<?php else: ?>
+    <?php /* Order Detail for CC Payment */ ?>
+    <table>
+        <tr>
+            <td>Nomor Pesanan</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold"><?php echo $_order->getIncrementId() ?></td>
+        </tr>
+        <tr>
+            <td>Metode Transaksi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold"><?php echo $_order->getPayment()->getMethodInstance()->getTitle(); ?></td>
+        </tr>
+        <tr>
+            <td>Status Transaksi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold">Sukses</td>
+        </tr>
+        <tr>
+            <td>Waktu Transaksi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold"><?php echo $_order->getCreatedAtFormated('long') ?></td>
+        </tr>
+        <tr>
+            <td>Jumlah Transaksi</td><td style="width:20px; height:22px; text-align:center;">:</td><td class="bold"><?php echo Mage::helper('core')->currency($_order->getGrandTotal() , true, false); ?></td>
+        </tr>
+    </table>
+<?php endif ?>

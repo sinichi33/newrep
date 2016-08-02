@@ -1,0 +1,31 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (https://www.amasty.com)
+ * @package Amasty_Promo
+ */
+?>
+<?php if ($this->_getValidRule() && $this->_getValidRule()->getId()) {?>
+<div class="<?php echo ($this->getPosition() == "top" ? "category-image" : "product-options")?>">
+    <?php if ($this->getDescription()) {?>
+    <div class="ampromo-desc">
+        <?php echo Mage::helper('cms')->getPageTemplateProcessor()->filter($this->getDescription()); ?>
+    </div>
+    <?php }?>
+    <?php
+        $img = $this->getImage();
+    if ($img) {?>
+    <p class="ampromo-img">
+        <a href="<?php echo $this->getLink();?>" title="<?php echo $this->escapeHtml($this->getHoverText()) ?>">
+            <img src="<?php echo $img;?>" alt="<?php echo $this->escapeHtml($this->getAlt()) ?>" title="<?php echo $this->escapeHtml($this->getHoverText()) ?>" />
+        </a>
+    </p>
+    <?php }?>
+    <?php
+        if ($this->isShowGiftImages()) {
+            echo $this->getChildHtml('ampromo.gift');
+        }
+    ?>
+    <div style="clear: both;"></div>
+</div>
+<?php }?>

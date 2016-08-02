@@ -1,0 +1,60 @@
+<?php
+/**
+ * Product Review List
+ *
+ * Description:
+ * - override bse/default
+ * - Change header wording
+ * - Wrap with div.section
+ * - Add table wrapper
+ * - Add thead
+ * - Remove rating stars column
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+?>
+<div class="section">
+    <?php echo $this->getMessagesBlock()->toHtml() ?>
+    <div class="page-title">
+        <h1><?php echo $this->__('Product Reviews') ?></h1>
+    </div>
+    <?php if( $this->getCollection() && $this->count()): ?>
+        <?php echo $this->getToolbarHtml() ?>
+            <div class="data-table-wrapper">
+                <table class="data-table" id="my-reviews-table">
+                    <col width="1" />
+                    <col width="210" />
+                    <col width="1" />
+                    <col />
+                    <col width="1" />
+                    <thead>
+                        <tr>
+                            <th width="10%"><?php echo $this->__('Date') ?></th>
+                            <th width="35%"><?php echo $this->__('Product') ?></th>
+                            <th width="45%"><?php echo $this->__('Comment') ?></th>
+                            <th width="10%">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($this->getCollection() as $_review): ?>
+                        <tr>
+                            <td data-rwd="<?php echo $this->__('Date') ?>"><span class="nobr"><?php echo $this->dateFormat($_review->getReviewCreatedAt()); ?></span></td>
+                            <td data-rwd="<?php echo $this->__('Product') ?>"><h2 class="product-name"><a href="<?php echo $this->getProductLink() ?>id/<?php echo $_review->getEntityPkValue() ?>"><?php echo $this->escapeHtml($_review->getName()) ?></a></h2></td>
+                            <td data-rwd="<?php echo $this->__('Comment') ?>"><?php echo $this->helper('review')->getDetailHtml($_review->getDetail()) ?></td>
+                            <td class="a-right"><a href="<?php echo $this->getReviewLink() ?>id/<?php echo $_review->getReviewId() ?>" class="nobr"><?php echo $this->__('Detail') ?></a></td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+            <script type="text/javascript">decorateTable('my-reviews-table')</script>
+    <?php else: ?>
+        <p><?php echo $this->__('You have submitted no reviews.') ?></p>
+    <?php endif; ?>
+</div>
+<div class="buttons-set">
+    <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
+</div>

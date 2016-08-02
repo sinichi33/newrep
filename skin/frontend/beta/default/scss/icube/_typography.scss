@@ -1,0 +1,42 @@
+/*----------------------------------------------------------------------------*/
+/* Mixin
+/*----------------------------------------------------------------------------*/
+
+@mixin base-title {
+	font-family: $f-stack-default;
+	color: $c-text;
+}
+
+@mixin _h1 {
+    @include base-title;
+
+}
+
+@mixin _h2 {
+    @include base-title;
+
+}
+
+@mixin _pageTitle() {
+    
+    h1 {
+    	@include responsive-font-size(30);
+    	font-weight: bold;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* Typography
+/*----------------------------------------------------------------------------*/
+
+h1 {
+    @include _h1;
+}
+
+h2 {
+    @include _h2;
+}
+
+.page-title {
+    @include _pageTitle();
+}

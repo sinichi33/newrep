@@ -1,0 +1,102 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+?>
+
+<style>
+#amorderattr .required
+{
+    color: #EB340A;
+}
+
+#amorderattr label {
+    margin: 0;
+}
+
+#amorderattr .field-row {
+    margin-bottom: 10px;
+}
+
+#td_review{
+    padding-left: 35px;
+}
+
+.checkboxes li label,
+.radios li label {
+    font-weight: normal;
+}
+
+.checkboxes input,
+.radios input {
+    float: left; 
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+</style>
+
+<script type="text/javascript">
+
+    //var h = new Hash();
+    Validation.addAllThese([
+        ['validate-checkboxgroup-required', 'Please select an option.', function(v, elm) {
+            id = elm.id.slice(0, elm.id.lastIndexOf("_"));
+            /*if (h.get(id)) {
+                return true;
+            }*/
+            //h.set(id, true);
+            checkboxGroupChecked = false;
+            $$('input[id^=' + id + ']').each(function(checkbox){
+                if (checkbox.checked || jQuery(checkbox).hasClass('validation-failed'))
+                {
+                    checkboxGroupChecked = true;
+                }
+            });
+            return checkboxGroupChecked;
+        }],
+        
+        ['validate-length', 'Please use the value with length less or equal than 25 characters', function(v) {
+            return v.length <= 25;
+        }]
+    ]);
+    function clearHash() {
+        h = new Hash();
+    }
+    $$('#checkoutSteps button').each(function(button){
+        button.observe('click', clearHash);
+    });
+    
+    var amOrderattrConditionObj = new amOrderattrCondition({
+        'shipping_methods': <?php print Mage::helper('core')->jsonEncode($this->getShippingMethods());?>
+    });
+    
+    amOrderattrConditionObj.check();
+</script>
+
+
+<?php if ('review' == $this->getStep()):?>
+     <tr>
+        <td colspan='4' id="td_review">
+            <form id="form_review">
+ <?php endif; ?>
+ 
+<ul class="form-list">
+    <?php foreach ($this->getFormElements() as $element): ?>
+    <li class="fields">
+        <div class="input-box">
+        <?php 
+            echo $element->toHtml(); 
+        ?>
+        </div>
+    </li>
+    <?php endforeach; ?>
+</ul>
+
+<?php if ('review' == $this->getStep()):?>
+        </form>
+    </td>
+ </tr>
+ <?php endif;?>

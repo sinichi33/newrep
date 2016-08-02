@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <icubeinvoice translate="title" module="icube_invoice">
+                <model>icube_invoice/api</model>
+                <title>Invoice Resource</title>
+                <acl>icubeinvoice</acl>
+                <methods>
+                    <list translate="title" module="icube_invoice">
+                        <title>Retrive Invoices</title>
+                        <method>items</method>
+                        <acl>icubeinvoice/list</acl>
+                    </list>
+                    <updatestatus translate="title" module="icube_invoice">
+                        <title>Update Invoice Status</title>
+                        <method>updatestatus</method>
+                        <acl>icubeinvoice/updatestatus</acl>
+                    </updatestatus>
+                </methods>
+                <faults module="icube_invoice">
+                    <data_invalid> <!-- if we get invalid input data for invoices -->
+                        <code>100</code>
+                        <!-- we cannot know all the errors that can appear, their details can be found in error message for call -->
+                        <message>Invalid invoice data. Details in error message.</message>
+                    </data_invalid>
+                    <filters_invalid>
+                        <code>101</code>
+                        <message>Invalid filters specified. Details in error message.</message>
+                    </filters_invalid>
+                    <not_exists>
+                        <code>102</code>
+                        <message>Invoice/Shipment doesn't exist.</message>
+                    </not_exists>
+                    <not_deleted>
+                        <code>103</code>
+                        <message>Invoice was not deleted. Details in error message.</message>
+                    </not_deleted>
+                    <already_set>
+                        <code>104</code>
+                        <message>Invoice status is already shipped or delivered. Details in error message.</message>
+                    </already_set>
+                </faults>
+            </icubeinvoice>
+        </resources>
+        <acl>
+            <resources>
+                <icubeinvoice translate="title" module="icube_invoice">
+                    <title>Invoices</title>
+                    <list translate="title" module="icube_invoice">
+                        <title>View All</title>
+                    </list>
+                    <updatestatus translate="title" module="icube_invoice">
+                        <title>Update Invoice Status</title>
+                    </updatestatus>
+                </icubeinvoice>
+            </resources>
+        </acl>
+    </api>
+</config>

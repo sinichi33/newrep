@@ -1,0 +1,24 @@
+<config>
+    <api2>
+        <resources>
+            <order>
+                <attributes>
+                    <fooman_surcharge_amount>Fooman Surcharge Amount</fooman_surcharge_amount>
+                    <base_fooman_surcharge_amount>Fooman Surcharge Amount (Base Currency)</base_fooman_surcharge_amount>
+                    <fooman_surcharge_tax_amount>Fooman Surcharge Tax Amount</fooman_surcharge_tax_amount>
+                    <base_fooman_surcharge_tax_amount>Fooman Surcharge Tax Amount (Base Currency)</base_fooman_surcharge_tax_amount>
+                    <fooman_surcharge_description>Fooman Surcharge Description</fooman_surcharge_description>
+                    <fooman_surcharge_amount_invoiced>Fooman Surcharge Amount Invoiced</fooman_surcharge_amount_invoiced>
+                    <base_fooman_surcharge_amount_invoiced>Fooman Surcharge Amount Invoiced (Base Currency)</base_fooman_surcharge_amount_invoiced>
+                    <fooman_surcharge_amount_refunded>Fooman Surcharge Amount Refunded</fooman_surcharge_amount_refunded>
+                    <base_fooman_surcharge_amount_refunded>Fooman Surcharge Amount Refunded (Base Currency)</base_fooman_surcharge_amount_refunded>
+                    <fooman_surcharge_tax_amount_invoiced>Fooman Surcharge Tax Amount Invoiced</fooman_surcharge_tax_amount_invoiced>
+                    <base_fooman_surcharge_tax_amount_invoiced>Fooman Surcharge Tax Amount Invoiced (Base Currency)</base_fooman_surcharge_tax_amount_invoiced>
+                    <fooman_surcharge_tax_amount_refunded>Fooman Surcharge Tax Amount Refunded</fooman_surcharge_tax_amount_refunded>
+                    <base_fooman_surcharge_tax_amount_refunded>Fooman Surcharge Tax Amount Refunded (Base Currency)</base_fooman_surcharge_tax_amount_refunded>
+                </attributes>
+            </order>
+        </resources>
+    </api2>
+</config>
+

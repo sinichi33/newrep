@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ruparupa_AdminStartup>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ruparupa_AdminStartup>
+    </modules>
+</config>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+		<icube translate="title">
+			<title>Icube</title>
+			<sort_order>80</sort_order>
+		</icube>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+			<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<icube translate="title">
+						<title>Icube</title>
+						<sort_order>80</sort_order>
+					</icube>
+					<system>
+						<children>
+							<config>
+								<children>
+									<icube translate="title">
+										<title>Icube</title>
+									</icube>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

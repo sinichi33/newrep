@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Icube_Customcache>
+            <version>1.0.0</version>
+        </Icube_Customcache>
+    </modules>
+    <global>
+        <models>
+            <customcache>
+                <class>Icube_Customcache_Model</class>
+            </customcache>
+        </models>
+        <helpers>
+            <customcache>
+                <class>Icube_Customcache_Helper</class>
+            </customcache>
+        </helpers>
+    </global>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Veritrans_Vtbcaklikpay>
+            <active>true</active>
+            <codePool>community</codePool>
+            <dependes>
+            	<Mage_adminhtml />
+                <Veritrans_Vtweb/>
+            </dependes>
+        </Veritrans_Vtbcaklikpay>
+    </modules>
+</config>

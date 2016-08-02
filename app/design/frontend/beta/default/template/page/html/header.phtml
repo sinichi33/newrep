@@ -1,0 +1,89 @@
+<?php
+/**
+ * Footer Template
+ *
+ * Description:
+ * - override RWD/default
+ * - add youama ajax login box
+ * - Move header menu/nav other than categories to cms block
+ * 
+ */
+?>
+
+<div class="header-announcement-background">
+    <div class="content-list">
+        <?php echo $this->getChildHtml('header_announcement') ?>
+    </div>
+    <span class="close-announcement"></span>
+</div>
+
+<div class="header-links-background">
+    <div class="header-container">
+        <ul class="vendors">
+            <li><a href="<?php echo Mage::getBaseUrl().'getmore-ace.html' ?>"><img src="<?php echo $this->getSkinUrl('images/sample/header/logo-header-ace.png') ?>"></a></li>
+            <li><a href="<?php echo Mage::getBaseUrl().'getmore-informa.html' ?>"><img src="<?php echo $this->getSkinUrl('images/sample/header/logo-header-informa.png') ?>"></a></li>
+            <li><a href="<?php echo Mage::getBaseUrl().'getmore-toyskingdom.html' ?>"><img src="<?php echo $this->getSkinUrl('images/sample/header/logo-header-toyskingdom.png') ?>"></a></li>
+        </ul>
+        <ul class="page-links">
+            <li><a href="#"><?php echo $this->__('Customer Care') ?></a></li>
+            <li class="header-minitrackorder">
+                <a href="#" id="orderstatus-form-mini-link"><?php echo $this->__('Order Status') ?></a>
+                <?php echo $this->getChildHtml('trackorder.search.form.mini') ?>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-header-background">
+    <header id="header" class="page-header header-container">
+        
+        <!-- logo -->
+        
+        <a class="logo" href="<?php echo $this->getUrl('') ?>">
+            <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
+            <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" />
+        </a>
+
+        <!-- Search -->
+
+        <div id="header-search">
+            <?php echo $this->getChildHtml('topSearch') ?>
+        </div>
+
+        <!-- Skip Links -->
+
+        <div class="account-cart-links">
+            <div class="account-link">
+                <div class="icon"></div>
+                <?php echo $this->getChildHtml('miniaccount_head',false) ?>
+                <?php echo $this->getChildHtml('youamaajaxlogin') ?>
+            </div>
+            <div class="header-minicart">
+                <div class="icon"></div>
+                <div class="links">
+                    <?php echo $this->getChildHtml('minicart_head'); ?>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div class="main-header-background">
+    <div class="header-container">
+
+        <!-- Navigation -->
+        <div id="header-nav">
+            <ul>
+                <li class="categories">
+                    <a href="javascript:void(0)" class="header-nav-trigger"><?php echo $this->__('Shop All Categories') ?></a>
+                    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('category-top-menu')->toHtml();  ?>
+                </li>
+                <li class="cms-header-menu">
+                    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-menu')->toHtml(); ?> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<?php echo $this->getChildHtml('topContainer'); ?>

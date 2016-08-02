@@ -1,0 +1,57 @@
+
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+.attributesplash-page-view .main{
+
+	.banners {
+		margin-bottom: 15px;
+
+		img {
+			width: 100%;
+		}
+
+		&.hidden + .category-products > .toolbar:first-child {
+			margin-top: 0;
+
+			.top {
+				border-top: none;
+			}
+		}
+	}
+
+	.sidebar .block-title,
+	.sidebar .block-subtitle {
+		display: none;
+	}
+	.sidebar #narrow-by-list {
+		padding-top: 15px !important;
+	}
+}
+
+.splash-image {
+	margin-bottom: 15px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.splash-description {
+	margin: -12px 0 18px !important;
+	@include responsive-font-size(12);
+
+	p:last-child,
+	*:last-child {
+		margin-bottom: 0;
+	}
+
+	p {
+		margin-bottom: 10px;
+	}
+}
+
+.splash-description-full {
+	padding-top: 10px;
+}

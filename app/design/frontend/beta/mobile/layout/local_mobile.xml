@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Description:
+ * - Initial layout update
+ */
+-->
+<layout version="0.1.0">
+	<default>
+		<reference name="head">
+
+            <!-- Style Sheets -->
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/jquery.mmenu.all.css</name>
+            </action>
+
+            <action method="addItem"><type>skin_css</type><name>css/m-styles.css</name><params/><if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if></action>
+            
+            <!-- Style Sheets IE selector limit fix. For IE9 (and lower) only. -->
+            <!-- another separated css goes here -->
+            
+            <!-- Style Sheets For IE8 (and lower) only. -->
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/m-styles-ie8.css</name>
+                <params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if>
+            </action>
+
+            <!-- JS Libraries -->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/jquery.mmenu.all.min.js</name>
+            </action>
+
+            <!-- JS Extend -->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/icube.extHomepage.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/icube.extPdp.js</name>
+            </action>
+            <!-- JS Custom -->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/icube.mobPdp.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/icube.mobCatalogPopup.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/jquery.main.mobile.js</name>
+            </action>
+		</reference>
+		<reference name="before_body_end">
+			<block type="core/template" name="mobile.menu" template="icube/mobile/menu.phtml">
+                <block type="customisation/link" name="mmenu_miniaccount" as="mmenu_miniaccount" template="icube/mobile/account-link.phtml"/>
+                <block type="customisation/link" name="mmenu_logout" as="mmenu_logout" template="icube/mobile/logout-link.phtml"/>
+                <block type="page/html_topmenu" name="catalog.topnav" template="page/html/topmenu.phtml">
+                    <block type="page/html_topmenu_renderer" name="catalog.topnav.renderer" template="page/html/topmenu/renderer.phtml"/>
+                </block>
+            </block>
+            <block type="core/template" name="back.to.top" template="icube/mobile/back-to-top.phtml" />
+		</reference>
+	</default>
+</layout>

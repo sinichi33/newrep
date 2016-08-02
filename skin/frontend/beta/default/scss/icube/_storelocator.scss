@@ -1,0 +1,122 @@
+
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+.clarion-storelocator-index-index {
+
+	.page-title {
+
+		h1 {
+			border: none;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Search Form
+/*----------------------------------------------------------------------------*/
+
+#search-store {
+
+	#addressSearch {
+		padding: 10px 20px;
+		margin-bottom: 20px;
+		border-top: 1px solid #d2d6d7;
+		border-bottom: 1px solid #d2d6d7;
+
+		.legend {
+			display: none;
+		}
+
+		.form-list {
+
+			> li {
+				display: inline-block;
+				margin: 0;
+
+				&:not(.hidden) + li {
+					margin-left: 40px;
+				}
+
+				&.hidden {
+					display: none;
+				}
+			}
+
+			label {
+				width: auto;
+				float: none;
+				vertical-align: middle;
+				display: inline-block;
+				margin: 0 10px 0 0;
+			}
+
+			.input-box {
+				vertical-align: middle;
+				display: inline-block;
+				width: 150px !important;
+			}
+
+			.button {
+				padding: 0 20px;
+			    height: 23px;
+			    line-height: 23px;
+			    @include responsive-font-size(10);
+			}
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Store List
+/*----------------------------------------------------------------------------*/
+
+.your-store-title {
+	display: none;
+}
+
+#stores-list-div {
+	background: #fff;
+	margin: 0;
+	width: 41%;
+	height: 600px;
+	padding: 15px 10px;
+
+	.stores-view {
+		border: none;
+		padding: 15px 5px;
+
+		.button {
+			padding: 0 10px;
+		    height: 25px;
+		    line-height: 25px;
+		    text-transform: lowercase;
+		    letter-spacing: 0;
+		    margin-top: 7px;
+		}
+	}
+
+	.pager {
+		display: none;
+	}
+}
+
+#stores-list-gmap-div {
+	padding: 0;
+	border: none;
+	width: 59%;
+}
+
+#show-all-store {
+	padding: 0;
+	margin-top: 10px;
+
+	.button {
+		height: 25px;
+		line-height: 25px;
+		@include responsive-font-size(10);
+		letter-spacing: 0;
+		padding: 0 10px;
+	}
+}

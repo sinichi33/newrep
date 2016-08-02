@@ -1,0 +1,21 @@
+<?php
+/**
+ * Return Button on order detail
+ *
+ * Description:
+ * - override rwd/enterprise
+ * - add class "link-rma"
+ * - hide link-rma and separator by adding class "hidden" (task: http://teamwork.icubeonline.com/tasks/6307277)
+ * 
+ * 
+ * @category    design
+ * @package     rwd_enterprise
+ * @copyright Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license http://www.magento.com/license/enterprise-edition
+ */
+/** @var $this Enterprise_Rma_Block_Order_Button */
+?>
+<?php if($this->helper('enterprise_rma')->canCreateRma($this->getOrder())): ?>
+    <span class="separator hidden">|</span>
+    <a href="<?php echo $this->helper('enterprise_rma')->getReturnCreateUrl($this->getOrder()) ?>" class="link-rma hidden"><?php echo $this->__('Return') ?></a>
+<?php endif;?>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * @author     Kristof Ringleff
+ * @package    Fooman_Surcharge
+ * @copyright  Copyright (c) 2010 Fooman Limited (http://www.fooman.co.nz)
+ */
+-->
+<layout version="0.1.0">
+    <adminhtml_sales_order_view>
+        <reference name="order_totals">
+            <block name="fooman_surcharge" type="surcharge/adminhtml_sales_order_totals" />
+        </reference>
+    </adminhtml_sales_order_view>
+    <adminhtml_sales_order_invoice_new>
+        <reference name="invoice_totals">
+            <block name="fooman_surcharge" type="surcharge/adminhtml_sales_order_totals" />
+        </reference>
+    </adminhtml_sales_order_invoice_new>
+    <adminhtml_sales_order_invoice_updateqty>
+        <reference name="invoice_totals">
+            <block name="fooman_surcharge" type="surcharge/adminhtml_sales_order_totals" />
+        </reference>
+    </adminhtml_sales_order_invoice_updateqty>
+    <adminhtml_sales_order_invoice_view>
+        <reference name="invoice_totals">
+            <block name="fooman_surcharge" type="surcharge/adminhtml_sales_order_totals" />
+        </reference>
+    </adminhtml_sales_order_invoice_view>
+    <adminhtml_sales_order_creditmemo_new>
+        <reference name="creditmemo_totals">
+            <block name="fooman_surcharge" type="surcharge/adminhtml_sales_order_totals" />
+        </reference>
+    </adminhtml_sales_order_creditmemo_new>
+    <adminhtml_sales_order_creditmemo_updateqty>
+        <reference name="creditmemo_totals">
+            <block name="fooman_surcharge_update" type="surcharge/adminhtml_sales_order_totals" />
+        </reference>
+    </adminhtml_sales_order_creditmemo_updateqty>
+    <adminhtml_sales_order_creditmemo_new>
+        <reference name="creditmemo_totals">
+            <block name="fooman_surcharge" type="surcharge/adminhtml_sales_order_creditmemo_create_surcharge" template="surcharge/sales/order/creditmemo/create/totals/surcharge.phtml"/>
+        </reference>
+    </adminhtml_sales_order_creditmemo_new>
+    <adminhtml_sales_order_creditmemo_updateqty>
+        <reference name="creditmemo_totals">
+            <block name="fooman_surcharge_update" type="surcharge/adminhtml_sales_order_creditmemo_create_surcharge" template="surcharge/sales/order/creditmemo/create/totals/surcharge.phtml"/>
+        </reference>
+    </adminhtml_sales_order_creditmemo_updateqty>
+    <adminhtml_sales_order_creditmemo_view>
+        <reference name="creditmemo_totals">
+            <block name="fooman_surcharge" type="surcharge/adminhtml_sales_order_totals" />
+        </reference>
+    </adminhtml_sales_order_creditmemo_view>
+</layout>

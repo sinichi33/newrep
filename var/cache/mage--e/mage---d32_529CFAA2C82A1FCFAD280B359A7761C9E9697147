@@ -1,0 +1,14 @@
+<div id="cms-nav">
+<div class="title">Layanan Konsumen</div>
+<div class="block">
+    <div class="block-content">
+    <ul>
+    <li><i class="flaticon-telemarketer1">&nbsp;</i><a href="http://magen.local/contacts/index/">Hubungi Kami</a></li>
+    <li><i class="flaticon-cart3">&nbsp;</i><a href="http://magen.local/how-to-shop/">Cara Belanja</a></li>
+    <li><i class="flaticon-money146">&nbsp;</i><a href="http://magen.local/payment/">Pembayaran</a></li>
+    <li><i class="flaticon-money15">&nbsp;</i><a href="http://magen.local/faq-pengembalian/" data-altpath="return">Pengembalian</a></li>
+    <li><i class="flaticon-checked19">&nbsp;</i><a href="http://magen.local/trackorder/tracking/">Status Pesanan</a></li>
+    <li><i class="flaticon-speech132">&nbsp;</i><a href="http://magen.local/faq/">F.A.Q.</a></li>
+    </div>
+</div>
+</div>

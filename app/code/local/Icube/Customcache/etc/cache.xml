@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <placeholders>
+        <icube_customcache>
+            <block>customisation/link</block>
+            <name>miniaccount_head</name>
+            <placeholder>ICUBE_CUSTOM_CACHE</placeholder><!-- Can be any unique name -->
+            <container>Icube_Customcache_Model_Container_Cache</container>
+            <cache_life>1</cache_life>
+        </icube_customcache>
+    </placeholders>
+</config>

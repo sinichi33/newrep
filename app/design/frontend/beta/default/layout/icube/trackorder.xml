@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="header">
+			<block type="core/template" name="trackorder.search.form.mini" template="icube/trackorder/search/form.mini.phtml"/>
+		</reference>
+	</default>
+    <trackorder_tracking_index translate="label">
+		<reference name="content">
+			<block type="core/template" name="trackorder.search.form" template="icube/trackorder/search/form.phtml"/>
+		</reference>
+	</trackorder_tracking_index>
+
+	<trackorder_tracking_result translate="label">
+        <reference name="content">
+            <block type="core/template" name="trackorder.search.result" template="icube/trackorder/search/result.phtml"/>
+        </reference>
+    </trackorder_tracking_result >
+</layout>

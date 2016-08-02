@@ -1,0 +1,46 @@
+<?php
+/**
+ * Product Media Template
+ *
+ * Descriptiton:
+ * - override Beta/default
+ *
+ *
+ * Product media data template
+ *
+ * @see Mage_Catalog_Block_Product_View_Media
+ */
+
+/* @var $this Mage_Catalog_Block_Product_View_Media */
+?>
+<?php
+    $_product = $this->getProduct();
+    $_helper = $this->helper('catalog/output');
+
+    $_imgSize = 600;
+?>
+
+<div class="mob-product-image-gallery">
+<?php if (!count($this->getGalleryImages())): ?>
+    <li>
+        <img id="image-main"
+             class="gallery-image visible"
+             src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($_imgSize) ?>"
+             alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>"
+             title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>" 
+             data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($_imgSize); ?>" />
+    </li>
+<?php endif ?>
+    <?php $i=0; foreach ($this->getGalleryImages() as $_image): ?>
+        <?php if ($this->isGalleryImageVisible($_image)): ?>
+        <li>
+            <img id="image-<?php echo $i; ?>"
+             class="gallery-image"
+             src="<?php echo $this->helper('catalog/image')->init($_product, 'image', $_image->getFile())->resize($_imgSize); ?>"
+             data-zoom-image="<?php echo  $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize($_imgSize); ?>" />
+        </li>
+        <?php endif; ?>
+    <?php $i++; endforeach; ?>
+</div>
+
+<?php echo $this->getChildHtml('after'); ?>

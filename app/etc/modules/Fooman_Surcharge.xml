@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Fooman_Surcharge>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Fooman_TotalsSortingFix/>
+            </depends>
+        </Fooman_Surcharge>
+    </modules>
+</config>

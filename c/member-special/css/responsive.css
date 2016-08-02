@@ -1,0 +1,129 @@
+
+@media only screen and (max-width : 860px)
+{
+    .res-navbar-header
+    {
+        display: block;
+
+        height: 60px;
+        padding: 15px 0;
+    }
+
+    .navbar-header
+    {
+        display: none;
+    }
+
+    h1
+    {
+        font-size: 32px;
+    }
+
+    h2
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    hr.divide
+    {
+        margin-top: -12px;
+        margin-bottom: 25px;
+    }
+
+    p.content
+    {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    form
+    {
+        display: block;
+
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    input
+    {
+        width: 70%;
+        height: 42px;
+        padding: 0 10px;
+
+        vertical-align: middle;
+
+        color: #2a2a2a;
+        border: none;
+        background: #fff;
+    }
+
+    input[type='button']
+    {
+        font-weight: bold;
+        font-weight: normal;
+
+        display: inline-block;
+
+        width: auto;
+        height: 42px;
+        margin-left: -5px;
+        padding: 0 15px;
+
+        cursor: pointer;
+        letter-spacing: 1px;
+
+        color: #fff;
+        border: none;
+        background: #008ccf;
+    }
+
+    .hero.hero-countdown
+    {
+        height: 580px;
+        padding-top: 7%;
+    }
+
+    .navbar-collapse
+    {
+        display: block;
+
+        text-align: right;
+    }
+    .dropdown-menu
+    {
+        width: 300px;margin-top: 3px;
+    }
+    .dropdown-menu .col-sm-12
+    {margin-right: -5px;
+        margin-bottom: 15px; margin-left: -5px;
+    }
+    .login-button
+    {
+        margin-top: -60px;
+    }
+
+    .bg-white
+    {margin-bottom: -15px;
+        padding: 0;
+    }
+    .navbar-right .dropdown-menu
+    {
+        right: 0;
+        left: auto;
+    }
+    .resp-text
+    {font-size: 18px; display: block;margin-bottom: -8px; 
+
+        text-align: center; color: #4d4d4d;
+    }
+    .resp-img
+    {
+        display: inline-block; margin-top: 5px;
+    }
+
+    .desk-login,
+    .desk-reg
+    {
+        display: none !important;
+    }
+}

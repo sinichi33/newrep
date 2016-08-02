@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <icuberma translate="title" module="icube_rma">
+                <model>icube_rma/api</model>
+                <title>RMA Resource</title>
+                <acl>icuberma</acl>
+                <methods>
+                    <updatestatus translate="title" module="icube_rma">
+                        <title>Update RMA Status</title>
+                        <method>updatestatus</method>
+                        <acl>icuberma/updatestatus</acl>
+                    </updatestatus>
+                </methods>
+                <faults module="icube_rma">
+                    <data_invalid> <!-- if we get invalid input data for invoices -->
+                        <code>100</code>
+                        <!-- we cannot know all the errors that can appear, their details can be found in error message for call -->
+                        <message>Invalid RMA data. Details in error message.</message>
+                    </data_invalid>
+                    <filters_invalid>
+                        <code>101</code>
+                        <message>Invalid filters specified. Details in error message.</message>
+                    </filters_invalid>
+                    <not_exists>
+                        <code>102</code>
+                        <message>RMA doesn't exist.</message>
+                    </not_exists>
+                    <not_deleted>
+                        <code>103</code>
+                        <message>RMA was not deleted. Details in error message.</message>
+                    </not_deleted>
+                </faults>
+            </icuberma>
+        </resources>
+        <acl>
+            <resources>
+                <icuberma translate="title" module="icube_rma">
+                    <title>RMA</title>
+                    <updatestatus translate="title" module="icube_rma">
+                        <title>Update RMA Status</title>
+                    </updatestatus>
+                </icuberma>
+            </resources>
+        </acl>
+    </api>
+</config>

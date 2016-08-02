@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<layout>
+	<adminhtml_sales_order_creditmemo_new>
+		<reference name="creditmemo_totals">
+			<block type="icube_creditmemo/adminhtml_sales_creditmemo_create_refundasgc" name="refundasgc" template="icube/creditmemo/create/totals/refundasgc.phtml" />
+		</reference>
+        <reference name="submit_before">
+            <block type="enterprise_customerbalance/adminhtml_sales_order_creditmemo_controls" name="createcm" template="icube/creditmemo/create/totals/creategc.phtml" />
+        </reference>
+        <reference name="adjustments">
+            <action method="setTemplate">
+                <template>icube/creditmemo/create/totals/adjustments.phtml</template>
+            </action>
+        </reference>
+        <reference name="customerbalance">
+            <action method="setTemplate">
+                <template>icube/creditmemo/create/totals/refund.phtml</template>
+            </action>
+        </reference>
+        <reference name='order_items'>
+            <action method="addItemRender">
+                <type>default</type>
+                <block>adminhtml/sales_items_renderer_default</block>
+                <template>icube/creditmemo/create/items/renderer/default.phtml</template>
+            </action>
+                        
+            <action method='setTemplate'>
+                <tpl>icube/creditmemo/create/items.phtml</tpl>
+            </action>
+
+            <block type="adminhtml/sales_order_totals" name="order_totals" template="sales/order/totals.phtml" >
+                <block name="fooman_surcharge" type="surcharge/adminhtml_sales_order_totals" />
+                <block type="adminhtml/sales_order_totals_tax" name="tax" template="sales/order/totals/tax.phtml" />
+                <block type="adminhtml/sales_order_totals_item" name="giftcardaccount" template="enterprise/giftcardaccount/sales/order/totals/giftcardaccount.phtml">
+                    <action method="setBeforeCondition"><param>customerbalance</param></action>
+                </block>
+            </block>
+        </reference>
+    </adminhtml_sales_order_creditmemo_new>
+
+    <adminhtml_sales_order_creditmemo_updateqty>
+	    <reference name="creditmemo_totals">
+		    <block type="adminhtml/sales_order_creditmemo_create_adjustments" name="adjustments" template="icube/creditmemo/create/totals/adjustments-update.phtml" />
+            <block type="icube_creditmemo/adminhtml_sales_creditmemo_create_refundasgc" name="refundasgc" template="icube/creditmemo/create/totals/refundasgc.phtml" />
+		</reference>
+        <reference name="submit_before">
+            <block type="enterprise_customerbalance/adminhtml_sales_order_creditmemo_controls" name="createcm" template="icube/creditmemo/create/totals/creategc.phtml" />
+        </reference>
+        <reference name="customerbalance">
+            <action method="setTemplate">
+                <template>icube/creditmemo/create/totals/refund.phtml</template>
+            </action>
+        </reference>
+        <reference name='order_items'>    
+            <action method='setTemplate'>
+                <tpl>icube/creditmemo/create/items.phtml</tpl>
+            </action>
+            <action method="addItemRender">
+                <type>default</type>
+                <block>adminhtml/sales_items_renderer_default</block>
+                <template>icube/creditmemo/update/items/renderer/default.phtml</template>
+            </action>
+
+            <block type="adminhtml/sales_order_totals" name="order_totals" template="sales/order/totals.phtml" >
+                <block name="fooman_surcharge" type="surcharge/adminhtml_sales_order_totals" />
+                <block type="adminhtml/sales_order_totals_tax" name="tax" template="sales/order/totals/tax.phtml" />
+                <block type="adminhtml/sales_order_totals_item" name="giftcardaccount" template="enterprise/giftcardaccount/sales/order/totals/giftcardaccount.phtml">
+                    <action method="setBeforeCondition"><param>customerbalance</param></action>
+                </block>
+            </block>
+        </reference>
+    </adminhtml_sales_order_creditmemo_updateqty>
+
+    <adminhtml_sales_order_creditmemo_view>
+        <reference name="creditmemo_totals">
+	        <action method="setTemplate">
+                <template>icube/creditmemo/view/totals/totals.phtml</template>
+            </action>
+        </reference>
+    </adminhtml_sales_order_creditmemo_view>
+</layout>

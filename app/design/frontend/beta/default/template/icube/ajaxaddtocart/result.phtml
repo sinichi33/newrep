@@ -1,0 +1,6 @@
+<div id="ajaxaddtocart-result" class="a-center white-popup mfp-hide">
+	<p class="title"><strong><?php echo $this->__('Troli Anda') ?></strong></p>
+	<div class="message"><?php echo $this->__('%s telah ditambahkan ke troli anda.',$this->getProductName()) ?></div>
+	<a href="<?php echo Mage::helper('checkout/cart')->getCartUrl(); ?>" class="button"><?php echo $this->__('Lanjut ke pembayaran') ?></a>
+	<a href="javascript:void(0)" class="back"><i class="fa fa-angle-left"></i><?php echo $this->__('Kembali Berbelanja') ?></a>
+</div>

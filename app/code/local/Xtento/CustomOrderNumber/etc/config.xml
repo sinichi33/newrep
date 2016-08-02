@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Xtento_CustomOrderNumber>
+            <version>1.0.6</version>
+        </Xtento_CustomOrderNumber>
+    </modules>
+    <global>
+        <helpers>
+            <xtento_customordernumber>
+                <class>Xtento_CustomOrderNumber_Helper</class>
+            </xtento_customordernumber>
+        </helpers>
+        <models>
+            <xtento_customordernumber>
+                <class>Xtento_CustomOrderNumber_Model</class>
+            </xtento_customordernumber>
+            <eav>
+                <rewrite>
+                    <entity_type>Xtento_CustomOrderNumber_Model_Rewrite_Eav_Entity_Type</entity_type>
+                </rewrite>
+            </eav>
+            <sales_resource>
+                <rewrite>
+                    <quote>Xtento_CustomOrderNumber_Model_Rewrite_Sales_Resource_Quote</quote>
+                </rewrite>
+            </sales_resource>
+        </models>
+        <events>
+            <sales_order_invoice_save_before>
+                <observers>
+                    <xtento_customordernumber_sales_order_invoice_save_before>
+                        <type>singleton</type>
+                        <class>xtento_customordernumber/observer</class>
+                        <method>salesOrderInvoiceSaveBefore</method>
+                    </xtento_customordernumber_sales_order_invoice_save_before>
+                </observers>
+            </sales_order_invoice_save_before>
+            <sales_order_shipment_save_before>
+                <observers>
+                    <xtento_customordernumber_sales_order_shipment_save_before>
+                        <type>singleton</type>
+                        <class>xtento_customordernumber/observer</class>
+                        <method>salesOrderShipmentSaveBefore</method>
+                    </xtento_customordernumber_sales_order_shipment_save_before>
+                </observers>
+            </sales_order_shipment_save_before>
+            <sales_order_creditmemo_save_before>
+                <observers>
+                    <xtento_customordernumber_sales_order_creditmemo_save_before>
+                        <type>singleton</type>
+                        <class>xtento_customordernumber/observer</class>
+                        <method>salesOrderCreditmemoSaveBefore</method>
+                    </xtento_customordernumber_sales_order_creditmemo_save_before>
+                </observers>
+            </sales_order_creditmemo_save_before>
+        </events>
+    </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Xtento_CustomOrderNumber>
+                    <files>
+                        <default>Xtento_CustomOrderNumber.csv</default>
+                    </files>
+                </Xtento_CustomOrderNumber>
+            </modules>
+        </translate>
+        <events>
+            <core_config_data_save_after>
+                <observers>
+                    <has_value_for_customordernumber_configuration_changed>
+                        <type>model</type>
+                        <class>Xtento_CustomOrderNumber_Model_System_Config_Backend_Import_Enabled</class>
+                        <method>has_value_for_configuration_changed</method>
+                    </has_value_for_customordernumber_configuration_changed>
+                </observers>
+            </core_config_data_save_after>
+            <controller_action_predispatch_adminhtml>
+                <observers>
+                    <controller_action_predispatch_adminhtml_customordernumber>
+                        <type>model</type>
+                        <class>Xtento_CustomOrderNumber_Model_Observer</class>
+                        <method>controllerActionPredispatchAdminhtml</method>
+                    </controller_action_predispatch_adminhtml_customordernumber>
+                </observers>
+            </controller_action_predispatch_adminhtml>
+        </events>
+        <!-- Following: Compatibility fix for Magento version 1.3 -->
+        <menu>
+            <system>
+                <children>
+                    <xtento_extensions translate="title">
+                        <title>XTENTO Extensions</title>
+                        <sort_order>1</sort_order>
+                        <children>
+                            <customordernumber translate="title">
+                                <title>Order Number Customizer</title>
+                                <sort_order>250</sort_order>
+                                <action>adminhtml/system_config/edit/section/customordernumber</action>
+                            </customordernumber>
+                        </children>
+                    </xtento_extensions>
+                </children>
+            </system>
+        </menu>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <customordernumber translate="title">
+                                            <title>XTENTO Order Number Customizer</title>
+                                            <sort_order>1</sort_order>
+                                        </customordernumber>
+                                    </children>
+                                </config>
+                                <xtento_extensions translate="title">
+                                    <title>XTENTO Extensions</title>
+                                    <sort_order>1</sort_order>
+                                    <children>
+                                        <customordernumber translate="title">
+                                            <title>Order Number Customizer</title>
+                                            <sort_order>250</sort_order>
+                                            <action>adminhtml/system_config/edit/section/customordernumber</action>
+                                        </customordernumber>
+                                    </children>
+                                </xtento_extensions>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <default>
+        <customordernumber>
+            <order>
+                <enabled>0</enabled>
+                <id_format>ORD%counter%</id_format>
+                <count_from>1</count_from>
+                <increment_by>1</increment_by>
+                <padding>6</padding>
+                <reset_counter>0</reset_counter>
+            </order>
+            <invoice>
+                <enabled>0</enabled>
+                <same>1</same>
+                <id_format>INV%counter%</id_format>
+                <count_from>1</count_from>
+                <increment_by>1</increment_by>
+                <padding>6</padding>
+                <reset_counter>0</reset_counter>
+            </invoice>
+            <shipment>
+                <enabled>0</enabled>
+                <same>1</same>
+                <id_format>SHI%counter%</id_format>
+                <count_from>1</count_from>
+                <increment_by>1</increment_by>
+                <padding>6</padding>
+                <reset_counter>0</reset_counter>
+            </shipment>
+            <creditmemo>
+                <enabled>0</enabled>
+                <same>1</same>
+                <id_format>CRE%counter%</id_format>
+                <count_from>1</count_from>
+                <increment_by>1</increment_by>
+                <padding>6</padding>
+                <reset_counter>0</reset_counter>
+            </creditmemo>
+        </customordernumber>
+    </default>
+</config>
+<!--
+/**
+ * Product:       Xtento_CustomOrderNumber (1.0.6)
+ * ID:            8xAf+oCns/QOEdaiZub3aLgVCGFua6nB8AAizsm8sRY=
+ * Packaged:      2016-02-24T02:27:18+00:00
+ * Last Modified: 2014-12-04T16:18:04+01:00
+ * File:          app/code/local/Xtento/CustomOrderNumber/etc/config.xml
+ * Copyright:     Copyright (c) 2014 XTENTO GmbH & Co. KG <info@xtento.com> / All rights reserved.
+ */
+-->

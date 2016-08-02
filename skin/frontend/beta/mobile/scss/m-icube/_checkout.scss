@@ -1,0 +1,842 @@
+/*----------------------------------------------------------------------------*/
+/* General
+/*----------------------------------------------------------------------------*/
+
+.checkout-onepage-index {
+
+	.col-main {
+		padding: 0;
+
+		.page-title {
+		}
+
+		.buttons-set {
+			text-align: center;
+			
+			.back-link {
+
+			}
+
+			.please-wait {
+			}
+		}
+
+		p.required {
+		}
+	}
+
+	h3 {
+		@include responsive-font-size(18);
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Horizontal Nav
+/*----------------------------------------------------------------------------*/
+
+#horizontal-opc-nav {
+	padding: 0 0 10px;
+
+	li {
+		padding: 0;
+    	width: 90px;
+
+		.step-title {
+			display: none;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Checkout step
+/*----------------------------------------------------------------------------*/
+
+#checkoutSteps {
+
+	.step-title {
+	}
+
+	.opc-content-wrapper {
+		padding: 10px;
+
+		&:after {
+			@include clearfix;
+		}
+
+		+ .opc-content-wrapper {
+			margin-top: 10px;
+		}
+	}
+}
+
+.opc {
+
+	.section {
+
+		.step {
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* One Page Checkout (OPC) - Step 1 - Login
+/*----------------------------------------------------------------------------*/
+
+.opc #opc-login {
+
+	.opc-content-wrapper {
+		padding: 0;
+	}
+
+	.col2-set {
+	
+		.col-1,
+		.col-2 {
+			width: 100%;
+			float: none;
+			padding: 10px;
+
+			.input-box-inner,
+			.buttons-set button.button {
+				max-width: 100%;
+			}
+		}
+
+		.col-1 {
+
+			&:after {
+				@include clearfix;
+			}
+
+			.form-list {
+					
+				li:not(.control) {
+					
+					label {
+					}
+				}
+			}
+		}
+
+		.col-2 {
+			margin-top: 10px;
+			border-top: 10px solid $c-body;
+
+			.form-list {
+			}
+
+			.buttons-set {
+			}
+		}
+	}
+
+	h3 {
+		padding: 10px 0 20px;
+	}
+
+	p.description {
+		display: none;
+	}
+
+	.remember-me-box {
+
+		.link-tip {
+		}
+	}
+
+	.form-list {
+
+		.control {
+
+			input[type=radio],
+			input[type=checkbox] {
+			}
+
+			input[type=email], 
+			input[type=search], 
+			input[type=number], 
+			input[type=password], 
+			input[type=tel], 
+			input[type=text] {
+				width: 100%;
+			}
+
+			label {
+			}
+		}
+
+		.input-text {
+		}
+
+		li {
+		}
+
+		input[type=email] {
+
+			&:after {
+	        }
+		}
+	}
+
+	a {
+	}
+
+	.button {
+	}
+
+	.buttons-set {
+
+		+ .form-list {
+		}
+
+		.button {
+
+			+ .button {
+			}
+		}
+	}
+
+	#onepage-guest-register-button {
+	}
+
+	#custom-guest-checkout-button {
+		margin-top: 0;
+	}
+
+	.inchoo-socialconnect-checkout {
+	}
+
+	.inchoo-socialconnect-facebook,
+	.inchoo-socialconnect-google {
+		max-width: 100%;
+	}
+
+	#login-email,
+	#login-password {
+	}
+}
+
+.input-box-inner.email {
+
+	&:after {
+	}
+}
+
+.input-box-inner.password {
+	
+	&:after {
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* OPC - Step 2 - Shipping Address Form
+/* OPC - Step 3 - Payment
+/* OPC - Step 4 - Payment Method
+/*----------------------------------------------------------------------------*/
+
+.opc #opc-shipping,
+.opc #opc-payment,
+.opc #opc-shipping_method {
+
+	a {
+	}
+
+	h3 {
+	}
+
+	.col2-set {
+
+		.col-1,
+		.col-2 {
+			width: 100%;
+			float: none;
+			padding: 0;
+		}
+
+		.col-2 {
+
+			.form-list {
+			}
+		}
+	}
+
+	.form-list {
+
+		label {
+		}
+
+		.input-text,
+		textarea,
+		select,
+		.wide,
+		.select-bg {
+		}
+
+		textarea {
+		}
+
+		li.control {
+
+			input[type=checkbox],
+			input[type=radio] {
+			}
+
+			label {
+			}
+		}
+
+		li.wide {
+			margin-bottom: 10px;
+		}
+	}
+
+	table.totals {
+		@icnlude responsive-font-size(12);
+
+		tbody {
+
+			td {
+			}
+
+			td:first-child,
+			th:first-child {
+				padding-left: 0;
+			}
+
+			tr:last-child {
+
+				td {
+					@include responsive-font-size(14);
+
+					&:first-child {
+						@include responsive-font-size(12);
+					}
+				}
+			}
+		}
+
+		.btn-remove {
+			left: initial;
+		}
+	}
+
+	.buttons-set {
+		position: relative;
+
+		.back-link {
+			float: none;
+			padding: 0;
+			margin: 15px 0;
+		}
+
+		.button {
+			float: none;
+			width: 100%;
+		}
+
+		.please-wait {
+			margin: 0 0 20px;
+			float: none;
+		}
+	}
+
+	address {
+
+		strong {
+		}
+	}
+
+	#giftcard_balance_lookup,
+	#coupon-message {
+		margin-bottom: 0;
+	}
+
+	#gc-please-wait {
+	}
+
+	.gc-alert-when-used {
+
+		&:before {
+		}
+	}
+}
+
+.opc #opc-shipping {
+
+	.col2-set {
+
+		.col-1 {
+
+			&:after {
+				@include clearfix;
+			}
+		}
+	}
+	.giftcard,
+	.discount {
+		padding: 25px 0;
+
+		h2 {
+		}
+
+		label {
+		}
+
+		a {
+		}
+
+		.left,
+		.right {
+			width: 100%;
+			float: none;
+			padding: 0;
+		}
+
+		.left {
+			margin-top: 0;
+
+			.tooltip {
+			}
+		}
+
+		.right{
+			margin-top: 10px;
+
+			.field-wrapper {
+			}
+
+			.input-text {
+			}
+
+			.button-wrapper {
+			}
+
+			.button2 {
+			}
+		}
+
+		.toggle-form {
+			padding: 0;
+
+			input + label {
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.discount {
+
+		.cancel-coupon {
+		}
+	}
+
+	.check-gc-status {
+	}
+
+	#shipping-buttons-container {
+	}
+
+	.head-edit-form {
+	}
+
+	.customSelectAddress {
+		opacity: 1;
+	    left: 20px;
+	    top: 15px;
+	    position: relative;
+
+		+ label {
+			padding-left: 40px;
+		    position: relative;
+		    top: -20px;
+		    margin-bottom: -10px;
+		}
+	}
+
+	#newAddressBtn {
+		float: right;
+		background: none;
+		color: $c-blue;
+		position: relative;
+		padding: 0;
+		height: 25px;
+
+		&:before {
+			content: '+';
+			background: $c-blue;
+			color: #fff;
+			position: absolute;
+			left: -10px;
+			border-radius: 1em;
+		    font-size: 12px;
+		    width: 18px;
+		    line-height: 18px;
+		    top: 2px;
+		    font-weight: bold;
+		}
+
+		&:after {
+			@include clearfix;
+		}
+	}
+
+	#shipping-new-address-form {
+		clear: both;
+	}
+
+	.select {
+
+		.select-bg {
+		}
+	}
+
+	#co-shipping-form {
+
+		.form-list {
+
+			li {
+				position: relative;
+				overflow: hidden;
+			}
+		}
+	}
+}
+	
+.opc #opc-payment {
+
+	.sp-methods {
+		> dt,
+		> dd {
+		}
+
+		> dt {
+
+			input {
+			}
+
+			label {
+			}
+
+			.arrow:after {
+			}
+
+			&:not(.inactive) {
+
+				label {
+				}
+			}
+
+			&.inactive .arrow:after {
+			}
+
+			&.inactive label {
+			}
+
+		}
+
+		> dd {
+
+			> ul {
+			}
+		}
+
+		.form-list {
+
+			select {
+			}
+
+			li:not(.wide) {
+			}
+
+			label[for="vpayment_expiration"] + .input-box,
+			label[for="vpaymentins_expiration"] + .input-box {
+
+				.v-fix {
+
+					&:first-child {
+					}
+
+					&:last-child {
+					}
+				}
+			}
+
+			.logos {
+
+				img {
+
+					+ img {
+					}
+				}
+			}
+
+			.float-group {
+
+				&:after {
+				}
+			}
+
+			.image {
+
+				+ .image {
+				}
+
+				img.displayed {
+				}
+
+				+ .float-group {
+				}
+
+				+ .image {
+				}
+			}
+		}
+
+		#dd_method_vtweb {
+
+			#payment_form_vtweb {
+
+				> li {
+				}
+			}
+		}
+
+		#payment-bank_transfer_accounts,
+		.logos {
+
+			img {
+			}
+		}
+
+		.cvv-what-is-this {
+		}
+
+		.custom_cc_type_wrapper {
+		}
+
+		.custom_cc_type {
+		}
+
+		#payment_form_vpaymentva {
+
+			.val-one-required {
+
+			}
+		}
+	}
+
+	.checkout-onepage-payment-additional-giftcardaccount {
+	}
+
+	.checkout-agreements .agreement-content {
+	}
+
+	#payment-shipToAddress {
+	}
+
+	#customerbalance_placer {
+	}
+
+	#payment-tool-tip {
+	}
+
+	.col2-set {
+
+		.col-2 {
+			margin-top: 10px;
+		}
+	}
+}
+
+#opc-shipping_method {
+
+	#amorderattr {
+	}
+
+	.sp-methods {
+
+		dt {
+		}
+		
+		input[type=checkbox],
+		input[type=radio] {
+		}
+
+		label {
+		}
+	}
+
+	#onepage-checkout-shipping-method-additional-load {
+	}
+}
+
+#opc-review .skip-review-loader {
+
+	.text {
+	}
+
+    .text:before {
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* OPC - Order Success
+/*----------------------------------------------------------------------------*/
+
+body.checkout-onepage-success {
+
+	.col-main {
+
+		.opc-content-wrapper {
+			padding: 10px;
+			margin: 20px 0;
+		}
+
+		.page-title h1 {
+			@include responsive-font-size(22);
+		}
+
+		.sub-title {
+		}
+
+		.buttons-set {
+		}
+
+		p.order-id {
+
+			a {
+				@include responsive-font-size(16);
+			}
+		}
+
+		a {
+		}
+
+		table.table-content {
+			margin: 0 auto;
+			width: auto;
+			// display: block;
+
+			tbody,
+			tr,
+			th,
+			td {
+				// display: block;
+			}
+
+			tr {
+				margin-bottom: 5px;
+			}
+
+			td {
+				position: relative;
+				width: auto !important;
+				vertical-align: top;
+				// text-align: center;
+				height: auto;
+			}
+
+			td:first-child {
+				width: 138px !important;
+			}
+
+			td:nth-child(2) {
+				width: 10px !important;
+			}
+
+			// td:first-child:after {
+			// 	content: ':';
+			// 	margin-left: 5px;
+			// }
+		}
+
+		.va-instruction {
+			padding: 10px;
+			@include responsive-font-size(12);
+
+			> p:first-child {
+				@include responsive-font-size(14);
+			}
+		}
+
+		.alert {
+			padding-left: 55px;
+    		position: relative;
+			@include responsive-font-size(12);
+
+			img {
+				float: none;
+			    position: absolute;
+			    left: 15px;
+			}
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Order Review Table
+/*----------------------------------------------------------------------------*/
+
+#checkout-review-table {
+	@include responsive-font-size(12);
+
+	thead {
+	}
+
+	.product-image {
+
+		img {
+		}
+	}
+
+	.col-product-image {
+		display: none;
+	}
+
+	.product-name {
+		@include responsive-font-size(12);
+	}
+
+	.col-subtotal {
+	}
+
+	.col-price {
+		padding-right: 0;
+		text-align: left;
+	}
+
+	.col-product-info {
+		padding-left: 0;
+	}
+
+	tbody {
+
+		tr {
+			
+			&:first-child td {
+				padding-top: 0;
+			}
+		}
+		td {
+
+			.item-options {
+			}
+		}
+	}
+
+	.price {
+	}
+
+	.regular-price {
+	}
+
+	.old-price {
+
+		.price {
+			@include responsive-font-size(10);
+		}
+	}
+}
+
+#checkout-review-submit {
+}

@@ -1,0 +1,30 @@
+/*----------------------------------------------------------------------------*/
+/* Carousel
+/*----------------------------------------------------------------------------*/
+
+@mixin carousel() {
+
+    .owl-controls {
+
+        .navigation {
+            position: absolute;
+            z-index: 102;
+            top: 25%;
+            width: 47px;
+            height: 108px;
+            cursor: pointer;
+        }
+
+        .owl-next {
+            @extend .navigation;
+            right: -7%;
+            @include use-sprite('carousel-next');
+        }
+
+        .owl-prev {
+            @extend .navigation;
+            left: -7%;
+            @include use-sprite('carousel-prev');
+        }
+    }
+}

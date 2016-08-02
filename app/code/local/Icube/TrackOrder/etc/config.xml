@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+	<Icube_TrackOrder>
+	  <version>0.1.0</version>
+	</Icube_TrackOrder>
+  </modules>
+  	<frontend>
+        <routers>
+            <trackorder>
+                <use>standard</use>
+                <args>
+                    <module>Icube_TrackOrder</module>
+                    <frontName>trackorder</frontName>
+                </args>
+            </trackorder>
+        </routers>
+        <layout>
+            <updates>
+                <trackorder module="Icube_TrackOrder">
+                    <file>icube/trackorder.xml</file>
+                </trackorder>
+            </updates>
+        </layout>
+    </frontend>
+	<global>
+      <blocks>
+        <trackorder>
+          <class>Icube_TrackOrder_Block</class>
+        </trackorder>
+      </blocks>
+	  	<helpers>
+	        <trackorder>
+	            <class>Icube_TrackOrder_Helper</class>
+	        </trackorder>
+	    </helpers>
+	</global>
+</config>

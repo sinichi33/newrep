@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Icube_RedeemPoint>
+			<version>0.1.3</version>
+		</Icube_RedeemPoint>
+	</modules>
+	<frontend>
+		<routers>
+			<redeempoint>
+				<use>standard</use>
+				<args>
+					<module>Icube_RedeemPoint</module>
+					<frontName>redeempoint</frontName>
+				</args>
+			</redeempoint>
+			<customer>
+				<args>
+					<modules>
+						<redeempoint before="Mage_Customer">Icube_RedeemPoint</redeempoint>
+					</modules>
+				</args>
+			</customer>
+		</routers>
+		<layout>
+			<updates>
+				<redeempoint>
+					<file>icube/redeempoint.xml</file>
+				</redeempoint>
+			</updates>
+		</layout>
+	</frontend>
+	<global>
+		<template>
+			<email>
+					<icube_email_giftcard translate="label" module="redeempoint">
+						<label>Icube giftcard voucher template</label>
+						<file>icube/icube_redeem_email.html</file>
+						<type>html</type>
+					</icube_email_giftcard>
+			</email>
+		</template>
+		<models>
+			<redeempoint>
+				<class>Icube_RedeemPoint_Model</class>
+			</redeempoint>
+		</models>
+		<blocks> 
+			<redeempoint>
+				<class>Icube_RedeemPoint_Block</class>
+			</redeempoint>
+		</blocks>
+		<helpers>
+			<redeempoint>
+				<class>Icube_RedeemPoint_Helper</class>
+			</redeempoint>
+		</helpers>
+		<resources>
+			<icube_redeempoint_setup>
+				<setup>
+					<module>Icube_RedeemPoint</module>
+					<class>Mage_Catalog_Model_Resource_Setup</class>
+				</setup>
+			</icube_redeempoint_setup>
+		</resources>
+	</global>
+</config>

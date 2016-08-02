@@ -1,0 +1,119 @@
+<!--@subject Welcome, {{var fullname}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var customer.email":"Customer Email",
+"htmlescape var=$customer.password":"Customer Password"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="554px">
+        <tr style="width:554px;">
+       		<td>
+            	 <p style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#52555f; font-size:14px; margin-bottom:10px; margin-top:10px; font-weight:bold;">Hi {{var name}},</p>
+            </td>
+        </tr>
+        
+         <tr style="width:554px;">
+       		<td>
+            	 <p class="biasa">Selamat datang di Ruparupa! Nikmati kemudahan berbelanja produk Ace, Informa, Toys Kingdom serta produk Kawan Lama Group lainnya hanya dalam sekali klik!
+                 <b>Ruparupa</b> hadir dengan konsep <b> One Stop Online Shopping </b> untuk menjawab kebutuhan masyarakat modern akan kemudahan berbelanja, kapanpun dan dimanapun Anda menginginkannya.</p>
+                
+             
+            </td>
+        </tr>
+        
+   	 </table>
+    
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="554px" style="margin-top:20px;">
+    
+    	   <tr style="width:554px;">
+              <td colspan="3" style="border-top: solid thin #a1a1a1; padding-top:10px;">
+                     <p style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#52555f; font-size:14px; margin-top:5px; margin-bottom:18px; display:inline-block; font-weight:bold;">Gunakan kode voucher dibawah ini untuk berbelanja di Ruparupa</p>
+              </td>
+              </tr>
+              
+          <tr style="width:554px;">
+              <td>
+                    <a href="https://www.ruparupa.com/"><img style="margin-left:auto; margin-right:auto; display:block; margin-bottom:15px; margin-top:-5px;" src="https://img.ruparupa.com/media/static/member/banner-voucher50rb.jpg" alt="Anda Mendapatkan Voucher Belanja Rp50.000, klik disini untuk pakai voucher" width="554"/></a>
+              </td>
+          </tr>
+          
+           <tr>
+          	<td>
+            	<p style="text-align:center; font-size:12px; margin-bottom:10px;">Gunakan kode voucher sebelum {{var expire}}</p>
+            </td>
+          </tr>
+          
+          <tr>
+          	<td style="border:medium solid #52555f;">
+            	<p style="text-align:center; font-size:24px; margin:10px 0px 10px 0px;">{{var voucher}}</p>
+               
+            </td>
+          </tr>
+          
+          <tr>
+          	<td>
+            	<p style="font-size:12px; margin-bottom:10px;">Syarat dan Ketentuan:</p>
+                <p style="font-size:10px; margin-top:0px; line-height:14px;">
+1. Berlaku dengan minimum pembelian Rp 250.000,-<br />
+2. Voucher hanya berlaku hingga tanggal {{var expire}}<br />
+3. Tidak dapat diuangkan.<br />
+4. Tidak dapat digabungkan dengan promo lainnya<br />
+5. Tidak bisa menggunakan lebih dari 1 voucher per transaksi<br />
+6. Apabila terjadi kegagalan saat melakukan transaksi atau order dibatalkan maka voucher akan hangus dan tidak dapat
+     digunakan kembali<br />
+7. Apabila pembelian Anda melebihi nominal yang tertera di voucher, maka Anda harus membayar biaya kekurangannya<br />
+8. Ruparupa.com berhak membatalkan transaksi apabila penggunaan gift voucher tidak sesuai dengan syarat dan ketentuan
+    yang berlaku<br />
+9. Produk tidak dapat dikembalikan
+                </p>
+            </td>
+          </tr>
+          
+          <tr>
+          	<td>
+            	<p style="font-size:12px; margin-bottom:10px;">Cara Menggunakan Voucher :</p>
+                <img src="https://img.ruparupa.com/media/static/member/info.jpg" />
+            </td>
+          </tr>
+          </table>
+          
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="554px" style="margin-top:20px;">
+                  <tr style="width:554px;">
+                  <td colspan="2" style="border-top: solid thin #a1a1a1; padding-top:22px;">
+                       <a href="https://www.ruparupa.com/"> <img src="https://img.ruparupa.com/media/static/member/banner-cashback-bni-info.jpg" alt="Belanja diatas Rp500.000 dan dapatkan cashback Rp100.000" width="554"/></a>
+                  </td>
+                  </tr>
+          </table>
+          
+          <!--TABLE BAGIAN KE 2-->
+        
+         <table align="center" border="0" cellpadding="0" cellspacing="0" width="554px" style="margin-top:10px;">
+         	  <tr style="width:554px;">
+                  <td colspan="3" style="padding-bottom:10px;">
+                         <p style="text-align:center; color:#52555F; font-size:14px; letter-spacing:1px; font-weight:700;">LIHAT KATEGORI PRODUK LAINNYA</p>
+                  </td>
+              </tr>
+              
+              <tr style="width:554px;">
+                  <td style="padding-right:9px; padding-bottom:15px;">
+                  	 <a href="https://www.ruparupa.com/rumah-tangga.html"><img class="bannerbu" src="https://img.ruparupa.com/media/static/email/newsletter/7april16/kategori-1.jpg" alt="Kategori Rumah Tangga"/></a>
+                  </td>
+                  <td style="padding-right:9px; padding-bottom:15px;">
+                  	 <a href="https://www.ruparupa.com/bed-dan-bath.html"><img class="bannerbu" src="https://img.ruparupa.com/media/static/email/newsletter/7april16/kategori-2.jpg" alt="Kategori Bed dan bath"/></a>
+                  </td>   
+                  <td style=" padding-bottom:15px;">
+                  	 <a href="https://www.ruparupa.com/home-improvement.html"><img class="bannerbu" src="https://img.ruparupa.com/media/static/email/newsletter/7april16/kategori-3.jpg" alt="Kategori Home Improvement"/></a>
+                  </td>   
+              </tr>
+		</table><br />
+
+{{template config_path="design/email/footer"}}

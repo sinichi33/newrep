@@ -1,0 +1,94 @@
+<?php
+/**
+ * Toolbar Template
+ *
+ * Description:
+ * - Override beta/default
+ * - custom sort by
+ * - Add filter link
+ */
+?>
+<?php
+/**
+ * Product list toolbar
+ *
+ * @see Mage_Catalog_Block_Product_List_Toolbar
+ */
+?>
+<?php if($this->getCollection()->getSize()): ?>
+<div class="toolbar">
+    <div class="top">
+        <div class="left">
+            <!-- items counter -->
+            <div class="count-container">
+            <?php if ($this->getTotalNum() > 1): ?>
+                <?php echo $this->__('%s Products', $this->getTotalNum()) ?>
+            <?php else: ?>
+                <?php echo $this->__('%s Product', $this->getTotalNum()) ?>
+            <?php endif ?>
+            </div>
+        </div>
+        <div class="right">
+            <!-- Sort By -->
+            <?php if( $this->isExpanded() ): ?>
+                <a href="#filter-popup" class="filter-link btn-white"><i class="fa fa-filter"></i><?php echo $this->__('Filter') ?></a>
+                <a href="#sort-by-popup" class="sort-by-link btn-white"><i class="fa fa-sort"></i><?php echo $this->__('Sort') ?></a>
+                <div id="sort-by-popup" class="mmenu-popup" style="display: none;">
+                    <div>  
+                        <div class="popup-content">  
+                            <ul class="form-list">
+                                <?php foreach($this->getAvailableOrders() as $_key=>$_order): ?>
+                                    <?php trim($_key) ?>
+                                    <?php if (trim($_key)=='price'): ?>
+                                        <li>
+                                            <input type="radio" id="sort-by-<?php echo $_key ?>-asc" name="sortby" value="<?php echo $this->getOrderUrl($_key, 'asc') ?>"<?php echo ($this->isOrderCurrent($_key) && $this->getCurrentDirection() == 'asc')? 'checked="checked"':''?> />
+                                            <label for="sort-by-<?php echo $_key ?>-asc"><?php echo $this->__($_order.': Rendah ke Tinggi') ?></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="sort-by-<?php echo $_key ?>-desc" name="sortby" value="<?php echo $this->getOrderUrl($_key, 'desc') ?>"<?php echo ($this->isOrderCurrent($_key) && $this->getCurrentDirection() == 'desc')? 'checked="checked"':''; ?> />
+                                            <label for="sort-by-<?php echo $_key ?>-desc"><?php echo $this->__($_order.': Tinggi ke Rendah') ?></label>
+                                        </li>
+                                    <?php else: ?>
+                                        <li>
+                                            <input type="radio" id="sort-by-<?php echo $_key ?>" name="sortby" value="<?php echo $this->getOrderUrl($_key, 'asc') ?>"<?php echo ($this->isOrderCurrent($_key))? 'checked="checked"':'';?> />
+                                            <label for="sort-by-<?php echo $_key ?>"><?php echo $this->__($_order) ?></label>
+                                        </li>
+                                    <?php endif ?>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                        <div class="buttons-set">
+                            <button class="button cancel btn-dark-grey"><?php echo $this->__('Batal') ?></button>
+                            <button class="button submit" onclick="setLocation(jQuery('input[name=sortby]:checked').val())"><?php echo $this->__('Pilih') ?></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="currently-sort-by" style="display: none;">
+                    <div class="currently">
+                        <p class="block-subtitle">
+                            <?php echo $this->__('Sort by') ?>: <span class="value"></span>
+                        </p>
+                    </div>
+                </div>
+            <?php endif; ?>
+
+            <!-- items per page -->
+            <div class="limiter">
+                <label><?php echo $this->__('Show') ?></label>
+                <select onchange="setLocation(this.value)" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Results per page')); ?>">
+                <?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
+                    <option value="<?php echo $this->getLimitUrl($_key) ?>"<?php if($this->isLimitCurrent($_key)): ?> selected="selected"<?php endif ?>>
+                        <?php echo $this->__('%s Items',$_limit) ?>
+                    </option>
+                <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="pager">
+            <?php echo $this->getPagerHtml() ?>
+        </div>
+    </div>
+</div>
+<?php endif ?>

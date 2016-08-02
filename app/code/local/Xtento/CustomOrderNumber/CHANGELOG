@@ -1,0 +1,27 @@
+Xtento_CustomOrderNumber
+
+-------------
+  CHANGELOG
+-------------
+
+===== 1.0.0 =====
+ * Initial Release
+ ! Added compatibility for Magento CE 1.9.0.0 / EE 1.14.0.0
+
+===== 1.0.1 =====
+ * Various bugfixes and code optimization in license code
+
+===== 1.0.2 =====
+ + Added ability to add custom variables to the increment_id format using the xtento_customordernumber_replace_variables_before event
+
+===== 1.0.3 =====
+ + For Magento 1.6+, the isOrderIncrementIdUsed function is rewritten to support alphanumeric order numbers (type casting to int fixed, see: https://github.com/magento/bugathon_march_2013/commit/bf0cc46da9bf86c5f9e3914e41c52854dc40565c)
+
+===== 1.0.4 =====
+ * Fixed "Unique per store view" and "Unique per website" options not being saved
+
+===== 1.0.5 =====
+ * Fixed credit memos not using the custom ID format set by the extension
+
+===== 1.0.6 =====
+ ! Added compatibility for Magento CE 1.9.1.0 / EE 1.14.1.0

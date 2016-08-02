@@ -1,0 +1,65 @@
+	<div class="title">
+		<h3 class="ace"><?php echo $this->__('Your ACE point : ') ?><span class="your-point"></span></h3>
+		<h3 class="informa"><?php echo $this->__('Your Informa point : ') ?><span class="your-point"></span></h3>
+		<h3 class="toyskingdom"><?php echo $this->__('Your Toyskingdom point : ') ?><span class="your-point"></span></h3>
+	</div>
+	<form action="<?php echo $this->getActionSoapAjax() ?>" method="post" id="form-select-voucher">
+		<p><?php echo $this->__('Pilih Voucher') ?></p>
+		<ul class="form-list" id="form-select-voucher-1">
+			<li class="control border">
+				<div class="input-box">
+					<input type="radio" name="point" value="100000" id="point-100000" class="checkbox"><label for="point-100000">Rp 100.000 <span class="point-ace point-informa">(40 poin)</span><span class="point-toyskingdom">(400 poin)</span></label><br>
+					<input type="radio" name="point" value="50000" id="point-50000" class="checkbox"><label for="point-50000">Rp 50.000 <span class="point-ace point-informa">(20 poin)</span><span class="point-toyskingdom">(200 poin)</span></label><br/>
+					<input type="radio" name="point" value="25000" id="point-25000" class="checkbox validate-one-required"><label for="point-25000">Rp 25.000 <span class="point-ace point-informa">(10 poin)</span><span class="point-toyskingdom">(100 poin)</span></label>
+				</div>
+			</li>
+			<li class="control">
+				<div class="input-box">
+					<input type="checkbox" name="agree" id="redeem-agree" class="checkbox" />
+					<label for="redeem-agree"><?php echo $this->__('I agree to terms and conditions') ?></label>
+				</div>
+			</li>
+		</ul>
+		
+		<div class="buttons-set">
+			<button type="button" class="button btn-orange btn-popup-passkey custom-popup-trigger"  title="<?php echo $this->__('Exchange') ?>" data-target="redeem-confirm-passkey"><span><span><?php echo $this->__('Exchange') ?></span></span></button>
+		</div>
+
+		<div id="redeem-confirm-passkey" class="custom-popup-wrapper">
+			<div class="bg"></div>
+            <div class="popup-content">
+				<p><strong><?php echo $this->__('Continue Voucher Exchange') ?></strong></p>
+				<p><?php echo $this->__('Input passkey to exchange voucher') ?></p>
+				<div class="input-box" id="form-select-voucher-2">
+					<input type="hidden" name="type"  value="" />
+					<input type="hidden" name="memberid"  value="" />
+					<input type="password" name="memberpin" id="memberpin"  value="" class="input-text required-entry" />
+				</div>
+				<div class="buttons-set">
+					<button type="button" onclick="formSelectVoucher.submit()" class="button btn-orange btn-submit"  title="<?php echo $this->__('Exchange') ?>"><span><span><?php echo $this->__('Exchange') ?></span></span></button>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<div id="redeem-confirm-success" class="a-center white-popup mfp-hide">
+		<p class="title"><strong><?php echo $this->__('Exchange Voucher Succeeded') ?></strong></p>
+		<p><?php echo $this->__('You have successfully redeemed your points:') ?></p>
+		<p id="redeem-confirm-success-value">
+			<?php echo $this->__('Voucher :') ?>
+			<span></span>
+		</p>
+		<p><?php echo $this->__('The rest of your points right now is ') ?><span id="reeem-rest-points"><strong></strong> <?php echo $this->__('point') ?></span></p>
+		<p class="info a-center"><?php echo $this->__('Click <a href=\'%s\'>here</a> to know hot to use the voucher', '#') ?></p>
+		<div class="buttons-set">
+			<button type="button" onclick="window.location.replace('<?php echo Mage::getBaseUrl() ?>')" class="button btn-orange"  title="<?php echo $this->__('Shop Again') ?>"><span><span><?php echo $this->__('Shop Again') ?></span></span></button>
+			<button type="button" class="button btn-blue btn-close" title="<?php echo $this->__('Buy Voucher Again') ?>"><span><span><?php echo $this->__('Buy Voucher Again') ?></span></span></button>
+		</div>
+	</div>
+<script type="text/javascript">
+//<![CDATA[
+    var formSelectVoucher = new VarienForm('form-select-voucher');
+    var validatorFormSelectVoucher1 = new Validation('form-select-voucher-1');
+    var validatorFormSelectVoucher2 = new Validation('form-select-voucher-2');
+//]]>
+</script>
